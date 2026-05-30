@@ -17,6 +17,25 @@ un editor incluido.
 
 ---
 
+## 🌐 Acceso en línea
+
+La plataforma está publicada en **GitHub Pages**:
+
+> **https://julianquinteroi.github.io/plataforma-seguridad-energetica/**
+
+- Comparte esa URL con los estudiantes. Desde el mapa, el botón **«Abrir editor»**
+  los lleva a crear su país.
+- **Añadir entregas al mapa público:** copia el `<iso>.json` del estudiante a
+  `data/`, regístralo en `data/manifest.json`, y publica los cambios:
+  ```bash
+  git add . && git commit -m "Agrega entrega <país>" && git push
+  ```
+  El sitio se reconstruye solo en ~1 minuto.
+- **Repositorio:** https://github.com/JulianQuinteroI/plataforma-seguridad-energetica
+  (público; para hacerlo privado se requiere un plan de pago de GitHub para servir Pages).
+
+---
+
 ## Índice
 
 - [Para el DOCENTE — Inicio rápido](#para-el-docente--inicio-rápido)
@@ -130,7 +149,13 @@ usando el editor incluido. **No necesita programar nada.**
 1. **Abra el editor**: `editor.html` (doble clic, o desde el botón «Abrir editor»
    del mapa).
 
-2. **Empiece el país**, por una de dos vías:
+2. **Empiece el país**, por una de estas vías:
+   - **«Asistente IA (PDF→JSON)»** *(la más rápida)* → suba su *paper* en PDF. La
+     plataforma extrae el texto **en su navegador** y arma un *prompt*; péguelo en
+     **Claude** (claude.ai) o en la IA institucional, copie el JSON que devuelva y
+     péguelo de vuelta. Cae al editor como **borrador**. ⚠️ La IA puede inferir o
+     dejar vacíos campos (coordenadas del mapa, flujos del Sankey, cifras): **revise
+     y complete contra sus fuentes** antes de exportar. Su PDF nunca sale del navegador.
    - **«Nuevo país»** → arranca un formulario en blanco.
    - **«Importar»** → cargue la plantilla `data/_plantilla.json` (o un `.json`
      que ya venía trabajando) para seguir editándolo. La plantilla viene comentada
