@@ -4,6 +4,8 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Seguridad Energética por País — Tablero</title>
+<meta http-equiv="Cache-Control" content="no-cache, must-revalidate" />
+<meta http-equiv="Pragma" content="no-cache" />
 
 <!-- Dependencias CDN (CONTRACT §2) -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
@@ -12,9 +14,9 @@
 <script src="https://cdn.jsdelivr.net/npm/chartjs-chart-sankey@0.12.1/dist/chartjs-chart-sankey.min.js"></script>
 
 <!-- Estilos + esquema + render -->
-<link rel="stylesheet" href="assets/app.css" />
-<script src="assets/schema.js"></script>
-<script src="assets/render.js"></script>
+<link rel="stylesheet" href="assets/app.css?v=3" />
+<script src="assets/schema.js?v=3"></script>
+<script src="assets/render.js?v=3"></script>
 </head>
 <body>
 
@@ -60,7 +62,7 @@
   function fromFetch(iso) {
     /* Devuelve una promesa; falla en silencio bajo file:// o si no existe. */
     if (!iso) return Promise.resolve(null);
-    return fetch("data/" + iso.toLowerCase() + ".json")
+    return fetch("data/" + iso.toLowerCase() + ".json", { cache: "no-cache" })
       .then(function (r) { return r.ok ? r.json() : null; })
       .catch(function () { return null; });
   }
