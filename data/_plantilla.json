@@ -1,0 +1,214 @@
+{
+  "schema_version": "1.0.0",
+  "meta": {
+    "pais": "ESCRIBE AQUÍ el nombre del país (ej. Colombia)",
+    "pais_iso": "ISO3 ej. COL — código de 3 letras OBLIGATORIO",
+    "pais_iso2": "ISO2 ej. CO — código de 2 letras",
+    "subtitulo_pais": "Forma larga ej. República de / Reino de",
+    "eyebrow": "Portafolio · Seguridad Energética por País",
+    "titulo": "Título principal del tablero. Admite <br/> para salto de línea",
+    "subtitulo": "Resumen de una frase del análisis y de los países comparados",
+    "estudiante": "Tu nombre — aparece en el mapa al pasar el cursor",
+    "asignatura": "Logística Militar · Rúbrica Slide18",
+    "tipo_doc": "Documento de sustentación",
+    "fecha": "Mes Año ej. Mayo 2026",
+    "fuerzas_armadas": "Sigla de las FF.AA. ej. FF.MM.",
+    "aperc_global": null,
+    "cita_corta": "Fuentes abreviadas ej. IEA, 2024; ...",
+    "portafolio_label": "Rúbrica Slide18<br/>Logística Militar<br/>v2 — académica",
+    "map_view": { "lat": 0, "lng": 0, "zoom": 3 }
+  },
+
+  "resumen": {
+    "tesis_html": "ESCRIBE AQUÍ la tesis central (admite <i> <b> <br/>). Ej.: el país es exportador de X pero vulnerable por Y.",
+    "conclusion_html": "ESCRIBE AQUÍ la conclusión y el puntaje APERC, con el rol de las FF.AA.",
+    "kpis": [
+      { "valor": 0, "unidad": "EJ", "etiqueta": "ETIQUETA del KPI (ej. Consumo Primario)", "decimal": true }
+    ]
+  },
+
+  "aperc": {
+    "src": "Fuente del marco ej. APERC 2007 · Cherp & Jewell 2014",
+    "definicion_html": "ESCRIBE AQUÍ la definición de seguridad energética (admite HTML).",
+    "definicion_cita": "Cita de la definición.",
+    "scorecard_titulo": "Scorecard bajo APERC",
+    "scores": [
+      { "letra": "A", "nombre": "vailability", "desc": "Recursos físicos del país.", "score": null },
+      { "letra": "A", "nombre": "ccessibility", "desc": "Geopolítica y acceso técnico.", "score": null },
+      { "letra": "A", "nombre": "ffordability", "desc": "Costo soportable de la energía.", "score": null },
+      { "letra": "A", "nombre": "cceptability", "desc": "Aceptabilidad ambiental y social.", "score": null }
+    ],
+    "scorecard_cita": "Cita: scores propios calculados sobre indicadores normalizados.",
+    "comparador": { "pais_b": "PAÍS COMPARADO B", "pais_c": "PAÍS COMPARADO C" },
+    "indicadores_titulo": "Indicadores cuantitativos aplicados",
+    "indicadores": [
+      { "indicador": "NOMBRE del indicador (ej. HHI mix primario)", "definicion": "Qué mide y su rango", "propio": "valor del país", "b": "valor país B", "c": "valor país C", "interp": { "texto": "Interpretación breve", "pill": "ok" } }
+    ],
+    "indicadores_nota": "Nota metodológica: cómo se calcularon los indicadores y por qué se eligieron los comparados."
+  },
+
+  "matriz": {
+    "src": "Fuente del mix energético ej. IEA · Balance Nacional",
+    "primaria_titulo": "Energía Primaria (TPES, % EJ)",
+    "primaria": [
+      { "label": "ENERGÉTICO (ej. Petróleo)", "valor": 0, "color": "#c4570e" }
+    ],
+    "primaria_cita": "Cita del mix primario con fuente.",
+    "electrica_titulo": "Generación Eléctrica (% TWh)",
+    "electrica": [
+      { "label": "FUENTE ELÉCTRICA (ej. Hidro)", "valor": 0, "color": "#6a8caf" }
+    ],
+    "electrica_cita": "Cita del mix eléctrico con fuente.",
+    "comparativa_titulo": "Comparativa Internacional — Mix Eléctrico (%)",
+    "comparativa": {
+      "paises": ["Tu país", "País B", "País C"],
+      "series": [
+        { "label": "FUENTE (ej. Hidro)", "data": [0, 0, 0], "color": "#6a8caf" }
+      ]
+    },
+    "comparativa_nota": "Nota: por qué se eligieron estos países como eje normativo."
+  },
+
+  "sankey": {
+    "src": "Producción → Transformación → Uso final",
+    "titulo_panel": "Flujos físicos de energía, PAÍS AÑO (PJ aprox.)",
+    "flujos": [
+      { "from": "NODO ORIGEN (ej. Petróleo (prod.))", "to": "NODO DESTINO (ej. Exportación crudo)", "flow": 0 }
+    ],
+    "nodos": {
+      "NODO ORIGEN (ej. Petróleo (prod.))": { "color": "#c4570e", "label": "Etiqueta visible del nodo" }
+    },
+    "cita": "Cita: qué revela el diagrama de balance (admite HTML)."
+  },
+
+  "evolucion": {
+    "src": "Rango y fuente ej. 1990–2050 · Plan Nacional",
+    "historico_titulo": "Mix Eléctrico Histórico y Proyectado (%)",
+    "anios": ["2000", "2010", "2020", "2030", "2050"],
+    "series": [
+      { "label": "FUENTE (ej. Hidro)", "data": [0, 0, 0, 0, 0], "color": "#6a8caf" }
+    ],
+    "historico_cita": "Cita de la trayectoria y escenario usado.",
+    "hitos_titulo": "Hitos del Régimen Energético",
+    "hitos": [
+      { "anio": "AÑO", "evento": "DESCRIBE AQUÍ el hito energético." }
+    ]
+  },
+
+  "infraestructura": {
+    "src": "Mapa Leaflet · OSM + fuente",
+    "mapa_titulo": "Nodos energéticos y corredores críticos del país",
+    "pines": [
+      { "lat": 0, "lng": 0, "tipo": "refineria", "nombre": "NOMBRE del activo (tipo ∈ refineria|gnl|almacenamiento|minerales|sloc|otro)", "desc": "Operador · capacidad · descripción" }
+    ],
+    "rutas": [
+      { "puntos": [[0, 0], [0, 0]], "tooltip": "Descripción de la ruta/corredor (oleoducto, SLOC, línea)." }
+    ],
+    "leyenda": [
+      { "color": "#c4570e", "label": "ETIQUETA de la leyenda" }
+    ],
+    "mapa_cita": "Cita: coordenadas reales y fuentes del mapa.",
+    "vulnerabilidades_titulo": "Vulnerabilidades técnicas",
+    "vulnerabilidades": [
+      { "nivel": "high", "tag": "CRÍT", "texto_html": "<b>Título</b> · DESCRIBE la vulnerabilidad (nivel ∈ high|med|low)." }
+    ],
+    "capacidad_titulo": "Capacidad vs Demanda (GW)",
+    "capacidad": {
+      "anios": ["2024", "2030", "2040"],
+      "y_titulo": "GW",
+      "series": [
+        { "label": "SERIE (ej. Renovables (GW))", "tipo": "bar", "data": [0, 0, 0], "color": "#2e7d32" }
+      ]
+    },
+    "capacidad_cita": "Cita de la proyección de capacidad."
+  },
+
+  "geopolitica": {
+    "src": "Radar APERC normalizado",
+    "radar_titulo": "Radar APERC: Tu país vs País B vs País C",
+    "radar": {
+      "ejes": ["Availability", "Accessibility", "Affordability", "Acceptability", "Sovereignty", "Robustness", "Resilience"],
+      "series": [
+        { "label": "Tu país", "data": [0, 0, 0, 0, 0, 0, 0], "color": "#0b5394" }
+      ]
+    },
+    "radar_cita": "Cita: escala 0–10 y método de normalización.",
+    "dependencias_titulo": "Dependencias y socios",
+    "dependencias": [
+      { "vinculo": "DESCRIBE el vínculo (ej. Exportación gas a la UE)", "pct": "0", "riesgo": { "texto": "Lectura del riesgo", "pill": "ok" } }
+    ],
+    "dependencias_cita": "Cita de las fuentes de comercio exterior.",
+    "minerales_titulo": "Minerales críticos y recursos — posición del país",
+    "minerales": [
+      { "valor": "#1", "unidad": " mundial", "etiqueta": "RECURSO O MINERAL" }
+    ],
+    "minerales_cita": "Cita de la posición en minerales/recursos."
+  },
+
+  "militar": {
+    "titulo_seccion": "Combustibles Militares y Rol Operacional de las FF.AA.",
+    "nav_label": "Combustibles militares",
+    "src": "Fuente de defensa ej. Política de Defensa · contratos",
+    "combustibles_titulo": "Demanda de combustibles de las FF.AA.",
+    "combustibles": [
+      { "codigo": "CÓDIGO (ej. Jet A-1 / JP-8)", "tipo": "Tipo de combustible", "usuario": "Fuerza usuaria", "ml_anio": "0" }
+    ],
+    "combustibles_total": "~0",
+    "combustibles_cita": "Cita: cómo se estimó la demanda de combustible militar.",
+    "vulnerabilidades_titulo": "Vulnerabilidades específicas de defensa",
+    "vulnerabilidades": [
+      { "nivel": "high", "tag": "CRÍT", "texto_html": "<b>Título</b> · DESCRIBE la vulnerabilidad de defensa (nivel ∈ high|med|low)." }
+    ],
+    "mision_titulo": "Misión de las FF.AA. en Seguridad Energética",
+    "mision": [
+      { "titulo": "TÍTULO DE LA MISIÓN", "texto_html": "DESCRIBE el rol de las FF.AA. (admite HTML)." }
+    ],
+    "mision_cita": "Cita de las fuentes de defensa."
+  },
+
+  "politicas": {
+    "src": "Fuente institucional ej. Ministerio · Regulador",
+    "planes_titulo": "Planes nacionales",
+    "planes": [
+      { "nombre": "NOMBRE del plan/ley", "texto": "Qué establece en una frase." }
+    ],
+    "instituciones_titulo": "Instituciones clave",
+    "instituciones": [
+      { "sigla": "SIGLA", "texto": "Función de la institución." }
+    ],
+    "transicion_titulo": "Transición justa",
+    "transicion_html": "ESCRIBE AQUÍ el análisis de transición justa (admite HTML).",
+    "transicion_cita": "Cita de la política de transición."
+  },
+
+  "crisis": {
+    "src": "Wargaming · Cone of Plausibility",
+    "matriz_titulo": "Matriz Probabilidad × Impacto",
+    "matriz": {
+      "esquina": "Impacto ↓ / Prob →",
+      "prob_labels": ["Muy bajo", "Bajo", "Medio", "Alto", "Muy alto"],
+      "filas": [
+        { "impacto": "Catastrófico", "celdas": [ { "nivel": 1 }, { "nivel": 2 }, { "nivel": 3, "texto": "Escenario" }, { "nivel": 4 }, { "nivel": 5 } ] }
+      ]
+    },
+    "matriz_cita": "Cita de la escala de riesgo usada.",
+    "escenarios_titulo": "Escenarios calibrados",
+    "escenarios": [
+      { "nivel": "high", "tag": "A", "texto_html": "<b>Escenario</b> — descripción. <i>Respuesta:</i> medidas (nivel ∈ high|med|low)." }
+    ],
+    "vectores_titulo": "Respuesta estratégica integrada — vectores",
+    "vectores": [
+      { "titulo": "VECTOR (ej. DIVERSIFICACIÓN)", "texto": "Acción estratégica en una frase." }
+    ]
+  },
+
+  "referencias": {
+    "src": "Triangulación multi-fuente",
+    "titulo": "Fuentes primarias y académicas",
+    "items": [
+      "ESCRIBE AQUÍ una referencia en formato académico (admite HTML, ej. <i>cursivas</i>)."
+    ]
+  },
+
+  "footer": "Documento de sustentación · Rúbrica Slide18 · Logística Militar · Mes Año"
+}

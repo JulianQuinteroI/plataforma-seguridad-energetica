@@ -1,0 +1,361 @@
+{
+  "schema_version": "1.0.0",
+  "meta": {
+    "pais": "Australia",
+    "pais_iso": "AUS",
+    "pais_iso2": "AU",
+    "subtitulo_pais": "Commonwealth of",
+    "eyebrow": "Portafolio · Seguridad Energética por País",
+    "titulo": "Seguridad Energética de Australia:<br/>diagnóstico, vulnerabilidades y rol de la ADF",
+    "subtitulo": "Análisis cuantitativo bajo el marco APERC de las cuatro A's (Disponibilidad, Accesibilidad, Asequibilidad, Aceptabilidad), con comparación frente a Noruega y Arabia Saudita.",
+    "estudiante": "Cátedra (ejemplo de referencia)",
+    "asignatura": "Logística Militar · Rúbrica Slide18",
+    "tipo_doc": "Documento de sustentación",
+    "fecha": "Mayo 2026",
+    "fuerzas_armadas": "ADF",
+    "aperc_global": 6.2,
+    "cita_corta": "IEA, 2024; DCCEEW, 2024; APERC, 2007; Cherp & Jewell, 2014.",
+    "portafolio_label": "Rúbrica Slide18<br/>Logística Militar<br/>v2 — académica",
+    "map_view": { "lat": -22.5, "lng": 135, "zoom": 3.4 }
+  },
+
+  "resumen": {
+    "tesis_html": "Australia presenta una <i>paradoja estructural</i>: es el primer exportador mundial de carbón y GNL pero permanece estratégicamente vulnerable por su dependencia de petróleo refinado importado (~91%), reservas estratégicas inferiores al estándar IEA (~58 días vs 90), y exposición a las rutas marítimas del Indo-Pacífico. La transición energética (meta 82% renovable a 2030) reduce vulnerabilidades climáticas pero introduce nuevas dependencias en minerales críticos y red eléctrica.",
+    "conclusion_html": "En métricas APERC, Australia obtiene 6.2/10 — por debajo de Noruega (8.4) pero por encima de Arabia Saudita (5.7) — por desequilibrio entre <i>availability</i> y <i>acceptability</i>. El rol de la ADF es decisivo en protección de SLOC, reservas de F-44/F-76 y resiliencia de infraestructura crítica bajo el SLACIP Act 2022.",
+    "kpis": [
+      { "valor": 6.1, "unidad": "EJ", "etiqueta": "Consumo Primario", "decimal": true },
+      { "valor": 80, "unidad": "%", "etiqueta": "Energía Exportada" },
+      { "valor": 91, "unidad": "%", "etiqueta": "Petróleo Importado" },
+      { "valor": 58, "unidad": "días", "etiqueta": "Reservas vs 90 IEA" }
+    ]
+  },
+
+  "aperc": {
+    "src": "APERC 2007 · Cherp & Jewell 2014",
+    "definicion_html": "<p>La Asia Pacific Energy Research Centre (APERC, 2007) define seguridad energética como <i>\"la capacidad de una economía para garantizar el abastecimiento de recursos energéticos de forma sustentable y oportuna\"</i>, descompuesta en cuatro dimensiones: <b>Availability</b> (existencia física), <b>Accessibility</b> (capacidad geopolítica de obtenerlos), <b>Affordability</b> (costo soportable) y <b>Acceptability</b> (compatibilidad ambiental y social).</p><p>Cherp &amp; Jewell (2014) sintetizan el campo en tres perspectivas: <i>sovereignty</i> (control estatal), <i>robustness</i> (resistencia técnica) y <i>resilience</i> (adaptación), que aplicamos transversalmente.</p>",
+    "definicion_cita": "APERC (2007). <i>A Quest for Energy Security in the 21st Century</i>. Tokio. · Cherp &amp; Jewell (2014). Energy Policy 75: 415–421.",
+    "scorecard_titulo": "Scorecard de Australia bajo APERC",
+    "scores": [
+      { "letra": "A", "nombre": "vailability", "desc": "Recursos físicos (carbón, gas, uranio, sol, viento).", "score": 8.5 },
+      { "letra": "A", "nombre": "ccessibility", "desc": "Geopolítica, rutas SLOC, refinación local.", "score": 4.8 },
+      { "letra": "A", "nombre": "ffordability", "desc": "Precios mayoristas, pobreza energética.", "score": 6.0 },
+      { "letra": "A", "nombre": "cceptability", "desc": "Huella de carbono, licencia social.", "score": 5.5 }
+    ],
+    "scorecard_cita": "Scores propios calculados sobre indicadores normalizados; ver §06.",
+    "comparador": { "pais_b": "Noruega", "pais_c": "Arabia Saudita" },
+    "indicadores_titulo": "Indicadores cuantitativos aplicados",
+    "indicadores": [
+      { "indicador": "HHI mix primario", "definicion": "Herfindahl-Hirschman, concentración (0–10 000)", "propio": "2 920", "b": "3 600", "c": "5 050", "interp": { "texto": "AU moderadamente diversificada" } },
+      { "indicador": "Índice Shannon", "definicion": "Entropía del mix (mayor = más diverso)", "propio": "1.42", "b": "1.21", "c": "0.69", "interp": { "texto": "AU lidera", "pill": "ok" } },
+      { "indicador": "Net Import Dep. (%)", "definicion": "Eurostat: (Imp−Exp)/(Cons.bruto)", "propio": "−330%", "b": "−600%", "c": "−270%", "interp": { "texto": "Tres exportadores netos" } },
+      { "indicador": "Días de reserva petróleo", "definicion": "Stock estratégico / consumo diario", "propio": "58", "b": "n/d", "c": "90+", "interp": { "texto": "AU bajo umbral IEA", "pill": "danger" } },
+      { "indicador": "Intensidad de carbono (gCO₂/kWh)", "definicion": "Generación eléctrica", "propio": "510", "b": "26", "c": "615", "interp": { "texto": "AU alta, en mejora", "pill": "warn" } },
+      { "indicador": "Renovables en electricidad (%)", "definicion": "Solar + eólica + hidro + bioenergía", "propio": "38", "b": "98", "c": "1", "interp": { "texto": "Trayectoria de transición" } },
+      { "indicador": "Precio mayorista (USD/MWh)", "definicion": "Promedio 2024", "propio": "85", "b": "62", "c": "35", "interp": { "texto": "AU encarecido post-2022" } }
+    ],
+    "indicadores_nota": "HHI calculado sobre TPES IEA 2024; Shannon en base e; intensidad de carbono ember-climate.org. Comparativos seleccionados por la rúbrica (exportador desarrollado, exportador autoritario, productor democrático)."
+  },
+
+  "matriz": {
+    "src": "IEA · DCCEEW Australian Energy Update 2024",
+    "primaria_titulo": "Energía Primaria (TPES, % EJ)",
+    "primaria": [
+      { "label": "Petróleo", "valor": 37, "color": "#c4570e" },
+      { "label": "Carbón", "valor": 28, "color": "#8a4a4a" },
+      { "label": "Gas natural", "valor": 27, "color": "#0b5394" },
+      { "label": "Renovables", "valor": 7.5, "color": "#2e7d32" },
+      { "label": "Hidro", "valor": 0.5, "color": "#6a8caf" }
+    ],
+    "primaria_cita": "Petróleo 37 · Carbón 28 · Gas 27 · Renovables 8 · Hidro &lt;1. Total 6.1 EJ. <i>Fuente: DCCEEW (2024), tabla A.</i>",
+    "electrica_titulo": "Generación Eléctrica (% TWh)",
+    "electrica": [
+      { "label": "Carbón", "valor": 46, "color": "#8a4a4a" },
+      { "label": "Gas", "valor": 16, "color": "#0b5394" },
+      { "label": "Solar", "valor": 17, "color": "#a17c1c" },
+      { "label": "Eólica", "valor": 12, "color": "#6a8caf" },
+      { "label": "Hidro", "valor": 6, "color": "#2e7d32" },
+      { "label": "Otros", "valor": 3, "color": "#6b4e8e" }
+    ],
+    "electrica_cita": "Carbón 46 · Gas 16 · Solar 17 · Eólica 12 · Hidro 6 · Otros 3. <i>Fuente: Ember Electricity Data Explorer, 2024.</i>",
+    "comparativa_titulo": "Comparativa Internacional — Mix Eléctrico (%)",
+    "comparativa": {
+      "paises": ["Australia", "Noruega", "Arabia Saudita"],
+      "series": [
+        { "label": "Carbón", "data": [46, 0, 0], "color": "#8a4a4a" },
+        { "label": "Gas", "data": [16, 1, 60], "color": "#0b5394" },
+        { "label": "Petróleo", "data": [0, 0, 39], "color": "#c4570e" },
+        { "label": "Hidro", "data": [6, 88, 0], "color": "#6a8caf" },
+        { "label": "Eólica", "data": [12, 10, 0], "color": "#2e7d32" },
+        { "label": "Solar", "data": [17, 0, 1], "color": "#a17c1c" },
+        { "label": "Otros", "data": [3, 1, 0], "color": "#6b4e8e" }
+      ]
+    },
+    "comparativa_nota": "Eje normativo: Noruega como caso de descarbonización casi total vía hidro; A. Saudita como exportador hidrocarburos altamente concentrado."
+  },
+
+  "sankey": {
+    "src": "Producción → Transformación → Uso final",
+    "titulo_panel": "Flujos físicos de energía, Australia 2024 (PJ aprox.)",
+    "flujos": [
+      { "from": "Carbón (prod.)", "to": "Exportación carbón", "flow": 11000 },
+      { "from": "Carbón (prod.)", "to": "Generación eléctrica", "flow": 1100 },
+      { "from": "Gas natural (prod.)", "to": "Exportación GNL", "flow": 4800 },
+      { "from": "Gas natural (prod.)", "to": "Generación eléctrica", "flow": 380 },
+      { "from": "Gas natural (prod.)", "to": "Industria & residencial", "flow": 520 },
+      { "from": "Petróleo (prod. local)", "to": "Refinación local", "flow": 380 },
+      { "from": "Petróleo importado", "to": "Refinación local", "flow": 340 },
+      { "from": "Petróleo importado", "to": "Combustibles refinados", "flow": 1850 },
+      { "from": "Renovables (sol/viento)", "to": "Generación eléctrica", "flow": 520 },
+      { "from": "Hidro", "to": "Generación eléctrica", "flow": 90 },
+      { "from": "Refinación local", "to": "Combustibles refinados", "flow": 720 },
+      { "from": "Generación eléctrica", "to": "Industria & residencial", "flow": 1450 },
+      { "from": "Generación eléctrica", "to": "Transporte (EV+rail)", "flow": 120 },
+      { "from": "Combustibles refinados", "to": "Transporte (EV+rail)", "flow": 80 },
+      { "from": "Combustibles refinados", "to": "Transporte vial/aéreo", "flow": 1900 },
+      { "from": "Combustibles refinados", "to": "Defensa (ADF)", "flow": 20 },
+      { "from": "Combustibles refinados", "to": "Industria & residencial", "flow": 570 }
+    ],
+    "nodos": {
+      "Carbón (prod.)": { "color": "#8a4a4a", "label": "Carbón (producción)" },
+      "Gas natural (prod.)": { "color": "#0b5394", "label": "Gas natural (producción)" },
+      "Petróleo (prod. local)": { "color": "#c4570e", "label": "Petróleo doméstico" },
+      "Petróleo importado": { "color": "#a82822", "label": "Petróleo importado" },
+      "Renovables (sol/viento)": { "color": "#2e7d32", "label": "Solar & Eólica" },
+      "Hidro": { "color": "#6a8caf", "label": "Hidroeléctrica" },
+      "Refinación local": { "color": "#c4570e", "label": "Refinerías AU" },
+      "Generación eléctrica": { "color": "#6b4e8e", "label": "Generación Eléctrica" },
+      "Combustibles refinados": { "color": "#a17c1c", "label": "Combustibles refinados" },
+      "Exportación carbón": { "color": "#8a4a4a", "label": "EXPORT · Carbón" },
+      "Exportación GNL": { "color": "#0b5394", "label": "EXPORT · GNL" },
+      "Industria & residencial": { "color": "#4a5870", "label": "Industria + Residencial" },
+      "Transporte vial/aéreo": { "color": "#c4570e", "label": "Transporte vial/aéreo" },
+      "Transporte (EV+rail)": { "color": "#2e7d32", "label": "Transporte eléctrico" },
+      "Defensa (ADF)": { "color": "#a82822", "label": "Defensa (ADF)" }
+    },
+    "cita": "El diagrama hace visible la <b>paradoja exportador-importador</b>: Australia exporta ~80% de la energía que produce (principalmente carbón y GNL a Asia oriental) y simultáneamente importa &gt;90% del petróleo refinado que consume. Datos estilizados sobre IEA Sankey Tool 2024 y BP Statistical Review."
+  },
+
+  "evolucion": {
+    "src": "2000–2050 · trayectoria AEMO ISP",
+    "historico_titulo": "Mix Eléctrico Histórico y Proyectado (%)",
+    "anios": ["2000", "2005", "2010", "2015", "2020", "2024", "2030", "2040", "2050"],
+    "series": [
+      { "label": "Carbón", "data": [84, 82, 75, 67, 55, 46, 18, 5, 0], "color": "#8a4a4a" },
+      { "label": "Gas", "data": [14, 15, 18, 21, 22, 16, 12, 8, 5], "color": "#0b5394" },
+      { "label": "Renovables", "data": [1, 2, 6, 11, 22, 35, 68, 85, 93], "color": "#2e7d32" },
+      { "label": "Hidro", "data": [7, 6, 6, 6, 6, 6, 5, 4, 4], "color": "#6a8caf" }
+    ],
+    "historico_cita": "Carbón cae de 84% (2000) a 46% (2024); meta 82% renovable a 2030 (Climate Change Act 2022). Proyección: AEMO Integrated System Plan 2024, escenario \"Step Change\".",
+    "hitos_titulo": "Hitos del Régimen Energético",
+    "hitos": [
+      { "anio": "1973", "evento": "Primera crisis del petróleo expone dependencia de refinados." },
+      { "anio": "1989", "evento": "Inicio operaciones GNL North West Shelf (Karratha, WA)." },
+      { "anio": "2009", "evento": "Renewable Energy Target 20% a 2020." },
+      { "anio": "2011–14", "evento": "Carbon Pricing Mechanism: introducido y derogado en 3 años." },
+      { "anio": "2017", "evento": "Apagón Sudaustralia → mega-batería Hornsdale (Tesla)." },
+      { "anio": "2021", "evento": "Fuel Security Package: subsidio a refinerías Geelong & Lytton." },
+      { "anio": "2022", "evento": "Climate Change Act: −43% emisiones a 2030 · SLACIP Act ampliado." },
+      { "anio": "2023", "evento": "AUKUS Pillar 1: submarinos nucleares · Defence Strategic Review." },
+      { "anio": "2024", "evento": "Future Made in Australia Act · Capacity Investment Scheme." },
+      { "anio": "2030", "evento": "Meta 82% renovable · 32 GW + 9 GW almacenamiento subastados." },
+      { "anio": "2050", "evento": "Compromiso de neto cero · Hidrógeno verde como exportación insignia." }
+    ]
+  },
+
+  "infraestructura": {
+    "src": "Mapa Leaflet · OSM + GEM",
+    "mapa_titulo": "Nodos energéticos y SLOC del Indo-Pacífico",
+    "pines": [
+      { "lat": -38.13, "lng": 144.40, "tipo": "refineria", "nombre": "Refinería Geelong", "desc": "Viva Energy · 120 kbpd · una de 2 refinerías activas" },
+      { "lat": -27.43, "lng": 153.16, "tipo": "refineria", "nombre": "Refinería Lytton (Brisbane)", "desc": "Ampol · 109 kbpd · otra de las 2 supervivientes" },
+      { "lat": -20.74, "lng": 116.77, "tipo": "gnl", "nombre": "NW Shelf LNG (Karratha)", "desc": "Woodside · primer GNL australiano (1989)" },
+      { "lat": -20.86, "lng": 115.40, "tipo": "gnl", "nombre": "Gorgon LNG", "desc": "Chevron · 15.6 Mtpa · CCS asociado" },
+      { "lat": -21.65, "lng": 115.13, "tipo": "gnl", "nombre": "Wheatstone LNG", "desc": "Chevron · 8.9 Mtpa" },
+      { "lat": -12.40, "lng": 130.84, "tipo": "gnl", "nombre": "Ichthys LNG (Darwin)", "desc": "Inpex · 8.9 Mtpa" },
+      { "lat": -23.83, "lng": 151.25, "tipo": "gnl", "nombre": "Gladstone LNG hub", "desc": "QCLNG · APLNG · GLNG · gas no convencional" },
+      { "lat": -33.08, "lng": 138.32, "tipo": "almacenamiento", "nombre": "Hornsdale Power Reserve", "desc": "Neoen/Tesla · 150 MW/194 MWh" },
+      { "lat": -36.04, "lng": 148.30, "tipo": "almacenamiento", "nombre": "Snowy Hydro 2.0", "desc": "2 GW bombeo · backbone de almacenamiento" },
+      { "lat": -22.70, "lng": 117.79, "tipo": "minerales", "nombre": "Pilbara (mineral de hierro)", "desc": "Rio Tinto / BHP / FMG · exportación a China" },
+      { "lat": -21.50, "lng": 121.50, "tipo": "minerales", "nombre": "Greenbushes (litio)", "desc": "55% del litio mundial · WA" },
+      { "lat": -8.40, "lng": 115.90, "tipo": "sloc", "nombre": "Estrecho de Lombok", "desc": "Ruta principal exportación a Asia oriental" },
+      { "lat": 2.50, "lng": 101.40, "tipo": "sloc", "nombre": "Estrecho de Malaca", "desc": "Ruta de importación de refinados desde Singapur" }
+    ],
+    "rutas": [
+      { "puntos": [[-20.74, 116.77], [-8.40, 115.90], [15, 125], [35, 140]], "tooltip": "SLOC: WA → Lombok → Japón / Corea" },
+      { "puntos": [[-27.43, 153.16], [2.50, 101.40], [1.30, 103.80]], "tooltip": "SLOC: Importación refinados desde Singapur" }
+    ],
+    "leyenda": [
+      { "color": "#c4570e", "label": "Refinerías" },
+      { "color": "#0b5394", "label": "Terminales GNL" },
+      { "color": "#2e7d32", "label": "Mega-baterías / Hidro bombeo" },
+      { "color": "#a17c1c", "label": "Minerales críticos" },
+      { "color": "#c62828", "label": "Cuello de botella SLOC" }
+    ],
+    "mapa_cita": "Coordenadas reales: Geelong (Viva), Lytton (Ampol), NW Shelf (Woodside), Gorgon &amp; Wheatstone (Chevron), Ichthys (Inpex), Gladstone LNG, Pilbara (Rio/BHP), Hornsdale (Neoen). SLOC: Estrechos de Lombok y Malaca, paso obligado de ~95% de exportaciones energéticas hacia NE Asia. <i>Fuentes: Global Energy Monitor 2024; AEMO; ABS.</i>",
+    "vulnerabilidades_titulo": "Vulnerabilidades técnicas",
+    "vulnerabilidades": [
+      { "nivel": "high", "tag": "CRÍT", "texto_html": "<b>Refinación local</b> · de 7 plantas en 2003 sólo quedan Geelong (Viva) y Lytton (Ampol). Dependencia de Singapur, Corea, India." },
+      { "nivel": "high", "tag": "CRÍT", "texto_html": "<b>Reservas estratégicas</b> · ~58 días vs estándar IEA de 90; parte almacenada en EE.UU. (Ticket Contract 2020)." },
+      { "nivel": "med", "tag": "ALTO", "texto_html": "<b>Interconectores NEM</b> · congestión QNI, Heywood, Basslink; cuellos de botella inter-estatales." },
+      { "nivel": "med", "tag": "ALTO", "texto_html": "<b>Ciber-OT</b> · SCADA de operadores eléctricos (AGL, Origin); incidentes 2022–2024." },
+      { "nivel": "low", "tag": "MED", "texto_html": "<b>Gas doméstico</b> · ADGSM (mecanismo de seguridad de gas) protege mercado interno." }
+    ],
+    "capacidad_titulo": "Capacidad vs Demanda (GW)",
+    "capacidad": {
+      "anios": ["2024", "2026", "2028", "2030", "2035", "2040"],
+      "y_titulo": "GW",
+      "series": [
+        { "label": "Renovables (GW)", "tipo": "bar", "data": [42, 58, 76, 95, 140, 180], "color": "#2e7d32" },
+        { "label": "Fósil (GW)", "tipo": "bar", "data": [35, 30, 22, 14, 6, 2], "color": "#8a4a4a" },
+        { "label": "Almacenamiento (GW)", "tipo": "bar", "data": [4, 9, 16, 25, 45, 70], "color": "#a17c1c" },
+        { "label": "Demanda pico (GW)", "tipo": "line", "data": [35, 37, 40, 43, 50, 58], "color": "#c4570e" }
+      ]
+    },
+    "capacidad_cita": "Renovables crecen de 42 a 180 GW; fósiles caen de 35 a 2 GW. Almacenamiento se vuelve crítico. <i>Fuente: AEMO ISP 2024.</i>"
+  },
+
+  "geopolitica": {
+    "src": "Radar APERC normalizado",
+    "radar_titulo": "Radar APERC: Australia vs Noruega vs Arabia Saudita",
+    "radar": {
+      "ejes": ["Availability", "Accessibility", "Affordability", "Acceptability", "Sovereignty", "Robustness", "Resilience"],
+      "series": [
+        { "label": "Australia", "data": [8.5, 4.8, 6.0, 5.5, 7.0, 6.2, 6.5], "color": "#0b5394" },
+        { "label": "Noruega", "data": [9.0, 8.5, 7.5, 9.5, 9.0, 9.0, 9.0], "color": "#2e7d32" },
+        { "label": "Arabia Saudita", "data": [9.5, 5.0, 8.5, 2.5, 8.0, 6.0, 5.5], "color": "#c4570e" }
+      ]
+    },
+    "radar_cita": "Cuatro A's (escala 0–10), más tres dimensiones de Cherp &amp; Jewell. Normalización min-max sobre indicadores tabla §01.",
+    "dependencias_titulo": "Dependencias y socios",
+    "dependencias": [
+      { "vinculo": "Exportación carbón a China", "pct": "23", "riesgo": { "texto": "Coerción 2020–23", "pill": "warn" } },
+      { "vinculo": "Exportación GNL a Japón", "pct": "38", "riesgo": { "texto": "Aliado estable", "pill": "ok" } },
+      { "vinculo": "Exportación GNL a Corea", "pct": "19", "riesgo": { "texto": "Aliado estable", "pill": "ok" } },
+      { "vinculo": "Importación diésel Singapur", "pct": "35", "riesgo": { "texto": "Choke point", "pill": "danger" } },
+      { "vinculo": "Importación crudo Corea", "pct": "14", "riesgo": { "texto": "SLOC vulnerable", "pill": "warn" } },
+      { "vinculo": "Importación gasolina India", "pct": "13", "riesgo": { "texto": "SLOC vulnerable", "pill": "warn" } },
+      { "vinculo": "Cooperación Quad (US/JP/IN)", "pct": "—", "riesgo": { "texto": "Mitigador", "pill": "ok" } }
+    ],
+    "dependencias_cita": "DFAT Composition of Trade 2024; UN Comtrade.",
+    "minerales_titulo": "Minerales críticos — posición australiana",
+    "minerales": [
+      { "valor": "55", "unidad": "%", "etiqueta": "LITIO mundial" },
+      { "valor": "#1", "unidad": " reservas", "etiqueta": "LITIO & RUTILO" },
+      { "valor": "#2", "unidad": " mundial", "etiqueta": "COBALTO & TIERRAS RARAS" },
+      { "valor": "22.7", "unidad": " G AUD", "etiqueta": "FUTURE MADE IN AUS." }
+    ],
+    "minerales_cita": "USGS Mineral Commodity Summaries 2024; Critical Minerals Strategy 2023–2030."
+  },
+
+  "militar": {
+    "titulo_seccion": "Combustibles Militares y Rol Operacional de la ADF",
+    "nav_label": "Combustibles ADF",
+    "src": "DSR 2023 · Defence Fuel Transformation Program",
+    "combustibles_titulo": "Demanda de combustibles de la ADF",
+    "combustibles": [
+      { "codigo": "F-44 (JP-5)", "tipo": "Queroseno alto flash", "usuario": "Navy (aviación naval)", "ml_anio": "90" },
+      { "codigo": "F-34/F-35 (JP-8)", "tipo": "Queroseno militar", "usuario": "Air Force / Army", "ml_anio": "280" },
+      { "codigo": "F-76", "tipo": "Diésel naval OTAN", "usuario": "Navy (buques)", "ml_anio": "110" },
+      { "codigo": "F-54", "tipo": "Diésel terrestre", "usuario": "Army logística", "ml_anio": "30" }
+    ],
+    "combustibles_total": "~510",
+    "combustibles_cita": "Cifra orden de magnitud, basada en ANAO Audit Report 2020–21 No. 12 sobre Defence Fuel Supply Chain y respuestas a preguntas parlamentarias.",
+    "vulnerabilidades_titulo": "Vulnerabilidades específicas de defensa",
+    "vulnerabilidades": [
+      { "nivel": "high", "tag": "CRÍT", "texto_html": "<b>Proveedor único en regiones operacionales</b> · contratos panel concentrados en Viva &amp; Ampol; impacto si una refinería cae." },
+      { "nivel": "high", "tag": "CRÍT", "texto_html": "<b>F-44 importado</b> · Australia no produce JP-5 a especificación militar; depende de Corea y Singapur." },
+      { "nivel": "med", "tag": "ALTO", "texto_html": "<b>Capacidad de almacenamiento expedicionario</b> · stocks pre-posicionados en Darwin, Tindal, HMAS Stirling — limitados." },
+      { "nivel": "med", "tag": "ALTO", "texto_html": "<b>Interoperabilidad OTAN/Quad</b> · estándares STANAG cumplidos, pero la logística <i>just-in-time</i> es frágil." },
+      { "nivel": "low", "tag": "MED", "texto_html": "<b>Investigación en SAF</b> · DST Group + CSIRO exploran combustibles sintéticos / bio-jet para 2035." }
+    ],
+    "mision_titulo": "Misión de la ADF en Seguridad Energética",
+    "mision": [
+      { "titulo": "PROTECCIÓN SLOC", "texto_html": "RAN escolta y vigilancia en Estrecho de Lombok y aguas archipelágicas indonesias. Operaciones <i>Argos, Resolute, Manitou</i>. Cooperación bilateral con Indonesia (CARAT) y multinacional Quad." },
+      { "titulo": "RESERVAS", "texto_html": "Defence Fuel Transformation Program: modernización de depósitos onshore y Ticket Contract con la SPR de EE.UU. (1.7 millones de barriles)." },
+      { "titulo": "AUKUS · BASE INDUSTRIAL", "texto_html": "Submarinos nucleares (Virginia + SSN-AUKUS) no usan energía nuclear civil pero crean capacidad industrial dual-use, soberanía técnica, ecosistema HEU/LEU regulado." },
+      { "titulo": "DEFENSA INFRA. CRÍTICA", "texto_html": "SLACIP Act 2022 / SOCI Act 2018 permiten al ASD y a la ADF intervenir en incidentes en operadores designados (energía, agua, comunicaciones)." },
+      { "titulo": "HADR", "texto_html": "Despliegues \"Black Summer\" 2019–20, ciclón Yasi, inundaciones QLD 2022: ADF restablece generación de emergencia y combustible para servicios esenciales." },
+      { "titulo": "MICRO-REDES EN BASES", "texto_html": "Estrategia Net Zero Defence 2024: micro-redes solares + baterías en HMAS Stirling, Tindal, Edinburgh — resiliencia local frente a apagones civiles." }
+    ],
+    "mision_cita": "Defence Strategic Review 2023 (Comm. of Australia); ANAO Audit 2020–21 No.12; Defence Net Zero Strategy 2024."
+  },
+
+  "politicas": {
+    "src": "DCCEEW · AEMO · ARENA",
+    "planes_titulo": "Planes nacionales",
+    "planes": [
+      { "nombre": "Climate Change Act 2022", "texto": "−43% emisiones a 2030; neto cero 2050." },
+      { "nombre": "Future Made in Australia Act 2024", "texto": "22.7 G AUD para manufactura limpia." },
+      { "nombre": "Capacity Investment Scheme 2023", "texto": "32 GW renovables + 9 GW almacenamiento subastados." },
+      { "nombre": "National Hydrogen Strategy 2024", "texto": "exportación H₂ verde a JP, KR, DE." },
+      { "nombre": "Critical Minerals Strategy 2023–2030", "texto": "soberanía en cadena de valor." }
+    ],
+    "instituciones_titulo": "Instituciones clave",
+    "instituciones": [
+      { "sigla": "DCCEEW", "texto": "cartera de Cambio Climático, Energía y Agua." },
+      { "sigla": "AEMO", "texto": "operador del NEM (mercado eléctrico nacional)." },
+      { "sigla": "ARENA", "texto": "agencia de renovables; <b>CEFC</b> · banco verde." },
+      { "sigla": "AER", "texto": "regulador económico de redes." },
+      { "sigla": "DoD & ADF", "texto": "Defence Strategic Review, DFT Program, NZ Defence." },
+      { "sigla": "Net Zero Economy Authority", "texto": "transición justa regional." }
+    ],
+    "transicion_titulo": "Transición justa",
+    "transicion_html": "<p>Hunter Valley (NSW) y La Trobe (VIC) concentran ~12 000 empleos directos en carbón. NZEA gestiona reconversión hacia hidrógeno, baterías, ensamblaje eólico.</p><p>Tensión política federación-estados: WA y QLD dependen fiscalmente de regalías de gas y carbón (35–40% ingresos estatales).</p>",
+    "transicion_cita": "DCCEEW Annual Climate Change Statement 2024; NZEA establecimiento 2024."
+  },
+
+  "crisis": {
+    "src": "Wargaming · Cone of Plausibility",
+    "matriz_titulo": "Matriz Probabilidad × Impacto",
+    "matriz": {
+      "esquina": "Impacto ↓ / Prob →",
+      "prob_labels": ["Muy bajo", "Bajo", "Medio", "Alto", "Muy alto"],
+      "filas": [
+        { "impacto": "Catastrófico", "celdas": [ { "nivel": 3 }, { "nivel": 4 }, { "nivel": 5, "texto": "Bloqueo Malaca" }, { "nivel": 5, "texto": "Conflicto Taiwán" }, { "nivel": 5 } ] },
+        { "impacto": "Mayor", "celdas": [ { "nivel": 2 }, { "nivel": 3 }, { "nivel": 4, "texto": "Ciber-NEM" }, { "nivel": 4, "texto": "Disrupción GNL" }, { "nivel": 5 } ] },
+        { "impacto": "Moderado", "celdas": [ { "nivel": 1 }, { "nivel": 2 }, { "nivel": 3, "texto": "Falla refinería" }, { "nivel": 4, "texto": "Ola calor / red" }, { "nivel": 4 } ] },
+        { "impacto": "Menor", "celdas": [ { "nivel": 1 }, { "nivel": 1 }, { "nivel": 2, "texto": "Sequía hidro" }, { "nivel": 3 }, { "nivel": 3 } ] },
+        { "impacto": "Insignif.", "celdas": [ { "nivel": 1 }, { "nivel": 1 }, { "nivel": 1 }, { "nivel": 2 }, { "nivel": 2 } ] }
+      ]
+    },
+    "matriz_cita": "Escala HM Treasury Orange Book; escenarios calibrados con DSR 2023.",
+    "escenarios_titulo": "Escenarios calibrados",
+    "escenarios": [
+      { "nivel": "high", "tag": "A", "texto_html": "<b>Contingencia Taiwán</b> — bloqueo de SLOC; GNL atrapado, racionamiento de diésel 4–8 semanas. <i>Respuesta:</i> Plan de Defensa Nacional, ADF protege rutas alternas (Sunda)." },
+      { "nivel": "high", "tag": "B", "texto_html": "<b>Disrupción Malaca</b> — pérdida del 90% de diésel importado. <i>Respuesta:</i> activación de reservas militares, racionamiento civil priorizando agro y salud." },
+      { "nivel": "med", "tag": "C", "texto_html": "<b>Ola de calor + apagón NEM</b> — repetición SA-2017 a escala QLD-NSW. <i>Respuesta:</i> AEMO Lack-of-Reserve; ADF apoya servicios esenciales." },
+      { "nivel": "med", "tag": "D", "texto_html": "<b>Ciberataque APT a operador eléctrico</b> — toma de SCADA. <i>Respuesta:</i> SLACIP Step-in; ASD &amp; ACSC coordinan; ADF retorno a manual." },
+      { "nivel": "low", "tag": "E", "texto_html": "<b>Caída precio carbón/GNL</b> — pérdida fiscal QLD/WA. <i>Respuesta:</i> NZEA y reconversión laboral." }
+    ],
+    "vectores_titulo": "Respuesta estratégica integrada — vectores",
+    "vectores": [
+      { "titulo": "DIVERSIFICACIÓN", "texto": "82% renovable a 2030; H₂ verde como nuevo commodity exportable." },
+      { "titulo": "STOCKPILING", "texto": "Aumentar a 90 días IEA; pre-posicionar F-44/F-76 en bases del norte." },
+      { "titulo": "ALIANZAS", "texto": "AUKUS · Quad · IEA · ASEAN; interoperabilidad logística y reservas compartidas." },
+      { "titulo": "RESILIENCIA", "texto": "Mega-baterías civiles + micro-redes en bases ADF; generación distribuida." }
+    ]
+  },
+
+  "referencias": {
+    "src": "Triangulación multi-fuente",
+    "titulo": "Fuentes primarias y académicas",
+    "items": [
+      "APERC (2007). <i>A Quest for Energy Security in the 21st Century: Resources and Constraints</i>. Asia Pacific Energy Research Centre, Tokio.",
+      "Cherp, A. &amp; Jewell, J. (2014). The concept of energy security: Beyond the four As. <i>Energy Policy</i>, 75, 415–421.",
+      "IEA (2023). <i>Australia 2023 Energy Policy Review</i>. International Energy Agency, París.",
+      "DCCEEW (2024). <i>Australian Energy Update 2024</i>. Department of Climate Change, Energy, the Environment and Water.",
+      "AEMO (2024). <i>Integrated System Plan 2024</i>. Australian Energy Market Operator.",
+      "Commonwealth of Australia (2023). <i>National Defence: Defence Strategic Review</i>.",
+      "Commonwealth of Australia (2022). <i>Climate Change Act 2022</i>; <i>Security Legislation Amendment (Critical Infrastructure Protection) Act 2022</i>.",
+      "ANAO (2021). <i>Defence's Management of Fuel Services</i>. Report No. 12 of 2020–21.",
+      "BP (2023). <i>Statistical Review of World Energy 2023</i>.",
+      "Ember (2024). <i>Electricity Data Explorer</i>. ember-climate.org.",
+      "Global Energy Monitor (2024). <i>Global Oil &amp; Gas Infrastructure Tracker</i>.",
+      "USGS (2024). <i>Mineral Commodity Summaries</i>.",
+      "Lowy Institute (2023–24). <i>Asia Power Index</i> &amp; comentario sobre seguridad energética.",
+      "HM Treasury (2020). <i>The Orange Book: Management of Risk – Principles and Concepts</i>."
+    ]
+  },
+
+  "footer": "Documento de sustentación · Rúbrica Slide18 · Logística Militar · Mayo 2026"
+}

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Editor · Plataforma de Seguridad Energética por País</title>
+
+<!-- Dependencias CDN (idénticas a la referencia) -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-chart-sankey@0.12.1/dist/chartjs-chart-sankey.min.js"></script>
+
+<!-- pdf.js: extrae el texto de un PDF en el navegador (Asistente IA) -->
+<script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@3.11.174/build/pdf.min.js"></script>
+<script>if(window.pdfjsLib){pdfjsLib.GlobalWorkerOptions.workerSrc="https://cdn.jsdelivr.net/npm/pdfjs-dist@3.11.174/build/pdf.worker.min.js";}</script>
+
+<!-- Estilos y lógica compartidos -->
+<link rel="stylesheet" href="assets/app.css" />
+<script src="assets/schema.js"></script>
+<script src="assets/render.js"></script>
+
+<style>
+  /* Estilos propios del editor (complementan app.css; usan las mismas variables). */
+  .ed-topbar{
+    position:sticky;top:0;z-index:50;
+    display:flex;flex-wrap:wrap;align-items:center;gap:8px;
+    background:var(--ink);color:#dbe2ef;
+    padding:12px 18px;border-bottom:1px solid var(--line);
+    font-family:'Helvetica Neue','Arial',sans-serif;
+  }
+  .ed-topbar .ed-title{font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#8aa0c2;margin-right:auto}
+  .ed-topbar .ed-title b{color:#fff;font-weight:700;letter-spacing:1px}
+  .ed-btn{
+    font-family:'Helvetica Neue','Arial',sans-serif;font-size:12px;letter-spacing:0.4px;
+    background:rgba(255,255,255,0.08);color:#dbe2ef;border:1px solid rgba(255,255,255,0.18);
+    padding:7px 12px;border-radius:3px;cursor:pointer;transition:background .2s,border-color .2s;
+  }
+  .ed-btn:hover{background:rgba(255,255,255,0.16);border-color:#dbe2ef}
+  .ed-btn.primary{background:var(--accent);border-color:var(--accent);color:#fff}
+  .ed-btn.primary:hover{background:#0a4880}
+  .ed-btn.accent{background:var(--accent-2);border-color:var(--accent-2);color:#fff}
+  .ed-btn.accent:hover{background:#a8480b}
+
+  .ed-wrap{display:grid;grid-template-columns:minmax(420px,1fr) minmax(520px,1.25fr);gap:0;min-height:calc(100vh - 49px)}
+  .ed-form{
+    overflow-y:auto;max-height:calc(100vh - 49px);
+    padding:18px 20px 80px;border-right:1px solid var(--line);background:var(--bg);
+  }
+  .ed-preview-col{overflow-y:auto;max-height:calc(100vh - 49px);background:#eef1f6}
+  #preview{min-height:100%}
+
+  /* Acordeón por sección */
+  .acc{background:var(--panel);border:1px solid var(--line);margin-bottom:10px}
+  .acc>.acc-head{
+    display:flex;align-items:center;gap:10px;cursor:pointer;user-select:none;
+    padding:11px 14px;font-family:'Helvetica Neue','Arial',sans-serif;
+    background:#eef1f6;border-bottom:1px solid var(--line);
+  }
+  .acc.closed>.acc-head{border-bottom:0}
+  .acc-head .acc-num{font-size:11px;font-weight:700;letter-spacing:1.5px;color:var(--accent);min-width:24px}
+  .acc-head .acc-label{font-size:13px;font-weight:600;color:var(--ink);flex:1}
+  .acc-head .acc-chev{font-size:12px;color:var(--muted);transition:transform .2s}
+  .acc.closed .acc-head .acc-chev{transform:rotate(-90deg)}
+  .acc-head .acc-flag{font-size:9px;letter-spacing:1px;text-transform:uppercase;padding:2px 7px;border-radius:9px;font-weight:700}
+  .acc-flag.nucleo{background:#e6eef7;color:var(--accent)}
+  .acc-flag.vacia{background:#fdecec;color:var(--danger)}
+  .acc-flag.ok{background:#e6f4ea;color:var(--ok)}
+  .acc-body{padding:14px 14px 16px}
+  .acc.closed .acc-body{display:none}
+
+  /* Campos de formulario */
+  .fld{margin-bottom:11px}
+  .fld>label{
+    display:block;font-family:'Helvetica Neue','Arial',sans-serif;font-size:10.5px;
+    letter-spacing:0.6px;color:var(--ink-2);margin-bottom:3px;font-weight:600;
+  }
+  .fld>label .req{color:var(--danger)}
+  .fld>label .html-tag{color:var(--accent-2);font-weight:700;font-size:9px;letter-spacing:1px;margin-left:6px}
+  .fld input[type=text],.fld input[type=number],.fld textarea,.fld select{
+    width:100%;font-family:'Helvetica Neue','Arial',sans-serif;font-size:12.5px;
+    color:var(--ink);background:#fff;border:1px solid var(--line);border-radius:3px;
+    padding:6px 8px;line-height:1.45;
+  }
+  .fld textarea{resize:vertical;min-height:54px;font-family:'Source Serif Pro','Georgia',serif}
+  .fld input:focus,.fld textarea:focus,.fld select:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 2px rgba(11,83,148,0.12)}
+  .fld .hint{font-family:'Helvetica Neue','Arial',sans-serif;font-size:10px;color:var(--muted);margin-top:3px;font-style:italic}
+
+  .fgrid{display:grid;gap:8px}
+  .fgrid.c2{grid-template-columns:1fr 1fr}
+  .fgrid.c3{grid-template-columns:1fr 1fr 1fr}
+
+  .subgrp{border:1px dashed var(--line);border-radius:3px;padding:10px 12px;margin:10px 0;background:#fafbfd}
+  .subgrp>.subgrp-t{font-family:'Helvetica Neue','Arial',sans-serif;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:var(--ink-2);font-weight:700;margin-bottom:8px}
+
+  /* Editores de lista (filas) */
+  .lst{margin:6px 0}
+  .lst-row{
+    position:relative;border:1px solid var(--line);border-left:3px solid var(--accent);
+    border-radius:3px;padding:10px 12px 10px;margin-bottom:8px;background:#fff;
+  }
+  .lst-row .row-bar{display:flex;align-items:center;gap:6px;margin-bottom:7px}
+  .lst-row .row-idx{font-family:'Helvetica Neue','Arial',sans-serif;font-size:10px;font-weight:700;color:var(--muted);letter-spacing:1px;margin-right:auto}
+  .icon-btn{
+    font-family:'Helvetica Neue','Arial',sans-serif;font-size:11px;line-height:1;
+    background:#eef1f6;border:1px solid var(--line);color:var(--ink-2);
+    border-radius:3px;padding:3px 7px;cursor:pointer;
+  }
+  .icon-btn:hover{background:#e1e6ef}
+  .icon-btn.del:hover{background:#fdecec;color:var(--danger);border-color:#f3c9c9}
+  .add-btn{
+    font-family:'Helvetica Neue','Arial',sans-serif;font-size:11.5px;letter-spacing:0.4px;
+    background:#e6eef7;border:1px dashed var(--accent);color:var(--accent);
+    border-radius:3px;padding:7px 12px;cursor:pointer;width:100%;font-weight:600;
+  }
+  .add-btn:hover{background:#d8e4f3}
+
+  /* Aviso pedagógico */
+  .ped-note{
+    background:#fdf6e9;border:1px solid #ead9b0;border-left:4px solid var(--gold);
+    padding:10px 12px;margin-bottom:12px;border-radius:3px;
+    font-family:'Helvetica Neue','Arial',sans-serif;font-size:11.5px;color:#6a531a;line-height:1.5;
+  }
+  .ped-note b{color:var(--gold)}
+
+  /* Panel de validación */
+  .ed-validation{margin-bottom:12px}
+  .vbox{border:1px solid var(--line);border-radius:3px;padding:9px 12px;margin-bottom:7px;font-family:'Helvetica Neue','Arial',sans-serif;font-size:11.5px}
+  .vbox.ok{background:#e6f4ea;border-color:#bfe1c6;color:var(--ok)}
+  .vbox .vtitle{font-weight:700;letter-spacing:0.6px;margin-bottom:5px;text-transform:uppercase;font-size:10px}
+  .vbox ul{margin:0;padding-left:18px}
+  .vbox li{margin-bottom:3px;line-height:1.4}
+  .vbox.errs{background:#fdecec;border-color:#f3c9c9;color:var(--danger)}
+  .vbox.warns{background:#fdf0e0;border-color:#f2d9b3;color:var(--warn)}
+
+  /* Importar */
+  .ed-import-pane{display:none;background:var(--panel);border:1px solid var(--line);border-radius:3px;padding:12px 14px;margin-bottom:12px}
+  .ed-import-pane.open{display:block}
+  .ed-import-pane textarea{width:100%;min-height:120px;font-family:'Helvetica Neue','Arial',sans-serif;font-size:11px;border:1px solid var(--line);border-radius:3px;padding:8px}
+  .ed-import-row{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:8px}
+
+  .preview-banner{
+    font-family:'Helvetica Neue','Arial',sans-serif;font-size:10.5px;letter-spacing:1px;text-transform:uppercase;
+    color:var(--muted);background:#eef1f6;padding:6px 14px;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:5;
+  }
+
+  @media (max-width:980px){
+    .ed-wrap{grid-template-columns:1fr}
+    .ed-form,.ed-preview-col{max-height:none}
+    .ed-form{border-right:0;border-bottom:1px solid var(--line)}
+  }
+</style>
+</head>
+<body>
+
+<div class="ed-topbar">
+  <div class="ed-title"><b>Editor</b> · Seguridad Energética por País</div>
+  <button class="ed-btn" id="btn-nuevo">Nuevo país</button>
+  <button class="ed-btn" id="btn-importar">Importar JSON</button>
+  <input type="file" id="file-importar" accept=".json,application/json" style="display:none" />
+  <button class="ed-btn primary" id="btn-ia" style="color:#fff">Asistente IA (PDF→JSON)</button>
+  <button class="ed-btn" id="btn-aperc">Calcular APERC global</button>
+  <button class="ed-btn" id="btn-validar">Validar</button>
+  <button class="ed-btn" id="btn-preview">Vista previa en pais.html</button>
+  <button class="ed-btn accent" id="btn-exportar">Exportar JSON</button>
+</div>
+
+<div class="ed-wrap">
+  <!-- IZQUIERDA: formulario -->
+  <div class="ed-form" id="ed-form">
+    <div class="ed-import-pane" id="import-pane">
+      <div style="font-family:'Helvetica Neue',sans-serif;font-size:11px;color:var(--ink-2);font-weight:600;letter-spacing:0.5px;margin-bottom:6px">
+        Pega aquí el contenido de un .json de país, o usa «Elegir archivo».
+      </div>
+      <textarea id="import-text" placeholder='{ "schema_version": "1.0.0", "meta": { ... } }'></textarea>
+      <div class="ed-import-row">
+        <button class="ed-btn primary" id="btn-import-file" style="color:#fff">Elegir archivo…</button>
+        <button class="ed-btn primary" id="btn-import-apply">Cargar texto pegado</button>
+        <button class="ed-btn" id="btn-import-cancel" style="color:var(--ink-2);background:#eef1f6;border-color:var(--line)">Cancelar</button>
+        <span id="import-msg" style="font-family:'Helvetica Neue',sans-serif;font-size:11px;color:var(--danger)"></span>
+      </div>
+    </div>
+
+    <div class="ed-import-pane" id="ia-pane">
+      <div class="ped-note" style="margin-bottom:10px">
+        <b>Asistente IA · PDF → JSON.</b> Sube tu <i>paper</i> en PDF: la plataforma extrae su texto
+        <b>en tu navegador</b> (no se sube a ningún servidor) y arma un <b>prompt</b>. Pégalo en
+        <b>Claude</b> (claude.ai) o en la IA institucional, copia el JSON que devuelva y pégalo en el paso 3.
+        <b>Revisa siempre</b> el resultado contra tus fuentes: la IA puede inferir o dejar vacíos campos
+        (coordenadas del mapa, flujos del Sankey, cifras) que tú debes completar.
+      </div>
+
+      <div style="font-family:'Helvetica Neue',sans-serif;font-size:11px;color:var(--ink-2);font-weight:700;letter-spacing:0.5px;margin-bottom:5px">1 · Sube el paper en PDF</div>
+      <div class="ed-import-row" style="margin-top:0">
+        <button class="ed-btn primary" id="btn-ia-pdf" style="color:#fff">Elegir paper PDF…</button>
+        <input type="file" id="ia-file" accept="application/pdf,.pdf" style="display:none" />
+        <span id="ia-status" style="font-family:'Helvetica Neue',sans-serif;font-size:11px;color:var(--ink-2)"></span>
+      </div>
+
+      <div style="font-family:'Helvetica Neue',sans-serif;font-size:11px;color:var(--ink-2);font-weight:700;letter-spacing:0.5px;margin:12px 0 5px">2 · Copia este prompt y pégalo en tu IA</div>
+      <textarea id="ia-prompt" readonly placeholder="Aquí aparecerá el prompt cuando cargues un PDF…"></textarea>
+      <div class="ed-import-row">
+        <button class="ed-btn" id="btn-ia-copy">Copiar prompt</button>
+        <span id="ia-copy-msg" style="font-family:'Helvetica Neue',sans-serif;font-size:11px;color:var(--ok)"></span>
+      </div>
+
+      <div style="font-family:'Helvetica Neue',sans-serif;font-size:11px;color:var(--ink-2);font-weight:700;letter-spacing:0.5px;margin:12px 0 5px">3 · Pega aquí el JSON que devolvió la IA</div>
+      <textarea id="ia-response" placeholder='Pega la respuesta de la IA (puedo extraer el objeto { … } aunque traiga texto o ```)'></textarea>
+      <div class="ed-import-row">
+        <button class="ed-btn primary" id="btn-ia-load" style="color:#fff">Cargar JSON al editor</button>
+        <button class="ed-btn" id="btn-ia-cancel" style="color:var(--ink-2);background:#eef1f6;border-color:var(--line)">Cerrar</button>
+        <span id="ia-msg" style="font-family:'Helvetica Neue',sans-serif;font-size:11px;color:var(--danger)"></span>
+      </div>
+    </div>
+
+    <div class="ed-validation" id="ed-validation"></div>
+    <div id="ed-sections"><!-- secciones inyectadas por editor.js --></div>
+  </div>
+
+  <!-- DERECHA: vista previa en vivo -->
+  <div class="ed-preview-col">
+    <div class="preview-banner">Vista previa en vivo · se actualiza con cada cambio</div>
+    <div id="preview"></div>
+  </div>
+</div>
+
+<script src="assets/editor.js"></script>
+</body>
+</html>

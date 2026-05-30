@@ -1,0 +1,7 @@
+{
+  "countries": [
+    { "iso": "AUS", "file": "aus.json", "pais": "Australia", "estudiante": "Cátedra (ejemplo de referencia)", "aperc_global": 6.2 },
+    { "iso": "COL", "file": "col.json", "pais": "Colombia", "estudiante": "Cátedra (ejemplo de referencia)", "aperc_global": 5.4 },
+    { "iso": "NOR", "file": "nor.json", "pais": "Noruega", "estudiante": "Cátedra (ejemplo de referencia)", "aperc_global": 8.4 }
+  ]
+}

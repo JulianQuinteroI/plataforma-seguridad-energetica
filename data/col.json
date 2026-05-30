@@ -1,0 +1,359 @@
+{
+  "schema_version": "1.0.0",
+  "meta": {
+    "pais": "Colombia",
+    "pais_iso": "COL",
+    "pais_iso2": "CO",
+    "subtitulo_pais": "República de",
+    "eyebrow": "Portafolio · Seguridad Energética por País",
+    "titulo": "Seguridad Energética de Colombia:<br/>diagnóstico, vulnerabilidad hídrica y rol de las FF.MM.",
+    "subtitulo": "Análisis cuantitativo bajo el marco APERC de las cuatro A's (Disponibilidad, Accesibilidad, Asequibilidad, Aceptabilidad), con comparación frente a Brasil y Venezuela.",
+    "estudiante": "Cátedra (ejemplo de referencia)",
+    "asignatura": "Logística Militar · Rúbrica Slide18",
+    "tipo_doc": "Documento de sustentación",
+    "fecha": "Mayo 2026",
+    "fuerzas_armadas": "FF.MM.",
+    "aperc_global": 5.4,
+    "cita_corta": "UPME, 2024; XM, 2024; IEA, 2023; APERC, 2007; Cherp & Jewell, 2014.",
+    "portafolio_label": "Rúbrica Slide18<br/>Logística Militar<br/>v2 — académica",
+    "map_view": { "lat": 4, "lng": -73, "zoom": 5 }
+  },
+
+  "resumen": {
+    "tesis_html": "Colombia presenta una <i>paradoja hídrica</i>: es exportador neto de carbón y petróleo (Cerrejón, Drummond, ECOPETROL) pero su seguridad eléctrica descansa en una hidroelectricidad cercana al <b>70% del mix</b>, lo que la hace estructuralmente vulnerable al fenómeno de <i>El Niño</i>. La caída de reservas probadas de gas (Ballena, Cusiana) y la dependencia de un único corredor de transmisión exponen al país a racionamientos como el de 1992 y a la crisis de 2023–2024.",
+    "conclusion_html": "En métricas APERC, Colombia obtiene 5.4/10 — por encima de Venezuela (3.2) pero por debajo de Brasil (6.8) — por el desequilibrio entre una <i>availability</i> sólida en fósiles y una <i>accessibility</i> eléctrica frágil ante la variabilidad climática. El rol de las FF.MM. es decisivo en la protección de oleoductos (Caño Limón–Coveñas), líneas de transmisión y la infraestructura crítica frente a la amenaza de GAO y GAOr.",
+    "kpis": [
+      { "valor": 1.6, "unidad": "EJ", "etiqueta": "Consumo Primario", "decimal": true },
+      { "valor": 70, "unidad": "%", "etiqueta": "Electricidad Hidro" },
+      { "valor": 56, "unidad": "%", "etiqueta": "Producción Exportada" },
+      { "valor": 7, "unidad": "años", "etiqueta": "Reservas Gas (R/P)" }
+    ]
+  },
+
+  "aperc": {
+    "src": "APERC 2007 · Cherp & Jewell 2014",
+    "definicion_html": "<p>La Asia Pacific Energy Research Centre (APERC, 2007) define seguridad energética como <i>\"la capacidad de una economía para garantizar el abastecimiento de recursos energéticos de forma sustentable y oportuna\"</i>, descompuesta en cuatro dimensiones: <b>Availability</b> (existencia física), <b>Accessibility</b> (capacidad geopolítica y técnica de obtenerlos), <b>Affordability</b> (costo soportable) y <b>Acceptability</b> (compatibilidad ambiental y social).</p><p>Cherp &amp; Jewell (2014) sintetizan el campo en tres perspectivas: <i>sovereignty</i> (control estatal), <i>robustness</i> (resistencia técnica) y <i>resilience</i> (adaptación), que aquí aplicamos al caso colombiano dominado por el riesgo hidrológico.</p>",
+    "definicion_cita": "APERC (2007). <i>A Quest for Energy Security in the 21st Century</i>. Tokio. · Cherp &amp; Jewell (2014). Energy Policy 75: 415–421.",
+    "scorecard_titulo": "Scorecard de Colombia bajo APERC",
+    "scores": [
+      { "letra": "A", "nombre": "vailability", "desc": "Recursos físicos (petróleo, carbón, gas, agua, sol, viento).", "score": 6.5 },
+      { "letra": "A", "nombre": "ccessibility", "desc": "Riesgo hidrológico, único corredor de transmisión, ataques a oleoductos.", "score": 4.2 },
+      { "letra": "A", "nombre": "ffordability", "desc": "Tarifas, subsidios cruzados por estratos, costo de respaldo térmico.", "score": 5.0 },
+      { "letra": "A", "nombre": "cceptability", "desc": "Bajo carbono eléctrico, pero conflicto socioambiental minero-energético.", "score": 5.9 }
+    ],
+    "scorecard_cita": "Scores propios calculados sobre indicadores normalizados; ver §06.",
+    "comparador": { "pais_b": "Brasil", "pais_c": "Venezuela" },
+    "indicadores_titulo": "Indicadores cuantitativos aplicados",
+    "indicadores": [
+      { "indicador": "HHI mix primario", "definicion": "Herfindahl-Hirschman, concentración (0–10 000)", "propio": "3 350", "b": "2 480", "c": "5 900", "interp": { "texto": "CO moderadamente concentrada en fósiles" } },
+      { "indicador": "Índice Shannon", "definicion": "Entropía del mix (mayor = más diverso)", "propio": "1.28", "b": "1.51", "c": "0.62", "interp": { "texto": "Brasil lidera", "pill": "warn" } },
+      { "indicador": "Net Import Dep. (%)", "definicion": "Eurostat: (Imp−Exp)/(Cons.bruto)", "propio": "−120%", "b": "11%", "c": "−240%", "interp": { "texto": "CO exportador neto" } },
+      { "indicador": "Hidro en electricidad (%)", "definicion": "Generación firme dependiente de embalses", "propio": "70", "b": "60", "c": "62", "interp": { "texto": "CO muy expuesta a sequía", "pill": "danger" } },
+      { "indicador": "Reservas de gas (años R/P)", "definicion": "Reservas probadas / producción anual", "propio": "7", "b": "13", "c": "100+", "interp": { "texto": "CO al límite del autoabastecimiento", "pill": "danger" } },
+      { "indicador": "Intensidad de carbono (gCO₂/kWh)", "definicion": "Generación eléctrica", "propio": "164", "b": "98", "c": "240", "interp": { "texto": "CO baja por hidro", "pill": "ok" } },
+      { "indicador": "Cobertura eléctrica nacional (%)", "definicion": "Hogares con servicio (ZNI rezagadas)", "propio": "97", "b": "99.8", "c": "95", "interp": { "texto": "ZNI con diésel y déficit", "pill": "warn" } }
+    ],
+    "indicadores_nota": "HHI y Shannon calculados sobre TPES estilizado (UPME 2024); reservas de gas según ANH 2023; intensidad de carbono Ember 2024. Comparativos seleccionados por la rúbrica (vecino diversificado y democrático; petro-Estado autoritario en crisis)."
+  },
+
+  "matriz": {
+    "src": "UPME · XM · BP Statistical Review",
+    "primaria_titulo": "Energía Primaria (TPES, % EJ)",
+    "primaria": [
+      { "label": "Petróleo", "valor": 41, "color": "#c4570e" },
+      { "label": "Gas natural", "valor": 23, "color": "#0b5394" },
+      { "label": "Carbón", "valor": 13, "color": "#8a4a4a" },
+      { "label": "Hidro", "valor": 14, "color": "#6a8caf" },
+      { "label": "Biomasa", "valor": 7, "color": "#2e7d32" },
+      { "label": "Eólica/Solar", "valor": 2, "color": "#a17c1c" }
+    ],
+    "primaria_cita": "Petróleo 41 · Gas 23 · Carbón 13 · Hidro 14 · Biomasa 7 · Otras renovables 2. Total ≈1.6 EJ. <i>Fuente: UPME Balance Energético Nacional (BECO), 2024.</i>",
+    "electrica_titulo": "Generación Eléctrica (% TWh)",
+    "electrica": [
+      { "label": "Hidro", "valor": 70, "color": "#6a8caf" },
+      { "label": "Gas", "valor": 14, "color": "#0b5394" },
+      { "label": "Carbón", "valor": 8, "color": "#8a4a4a" },
+      { "label": "Líquidos/Diésel", "valor": 3, "color": "#c4570e" },
+      { "label": "Eólica/Solar", "valor": 4, "color": "#a17c1c" },
+      { "label": "Cogeneración", "valor": 1, "color": "#6b4e8e" }
+    ],
+    "electrica_cita": "Hidro 70 · Gas 14 · Carbón 8 · Líquidos 3 · Eólica/Solar 4 · Cogen 1. <i>Fuente: XM Informe de Operación del SIN, 2024.</i>",
+    "comparativa_titulo": "Comparativa Internacional — Mix Eléctrico (%)",
+    "comparativa": {
+      "paises": ["Colombia", "Brasil", "Venezuela"],
+      "series": [
+        { "label": "Hidro", "data": [70, 60, 62], "color": "#6a8caf" },
+        { "label": "Gas", "data": [14, 9, 22], "color": "#0b5394" },
+        { "label": "Carbón", "data": [8, 3, 0], "color": "#8a4a4a" },
+        { "label": "Petróleo/Diésel", "data": [3, 2, 16], "color": "#c4570e" },
+        { "label": "Eólica", "data": [3, 13, 0], "color": "#2e7d32" },
+        { "label": "Solar", "data": [1, 5, 0], "color": "#a17c1c" },
+        { "label": "Biomasa/Otros", "data": [1, 8, 0], "color": "#6b4e8e" }
+      ]
+    },
+    "comparativa_nota": "Eje normativo: Brasil como caso de diversificación renovable (eólica + biomasa) sobre base hídrica; Venezuela como petro-Estado con red hídrica degradada (apagones 2019–2024)."
+  },
+
+  "sankey": {
+    "src": "Producción → Transformación → Uso final",
+    "titulo_panel": "Flujos físicos de energía, Colombia 2024 (PJ aprox.)",
+    "flujos": [
+      { "from": "Petróleo (prod.)", "to": "Exportación crudo", "flow": 1450 },
+      { "from": "Petróleo (prod.)", "to": "Refinación local", "flow": 720 },
+      { "from": "Carbón (prod.)", "to": "Exportación carbón", "flow": 2100 },
+      { "from": "Carbón (prod.)", "to": "Generación eléctrica", "flow": 95 },
+      { "from": "Gas natural (prod.)", "to": "Industria & residencial", "flow": 260 },
+      { "from": "Gas natural (prod.)", "to": "Generación eléctrica", "flow": 150 },
+      { "from": "Hidro", "to": "Generación eléctrica", "flow": 720 },
+      { "from": "Renovables (sol/viento)", "to": "Generación eléctrica", "flow": 42 },
+      { "from": "Refinación local", "to": "Combustibles refinados", "flow": 700 },
+      { "from": "Generación eléctrica", "to": "Industria & residencial", "flow": 640 },
+      { "from": "Generación eléctrica", "to": "Transporte (eléctrico)", "flow": 30 },
+      { "from": "Combustibles refinados", "to": "Transporte vial/aéreo", "flow": 540 },
+      { "from": "Combustibles refinados", "to": "Defensa (FF.MM.)", "flow": 18 },
+      { "from": "Combustibles refinados", "to": "Industria & residencial", "flow": 140 }
+    ],
+    "nodos": {
+      "Petróleo (prod.)": { "color": "#c4570e", "label": "Petróleo (producción)" },
+      "Carbón (prod.)": { "color": "#8a4a4a", "label": "Carbón (producción)" },
+      "Gas natural (prod.)": { "color": "#0b5394", "label": "Gas natural (producción)" },
+      "Hidro": { "color": "#6a8caf", "label": "Hidroeléctrica" },
+      "Renovables (sol/viento)": { "color": "#2e7d32", "label": "Solar & Eólica" },
+      "Refinación local": { "color": "#c4570e", "label": "Refinerías (Barranca/Cartagena)" },
+      "Generación eléctrica": { "color": "#6b4e8e", "label": "Generación Eléctrica (SIN)" },
+      "Combustibles refinados": { "color": "#a17c1c", "label": "Combustibles refinados" },
+      "Exportación crudo": { "color": "#c4570e", "label": "EXPORT · Crudo" },
+      "Exportación carbón": { "color": "#8a4a4a", "label": "EXPORT · Carbón" },
+      "Industria & residencial": { "color": "#4a5870", "label": "Industria + Residencial" },
+      "Transporte vial/aéreo": { "color": "#c4570e", "label": "Transporte vial/aéreo" },
+      "Transporte (eléctrico)": { "color": "#2e7d32", "label": "Transporte eléctrico" },
+      "Defensa (FF.MM.)": { "color": "#a82822", "label": "Defensa (FF.MM.)" }
+    },
+    "cita": "El diagrama hace visible la <b>doble cara colombiana</b>: el país exporta el grueso de su crudo y casi todo su carbón, mientras su sistema eléctrico depende de la lluvia (hidro) y un margen estrecho de gas. Datos estilizados sobre UPME BECO 2024 y BP Statistical Review."
+  },
+
+  "evolucion": {
+    "src": "1990–2050 · trayectoria PEN UPME",
+    "historico_titulo": "Mix Eléctrico Histórico y Proyectado (%)",
+    "anios": ["1990", "2000", "2010", "2015", "2020", "2024", "2030", "2040", "2050"],
+    "series": [
+      { "label": "Hidro", "data": [78, 72, 68, 70, 69, 70, 62, 54, 48], "color": "#6a8caf" },
+      { "label": "Gas", "data": [10, 16, 18, 15, 16, 14, 15, 14, 12], "color": "#0b5394" },
+      { "label": "Carbón", "data": [10, 9, 9, 9, 9, 8, 6, 4, 2], "color": "#8a4a4a" },
+      { "label": "Eólica/Solar", "data": [0, 0, 0, 1, 1, 4, 14, 26, 36], "color": "#a17c1c" },
+      { "label": "Líquidos/Otros", "data": [2, 3, 5, 5, 5, 4, 3, 2, 2], "color": "#c4570e" }
+    ],
+    "historico_cita": "La hidro se mantiene dominante (≈70%) pero el PEN proyecta su descenso relativo ante la entrada de eólica de La Guajira y solar. Proyección: UPME Plan Energético Nacional 2050, escenario de transición.",
+    "hitos_titulo": "Hitos del Régimen Energético",
+    "hitos": [
+      { "anio": "1986", "evento": "Inicio operaciones campo Caño Limón (Arauca) y oleoducto a Coveñas." },
+      { "anio": "1992", "evento": "Apagón nacional por El Niño → racionamiento eléctrico de meses." },
+      { "anio": "1994", "evento": "Ley 142 y 143: creación del mercado eléctrico y del SIN." },
+      { "anio": "1995", "evento": "Descubrimiento de los campos Cusiana–Cupiagua (Casanare)." },
+      { "anio": "2003", "evento": "Creación de la ANH; apertura petrolera y nuevos contratos E&P." },
+      { "anio": "2007", "evento": "ECOPETROL sale a bolsa (BVC); democratización accionaria." },
+      { "anio": "2014", "evento": "Ley 1715: integración de FNCER y eficiencia energética." },
+      { "anio": "2018", "evento": "Subastas de cargo por confiabilidad incorporan eólica/solar." },
+      { "anio": "2021", "evento": "Ley 2099: impulso a transición, hidrógeno y comunidades energéticas." },
+      { "anio": "2023", "evento": "Hidroituango entra en operación tras la contingencia de 2018." },
+      { "anio": "2024", "evento": "El Niño 2023–24 reaviva el riesgo de racionamiento; estrés del SIN." },
+      { "anio": "2050", "evento": "PEN: carbono neutralidad y mayor peso de FNCER en el mix." }
+    ]
+  },
+
+  "infraestructura": {
+    "src": "Mapa Leaflet · OSM + UPME + ANH",
+    "mapa_titulo": "Nodos energéticos y corredores críticos de Colombia",
+    "pines": [
+      { "lat": 7.065, "lng": -73.854, "tipo": "refineria", "nombre": "Refinería de Barrancabermeja", "desc": "ECOPETROL · ~250 kbpd · principal centro de refinación del país" },
+      { "lat": 10.323, "lng": -75.477, "tipo": "refineria", "nombre": "Refinería de Cartagena (Reficar)", "desc": "ECOPETROL · ~165 kbpd · modernizada 2015" },
+      { "lat": 5.330, "lng": -72.380, "tipo": "gnl", "nombre": "Campos Cusiana–Cupiagua", "desc": "Casanare · gas y crudo · corazón del suministro de gas interior" },
+      { "lat": 11.760, "lng": -72.000, "tipo": "gnl", "nombre": "Campo Ballena (La Guajira)", "desc": "Chuchupa-Ballena · gas costa afuera en declive · Promigas" },
+      { "lat": 11.020, "lng": -74.150, "tipo": "gnl", "nombre": "Regasificadora SPEC LNG (Cartagena)", "desc": "Terminal de importación de GNL para respaldo térmico" },
+      { "lat": 6.785, "lng": -75.640, "tipo": "almacenamiento", "nombre": "Hidroituango (EPM)", "desc": "Antioquia · 2.4 GW · mayor central del país tras contingencia 2018" },
+      { "lat": 5.215, "lng": -74.850, "tipo": "almacenamiento", "nombre": "Embalse El Guavio", "desc": "Cundinamarca · ~1.2 GW · generación firme clave del SIN" },
+      { "lat": 12.200, "lng": -71.300, "tipo": "almacenamiento", "nombre": "Parques eólicos La Guajira", "desc": "Jepírapa/Guajira I · viento clase mundial · transición FNCER" },
+      { "lat": 11.095, "lng": -72.640, "tipo": "minerales", "nombre": "Mina El Cerrejón (carbón)", "desc": "La Guajira · mayor mina de carbón a cielo abierto de A. Latina" },
+      { "lat": 8.000, "lng": -73.520, "tipo": "sloc", "nombre": "Oleoducto Caño Limón–Coveñas", "desc": "≈770 km · blanco recurrente de atentados (ELN)" },
+      { "lat": 9.405, "lng": -75.690, "tipo": "sloc", "nombre": "Terminal de Coveñas", "desc": "Sucre · principal puerto de exportación de crudo" },
+      { "lat": 11.005, "lng": -74.250, "tipo": "sloc", "nombre": "Puerto carbonífero (Ciénaga/Sta Marta)", "desc": "Magdalena · exportación de carbón Drummond" }
+    ],
+    "rutas": [
+      { "puntos": [[8.000, -73.520], [8.300, -73.900], [9.405, -75.690]], "tooltip": "Oleoducto Caño Limón → Coveñas (exportación crudo)" },
+      { "puntos": [[5.330, -72.380], [4.700, -74.100], [3.450, -76.530]], "tooltip": "Gasoducto Cusiana → interior (Bogotá/Cali)" },
+      { "puntos": [[11.095, -72.640], [11.005, -74.250]], "tooltip": "Tren carbonífero Cerrejón/Drummond → puerto" }
+    ],
+    "leyenda": [
+      { "color": "#c4570e", "label": "Refinerías" },
+      { "color": "#0b5394", "label": "Gas / Regasificación" },
+      { "color": "#2e7d32", "label": "Hidro & FNCER" },
+      { "color": "#a17c1c", "label": "Minerales / Carbón" },
+      { "color": "#c62828", "label": "Corredores y puertos críticos" }
+    ],
+    "mapa_cita": "Coordenadas reales: Barrancabermeja y Reficar (ECOPETROL), Cusiana–Cupiagua (Casanare), Ballena (La Guajira), Hidroituango (EPM), El Guavio, eólicas de La Guajira, El Cerrejón y el oleoducto Caño Limón–Coveñas. <i>Fuentes: UPME, ANH, XM, EPM, 2024.</i>",
+    "vulnerabilidades_titulo": "Vulnerabilidades técnicas",
+    "vulnerabilidades": [
+      { "nivel": "high", "tag": "CRÍT", "texto_html": "<b>Dependencia hídrica</b> · ~70% de la generación es hidro; un El Niño severo agota embalses y obliga a despacho térmico caro y racionamiento." },
+      { "nivel": "high", "tag": "CRÍT", "texto_html": "<b>Declive del gas</b> · reservas probadas ≈7 años (R/P); riesgo de importar GNL por SPEC y exposición a precios internacionales." },
+      { "nivel": "high", "tag": "CRÍT", "texto_html": "<b>Ataques a oleoductos</b> · Caño Limón–Coveñas y Transandino sufren voladuras recurrentes del ELN, con derrames y cierres." },
+      { "nivel": "med", "tag": "ALTO", "texto_html": "<b>Corredor único de transmisión</b> · líneas STN sensibles a deslizamientos, clima y orden público en zonas de difícil acceso." },
+      { "nivel": "med", "tag": "ALTO", "texto_html": "<b>Zonas No Interconectadas (ZNI)</b> · ~52 GWh/año en diésel; suministro costoso y frágil en la periferia." },
+      { "nivel": "low", "tag": "MED", "texto_html": "<b>Ciber-OT</b> · SCADA de operadores (XM, EPM, ISA) bajo presión creciente de amenazas digitales." }
+    ],
+    "capacidad_titulo": "Capacidad vs Demanda (GW)",
+    "capacidad": {
+      "anios": ["2024", "2026", "2028", "2030", "2035", "2040"],
+      "y_titulo": "GW",
+      "series": [
+        { "label": "Hidro (GW)", "tipo": "bar", "data": [12.6, 13.4, 14.0, 14.6, 15.5, 16.2], "color": "#6a8caf" },
+        { "label": "Térmica (GW)", "tipo": "bar", "data": [5.6, 5.4, 5.0, 4.6, 3.8, 3.0], "color": "#8a4a4a" },
+        { "label": "Eólica/Solar (GW)", "tipo": "bar", "data": [1.8, 4.5, 7.5, 11.0, 18.0, 25.0], "color": "#a17c1c" },
+        { "label": "Demanda pico (GW)", "tipo": "line", "data": [12.0, 12.9, 13.8, 14.8, 17.0, 19.5], "color": "#c4570e" }
+      ]
+    },
+    "capacidad_cita": "La eólica/solar (La Guajira, Caribe) debe crecer con fuerza para liberar la dependencia hídrica y cubrir la demanda pico. <i>Fuente: UPME Plan de Expansión de Referencia 2024.</i>"
+  },
+
+  "geopolitica": {
+    "src": "Radar APERC normalizado",
+    "radar_titulo": "Radar APERC: Colombia vs Brasil vs Venezuela",
+    "radar": {
+      "ejes": ["Availability", "Accessibility", "Affordability", "Acceptability", "Sovereignty", "Robustness", "Resilience"],
+      "series": [
+        { "label": "Colombia", "data": [6.5, 4.2, 5.0, 5.9, 6.0, 4.8, 5.0], "color": "#0b5394" },
+        { "label": "Brasil", "data": [7.5, 7.0, 6.5, 7.2, 7.0, 6.8, 7.0], "color": "#2e7d32" },
+        { "label": "Venezuela", "data": [9.0, 3.0, 4.5, 3.0, 6.0, 2.5, 2.8], "color": "#c4570e" }
+      ]
+    },
+    "radar_cita": "Cuatro A's (escala 0–10), más tres dimensiones de Cherp &amp; Jewell. Normalización min-max sobre indicadores tabla §01.",
+    "dependencias_titulo": "Dependencias y socios",
+    "dependencias": [
+      { "vinculo": "Exportación crudo a EE.UU.", "pct": "38", "riesgo": { "texto": "Socio estable", "pill": "ok" } },
+      { "vinculo": "Exportación carbón a Europa", "pct": "30", "riesgo": { "texto": "Demanda en transición", "pill": "warn" } },
+      { "vinculo": "Exportación crudo a China/India", "pct": "22", "riesgo": { "texto": "Diversificación", "pill": "ok" } },
+      { "vinculo": "Importación de GNL (respaldo)", "pct": "—", "riesgo": { "texto": "Precio internacional", "pill": "warn" } },
+      { "vinculo": "Intercambio eléctrico con Ecuador", "pct": "—", "riesgo": { "texto": "Apoyo bilateral", "pill": "ok" } },
+      { "vinculo": "Frontera energética Venezuela", "pct": "—", "riesgo": { "texto": "Riesgo de orden público", "pill": "danger" } }
+    ],
+    "dependencias_cita": "DANE Comercio Exterior 2024; UN Comtrade; XM intercambios internacionales.",
+    "minerales_titulo": "Minerales críticos y recursos — posición colombiana",
+    "minerales": [
+      { "valor": "#1", "unidad": " A. Latina", "etiqueta": "EXPORTADOR CARBÓN" },
+      { "valor": "Top", "unidad": " mundial", "etiqueta": "NÍQUEL (CERRO MATOSO)" },
+      { "valor": "Alto", "unidad": " potencial", "etiqueta": "COBRE & ORO" },
+      { "valor": "9", "unidad": " GW viento", "etiqueta": "RECURSO LA GUAJIRA" }
+    ],
+    "minerales_cita": "USGS Mineral Commodity Summaries 2024; UPME Atlas de Viento y Energía Eólica de Colombia."
+  },
+
+  "militar": {
+    "titulo_seccion": "Combustibles Militares y Rol Operacional de las FF.MM.",
+    "nav_label": "Combustibles FF.MM.",
+    "src": "Política de Defensa · ECOPETROL contratos panel",
+    "combustibles_titulo": "Demanda de combustibles de las FF.MM.",
+    "combustibles": [
+      { "codigo": "Jet A-1 / JP-8", "tipo": "Queroseno de aviación", "usuario": "FAC / Aviación Ejército y Armada", "ml_anio": "240" },
+      { "codigo": "ACPM (Diésel)", "tipo": "Diésel terrestre y naval", "usuario": "Ejército y Armada (buques/vehículos)", "ml_anio": "190" },
+      { "codigo": "Gasolina motor", "tipo": "Gasolina", "usuario": "Vehículos ligeros y embarcaciones menores", "ml_anio": "55" },
+      { "codigo": "F-76 / IFO", "tipo": "Diésel/combustible naval", "usuario": "Armada (buques oceánicos)", "ml_anio": "35" }
+    ],
+    "combustibles_total": "~520",
+    "combustibles_cita": "Cifra de orden de magnitud, estimada sobre el parque aéreo, naval y terrestre de las FF.MM. y suministro vía ECOPETROL y distribuidores nacionales.",
+    "vulnerabilidades_titulo": "Vulnerabilidades específicas de defensa",
+    "vulnerabilidades": [
+      { "nivel": "high", "tag": "CRÍT", "texto_html": "<b>Abastecimiento en zonas rojas</b> · convoyes y depósitos en operaciones contra GAO/GAOr expuestos a emboscadas y artefactos." },
+      { "nivel": "high", "tag": "CRÍT", "texto_html": "<b>Dependencia de refinación nacional</b> · disrupciones en Barranca o Reficar comprometen el suministro de Jet A-1 y ACPM." },
+      { "nivel": "med", "tag": "ALTO", "texto_html": "<b>Logística fluvial y selvática</b> · Amazonia y Pacífico exigen prepoblamiento de combustible difícil y costoso." },
+      { "nivel": "med", "tag": "ALTO", "texto_html": "<b>Apoyo a infraestructura civil</b> · custodia de oleoductos y torres de energía dispersa el esfuerzo logístico." },
+      { "nivel": "low", "tag": "MED", "texto_html": "<b>Combustibles sostenibles</b> · pilotos de biodiésel y SAF aún incipientes para uso militar." }
+    ],
+    "mision_titulo": "Misión de las FF.MM. en Seguridad Energética",
+    "mision": [
+      { "titulo": "PROTECCIÓN DE INFRAESTRUCTURA", "texto_html": "Batallones de protección de infraestructura crítica y económica resguardan oleoductos, gasoductos y líneas de transmisión frente a atentados de GAO." },
+      { "titulo": "OLEODUCTO CAÑO LIMÓN–COVEÑAS", "texto_html": "Vigilancia y reacción sobre ≈770 km de tubería históricamente atacada por el ELN; coordinación con ECOPETROL y la Fuerza de Tarea conjunta." },
+      { "titulo": "SEGURIDAD ELÉCTRICA", "texto_html": "Custodia de torres del Sistema de Transmisión Nacional (STN) y subestaciones, especialmente en Arauca, Norte de Santander y Cauca." },
+      { "titulo": "CONTROL DEL ESPACIO MARÍTIMO", "texto_html": "La Armada protege terminales de Coveñas y puertos carboníferos del Caribe, y vigila SLOC del Caribe y Pacífico." },
+      { "titulo": "APOYO HADR", "texto_html": "Restablecimiento de servicios esenciales y combustible de emergencia ante desastres (inundaciones, deslizamientos) en coordinación con la UNGRD." },
+      { "titulo": "ENERGÍA EN BASES REMOTAS", "texto_html": "Despliegue de soluciones solares y baterías en bases de frontera y ZNI para reducir la dependencia del diésel transportado." }
+    ],
+    "mision_cita": "Política de Defensa y Seguridad (MinDefensa); ECOPETROL Reporte de Sostenibilidad; informes de protección de infraestructura crítica."
+  },
+
+  "politicas": {
+    "src": "MinEnergía · UPME · CREG",
+    "planes_titulo": "Planes nacionales",
+    "planes": [
+      { "nombre": "Plan Energético Nacional (PEN) 2050", "texto": "ruta a carbono neutralidad y mayor peso de FNCER." },
+      { "nombre": "Ley 1715 de 2014", "texto": "integración de renovables no convencionales y eficiencia." },
+      { "nombre": "Ley 2099 de 2021", "texto": "transición energética, hidrógeno y comunidades energéticas." },
+      { "nombre": "Plan Nacional de Desarrollo — Transición", "texto": "comunidades energéticas y soberanía energética." },
+      { "nombre": "Hoja de Ruta del Hidrógeno", "texto": "hidrógeno verde y azul como vector exportable." }
+    ],
+    "instituciones_titulo": "Instituciones clave",
+    "instituciones": [
+      { "sigla": "MinEnergía", "texto": "Ministerio de Minas y Energía; rectoría sectorial." },
+      { "sigla": "UPME", "texto": "Unidad de Planeación Minero Energética; planes y proyecciones." },
+      { "sigla": "CREG", "texto": "Comisión de Regulación de Energía y Gas." },
+      { "sigla": "XM / ANH", "texto": "operador del SIN y mercado; Agencia Nacional de Hidrocarburos." },
+      { "sigla": "ECOPETROL", "texto": "petrolera estatal; refinación, transporte (Cenit) y E&P." },
+      { "sigla": "MinDefensa & FF.MM.", "texto": "protección de infraestructura crítica energética." }
+    ],
+    "transicion_titulo": "Transición justa",
+    "transicion_html": "<p>La Guajira y el Cesar concentran el empleo carbonífero (Cerrejón, Drummond) y enfrentan el cierre progresivo de mercados europeos; el reto es reconvertir esa economía hacia eólica, solar e hidrógeno con participación de comunidades <i>wayúu</i>.</p><p>Tensión entre regalías de hidrocarburos (clave para el presupuesto territorial) y la meta de descarbonización; las <b>comunidades energéticas</b> de la Ley 2099 buscan democratizar la generación.</p>",
+    "transicion_cita": "MinEnergía Hoja de Ruta de Transición Energética Justa; UPME PEN 2050."
+  },
+
+  "crisis": {
+    "src": "Wargaming · Cone of Plausibility",
+    "matriz_titulo": "Matriz Probabilidad × Impacto",
+    "matriz": {
+      "esquina": "Impacto ↓ / Prob →",
+      "prob_labels": ["Muy bajo", "Bajo", "Medio", "Alto", "Muy alto"],
+      "filas": [
+        { "impacto": "Catastrófico", "celdas": [ { "nivel": 3 }, { "nivel": 4 }, { "nivel": 4, "texto": "El Niño extremo" }, { "nivel": 5, "texto": "Racionamiento" }, { "nivel": 5 } ] },
+        { "impacto": "Mayor", "celdas": [ { "nivel": 2 }, { "nivel": 3 }, { "nivel": 4, "texto": "Crisis de gas" }, { "nivel": 4, "texto": "Atentado oleoducto" }, { "nivel": 5 } ] },
+        { "impacto": "Moderado", "celdas": [ { "nivel": 1 }, { "nivel": 2 }, { "nivel": 3, "texto": "Falla refinería" }, { "nivel": 3, "texto": "Caída línea STN" }, { "nivel": 4 } ] },
+        { "impacto": "Menor", "celdas": [ { "nivel": 1 }, { "nivel": 1 }, { "nivel": 2, "texto": "Ciber-OT" }, { "nivel": 3 }, { "nivel": 3 } ] },
+        { "impacto": "Insignif.", "celdas": [ { "nivel": 1 }, { "nivel": 1 }, { "nivel": 1 }, { "nivel": 2 }, { "nivel": 2 } ] }
+      ]
+    },
+    "matriz_cita": "Escala HM Treasury Orange Book; escenarios calibrados con la realidad operacional colombiana.",
+    "escenarios_titulo": "Escenarios calibrados",
+    "escenarios": [
+      { "nivel": "high", "tag": "A", "texto_html": "<b>El Niño severo + embalses bajos</b> — repetición de 1992; despacho térmico al límite. <i>Respuesta:</i> ahorro voluntario, importación de GNL por SPEC, vigilancia del SIN." },
+      { "nivel": "high", "tag": "B", "texto_html": "<b>Crisis de abastecimiento de gas</b> — declive de Ballena/Cusiana sin nueva oferta. <i>Respuesta:</i> contratos de GNL, aceleración offshore Caribe, priorización térmica." },
+      { "nivel": "high", "tag": "C", "texto_html": "<b>Campaña de atentados a oleoductos</b> — voladuras del ELN en Caño Limón. <i>Respuesta:</i> protección militar reforzada, reversión de bombeo, reparación rápida." },
+      { "nivel": "med", "tag": "D", "texto_html": "<b>Caída de corredor de transmisión</b> — pérdida de líneas STN por clima u orden público. <i>Respuesta:</i> redespacho, anillos de respaldo, custodia de torres." },
+      { "nivel": "low", "tag": "E", "texto_html": "<b>Ciberataque a operador (XM/EPM)</b> — toma de SCADA. <i>Respuesta:</i> CCOC y CSIRT coordinan; retorno a operación manual." }
+    ],
+    "vectores_titulo": "Respuesta estratégica integrada — vectores",
+    "vectores": [
+      { "titulo": "DIVERSIFICACIÓN", "texto": "Eólica de La Guajira + solar para reducir la dependencia hídrica del SIN." },
+      { "titulo": "RESPALDO DE GAS", "texto": "GNL de respaldo (SPEC) y exploración offshore en el Caribe." },
+      { "titulo": "PROTECCIÓN", "texto": "FF.MM. en oleoductos, torres STN y puertos; reacción rápida ante atentados." },
+      { "titulo": "RESILIENCIA", "texto": "Embalses de regulación plurianual, demanda gestionable y comunidades energéticas." }
+    ]
+  },
+
+  "referencias": {
+    "src": "Triangulación multi-fuente",
+    "titulo": "Fuentes primarias y académicas",
+    "items": [
+      "APERC (2007). <i>A Quest for Energy Security in the 21st Century: Resources and Constraints</i>. Asia Pacific Energy Research Centre, Tokio.",
+      "Cherp, A. &amp; Jewell, J. (2014). The concept of energy security: Beyond the four As. <i>Energy Policy</i>, 75, 415–421.",
+      "UPME (2024). <i>Balance Energético Colombiano (BECO)</i> y <i>Plan Energético Nacional 2050</i>. Unidad de Planeación Minero Energética.",
+      "XM (2024). <i>Informe de Operación del Sistema Interconectado Nacional</i>. XM S.A. E.S.P.",
+      "Ministerio de Minas y Energía (2023). <i>Hoja de Ruta de la Transición Energética Justa</i>.",
+      "ANH (2023). <i>Informe de Reservas y Recursos de Hidrocarburos</i>. Agencia Nacional de Hidrocarburos.",
+      "ECOPETROL (2024). <i>Reporte Integrado de Gestión Sostenible</i>.",
+      "IEA (2023). <i>Colombia Energy Profile</i>. International Energy Agency, París.",
+      "Congreso de Colombia (2014; 2021). <i>Ley 1715 de 2014</i>; <i>Ley 2099 de 2021</i>.",
+      "Ember (2024). <i>Electricity Data Explorer</i>. ember-climate.org.",
+      "BP (2023). <i>Statistical Review of World Energy 2023</i>.",
+      "USGS (2024). <i>Mineral Commodity Summaries</i>.",
+      "HM Treasury (2020). <i>The Orange Book: Management of Risk – Principles and Concepts</i>."
+    ]
+  },
+
+  "footer": "Documento de sustentación · Rúbrica Slide18 · Logística Militar · Mayo 2026"
+}

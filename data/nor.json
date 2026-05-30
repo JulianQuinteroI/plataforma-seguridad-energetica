@@ -1,0 +1,352 @@
+{
+  "schema_version": "1.0.0",
+  "meta": {
+    "pais": "Noruega",
+    "pais_iso": "NOR",
+    "pais_iso2": "NO",
+    "subtitulo_pais": "Reino de",
+    "eyebrow": "Portafolio · Seguridad Energética por País",
+    "titulo": "Seguridad Energética de Noruega:<br/>hidroelectricidad, petro-riqueza y rol de las Forsvaret",
+    "subtitulo": "Análisis cuantitativo bajo el marco APERC de las cuatro A's (Disponibilidad, Accesibilidad, Asequibilidad, Aceptabilidad), con comparación frente a Suecia y Catar.",
+    "estudiante": "Cátedra (ejemplo de referencia)",
+    "asignatura": "Logística Militar · Rúbrica Slide18",
+    "tipo_doc": "Documento de sustentación",
+    "fecha": "Mayo 2026",
+    "fuerzas_armadas": "Forsvaret",
+    "aperc_global": 8.4,
+    "cita_corta": "NVE, 2024; NPD/Sokkeldirektoratet, 2024; IEA, 2022; APERC, 2007; Cherp & Jewell, 2014.",
+    "portafolio_label": "Rúbrica Slide18<br/>Logística Militar<br/>v2 — académica",
+    "map_view": { "lat": 64, "lng": 12, "zoom": 4 }
+  },
+
+  "resumen": {
+    "tesis_html": "Noruega es un caso casi <i>único</i>: cubre el <b>88–98%</b> de su electricidad con hidroeléctrica de embalse y, a la vez, es uno de los mayores exportadores de petróleo y gas de Europa desde el Mar del Norte. Su excepcional seguridad energética se sostiene en un recurso hídrico abundante, una red robusta interconectada con el continente y un fondo soberano (GPFG) que blinda su economía frente a la volatilidad de los precios.",
+    "conclusion_html": "En métricas APERC, Noruega obtiene 8.4/10 — la referencia superior de la cátedra — por una combinación rara de <i>availability</i>, <i>acceptability</i> y <i>sovereignty</i> altas. Sus vulnerabilidades son acotadas: años hidrológicos secos, exposición de cables submarinos e infraestructura del Mar del Norte tras Nord Stream, y el dilema de ser exportador fósil en plena transición. Las Forsvaret (FF.AA. noruegas), en el marco de la OTAN, custodian plataformas, gasoductos y cables críticos.",
+    "kpis": [
+      { "valor": 1.5, "unidad": "EJ", "etiqueta": "Consumo Primario", "decimal": true },
+      { "valor": 92, "unidad": "%", "etiqueta": "Electricidad Hidro" },
+      { "valor": 90, "unidad": "%", "etiqueta": "Producción Exportada" },
+      { "valor": 1.7, "unidad": "B USD", "etiqueta": "Fondo Soberano", "decimal": true }
+    ]
+  },
+
+  "aperc": {
+    "src": "APERC 2007 · Cherp & Jewell 2014",
+    "definicion_html": "<p>La Asia Pacific Energy Research Centre (APERC, 2007) define seguridad energética como <i>\"la capacidad de una economía para garantizar el abastecimiento de recursos energéticos de forma sustentable y oportuna\"</i>, descompuesta en cuatro dimensiones: <b>Availability</b> (existencia física), <b>Accessibility</b> (capacidad geopolítica de obtenerlos), <b>Affordability</b> (costo soportable) y <b>Acceptability</b> (compatibilidad ambiental y social).</p><p>Cherp &amp; Jewell (2014) sintetizan el campo en tres perspectivas: <i>sovereignty</i> (control estatal), <i>robustness</i> (resistencia técnica) y <i>resilience</i> (adaptación). Noruega puntúa alto en las tres, con un sistema eléctrico casi totalmente renovable y soberanía sobre sus recursos.</p>",
+    "definicion_cita": "APERC (2007). <i>A Quest for Energy Security in the 21st Century</i>. Tokio. · Cherp &amp; Jewell (2014). Energy Policy 75: 415–421.",
+    "scorecard_titulo": "Scorecard de Noruega bajo APERC",
+    "scores": [
+      { "letra": "A", "nombre": "vailability", "desc": "Recursos físicos (hidro abundante, petróleo y gas del Mar del Norte).", "score": 9.2 },
+      { "letra": "A", "nombre": "ccessibility", "desc": "Red robusta, interconexiones europeas, control estatal (Equinor/Statnett).", "score": 8.0 },
+      { "letra": "A", "nombre": "ffordability", "desc": "Precios bajos históricos; tensión reciente por acoplamiento al mercado europeo.", "score": 7.6 },
+      { "letra": "A", "nombre": "cceptability", "desc": "Electricidad casi 100% renovable; dilema de exportador fósil.", "score": 8.8 }
+    ],
+    "scorecard_cita": "Scores propios calculados sobre indicadores normalizados; ver §06.",
+    "comparador": { "pais_b": "Suecia", "pais_c": "Catar" },
+    "indicadores_titulo": "Indicadores cuantitativos aplicados",
+    "indicadores": [
+      { "indicador": "HHI mix primario", "definicion": "Herfindahl-Hirschman, concentración (0–10 000)", "propio": "4 100", "b": "2 950", "c": "5 600", "interp": { "texto": "NO concentrada en hidro/fósiles propios" } },
+      { "indicador": "Índice Shannon", "definicion": "Entropía del mix (mayor = más diverso)", "propio": "1.10", "b": "1.44", "c": "0.74", "interp": { "texto": "Diversidad moderada", "pill": "warn" } },
+      { "indicador": "Net Import Dep. (%)", "definicion": "Eurostat: (Imp−Exp)/(Cons.bruto)", "propio": "−600%", "b": "−10%", "c": "−540%", "interp": { "texto": "Gran exportador neto" } },
+      { "indicador": "Renovables en electricidad (%)", "definicion": "Hidro + eólica", "propio": "98", "b": "70", "c": "1", "interp": { "texto": "NO casi 100% limpia", "pill": "ok" } },
+      { "indicador": "Intensidad de carbono (gCO₂/kWh)", "definicion": "Generación eléctrica", "propio": "26", "b": "40", "c": "490", "interp": { "texto": "NO la más baja", "pill": "ok" } },
+      { "indicador": "Fondo soberano (% PIB)", "definicion": "GPFG como colchón macro-energético", "propio": "330", "b": "0", "c": "200", "interp": { "texto": "Blindaje financiero", "pill": "ok" } },
+      { "indicador": "Penetración VE (% ventas)", "definicion": "Vehículos eléctricos nuevos", "propio": "88", "b": "60", "c": "2", "interp": { "texto": "NO líder mundial", "pill": "ok" } }
+    ],
+    "indicadores_nota": "HHI y Shannon sobre TPES estilizado (IEA 2022); intensidad de carbono Ember 2024; GPFG según Norges Bank Investment Management. Comparativos seleccionados por la rúbrica (vecino nórdico diversificado; exportador de gas autoritario)."
+  },
+
+  "matriz": {
+    "src": "IEA · NVE · Sokkeldirektoratet 2024",
+    "primaria_titulo": "Energía Primaria (TPES, % EJ)",
+    "primaria": [
+      { "label": "Petróleo", "valor": 36, "color": "#c4570e" },
+      { "label": "Hidro", "valor": 33, "color": "#6a8caf" },
+      { "label": "Gas natural", "valor": 19, "color": "#0b5394" },
+      { "label": "Biomasa", "valor": 7, "color": "#2e7d32" },
+      { "label": "Eólica", "valor": 4, "color": "#a17c1c" },
+      { "label": "Otros", "valor": 1, "color": "#6b4e8e" }
+    ],
+    "primaria_cita": "Petróleo 36 · Hidro 33 · Gas 19 · Biomasa 7 · Eólica 4 · Otros 1. Total ≈1.5 EJ. <i>Fuente: IEA Norway Energy Profile (2022) y SSB.</i>",
+    "electrica_titulo": "Generación Eléctrica (% TWh)",
+    "electrica": [
+      { "label": "Hidro", "valor": 88, "color": "#6a8caf" },
+      { "label": "Eólica", "valor": 10, "color": "#a17c1c" },
+      { "label": "Térmica/Gas", "valor": 1.5, "color": "#0b5394" },
+      { "label": "Otros", "valor": 0.5, "color": "#6b4e8e" }
+    ],
+    "electrica_cita": "Hidro 88 · Eólica 10 · Térmica 1.5 · Otros 0.5. En años húmedos la hidro supera el 95%. <i>Fuente: NVE / Statnett, 2024.</i>",
+    "comparativa_titulo": "Comparativa Internacional — Mix Eléctrico (%)",
+    "comparativa": {
+      "paises": ["Noruega", "Suecia", "Catar"],
+      "series": [
+        { "label": "Hidro", "data": [88, 43, 0], "color": "#6a8caf" },
+        { "label": "Eólica", "data": [10, 20, 0], "color": "#2e7d32" },
+        { "label": "Nuclear", "data": [0, 30, 0], "color": "#6b4e8e" },
+        { "label": "Gas", "data": [1, 1, 100], "color": "#0b5394" },
+        { "label": "Petróleo", "data": [0, 0, 0], "color": "#c4570e" },
+        { "label": "Biomasa/Otros", "data": [1, 6, 0], "color": "#a17c1c" }
+      ]
+    },
+    "comparativa_nota": "Eje normativo: Suecia combina hidro, nuclear y eólica; Catar como exportador de GNL con electricidad 100% a gas, contraste extremo de aceptabilidad."
+  },
+
+  "sankey": {
+    "src": "Producción → Transformación → Uso final",
+    "titulo_panel": "Flujos físicos de energía, Noruega 2024 (PJ aprox.)",
+    "flujos": [
+      { "from": "Petróleo (prod.)", "to": "Exportación crudo", "flow": 3600 },
+      { "from": "Petróleo (prod.)", "to": "Refinación local", "flow": 320 },
+      { "from": "Gas natural (prod.)", "to": "Exportación gas", "flow": 4200 },
+      { "from": "Gas natural (prod.)", "to": "Industria & residencial", "flow": 80 },
+      { "from": "Hidro", "to": "Generación eléctrica", "flow": 1330 },
+      { "from": "Eólica", "to": "Generación eléctrica", "flow": 150 },
+      { "from": "Refinación local", "to": "Combustibles refinados", "flow": 310 },
+      { "from": "Generación eléctrica", "to": "Industria & residencial", "flow": 900 },
+      { "from": "Generación eléctrica", "to": "Exportación electricidad", "flow": 90 },
+      { "from": "Generación eléctrica", "to": "Transporte (eléctrico)", "flow": 120 },
+      { "from": "Combustibles refinados", "to": "Transporte vial/marítimo", "flow": 220 },
+      { "from": "Combustibles refinados", "to": "Defensa (Forsvaret)", "flow": 12 },
+      { "from": "Combustibles refinados", "to": "Industria & residencial", "flow": 78 }
+    ],
+    "nodos": {
+      "Petróleo (prod.)": { "color": "#c4570e", "label": "Petróleo (producción)" },
+      "Gas natural (prod.)": { "color": "#0b5394", "label": "Gas natural (producción)" },
+      "Hidro": { "color": "#6a8caf", "label": "Hidroeléctrica" },
+      "Eólica": { "color": "#2e7d32", "label": "Eólica" },
+      "Refinación local": { "color": "#c4570e", "label": "Refinería Mongstad" },
+      "Generación eléctrica": { "color": "#6b4e8e", "label": "Generación Eléctrica" },
+      "Combustibles refinados": { "color": "#a17c1c", "label": "Combustibles refinados" },
+      "Exportación crudo": { "color": "#c4570e", "label": "EXPORT · Crudo" },
+      "Exportación gas": { "color": "#0b5394", "label": "EXPORT · Gas (ductos)" },
+      "Exportación electricidad": { "color": "#2e7d32", "label": "EXPORT · Electricidad" },
+      "Industria & residencial": { "color": "#4a5870", "label": "Industria + Residencial" },
+      "Transporte vial/marítimo": { "color": "#c4570e", "label": "Transporte vial/marítimo" },
+      "Transporte (eléctrico)": { "color": "#2e7d32", "label": "Transporte eléctrico" },
+      "Defensa (Forsvaret)": { "color": "#a82822", "label": "Defensa (Forsvaret)" }
+    },
+    "cita": "El diagrama muestra el <b>doble papel noruego</b>: exporta el grueso de su petróleo y gas a Europa mientras su consumo interno es electricidad hidro casi pura. Datos estilizados sobre IEA Sankey y BP Statistical Review."
+  },
+
+  "evolucion": {
+    "src": "1990–2050 · trayectoria NVE / Klimaplan",
+    "historico_titulo": "Mix Eléctrico Histórico y Proyectado (%)",
+    "anios": ["1990", "2000", "2010", "2015", "2020", "2024", "2030", "2040", "2050"],
+    "series": [
+      { "label": "Hidro", "data": [99, 99, 96, 96, 92, 88, 84, 80, 76], "color": "#6a8caf" },
+      { "label": "Eólica", "data": [0, 0, 1, 2, 6, 10, 14, 18, 22], "color": "#a17c1c" },
+      { "label": "Térmica/Gas", "data": [1, 1, 3, 2, 2, 1.5, 1, 1, 1], "color": "#0b5394" },
+      { "label": "Otros", "data": [0, 0, 0, 0, 0, 0.5, 1, 1, 1], "color": "#6b4e8e" }
+    ],
+    "historico_cita": "La hidro domina desde el siglo XX; la eólica terrestre crece desde 2015. Proyección: NVE y Klimaplan 2021–2030, escenario de electrificación creciente.",
+    "hitos_titulo": "Hitos del Régimen Energético",
+    "hitos": [
+      { "anio": "1969", "evento": "Descubrimiento del campo gigante Ekofisk en el Mar del Norte." },
+      { "anio": "1972", "evento": "Creación de Statoil (hoy Equinor) y del régimen de petro-soberanía." },
+      { "anio": "1990", "evento": "Se establece el Fondo (GPFG) para administrar la renta petrolera." },
+      { "anio": "1991", "evento": "Liberalización del mercado eléctrico; base de Nord Pool." },
+      { "anio": "1996", "evento": "Inicio del campo Troll, columna del gas noruego." },
+      { "anio": "2007", "evento": "Captura y almacenamiento de CO₂ a gran escala (Sleipner/Snøhvit)." },
+      { "anio": "2021", "evento": "Cables NordLink (DE) y North Sea Link (UK) acoplan precios a Europa." },
+      { "anio": "2022", "evento": "Tras Nord Stream, Noruega se vuelve el mayor proveedor de gas de la UE." },
+      { "anio": "2023", "evento": "Aumenta la vigilancia militar de plataformas y gasoductos del Mar del Norte." },
+      { "anio": "2024", "evento": "Récord de penetración de VE (>88% de ventas nuevas)." },
+      { "anio": "2050", "evento": "Compromiso de neto cero; electrificación del transporte y la industria." }
+    ]
+  },
+
+  "infraestructura": {
+    "src": "Mapa Leaflet · OSM + Sokkeldirektoratet",
+    "mapa_titulo": "Nodos energéticos del Mar del Norte y de la Noruega continental",
+    "pines": [
+      { "lat": 56.55, "lng": 3.21, "tipo": "gnl", "nombre": "Campo Ekofisk", "desc": "ConocoPhillips · primer gran campo (1969) · petróleo y gas" },
+      { "lat": 60.64, "lng": 3.72, "tipo": "gnl", "nombre": "Campo Troll", "desc": "Equinor · mayor campo de gas del país" },
+      { "lat": 61.20, "lng": 2.27, "tipo": "gnl", "nombre": "Campo Johan Sverdrup", "desc": "Equinor · gran campo petrolero electrificado desde tierra" },
+      { "lat": 59.28, "lng": 5.49, "tipo": "gnl", "nombre": "Terminal de gas de Kårstø", "desc": "Gassco · procesamiento y exportación de gas y LGN" },
+      { "lat": 60.41, "lng": 4.85, "tipo": "gnl", "nombre": "Terminal de gas de Kollsnes", "desc": "Gassco/Equinor · procesa el gas de Troll" },
+      { "lat": 70.67, "lng": 23.62, "tipo": "gnl", "nombre": "Hammerfest LNG (Melkøya)", "desc": "Equinor · planta de GNL del campo Snøhvit (Mar de Barents)" },
+      { "lat": 60.81, "lng": 5.03, "tipo": "refineria", "nombre": "Refinería de Mongstad", "desc": "Equinor · principal refinería de Noruega · centro de CCS" },
+      { "lat": 59.18, "lng": 9.61, "tipo": "almacenamiento", "nombre": "Central hidro de Tokke", "desc": "Statkraft · complejo hidroeléctrico de embalse (Telemark)" },
+      { "lat": 60.53, "lng": 7.16, "tipo": "almacenamiento", "nombre": "Sistema hidro de Hardanger", "desc": "Embalses de regulación de gran capacidad" },
+      { "lat": 59.10, "lng": 6.30, "tipo": "almacenamiento", "nombre": "Conversor North Sea Link", "desc": "Interconexión HVDC con el Reino Unido (Kvilldal)" },
+      { "lat": 58.00, "lng": 6.80, "tipo": "sloc", "nombre": "Cables submarinos al continente", "desc": "NordLink (DE) y enlaces con DK/NL · activos críticos" },
+      { "lat": 62.00, "lng": 4.00, "tipo": "sloc", "nombre": "Gasoductos del Mar del Norte", "desc": "Europipe/Langeled hacia DE y UK · vigilancia militar reforzada" }
+    ],
+    "rutas": [
+      { "puntos": [[60.64, 3.72], [60.41, 4.85], [56.0, 6.5], [53.5, 6.8]], "tooltip": "Gasoducto Troll/Kollsnes → continente europeo" },
+      { "puntos": [[59.10, 6.30], [57.0, 3.0], [55.0, 1.5]], "tooltip": "North Sea Link HVDC Noruega → Reino Unido" },
+      { "puntos": [[70.67, 23.62], [66.0, 12.0], [60.0, 5.0]], "tooltip": "Ruta de buques GNL desde Hammerfest (Melkøya)" }
+    ],
+    "leyenda": [
+      { "color": "#c4570e", "label": "Refinerías" },
+      { "color": "#0b5394", "label": "Campos / Terminales de gas" },
+      { "color": "#2e7d32", "label": "Hidro & interconexión" },
+      { "color": "#a17c1c", "label": "Minerales / recursos" },
+      { "color": "#c62828", "label": "Cables y ductos críticos" }
+    ],
+    "mapa_cita": "Coordenadas reales: Ekofisk (ConocoPhillips), Troll y Johan Sverdrup (Equinor), terminales de Kårstø y Kollsnes (Gassco), Hammerfest LNG/Melkøya, refinería de Mongstad e interconexión North Sea Link. <i>Fuentes: Sokkeldirektoratet, Gassco, NVE, 2024.</i>",
+    "vulnerabilidades_titulo": "Vulnerabilidades técnicas",
+    "vulnerabilidades": [
+      { "nivel": "med", "tag": "ALTO", "texto_html": "<b>Años hidrológicos secos</b> · una sucesión de inviernos secos baja embalses y dispara precios; dependencia del clima nórdico." },
+      { "nivel": "med", "tag": "ALTO", "texto_html": "<b>Cables y gasoductos submarinos</b> · tras Nord Stream, sabotaje o accidente sobre Langeled/North Sea Link es una amenaza tangible." },
+      { "nivel": "med", "tag": "ALTO", "texto_html": "<b>Acoplamiento al mercado europeo</b> · NordLink y NSL transmiten precios altos del continente al consumidor noruego." },
+      { "nivel": "low", "tag": "MED", "texto_html": "<b>Concentración corporativa</b> · gran peso de Equinor y Statnett en la cadena energética nacional." },
+      { "nivel": "low", "tag": "MED", "texto_html": "<b>Ciber-OT y Ártico</b> · operación remota en el Mar de Barents y SCADA expuestos en latitudes extremas." }
+    ],
+    "capacidad_titulo": "Capacidad vs Demanda (GW)",
+    "capacidad": {
+      "anios": ["2024", "2026", "2028", "2030", "2035", "2040"],
+      "y_titulo": "GW",
+      "series": [
+        { "label": "Hidro (GW)", "tipo": "bar", "data": [33.0, 33.5, 34.0, 34.5, 35.5, 36.0], "color": "#6a8caf" },
+        { "label": "Eólica (GW)", "tipo": "bar", "data": [5.0, 6.5, 8.5, 11.0, 16.0, 22.0], "color": "#a17c1c" },
+        { "label": "Térmica (GW)", "tipo": "bar", "data": [1.0, 0.9, 0.8, 0.7, 0.5, 0.4], "color": "#8a4a4a" },
+        { "label": "Demanda pico (GW)", "tipo": "line", "data": [25.0, 26.5, 28.0, 30.0, 34.0, 38.0], "color": "#c4570e" }
+      ]
+    },
+    "capacidad_cita": "La electrificación (VE, industria, hidrógeno) eleva la demanda; la eólica complementa la hidro de regulación. <i>Fuente: NVE / Statnett Kraftsystemutredning.</i>"
+  },
+
+  "geopolitica": {
+    "src": "Radar APERC normalizado",
+    "radar_titulo": "Radar APERC: Noruega vs Suecia vs Catar",
+    "radar": {
+      "ejes": ["Availability", "Accessibility", "Affordability", "Acceptability", "Sovereignty", "Robustness", "Resilience"],
+      "series": [
+        { "label": "Noruega", "data": [9.2, 8.0, 7.6, 8.8, 9.0, 8.5, 8.5], "color": "#0b5394" },
+        { "label": "Suecia", "data": [7.8, 7.5, 7.0, 8.2, 7.5, 8.0, 7.8], "color": "#2e7d32" },
+        { "label": "Catar", "data": [9.5, 6.0, 8.0, 2.5, 8.5, 6.5, 5.5], "color": "#c4570e" }
+      ]
+    },
+    "radar_cita": "Cuatro A's (escala 0–10), más tres dimensiones de Cherp &amp; Jewell. Normalización min-max sobre indicadores tabla §01.",
+    "dependencias_titulo": "Dependencias y socios",
+    "dependencias": [
+      { "vinculo": "Exportación gas a la UE", "pct": "55", "riesgo": { "texto": "Proveedor n.º 1 de la UE", "pill": "ok" } },
+      { "vinculo": "Exportación gas a Reino Unido", "pct": "20", "riesgo": { "texto": "Socio estable (OTAN)", "pill": "ok" } },
+      { "vinculo": "Exportación crudo a Europa", "pct": "18", "riesgo": { "texto": "Mercado maduro", "pill": "ok" } },
+      { "vinculo": "Interconexión eléctrica DE/UK", "pct": "—", "riesgo": { "texto": "Acopla precios", "pill": "warn" } },
+      { "vinculo": "Frontera energética con Rusia (Ártico)", "pct": "—", "riesgo": { "texto": "Tensión OTAN-Rusia", "pill": "danger" } },
+      { "vinculo": "Cooperación nórdica (Nord Pool)", "pct": "—", "riesgo": { "texto": "Mitigador", "pill": "ok" } }
+    ],
+    "dependencias_cita": "SSB Comercio Exterior 2024; Gassco; ENTSO-E.",
+    "minerales_titulo": "Minerales críticos y recursos — posición noruega",
+    "minerales": [
+      { "valor": "#1", "unidad": " gas UE", "etiqueta": "PROVEEDOR DE GAS" },
+      { "valor": "1.7", "unidad": " B USD", "etiqueta": "FONDO SOBERANO (GPFG)" },
+      { "valor": "Alto", "unidad": " potencial", "etiqueta": "MINERÍA MARINA (CRTR)" },
+      { "valor": "88", "unidad": "%", "etiqueta": "VENTAS DE VE NUEVAS" }
+    ],
+    "minerales_cita": "Norges Bank Investment Management 2024; Sokkeldirektoratet evaluación de minerales del lecho marino."
+  },
+
+  "militar": {
+    "titulo_seccion": "Combustibles Militares y Rol Operacional de las Forsvaret",
+    "nav_label": "Combustibles Forsvaret",
+    "src": "Forsvaret · NATO STANAG · Total Defence",
+    "combustibles_titulo": "Demanda de combustibles de las Forsvaret",
+    "combustibles": [
+      { "codigo": "F-34 (JP-8)", "tipo": "Queroseno militar", "usuario": "Luftforsvaret (F-35) y Hæren", "ml_anio": "150" },
+      { "codigo": "F-44 (JP-5)", "tipo": "Queroseno alto flash", "usuario": "Sjøforsvaret (aviación naval)", "ml_anio": "45" },
+      { "codigo": "F-76", "tipo": "Diésel naval OTAN", "usuario": "Sjøforsvaret (fragatas, patrulleros)", "ml_anio": "80" },
+      { "codigo": "F-54 (Diésel)", "tipo": "Diésel terrestre", "usuario": "Hæren (logística terrestre)", "ml_anio": "25" }
+    ],
+    "combustibles_total": "~300",
+    "combustibles_cita": "Cifra de orden de magnitud, estimada sobre el parque de las Forsvaret (F-35, fragatas Fridtjof Nansen) y compromisos de reserva del marco de Defensa Total.",
+    "vulnerabilidades_titulo": "Vulnerabilidades específicas de defensa",
+    "vulnerabilidades": [
+      { "nivel": "high", "tag": "CRÍT", "texto_html": "<b>Protección de infraestructura offshore</b> · plataformas y gasoductos del Mar del Norte como objetivos de sabotaje híbrido tras Nord Stream." },
+      { "nivel": "med", "tag": "ALTO", "texto_html": "<b>Operaciones en el Alto Norte</b> · clima ártico, distancias y proximidad a Rusia complican el reabastecimiento de combustible." },
+      { "nivel": "med", "tag": "ALTO", "texto_html": "<b>Interoperabilidad OTAN</b> · estándares STANAG cumplidos, pero el flujo de combustible aliado depende de pocos puertos y depósitos." },
+      { "nivel": "low", "tag": "MED", "texto_html": "<b>Reservas en clima frío</b> · gestión de aditivos y almacenamiento en condiciones subárticas." },
+      { "nivel": "low", "tag": "MED", "texto_html": "<b>Combustibles sostenibles</b> · pilotos de biocombustibles y electrificación de bases en marcha." }
+    ],
+    "mision_titulo": "Misión de las Forsvaret en Seguridad Energética",
+    "mision": [
+      { "titulo": "PROTECCIÓN OFFSHORE", "texto_html": "La Marina y la Guardia Costera patrullan plataformas, terminales y gasoductos del Mar del Norte; vigilancia reforzada de activos críticos desde 2022." },
+      { "titulo": "DEFENSA DE CABLES Y DUCTOS", "texto_html": "Cooperación con aliados (UK, DE, NL) para proteger cables submarinos e infraestructura energética bajo el agua frente a amenazas híbridas." },
+      { "titulo": "EL ALTO NORTE", "texto_html": "Presencia y disuasión en el Mar de Barents y el Ártico, donde se cruzan recursos energéticos y la frontera con Rusia." },
+      { "titulo": "DEFENSA TOTAL (Totalforsvaret)", "texto_html": "Modelo de Defensa Total que integra a Forsvaret, autoridades civiles y operadores energéticos para garantizar el suministro en crisis." },
+      { "titulo": "FLANCO NORTE DE LA OTAN", "texto_html": "Noruega ancla el flanco norte: ejercicios como Cold Response y la protección del corredor energético europeo." },
+      { "titulo": "RESILIENCIA EN BASES", "texto_html": "Generación de respaldo y microredes en bases del Ártico para sostener operaciones ante cortes de la red civil." }
+    ],
+    "mision_cita": "Forsvaret; Concepto de Defensa Total; documentos de la OTAN sobre protección de infraestructura submarina crítica."
+  },
+
+  "politicas": {
+    "src": "OED · NVE · Klimaplan",
+    "planes_titulo": "Planes nacionales",
+    "planes": [
+      { "nombre": "Klimaplan 2021–2030", "texto": "ruta a −55% de emisiones y electrificación de la economía." },
+      { "nombre": "Estrategia de energía eólica marina", "texto": "Sørlige Nordsjø II y Utsira Nord como nuevas áreas." },
+      { "nombre": "Estrategia de hidrógeno", "texto": "hidrógeno y amoníaco bajos en carbono para exportación." },
+      { "nombre": "Longship / CCS", "texto": "captura y almacenamiento de CO₂ a escala industrial." },
+      { "nombre": "Política del Mar del Norte", "texto": "continuidad petrolera con licencia social condicionada." }
+    ],
+    "instituciones_titulo": "Instituciones clave",
+    "instituciones": [
+      { "sigla": "OED", "texto": "Ministerio de Energía (antes Petróleo y Energía)." },
+      { "sigla": "NVE", "texto": "Dirección de Recursos Hídricos y Energía." },
+      { "sigla": "Sokkeldir.", "texto": "Dirección de la Plataforma Continental (ex-NPD)." },
+      { "sigla": "Statnett", "texto": "operador del sistema de transmisión eléctrica." },
+      { "sigla": "Equinor / Gassco", "texto": "petrolera estatal y operador de la red de gas." },
+      { "sigla": "NBIM (GPFG)", "texto": "gestor del fondo soberano; colchón macro-energético." }
+    ],
+    "transicion_titulo": "Transición justa",
+    "transicion_html": "<p>Noruega vive una <i>paradoja moral</i>: financia su Estado de bienestar y su transición con renta de petróleo y gas que vende a una Europa que se descarboniza. El reto es reconvertir la pericia <i>offshore</i> hacia eólica marina, CCS e hidrógeno sin colapsar las comunidades petroleras del oeste (Stavanger, Bergen).</p><p>El consenso social respalda la electrificación interna (VE, transporte), pero el debate sobre cuándo cesar la exploración del Mar del Norte sigue abierto.</p>",
+    "transicion_cita": "Klimaplan 2021–2030; Meld. St. del Storting sobre energía y clima."
+  },
+
+  "crisis": {
+    "src": "Wargaming · Cone of Plausibility",
+    "matriz_titulo": "Matriz Probabilidad × Impacto",
+    "matriz": {
+      "esquina": "Impacto ↓ / Prob →",
+      "prob_labels": ["Muy bajo", "Bajo", "Medio", "Alto", "Muy alto"],
+      "filas": [
+        { "impacto": "Catastrófico", "celdas": [ { "nivel": 3 }, { "nivel": 4, "texto": "Conflicto OTAN-Rusia" }, { "nivel": 4 }, { "nivel": 5 }, { "nivel": 5 } ] },
+        { "impacto": "Mayor", "celdas": [ { "nivel": 2 }, { "nivel": 3, "texto": "Sabotaje gasoducto" }, { "nivel": 4, "texto": "Año hidro seco" }, { "nivel": 4 }, { "nivel": 5 } ] },
+        { "impacto": "Moderado", "celdas": [ { "nivel": 1 }, { "nivel": 2 }, { "nivel": 3, "texto": "Corte de cable" }, { "nivel": 3, "texto": "Choque de precios UE" }, { "nivel": 4 } ] },
+        { "impacto": "Menor", "celdas": [ { "nivel": 1 }, { "nivel": 1 }, { "nivel": 2, "texto": "Ciber-OT" }, { "nivel": 2 }, { "nivel": 3 } ] },
+        { "impacto": "Insignif.", "celdas": [ { "nivel": 1 }, { "nivel": 1 }, { "nivel": 1 }, { "nivel": 2 }, { "nivel": 2 } ] }
+      ]
+    },
+    "matriz_cita": "Escala HM Treasury Orange Book; escenarios calibrados con la postura de Defensa Total y el flanco norte de la OTAN.",
+    "escenarios_titulo": "Escenarios calibrados",
+    "escenarios": [
+      { "nivel": "high", "tag": "A", "texto_html": "<b>Sabotaje de gasoducto/cable</b> — ataque híbrido a Langeled o NordLink. <i>Respuesta:</i> vigilancia naval aliada, redundancia de rutas, cooperación OTAN." },
+      { "nivel": "high", "tag": "B", "texto_html": "<b>Año hidrológico muy seco</b> — embalses bajos elevan precios y reducen exportación eléctrica. <i>Respuesta:</i> gestión de embalses, límites de exportación, eólica de respaldo." },
+      { "nivel": "med", "tag": "C", "texto_html": "<b>Choque de precios europeo</b> — el acoplamiento traslada precios altos al consumidor. <i>Respuesta:</i> esquemas de compensación tarifaria y debate sobre interconexión." },
+      { "nivel": "med", "tag": "D", "texto_html": "<b>Escalada OTAN-Rusia en el Alto Norte</b> — tensión en el Mar de Barents. <i>Respuesta:</i> disuasión, Defensa Total, protección de infraestructura ártica." },
+      { "nivel": "low", "tag": "E", "texto_html": "<b>Ciberataque a Statnett/Equinor</b> — toma de SCADA. <i>Respuesta:</i> NSM coordina; segmentación OT; retorno a operación manual." }
+    ],
+    "vectores_titulo": "Respuesta estratégica integrada — vectores",
+    "vectores": [
+      { "titulo": "DIVERSIFICACIÓN", "texto": "Eólica marina, CCS e hidrógeno para diversificar más allá de la hidro y el gas." },
+      { "titulo": "PROTECCIÓN OFFSHORE", "texto": "Vigilancia aliada de plataformas, ductos y cables del Mar del Norte." },
+      { "titulo": "ALIANZAS", "texto": "OTAN · Nord Pool · UE; reservas y redundancia de rutas con socios." },
+      { "titulo": "RESILIENCIA", "texto": "Defensa Total que integra operadores energéticos, fuerzas y población." }
+    ]
+  },
+
+  "referencias": {
+    "src": "Triangulación multi-fuente",
+    "titulo": "Fuentes primarias y académicas",
+    "items": [
+      "APERC (2007). <i>A Quest for Energy Security in the 21st Century: Resources and Constraints</i>. Asia Pacific Energy Research Centre, Tokio.",
+      "Cherp, A. &amp; Jewell, J. (2014). The concept of energy security: Beyond the four As. <i>Energy Policy</i>, 75, 415–421.",
+      "IEA (2022). <i>Norway 2022 Energy Policy Review</i>. International Energy Agency, París.",
+      "NVE (2024). <i>Norwegian Water Resources and Energy Directorate — Energy Statistics</i>.",
+      "Sokkeldirektoratet / NPD (2024). <i>Resource Report — Norwegian Continental Shelf</i>.",
+      "Gassco (2024). <i>Annual Report on Gas Transport Infrastructure</i>.",
+      "Statnett (2024). <i>Kraftsystemutredning (Power System Outlook)</i>.",
+      "Norges Bank Investment Management (2024). <i>Government Pension Fund Global — Annual Report</i>.",
+      "Equinor (2024). <i>Annual Report and Sustainability Report</i>.",
+      "Ember (2024). <i>Electricity Data Explorer</i>. ember-climate.org.",
+      "BP (2023). <i>Statistical Review of World Energy 2023</i>.",
+      "NATO (2023). <i>Protecting Critical Undersea Infrastructure</i>.",
+      "HM Treasury (2020). <i>The Orange Book: Management of Risk – Principles and Concepts</i>."
+    ]
+  },
+
+  "footer": "Documento de sustentación · Rúbrica Slide18 · Logística Militar · Mayo 2026"
+}

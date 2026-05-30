@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Seguridad Energética por País — Panel Mundial</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<link rel="stylesheet" href="assets/app.css" />
+<script src="assets/schema.js"></script>
+<style>
+  /* Estilos propios del panel mundial. Reusan la paleta de app.css (:root) y
+   * son autosuficientes para el layout del mapa + panel lateral. */
+  :root{
+    --bg:#f7f8fa; --panel:#ffffff; --ink:#1a2332; --ink-2:#4a5870;
+    --muted:#8693a8; --line:#e2e6ed; --accent:#0b5394; --accent-2:#c4570e;
+    --ok:#2e7d32; --warn:#ed6c02; --danger:#c62828; --gold:#a17c1c;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{height:100%}
+  body{
+    font-family:'Source Serif Pro','Georgia',serif;
+    background:var(--bg);color:var(--ink);
+    line-height:1.6;font-size:14.5px;
+  }
+  .sans{font-family:'Helvetica Neue','Arial',sans-serif}
+
+  /* Encabezado del documento */
+  .doc-header{
+    padding:28px 40px 20px;border-bottom:2px solid var(--ink);background:var(--panel);
+  }
+  .doc-header .eyebrow{
+    font-family:'Helvetica Neue',sans-serif;font-size:11px;letter-spacing:3px;
+    color:var(--accent);text-transform:uppercase;margin-bottom:6px;
+  }
+  .doc-header h1{font-size:28px;font-weight:700;line-height:1.15;letter-spacing:-0.3px}
+  .doc-header .sub{font-size:14px;color:var(--ink-2);font-style:italic;max-width:860px;margin-top:6px}
+
+  /* Layout principal: mapa (~70%) + panel lateral derecho */
+  .world-layout{
+    display:grid;grid-template-columns:1fr 360px;gap:0;
+    height:calc(100vh - 92px);min-height:560px;
+  }
+  .map-col{position:relative}
+  #worldmap{width:100%;height:100%;background:#eef1f6}
+  #worldmap.drag-over{outline:3px dashed var(--accent);outline-offset:-6px}
+
+  .map-drop-hint{
+    position:absolute;top:14px;left:50%;transform:translateX(-50%);
+    z-index:600;pointer-events:none;
+    font-family:'Helvetica Neue',sans-serif;font-size:11px;letter-spacing:0.5px;
+    background:rgba(26,35,50,0.82);color:#fff;padding:6px 14px;border-radius:14px;
+    opacity:0;transition:opacity .2s;
+  }
+  #worldmap.drag-over + .map-drop-hint{opacity:1}
+
+  /* Panel lateral */
+  .side{
+    background:var(--panel);border-left:1px solid var(--line);
+    overflow-y:auto;padding:20px 18px;display:flex;flex-direction:column;gap:18px;
+  }
+  .side h2{
+    font-family:'Helvetica Neue',sans-serif;font-size:12px;letter-spacing:2px;
+    color:var(--ink);text-transform:uppercase;font-weight:700;
+  }
+  .side h3{
+    font-family:'Helvetica Neue',sans-serif;font-size:10.5px;letter-spacing:1.5px;
+    color:var(--ink-2);text-transform:uppercase;font-weight:600;margin-bottom:8px;
+  }
+
+  /* Zona drag-drop */
+  .dropzone{
+    border:2px dashed var(--line);border-radius:6px;background:#f9fafc;
+    padding:18px 16px;text-align:center;cursor:pointer;transition:all .2s;
+  }
+  .dropzone:hover{border-color:var(--accent);background:#f4f7fb}
+  .dropzone.drag-over{border-color:var(--accent);background:#eaf1f9}
+  .dropzone .dz-title{font-family:'Helvetica Neue',sans-serif;font-size:13px;font-weight:600;color:var(--ink)}
+  .dropzone .dz-sub{font-family:'Helvetica Neue',sans-serif;font-size:11px;color:var(--muted);margin-top:4px}
+  .dropzone input[type=file]{display:none}
+
+  /* Mensajes de estado / error */
+  .msg{
+    font-family:'Helvetica Neue',sans-serif;font-size:11.5px;line-height:1.5;
+    border-radius:4px;padding:9px 12px;border-left:3px solid var(--muted);
+    background:#f9fafc;color:var(--ink-2);
+  }
+  .msg.error{border-left-color:var(--danger);background:#fdecec;color:#7d2020}
+  .msg.ok{border-left-color:var(--ok);background:#e9f4ec;color:#205c27}
+  .msg.warn{border-left-color:var(--warn);background:#fdf3e6;color:#7a4a10}
+  .msg ul{margin:4px 0 0 16px;padding:0}
+  .msg li{margin-bottom:2px}
+  #msgbox{display:flex;flex-direction:column;gap:8px}
+  #msgbox:empty{display:none}
+
+  /* Buscador */
+  .search-input{
+    width:100%;font-family:'Helvetica Neue',sans-serif;font-size:13px;
+    padding:8px 10px;border:1px solid var(--line);border-radius:4px;color:var(--ink);
+  }
+  .search-input:focus{outline:none;border-color:var(--accent)}
+
+  /* Lista de países entregados */
+  .country-list{display:flex;flex-direction:column;gap:4px;max-height:340px;overflow-y:auto}
+  .country-list:empty::after{
+    content:'Sin entregas cargadas todavía.';
+    font-family:'Helvetica Neue',sans-serif;font-size:11.5px;color:var(--muted);font-style:italic;
+  }
+  .country-item{
+    display:flex;align-items:center;gap:10px;padding:8px 10px;border:1px solid var(--line);
+    border-radius:4px;background:#fff;transition:box-shadow .2s,border-color .2s;
+  }
+  .country-item:hover{border-color:var(--accent);box-shadow:0 2px 10px rgba(26,35,50,0.06)}
+  .ci-swatch{width:12px;height:12px;border-radius:3px;flex:0 0 auto}
+  .ci-main{flex:1;min-width:0;cursor:pointer}
+  .ci-name{font-family:'Helvetica Neue',sans-serif;font-size:13px;font-weight:600;color:var(--ink);line-height:1.2}
+  .ci-meta{font-family:'Helvetica Neue',sans-serif;font-size:10.5px;color:var(--muted);margin-top:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .ci-score{font-family:'Helvetica Neue',sans-serif;font-size:12px;font-weight:700;color:var(--accent);font-variant-numeric:tabular-nums}
+  .ci-remove{
+    font-family:'Helvetica Neue',sans-serif;font-size:15px;line-height:1;color:var(--muted);
+    background:none;border:none;cursor:pointer;padding:2px 4px;border-radius:3px;
+  }
+  .ci-remove:hover{color:var(--danger);background:#fdecec}
+
+  /* Botones */
+  .btn-row{display:flex;gap:8px;flex-wrap:wrap}
+  .btn{
+    font-family:'Helvetica Neue',sans-serif;font-size:11.5px;font-weight:600;letter-spacing:0.3px;
+    padding:7px 12px;border-radius:4px;border:1px solid var(--line);background:#fff;color:var(--ink-2);
+    cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;gap:6px;transition:all .2s;
+  }
+  .btn:hover{border-color:var(--accent);color:var(--accent)}
+  .btn-primary{background:var(--accent);border-color:var(--accent);color:#fff}
+  .btn-primary:hover{background:#0a4a85;color:#fff}
+  .btn-danger:hover{border-color:var(--danger);color:var(--danger)}
+
+  /* Leyenda de coropleta */
+  .legend{display:flex;flex-direction:column;gap:5px}
+  .legend .row{display:flex;align-items:center;gap:8px;font-family:'Helvetica Neue',sans-serif;font-size:11.5px;color:var(--ink-2)}
+  .legend .sw{width:14px;height:14px;border-radius:3px;border:1px solid rgba(0,0,0,0.08);flex:0 0 auto}
+
+  .side-block{border-top:1px solid var(--line);padding-top:16px}
+  .side-block:first-of-type{border-top:none;padding-top:0}
+
+  .counter{font-family:'Helvetica Neue',sans-serif;font-size:10.5px;color:var(--muted);font-weight:600}
+
+  /* Tooltip Leaflet sobrio */
+  .leaflet-tooltip.se-tip{
+    font-family:'Helvetica Neue',sans-serif;font-size:12px;
+    border:1px solid var(--line);box-shadow:0 2px 10px rgba(26,35,50,0.12);
+  }
+  .leaflet-tooltip.se-tip b{color:var(--ink)}
+  .leaflet-tooltip.se-tip .sc{color:var(--accent);font-weight:700}
+
+  footer.foot{
+    grid-column:1 / -1;padding:10px 40px;border-top:1px solid var(--line);
+    font-family:'Helvetica Neue',sans-serif;font-size:10.5px;color:var(--muted);letter-spacing:0.5px;background:var(--panel);
+  }
+
+  @media (max-width:900px){
+    .world-layout{grid-template-columns:1fr;height:auto}
+    .map-col{height:60vh}
+    .side{border-left:none;border-top:1px solid var(--line)}
+    .doc-header{padding:20px 22px 16px}
+    .doc-header h1{font-size:22px}
+  }
+</style>
+</head>
+<body>
+
+  <div class="doc-header">
+    <div class="eyebrow">Portafolio · Seguridad Energética por País</div>
+    <h1>Seguridad Energética por País — Panel Mundial</h1>
+    <div class="sub">Mapa mundi coroplético del puntaje APERC (0–10) por país. Cargue las entregas de los estudiantes (archivos <code>.json</code>) y haga clic en un país para abrir su tablero analítico.</div>
+  </div>
+
+  <div class="world-layout">
+    <div class="map-col">
+      <div id="worldmap"></div>
+      <div class="map-drop-hint sans">Suelte aquí los archivos .json de las entregas</div>
+    </div>
+
+    <div class="side">
+
+      <div class="side-block">
+        <h2>Cargar entregas</h2>
+        <div class="dropzone" id="dropzone" title="Arrastre archivos .json o haga clic para elegir">
+          <div class="dz-title sans">Arrastre archivos .json</div>
+          <div class="dz-sub sans">o haga clic para seleccionar (varios a la vez)</div>
+          <input type="file" id="fileinput" accept=".json,application/json" multiple />
+        </div>
+        <div id="msgbox" style="margin-top:10px"></div>
+      </div>
+
+      <div class="side-block">
+        <h3>Países entregados <span class="counter" id="count">(0)</span></h3>
+        <input type="text" class="search-input sans" id="search" placeholder="Buscar país o estudiante…" />
+        <div class="country-list" id="countrylist" style="margin-top:8px"></div>
+        <div class="btn-row" style="margin-top:10px">
+          <button class="btn btn-danger sans" id="clearall" type="button">Limpiar todo</button>
+        </div>
+      </div>
+
+      <div class="side-block">
+        <h3>Leyenda · APERC global</h3>
+        <div class="legend" id="legend"></div>
+      </div>
+
+      <div class="side-block">
+        <h3>Herramientas</h3>
+        <div class="btn-row">
+          <a class="btn sans" id="lnk-plantilla" href="data/_plantilla.json" download>Descargar plantilla</a>
+          <a class="btn btn-primary sans" href="editor.html">Abrir editor</a>
+        </div>
+      </div>
+
+    </div>
+
+    <footer class="foot sans">
+      Plataforma de Seguridad Energética por País · Coropleta por puntaje APERC · Datos servidos vía manifest.json y/o cargados localmente en el navegador.
+    </footer>
+  </div>
+
+<script>
+"use strict";
+(function () {
+  var ESQ = window.SE_ESQUEMA;
+  if (!ESQ) { console.error("SE_ESQUEMA no disponible: revise assets/schema.js"); return; }
+
+  var GEOJSON_LOCAL = "assets/countries.geo.json";
+  var GEOJSON_CDN = "https://cdn.jsdelivr.net/gh/nvkelso/natural-earth-vector@master/geojson/ne_110m_admin_0_countries.geojson";
+
+  var COLOR_SIN = "#d7dce4";   // gris sin entrega
+  var COLOR_BORDE = "#ffffff";
+  var COLOR_HOVER = "#1a2332";
+
+  /* ------------------------------------------------------------------ */
+  /* Estado: Map ISO(3) -> { data, meta }                                */
+  /* ------------------------------------------------------------------ */
+  var entregas = new Map();   // clave = ISO3 en mayúsculas
+  var geoLayer = null;        // capa Leaflet GeoJSON
+
+  /* ---- localStorage helpers --------------------------------------- */
+  function lsGet(k) { try { return window.localStorage.getItem(k); } catch (e) { return null; } }
+  function lsSet(k, v) { try { window.localStorage.setItem(k, v); return true; } catch (e) { return false; } }
+  function lsDel(k) { try { window.localStorage.removeItem(k); } catch (e) {} }
+
+  function metaDeData(data) {
+    var m = (data && data.meta) || {};
+    return {
+      iso: String(m.pais_iso || "").toUpperCase(),
+      pais: m.pais || "",
+      estudiante: m.estudiante || "",
+      aperc_global: ESQ.apercGlobal(data)
+    };
+  }
+
+  /* Registra una entrega en memoria (no toca localStorage). */
+  function registrar(data, opts) {
+    opts = opts || {};
+    var meta = metaDeData(data);
+    if (!meta.iso) return false;
+    // localStorage gana si choca: no sobreescribir una entrega local con una servida.
+    if (entregas.has(meta.iso) && opts.fuente === "servido" && entregas.get(meta.iso).fuente === "local") return false;
+    entregas.set(meta.iso, { data: data, meta: meta, fuente: opts.fuente || "local" });
+    return true;
+  }
+
+  /* Persiste el índice de entregas locales en localStorage. */
+  function guardarIndice() {
+    var idx = [];
+    entregas.forEach(function (e) {
+      if (e.fuente !== "local") return; // sólo se persiste lo cargado en el navegador
+      idx.push({ iso: e.meta.iso, pais: e.meta.pais, estudiante: e.meta.estudiante, aperc_global: e.meta.aperc_global });
+    });
+    lsSet("se_indice", JSON.stringify(idx));
+  }
+
+  /* ------------------------------------------------------------------ */
+  /* Carga de archivos desde el input / drag-drop                        */
+  /* ------------------------------------------------------------------ */
+  function cargarArchivos(fileList) {
+    var files = Array.prototype.slice.call(fileList || []);
+    files = files.filter(function (f) { return /\.json$/i.test(f.name); });
+    if (!files.length) { mostrarMsg("error", "No se reconoció ningún archivo .json. Seleccione entregas con extensión .json."); return; }
+
+    var oks = [], fallos = [], pendientes = files.length;
+
+    files.forEach(function (file) {
+      var reader = new FileReader();
+      reader.onload = function () {
+        var data;
+        try {
+          data = JSON.parse(String(reader.result));
+        } catch (e) {
+          fallos.push({ nombre: file.name, errs: ["No es un JSON válido (" + e.message + ")."] });
+          terminar(); return;
+        }
+        var v = ESQ.validate(data);
+        if (!v.ok) {
+          fallos.push({ nombre: file.name, errs: v.errors });
+          terminar(); return;
+        }
+        var meta = metaDeData(data);
+        // Persistir y registrar como entrega local.
+        lsSet("se_pais_" + meta.iso, JSON.stringify(data));
+        entregas.set(meta.iso, { data: data, meta: meta, fuente: "local" });
+        oks.push({ nombre: file.name, pais: meta.pais, iso: meta.iso, warns: v.warnings || [] });
+        terminar();
+      };
+      reader.onerror = function () {
+        fallos.push({ nombre: file.name, errs: ["No se pudo leer el archivo."] });
+        terminar();
+      };
+      reader.readAsText(file);
+    });
+
+    function terminar() {
+      pendientes -= 1;
+      if (pendientes > 0) return;
+      if (oks.length) { guardarIndice(); refrescar(); }
+      reportarCarga(oks, fallos);
+    }
+  }
+
+  function reportarCarga(oks, fallos) {
+    limpiarMsg();
+    if (oks.length) {
+      var html = "<b>" + oks.length + "</b> entrega(s) cargada(s): " +
+        oks.map(function (o) { return ESQ.esc(o.pais || o.iso) + " (" + ESQ.esc(o.iso) + ")"; }).join(", ") + ".";
+      var warns = [];
+      oks.forEach(function (o) {
+        (o.warns || []).forEach(function (w) { warns.push(ESQ.esc(o.iso) + ": " + ESQ.esc(w)); });
+      });
+      mostrarMsg("ok", html);
+      if (warns.length) mostrarMsg("warn", "Advertencias:<ul><li>" + warns.join("</li><li>") + "</li></ul>");
+    }
+    if (fallos.length) {
+      var items = fallos.map(function (f) {
+        return "<b>" + ESQ.esc(f.nombre) + "</b>: " + f.errs.map(ESQ.esc).join(" ");
+      });
+      mostrarMsg("error", "No se cargaron " + fallos.length + " archivo(s):<ul><li>" + items.join("</li><li>") + "</li></ul>");
+    }
+  }
+
+  /* ------------------------------------------------------------------ */
+  /* Mensajes                                                            */
+  /* ------------------------------------------------------------------ */
+  var msgbox = document.getElementById("msgbox");
+  function limpiarMsg() { if (msgbox) msgbox.innerHTML = ""; }
+  function mostrarMsg(tipo, html) {
+    if (!msgbox) return;
+    var d = document.createElement("div");
+    d.className = "msg " + (tipo || "");
+    d.innerHTML = html;
+    msgbox.appendChild(d);
+  }
+
+  /* ------------------------------------------------------------------ */
+  /* Inicialización del mapa Leaflet                                     */
+  /* ------------------------------------------------------------------ */
+  var map = L.map("worldmap", { worldCopyJump: true, minZoom: 1, maxZoom: 7 })
+            .setView([20, 0], 2);
+
+  L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png", {
+    attribution: '&copy; OpenStreetMap &copy; CARTO',
+    subdomains: "abcd",
+    maxZoom: 19
+  }).addTo(map);
+
+  /* Matching feature -> ISO3. ADM0_A3, fallback ISO_A3, luego NAME. */
+  function featISO(feature) {
+    var p = (feature && feature.properties) || {};
+    var iso = p.ADM0_A3 || p.ISO_A3 || "";
+    iso = String(iso).toUpperCase();
+    if (iso && iso !== "-99") return iso;
+    // fallback por nombre contra meta.pais
+    var nm = String(p.NAME || p.ADMIN || p.NAME_LONG || "").toLowerCase();
+    var hit = null;
+    entregas.forEach(function (e) {
+      if (!hit && e.meta.pais && e.meta.pais.toLowerCase() === nm) hit = e.meta.iso;
+    });
+    return hit || iso;
+  }
+
+  function entregaDe(feature) {
+    var iso = featISO(feature);
+    return iso ? entregas.get(iso) : null;
+  }
+
+  function styleFeature(feature) {
+    var e = entregaDe(feature);
+    if (e) {
+      return { fillColor: ESQ.scoreColor(e.meta.aperc_global), fillOpacity: 0.75,
+               weight: 0.6, color: COLOR_BORDE };
+    }
+    return { fillColor: COLOR_SIN, fillOpacity: 0.35, weight: 0.6, color: COLOR_BORDE };
+  }
+
+  function tooltipHtml(feature) {
+    var e = entregaDe(feature);
+    var p = (feature && feature.properties) || {};
+    var nombre = (e && e.meta.pais) || p.NAME || p.ADMIN || "—";
+    if (!e) {
+      return "<b>" + ESQ.esc(nombre) + "</b><br/><span style='color:#8693a8'>sin entrega</span>";
+    }
+    var est = e.meta.estudiante ? ESQ.esc(e.meta.estudiante) : "—";
+    var sc = (typeof e.meta.aperc_global === "number") ? e.meta.aperc_global.toFixed(1) : "n/d";
+    return "<b>" + ESQ.esc(nombre) + "</b> · " + est +
+           "<br/>APERC <span class='sc'>" + sc + "</span>/10";
+  }
+
+  function onEachFeature(feature, layer) {
+    layer.bindTooltip(tooltipHtml(feature), { sticky: true, className: "se-tip", direction: "top" });
+    layer.on({
+      mouseover: function (ev) {
+        ev.target.setStyle({ weight: 2, color: COLOR_HOVER });
+        if (ev.target.bringToFront) ev.target.bringToFront();
+      },
+      mouseout: function (ev) {
+        if (geoLayer) geoLayer.resetStyle(ev.target);
+      },
+      click: function () {
+        var e = entregaDe(feature);
+        if (e) window.location = "pais.html?pais=" + encodeURIComponent(e.meta.iso);
+      }
+    });
+  }
+
+  var geojsonData = null;
+  function pintarGeo() {
+    if (!geojsonData) return;
+    if (geoLayer) { map.removeLayer(geoLayer); geoLayer = null; }
+    geoLayer = L.geoJSON(geojsonData, { style: styleFeature, onEachFeature: onEachFeature }).addTo(map);
+  }
+
+  /* Tras cualquier cambio en entregas: re-estilar mapa + lista lateral. */
+  function refrescar() {
+    if (geoLayer) {
+      geoLayer.eachLayer(function (layer) {
+        layer.setStyle(styleFeature(layer.feature));
+        layer.setTooltipContent(tooltipHtml(layer.feature));
+      });
+    }
+    renderLista();
+  }
+
+  function cargarGeoJSON() {
+    return fetch(GEOJSON_LOCAL)
+      .then(function (r) { if (!r.ok) throw new Error("local " + r.status); return r.json(); })
+      .catch(function () {
+        return fetch(GEOJSON_CDN).then(function (r) {
+          if (!r.ok) throw new Error("cdn " + r.status); return r.json();
+        });
+      })
+      .then(function (gj) { geojsonData = gj; pintarGeo(); })
+      .catch(function (err) {
+        console.warn("No se pudo cargar el GeoJSON:", err);
+        mostrarMsg("warn", "No se pudo cargar el mapa base (countries.geo.json). El panel de entregas sigue disponible.");
+      });
+  }
+
+  /* ------------------------------------------------------------------ */
+  /* Lista lateral (buscable)                                            */
+  /* ------------------------------------------------------------------ */
+  var listEl = document.getElementById("countrylist");
+  var searchEl = document.getElementById("search");
+  var countEl = document.getElementById("count");
+
+  function renderLista() {
+    var q = (searchEl && searchEl.value || "").trim().toLowerCase();
+    var arr = [];
+    entregas.forEach(function (e) { arr.push(e); });
+    arr.sort(function (a, b) { return (a.meta.pais || a.meta.iso).localeCompare(b.meta.pais || b.meta.iso, "es"); });
+
+    if (countEl) countEl.textContent = "(" + arr.length + ")";
+
+    var filtered = arr.filter(function (e) {
+      if (!q) return true;
+      return (e.meta.pais || "").toLowerCase().indexOf(q) !== -1 ||
+             (e.meta.estudiante || "").toLowerCase().indexOf(q) !== -1 ||
+             (e.meta.iso || "").toLowerCase().indexOf(q) !== -1;
+    });
+
+    listEl.innerHTML = "";
+    filtered.forEach(function (e) {
+      var item = document.createElement("div");
+      item.className = "country-item";
+
+      var sw = document.createElement("span");
+      sw.className = "ci-swatch";
+      sw.style.background = ESQ.scoreColor(e.meta.aperc_global);
+
+      var main = document.createElement("div");
+      main.className = "ci-main";
+      main.title = "Abrir tablero de " + (e.meta.pais || e.meta.iso);
+      var sc = (typeof e.meta.aperc_global === "number") ? e.meta.aperc_global.toFixed(1) : "n/d";
+      main.innerHTML =
+        "<div class='ci-name'>" + ESQ.esc(e.meta.pais || e.meta.iso) + "</div>" +
+        "<div class='ci-meta'>" + ESQ.esc(e.meta.estudiante || "—") +
+        " · APERC " + ESQ.esc(sc) + "/10" +
+        (e.fuente === "servido" ? " · servido" : "") + "</div>";
+      main.addEventListener("click", function () {
+        window.location = "pais.html?pais=" + encodeURIComponent(e.meta.iso);
+      });
+
+      var score = document.createElement("span");
+      score.className = "ci-score";
+      score.textContent = sc;
+
+      var rm = document.createElement("button");
+      rm.className = "ci-remove";
+      rm.type = "button";
+      rm.title = "Quitar " + (e.meta.pais || e.meta.iso);
+      rm.innerHTML = "&times;";
+      rm.addEventListener("click", function (ev) {
+        ev.stopPropagation();
+        quitarEntrega(e.meta.iso);
+      });
+
+      item.appendChild(sw);
+      item.appendChild(main);
+      item.appendChild(score);
+      item.appendChild(rm);
+      listEl.appendChild(item);
+    });
+  }
+
+  function quitarEntrega(iso) {
+    entregas.delete(iso);
+    lsDel("se_pais_" + iso);
+    guardarIndice();
+    refrescar();
+  }
+
+  function limpiarTodo() {
+    var isos = [];
+    entregas.forEach(function (e) { isos.push(e.meta.iso); });
+    isos.forEach(function (iso) { lsDel("se_pais_" + iso); });
+    lsDel("se_indice");
+    entregas.clear();
+    refrescar();
+    mostrarMsg("ok", "Se borraron las entregas guardadas en este navegador.");
+  }
+
+  /* ------------------------------------------------------------------ */
+  /* Leyenda                                                             */
+  /* ------------------------------------------------------------------ */
+  function renderLeyenda() {
+    var el = document.getElementById("legend");
+    if (!el) return;
+    el.innerHTML = "";
+    (ESQ.SCORE_LEGEND || []).forEach(function (item) {
+      var row = document.createElement("div");
+      row.className = "row";
+      row.innerHTML = "<span class='sw' style='background:" + item.color + "'></span>" + ESQ.esc(item.label);
+      el.appendChild(row);
+    });
+  }
+
+  /* ------------------------------------------------------------------ */
+  /* Reconstrucción inicial del estado                                   */
+  /* ------------------------------------------------------------------ */
+  function reconstruirDesdeLocal() {
+    var raw = lsGet("se_indice");
+    if (!raw) return 0;
+    var idx;
+    try { idx = JSON.parse(raw); } catch (e) { return 0; }
+    if (!Array.isArray(idx)) return 0;
+    var n = 0;
+    idx.forEach(function (entry) {
+      var iso = String(entry && entry.iso || "").toUpperCase();
+      if (!iso) return;
+      var dataRaw = lsGet("se_pais_" + iso);
+      if (!dataRaw) return;
+      try {
+        var data = JSON.parse(dataRaw);
+        entregas.set(iso, { data: data, meta: metaDeData(data), fuente: "local" });
+        n += 1;
+      } catch (e) { /* ignora entrada corrupta */ }
+    });
+    return n;
+  }
+
+  function cargarManifest() {
+    return fetch("data/manifest.json")
+      .then(function (r) { if (!r.ok) throw new Error("manifest " + r.status); return r.json(); })
+      .then(function (mf) {
+        var lista = (mf && mf.countries) || [];
+        var jobs = lista.map(function (c) {
+          if (!c || !c.file) return Promise.resolve();
+          return fetch("data/" + c.file)
+            .then(function (r) { if (!r.ok) throw new Error(c.file + " " + r.status); return r.json(); })
+            .then(function (data) { registrar(data, { fuente: "servido" }); })
+            .catch(function () { /* archivo del manifest no accesible: se ignora */ });
+        });
+        return Promise.all(jobs);
+      })
+      .catch(function () { return null; }); // sin manifest (modo file:// o no desplegado)
+  }
+
+  function cargarEjemploFallback() {
+    // Si no hay nada (ni local ni manifest), intentar al menos el ejemplo.
+    if (entregas.size > 0) return Promise.resolve();
+    return fetch("data/aus.json")
+      .then(function (r) { if (!r.ok) throw new Error("aus " + r.status); return r.json(); })
+      .then(function (data) { registrar(data, { fuente: "servido" }); })
+      .catch(function () { /* file:// sin servidor y sin entregas locales: mapa en gris */ });
+  }
+
+  function init() {
+    renderLeyenda();
+    var nLocal = reconstruirDesdeLocal();
+
+    // Cargar GeoJSON y fuentes servidas en paralelo; pintar al final.
+    Promise.all([cargarGeoJSON(), cargarManifest()])
+      .then(cargarEjemploFallback)
+      .then(function () {
+        refrescar();
+        if (entregas.size === 0) {
+          mostrarMsg("warn", "No hay entregas disponibles. Arrastre archivos .json a la zona de carga o al mapa para empezar.");
+        } else if (nLocal === 0) {
+          // todo vino de manifest/ejemplo
+        }
+      });
+  }
+
+  /* ------------------------------------------------------------------ */
+  /* Wiring de eventos                                                   */
+  /* ------------------------------------------------------------------ */
+  var dropzone = document.getElementById("dropzone");
+  var fileinput = document.getElementById("fileinput");
+
+  dropzone.addEventListener("click", function () { fileinput.click(); });
+  fileinput.addEventListener("change", function () {
+    cargarArchivos(fileinput.files);
+    fileinput.value = ""; // permite recargar el mismo archivo
+  });
+
+  function prevent(e) { e.preventDefault(); e.stopPropagation(); }
+
+  // Drag-drop sobre la zona
+  ["dragenter", "dragover"].forEach(function (ev) {
+    dropzone.addEventListener(ev, function (e) { prevent(e); dropzone.classList.add("drag-over"); });
+  });
+  ["dragleave", "drop"].forEach(function (ev) {
+    dropzone.addEventListener(ev, function (e) { prevent(e); dropzone.classList.remove("drag-over"); });
+  });
+  dropzone.addEventListener("drop", function (e) {
+    var dt = e.dataTransfer;
+    if (dt && dt.files) cargarArchivos(dt.files);
+  });
+
+  // Drag-drop sobre el mapa
+  var mapEl = document.getElementById("worldmap");
+  ["dragenter", "dragover"].forEach(function (ev) {
+    mapEl.addEventListener(ev, function (e) { prevent(e); mapEl.classList.add("drag-over"); });
+  });
+  ["dragleave", "drop"].forEach(function (ev) {
+    mapEl.addEventListener(ev, function (e) { prevent(e); mapEl.classList.remove("drag-over"); });
+  });
+  mapEl.addEventListener("drop", function (e) {
+    var dt = e.dataTransfer;
+    if (dt && dt.files && dt.files.length) cargarArchivos(dt.files);
+  });
+
+  // Buscador
+  if (searchEl) searchEl.addEventListener("input", renderLista);
+
+  // Limpiar todo
+  var clearBtn = document.getElementById("clearall");
+  if (clearBtn) clearBtn.addEventListener("click", function () {
+    if (entregas.size === 0) { mostrarMsg("warn", "No hay entregas que limpiar."); return; }
+    if (window.confirm("¿Borrar todas las entregas guardadas en este navegador?")) limpiarTodo();
+  });
+
+  init();
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Seguridad Energética por País — Tablero</title>
+
+<!-- Dependencias CDN (CONTRACT §2) -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-chart-sankey@0.12.1/dist/chartjs-chart-sankey.min.js"></script>
+
+<!-- Estilos + esquema + render -->
+<link rel="stylesheet" href="assets/app.css" />
+<script src="assets/schema.js"></script>
+<script src="assets/render.js"></script>
+</head>
+<body>
+
+<div class="topbar">
+  <a class="back" href="index.html">← Volver al mapa</a>
+  <span class="tb-pais" id="tbPais">Seguridad Energética</span>
+</div>
+
+<div id="app"></div>
+
+<script>
+(function () {
+  "use strict";
+
+  /* ---- Resolver el ISO desde la query (?pais / ?país / ?iso) ----------- */
+  function getIso() {
+    var qs = new URLSearchParams(window.location.search);
+    var v = qs.get("pais") || qs.get("país") || qs.get("iso") || "";
+    return v ? v.trim().toUpperCase() : "";
+  }
+
+  /* ---- Fuentes de datos (CONTRACT §6) ---------------------------------- */
+  function fromPreview(iso) {
+    try {
+      var raw = sessionStorage.getItem("se_preview");
+      if (!raw) return null;
+      var obj = JSON.parse(raw);
+      var pIso = obj && obj.meta && obj.meta.pais_iso ? String(obj.meta.pais_iso).toUpperCase() : "";
+      /* Sirve si no hay ISO en la URL o si coincide con el preview. */
+      if (!iso || !pIso || pIso === iso) return obj;
+      return null;
+    } catch (e) { return null; }
+  }
+
+  function fromLocal(iso) {
+    if (!iso) return null;
+    try {
+      var raw = localStorage.getItem("se_pais_" + iso);
+      return raw ? JSON.parse(raw) : null;
+    } catch (e) { return null; }
+  }
+
+  function fromFetch(iso) {
+    /* Devuelve una promesa; falla en silencio bajo file:// o si no existe. */
+    if (!iso) return Promise.resolve(null);
+    return fetch("data/" + iso.toLowerCase() + ".json")
+      .then(function (r) { return r.ok ? r.json() : null; })
+      .catch(function () { return null; });
+  }
+
+  function mostrarAviso(iso) {
+    var app = document.getElementById("app");
+    app.innerHTML =
+      '<div class="aviso">' +
+        '<h2>No se encontró la entrega' + (iso ? " para " + iso : "") + '.</h2>' +
+        '<p>No hay datos en la vista previa, ni un archivo <code>data/' +
+          (iso ? iso.toLowerCase() : "&lt;iso&gt;") + '.json</code> accesible, ' +
+          'ni una entrega guardada localmente.</p>' +
+        '<p>Sirve la plataforma por HTTP, carga la entrega desde el mapa, ' +
+          'o ábrela desde el editor con «Vista previa».</p>' +
+        '<p style="margin-top:14px"><a href="index.html">← Volver al mapa</a></p>' +
+      '</div>';
+  }
+
+  function pintar(data) {
+    var app = document.getElementById("app");
+    var nombre = (data && data.meta && data.meta.pais) ? data.meta.pais : "";
+    if (nombre) {
+      document.getElementById("tbPais").textContent = nombre;
+      document.title = "Seguridad Energética · " + nombre;
+    }
+    window.renderDashboard(app, data);
+  }
+
+  /* ---- Orden de resolución: preview → fetch → localStorage ------------- */
+  var iso = getIso();
+
+  var preview = fromPreview(iso);
+  if (preview) { pintar(preview); return; }
+
+  fromFetch(iso).then(function (data) {
+    if (data) { pintar(data); return; }
+    var local = fromLocal(iso);
+    if (local) { pintar(local); return; }
+    mostrarAviso(iso);
+  });
+})();
+</script>
+</body>
+</html>
