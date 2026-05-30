@@ -1,0 +1,994 @@
+{
+  "schema_version": "1.0.0",
+  "meta": {
+    "pais": "Alemania",
+    "pais_iso": "DEU",
+    "pais_iso2": "DE",
+    "subtitulo_pais": "República Federal de",
+    "eyebrow": "Portafolio · Seguridad Energética por País",
+    "titulo": "Seguridad Energética de Alemania:<br/>Energiewende tras el shock del gas ruso",
+    "subtitulo": "Transición energética con salida nuclear y senda de salida del carbón: fuerte despliegue renovable frente a la dependencia histórica del gas ruso, reconfigurada de urgencia tras 2022.",
+    "estudiante": "Cátedra (ejemplo de referencia)",
+    "asignatura": "Logística Militar · Rúbrica Slide18",
+    "tipo_doc": "Documento de sustentación",
+    "fecha": "Mayo 2026",
+    "fuerzas_armadas": "Bundeswehr",
+    "aperc_global": 6.3,
+    "cita_corta": "IEA, 2024; AGEB, 2024; BNetzA.",
+    "portafolio_label": "Rúbrica Slide18<br/>Logística Militar<br/>v2 — académica",
+    "map_view": {
+      "lat": 51,
+      "lng": 10,
+      "zoom": 5
+    }
+  },
+  "resumen": {
+    "tesis_html": "Alemania impulsa la <b>Energiewende</b>: salió de la energía nuclear (2023) y avanza hacia la salida del carbón con fuerte eólica y solar. Su talón de Aquiles era la <b>dependencia del gas ruso</b> (~55% del gas), que el shock de 2022 obligó a sustituir con terminales de GNL exprés (Wilhelmshaven) y diversificación. Retos: red, almacenamiento e industria electrointensiva.",
+    "conclusion_html": "APERC <b>6.3/10</b>: buena <i>acceptability</i> (renovables) pero <i>availability</i> y <i>sovereignty</i> golpeadas por importar casi todos los fósiles. La Bundeswehr enfoca resiliencia energética y compromisos OTAN.",
+    "kpis": [
+      {
+        "valor": 55,
+        "unidad": "%",
+        "etiqueta": "Renovables en electricidad"
+      },
+      {
+        "valor": 0,
+        "unidad": "",
+        "etiqueta": "Reactores nucleares activos"
+      },
+      {
+        "valor": 95,
+        "unidad": "%",
+        "etiqueta": "Gas importado"
+      },
+      {
+        "valor": 6,
+        "unidad": "",
+        "etiqueta": "Terminales GNL (nuevas)"
+      }
+    ]
+  },
+  "aperc": {
+    "src": "APERC 2007 · IEA 2024",
+    "definicion_html": "<p>Alemania prioriza la <i>acceptability</i> (descarbonización) pero el shock de 2022 expuso su débil <i>availability/sovereignty</i> al depender del gas ruso. La respuesta: GNL diversificado, aceleración renovable y debate sobre el respaldo (gas/hidrógeno).</p>",
+    "definicion_cita": "IEA, Germany Energy Profile 2024.",
+    "scorecard_titulo": "Scorecard de Alemania bajo APERC",
+    "scores": [
+      {
+        "letra": "A",
+        "nombre": "vailability",
+        "desc": "Sin fósiles propios (salvo lignito); importador.",
+        "score": 5.5
+      },
+      {
+        "letra": "A",
+        "nombre": "ccessibility",
+        "desc": "Diversificó gas tras Rusia (GNL, Noruega).",
+        "score": 6
+      },
+      {
+        "letra": "A",
+        "nombre": "ffordability",
+        "desc": "Precios altos para la industria post-2022.",
+        "score": 6.5
+      },
+      {
+        "letra": "A",
+        "nombre": "cceptability",
+        "desc": "Renovables altas; lignito aún presente.",
+        "score": 7.2
+      }
+    ],
+    "scorecard_cita": "Scores propios sobre indicadores normalizados.",
+    "comparador": {
+      "pais_b": "Francia",
+      "pais_c": "Noruega"
+    },
+    "indicadores_titulo": "Indicadores cuantitativos aplicados",
+    "indicadores": [
+      {
+        "indicador": "Renovables en electricidad (%)",
+        "definicion": "Generación",
+        "propio": "55",
+        "b": "25",
+        "c": "98",
+        "interp": {
+          "texto": "Alta y creciendo",
+          "pill": "ok"
+        }
+      },
+      {
+        "indicador": "Intensidad de carbono (gCO₂/kWh)",
+        "definicion": "Generación",
+        "propio": "380",
+        "b": "56",
+        "c": "26",
+        "interp": {
+          "texto": "Alta por lignito",
+          "pill": "warn"
+        }
+      },
+      {
+        "indicador": "Dependencia de gas importado (%)",
+        "definicion": "Neta",
+        "propio": "95",
+        "b": "99",
+        "c": "−600%",
+        "interp": {
+          "texto": "Casi total"
+        }
+      },
+      {
+        "indicador": "Gas ruso en el mix de gas (%)",
+        "definicion": "Antes/después 2022",
+        "propio": "0 (era 55)",
+        "b": "—",
+        "c": "—",
+        "interp": {
+          "texto": "Sustituido",
+          "pill": "ok"
+        }
+      }
+    ],
+    "indicadores_nota": "Comparación con Francia (nuclear) y Noruega (hidro)."
+  },
+  "matriz": {
+    "src": "AGEB · Ember 2024",
+    "primaria_titulo": "Energía Primaria (TPES, %)",
+    "primaria": [
+      {
+        "label": "Petróleo",
+        "valor": 34,
+        "color": "#c4570e"
+      },
+      {
+        "label": "Gas natural",
+        "valor": 24,
+        "color": "#0b5394"
+      },
+      {
+        "label": "Renovables",
+        "valor": 20,
+        "color": "#a17c1c"
+      },
+      {
+        "label": "Carbón",
+        "valor": 18,
+        "color": "#8a4a4a"
+      },
+      {
+        "label": "Otros",
+        "valor": 4,
+        "color": "#4a5870"
+      }
+    ],
+    "primaria_cita": "Petróleo 34 · Gas 24 · Renov. 20 · Carbón 18. <i>Fuente: AGEB 2024.</i>",
+    "electrica_titulo": "Generación Eléctrica (%)",
+    "electrica": [
+      {
+        "label": "Eólica",
+        "valor": 31,
+        "color": "#6a8caf"
+      },
+      {
+        "label": "Carbón",
+        "valor": 25,
+        "color": "#8a4a4a"
+      },
+      {
+        "label": "Solar",
+        "valor": 12,
+        "color": "#a17c1c"
+      },
+      {
+        "label": "Gas",
+        "valor": 14,
+        "color": "#0b5394"
+      },
+      {
+        "label": "Biomasa",
+        "valor": 8,
+        "color": "#2e7d32"
+      },
+      {
+        "label": "Otros",
+        "valor": 10,
+        "color": "#4a5870"
+      }
+    ],
+    "electrica_cita": "Eólica 31 · Carbón 25 · Solar 12 · Gas 14 · Biomasa 8. <i>Fuente: Ember 2024.</i>",
+    "comparativa_titulo": "Comparativa Internacional — Mix Eléctrico (%)",
+    "comparativa": {
+      "paises": [
+        "Alemania",
+        "Francia",
+        "Noruega"
+      ],
+      "series": [
+        {
+          "label": "Eólica",
+          "data": [
+            31,
+            9,
+            9
+          ],
+          "color": "#6a8caf"
+        },
+        {
+          "label": "Solar",
+          "data": [
+            12,
+            5,
+            0
+          ],
+          "color": "#a17c1c"
+        },
+        {
+          "label": "Carbón",
+          "data": [
+            25,
+            1,
+            0
+          ],
+          "color": "#8a4a4a"
+        },
+        {
+          "label": "Gas",
+          "data": [
+            14,
+            5,
+            1
+          ],
+          "color": "#0b5394"
+        },
+        {
+          "label": "Nuclear",
+          "data": [
+            0,
+            68,
+            0
+          ],
+          "color": "#6b4e8e"
+        },
+        {
+          "label": "Hidro",
+          "data": [
+            4,
+            11,
+            88
+          ],
+          "color": "#2e7d32"
+        }
+      ]
+    },
+    "comparativa_nota": "Tres modelos europeos: renovables+carbón (DE), nuclear (FR), hidro (NO)."
+  },
+  "sankey": {
+    "src": "Producción → Transformación → Uso final",
+    "titulo_panel": "Flujos físicos de energía, Alemania (PJ aprox.)",
+    "flujos": [
+      {
+        "from": "Gas importado",
+        "to": "Industria & residencial",
+        "flow": 3500
+      },
+      {
+        "from": "Gas importado",
+        "to": "Generación eléctrica",
+        "flow": 1200
+      },
+      {
+        "from": "Petróleo importado",
+        "to": "Refinación local",
+        "flow": 4000
+      },
+      {
+        "from": "Refinación local",
+        "to": "Transporte",
+        "flow": 3600
+      },
+      {
+        "from": "Lignito (propio)",
+        "to": "Generación eléctrica",
+        "flow": 2200
+      },
+      {
+        "from": "Eólica/Solar",
+        "to": "Generación eléctrica",
+        "flow": 3000
+      },
+      {
+        "from": "Generación eléctrica",
+        "to": "Industria & residencial",
+        "flow": 5500
+      },
+      {
+        "from": "Generación eléctrica",
+        "to": "Exportación eléctrica",
+        "flow": 400
+      }
+    ],
+    "nodos": {
+      "Gas importado": {
+        "color": "#0b5394",
+        "label": "Gas importado"
+      },
+      "Petróleo importado": {
+        "color": "#c4570e",
+        "label": "Petróleo importado"
+      },
+      "Lignito (propio)": {
+        "color": "#8a4a4a",
+        "label": "Lignito (propio)"
+      },
+      "Eólica/Solar": {
+        "color": "#a17c1c",
+        "label": "Eólica & Solar"
+      },
+      "Refinación local": {
+        "color": "#c4570e",
+        "label": "Refinerías"
+      },
+      "Generación eléctrica": {
+        "color": "#6b4e8e",
+        "label": "Generación eléctrica"
+      },
+      "Industria & residencial": {
+        "color": "#4a5870",
+        "label": "Industria + Residencial"
+      },
+      "Exportación eléctrica": {
+        "color": "#2e7d32",
+        "label": "EXPORT · Electricidad"
+      },
+      "Transporte": {
+        "color": "#c4570e",
+        "label": "Transporte"
+      }
+    },
+    "cita": "El lignito propio es el único fósil doméstico; todo lo demás se importa. <i>Datos estilizados.</i>"
+  },
+  "evolucion": {
+    "src": "2000–2050 · Energiewende",
+    "historico_titulo": "Mix Eléctrico Histórico y Proyectado (%)",
+    "anios": [
+      "2000",
+      "2010",
+      "2020",
+      "2024",
+      "2035",
+      "2050"
+    ],
+    "series": [
+      {
+        "label": "Carbón",
+        "data": [
+          52,
+          43,
+          24,
+          25,
+          8,
+          0
+        ],
+        "color": "#8a4a4a"
+      },
+      {
+        "label": "Nuclear",
+        "data": [
+          29,
+          22,
+          11,
+          0,
+          0,
+          0
+        ],
+        "color": "#6b4e8e"
+      },
+      {
+        "label": "Renovables",
+        "data": [
+          7,
+          17,
+          45,
+          55,
+          80,
+          95
+        ],
+        "color": "#a17c1c"
+      },
+      {
+        "label": "Gas",
+        "data": [
+          9,
+          14,
+          16,
+          14,
+          10,
+          5
+        ],
+        "color": "#0b5394"
+      }
+    ],
+    "historico_cita": "Meta: 80% renovables en electricidad a 2030; neutralidad climática 2045.",
+    "hitos_titulo": "Hitos del Régimen Energético",
+    "hitos": [
+      {
+        "anio": "2000",
+        "evento": "Ley de Energías Renovables (EEG): tarifas de inyección."
+      },
+      {
+        "anio": "2011",
+        "evento": "Tras Fukushima, decisión de salir de la energía nuclear."
+      },
+      {
+        "anio": "2011",
+        "evento": "Inicio de Nord Stream 1 (gas ruso)."
+      },
+      {
+        "anio": "2022",
+        "evento": "Shock de gas ruso; GNL exprés en Wilhelmshaven; reactivación temporal de carbón."
+      },
+      {
+        "anio": "2023",
+        "evento": "Apagado de los últimos reactores nucleares."
+      },
+      {
+        "anio": "2024",
+        "evento": "Ley de centrales de respaldo a hidrógeno (Kraftwerksstrategie)."
+      }
+    ]
+  },
+  "infraestructura": {
+    "src": "Mapa Leaflet · GEM",
+    "mapa_titulo": "GNL, lignito y eólica marina",
+    "pines": [
+      {
+        "lat": 53.6,
+        "lng": 8.1,
+        "tipo": "gnl",
+        "nombre": "Terminal GNL Wilhelmshaven",
+        "desc": "Primera terminal de GNL alemana (2022)"
+      },
+      {
+        "lat": 53.9,
+        "lng": 9.1,
+        "tipo": "gnl",
+        "nombre": "Terminal GNL Brunsbüttel",
+        "desc": "GNL del Mar del Norte"
+      },
+      {
+        "lat": 51.05,
+        "lng": 6.45,
+        "tipo": "refineria",
+        "nombre": "Lignito renano (Garzweiler)",
+        "desc": "Mayor cuenca de lignito a cielo abierto"
+      },
+      {
+        "lat": 54,
+        "lng": 7.5,
+        "tipo": "minerales",
+        "nombre": "Eólica marina del Mar del Norte",
+        "desc": "Parques offshore (Borkum, etc.)"
+      },
+      {
+        "lat": 52.6,
+        "lng": 8.6,
+        "tipo": "almacenamiento",
+        "nombre": "Almacén de gas Rehden",
+        "desc": "Mayor depósito de gas de Europa occidental"
+      },
+      {
+        "lat": 50.5,
+        "lng": 11,
+        "tipo": "almacenamiento",
+        "nombre": "Hidrobombeo Goldisthal",
+        "desc": "Almacenamiento por bombeo"
+      }
+    ],
+    "rutas": [
+      {
+        "puntos": [
+          [
+            60,
+            4
+          ],
+          [
+            56,
+            6
+          ],
+          [
+            53.6,
+            8.1
+          ]
+        ],
+        "tooltip": "Gas/GNL desde Noruega y el Atlántico"
+      }
+    ],
+    "leyenda": [
+      {
+        "color": "#0b5394",
+        "label": "Terminales GNL / gas"
+      },
+      {
+        "color": "#8a4a4a",
+        "label": "Lignito"
+      },
+      {
+        "color": "#a17c1c",
+        "label": "Eólica / solar"
+      },
+      {
+        "color": "#2e7d32",
+        "label": "Almacenamiento"
+      }
+    ],
+    "mapa_cita": "Coordenadas reales de Wilhelmshaven, Brunsbüttel, Garzweiler, Rehden. <i>Fuentes: GEM 2024.</i>",
+    "vulnerabilidades_titulo": "Vulnerabilidades técnicas",
+    "vulnerabilidades": [
+      {
+        "nivel": "high",
+        "tag": "CRÍT",
+        "texto_html": "<b>Seguridad de gas</b> · sin gas ruso, depende de GNL y Noruega; almacenamiento estacional clave."
+      },
+      {
+        "nivel": "med",
+        "tag": "ALTO",
+        "texto_html": "<b>Red norte-sur</b> · cuellos para llevar eólica del norte al sur industrial (SuedLink)."
+      },
+      {
+        "nivel": "med",
+        "tag": "ALTO",
+        "texto_html": "<b>Respaldo</b> · intermitencia exige centrales de gas/hidrógeno (Dunkelflaute)."
+      },
+      {
+        "nivel": "low",
+        "tag": "MED",
+        "texto_html": "<b>Industria electrointensiva</b> · precios altos amenazan competitividad."
+      }
+    ],
+    "capacidad_titulo": "Capacidad instalada (GW)",
+    "capacidad": {
+      "anios": [
+        "2020",
+        "2024",
+        "2030",
+        "2040"
+      ],
+      "y_titulo": "GW",
+      "series": [
+        {
+          "label": "Renovables (GW)",
+          "tipo": "bar",
+          "data": [
+            130,
+            170,
+            360,
+            500
+          ],
+          "color": "#a17c1c"
+        },
+        {
+          "label": "Fósil/respaldo (GW)",
+          "tipo": "bar",
+          "data": [
+            85,
+            80,
+            60,
+            40
+          ],
+          "color": "#8a4a4a"
+        },
+        {
+          "label": "Demanda pico (GW)",
+          "tipo": "line",
+          "data": [
+            80,
+            82,
+            95,
+            110
+          ],
+          "color": "#c4570e"
+        }
+      ]
+    },
+    "capacidad_cita": "Expansión renovable masiva + respaldo flexible. <i>Fuente: BNetzA.</i>"
+  },
+  "geopolitica": {
+    "src": "Radar APERC normalizado",
+    "radar_titulo": "Radar APERC: Alemania vs Francia vs Noruega",
+    "radar": {
+      "ejes": [
+        "Availability",
+        "Accessibility",
+        "Affordability",
+        "Acceptability",
+        "Sovereignty",
+        "Robustness",
+        "Resilience"
+      ],
+      "series": [
+        {
+          "label": "Alemania",
+          "data": [
+            5.5,
+            6,
+            6.5,
+            7.2,
+            5.5,
+            6,
+            6.5
+          ],
+          "color": "#8a4a4a"
+        },
+        {
+          "label": "Francia",
+          "data": [
+            7.5,
+            8,
+            7,
+            8.5,
+            8,
+            7.5,
+            7.5
+          ],
+          "color": "#0b5394"
+        },
+        {
+          "label": "Noruega",
+          "data": [
+            9,
+            8.5,
+            7.5,
+            9.5,
+            9,
+            9,
+            9
+          ],
+          "color": "#2e7d32"
+        }
+      ]
+    },
+    "radar_cita": "Normalización min-max sobre indicadores §01.",
+    "dependencias_titulo": "Dependencias y socios",
+    "dependencias": [
+      {
+        "vinculo": "Gas de Noruega",
+        "pct": "45",
+        "riesgo": {
+          "texto": "Proveedor clave post-Rusia",
+          "pill": "ok"
+        }
+      },
+      {
+        "vinculo": "GNL (EE.UU./Catar)",
+        "pct": "25",
+        "riesgo": {
+          "texto": "Nueva vía marítima",
+          "pill": "ok"
+        }
+      },
+      {
+        "vinculo": "Gas ruso (histórico)",
+        "pct": "0",
+        "riesgo": {
+          "texto": "Eliminado tras 2022",
+          "pill": "warn"
+        }
+      },
+      {
+        "vinculo": "Paneles/baterías de China",
+        "pct": "—",
+        "riesgo": {
+          "texto": "Dependencia de cadena",
+          "pill": "warn"
+        }
+      }
+    ],
+    "dependencias_cita": "BNetzA; AGEB 2024.",
+    "minerales_titulo": "Posición energética",
+    "minerales": [
+      {
+        "valor": "#1",
+        "unidad": " UE",
+        "etiqueta": "MAYOR DEMANDA ENERGÉTICA"
+      },
+      {
+        "valor": "55",
+        "unidad": "%",
+        "etiqueta": "RENOVABLES ELÉCTRICAS"
+      },
+      {
+        "valor": "2045",
+        "unidad": "",
+        "etiqueta": "META DE NEUTRALIDAD"
+      }
+    ],
+    "minerales_cita": "AGEB; Ember 2024."
+  },
+  "militar": {
+    "titulo_seccion": "Combustibles Militares y Rol Operacional de la Bundeswehr",
+    "nav_label": "Combustibles militares",
+    "src": "IISS · Bundeswehr",
+    "combustibles_titulo": "Demanda de combustibles de la Bundeswehr",
+    "combustibles": [
+      {
+        "codigo": "F-34 (JP-8)",
+        "tipo": "Queroseno militar",
+        "usuario": "Luftwaffe",
+        "ml_anio": "400"
+      },
+      {
+        "codigo": "F-76",
+        "tipo": "Diésel naval",
+        "usuario": "Deutsche Marine",
+        "ml_anio": "120"
+      },
+      {
+        "codigo": "F-54",
+        "tipo": "Diésel terrestre",
+        "usuario": "Heer",
+        "ml_anio": "200"
+      }
+    ],
+    "combustibles_total": "~720",
+    "combustibles_cita": "Estimación de orden de magnitud.",
+    "vulnerabilidades_titulo": "Vulnerabilidades específicas de defensa",
+    "vulnerabilidades": [
+      {
+        "nivel": "med",
+        "tag": "ALTO",
+        "texto_html": "<b>Resiliencia industrial</b> · la base industrial de defensa depende de energía asequible."
+      },
+      {
+        "nivel": "med",
+        "tag": "ALTO",
+        "texto_html": "<b>Protección de infraestructura crítica</b> · gasoductos y cables (sabotaje a Nord Stream, 2022)."
+      },
+      {
+        "nivel": "low",
+        "tag": "MED",
+        "texto_html": "<b>Flanco OTAN</b> · seguridad energética del este europeo."
+      }
+    ],
+    "mision_titulo": "Misión en Seguridad Energética",
+    "mision": [
+      {
+        "titulo": "PROTECCIÓN DE INFRAESTRUCTURA",
+        "texto_html": "Vigilancia de ductos y cables submarinos en el Báltico/Mar del Norte tras Nord Stream."
+      },
+      {
+        "titulo": "RESILIENCIA OTAN",
+        "texto_html": "Zeitenwende: rearme y seguridad energética del flanco oriental."
+      },
+      {
+        "titulo": "TRANSICIÓN DE BASES",
+        "texto_html": "Eficiencia y energías limpias en instalaciones militares."
+      },
+      {
+        "titulo": "COOPERACIÓN UE",
+        "texto_html": "Compras conjuntas de gas y solidaridad energética."
+      }
+    ],
+    "mision_cita": "IISS 2024; Zeitenwende."
+  },
+  "politicas": {
+    "src": "BMWK · BNetzA",
+    "planes_titulo": "Planes nacionales",
+    "planes": [
+      {
+        "nombre": "Energiewende / EEG",
+        "texto": "80% renovables en electricidad a 2030."
+      },
+      {
+        "nombre": "Kohleausstieg",
+        "texto": "Salida del carbón (idealmente 2030–2038)."
+      },
+      {
+        "nombre": "LNG-Beschleunigungsgesetz",
+        "texto": "Ley exprés para terminales de GNL (2022)."
+      },
+      {
+        "nombre": "Kraftwerksstrategie",
+        "texto": "Centrales de respaldo listas para hidrógeno."
+      }
+    ],
+    "instituciones_titulo": "Instituciones clave",
+    "instituciones": [
+      {
+        "sigla": "BMWK",
+        "texto": "ministerio de economía y clima."
+      },
+      {
+        "sigla": "BNetzA",
+        "texto": "agencia federal de redes."
+      },
+      {
+        "sigla": "Übertragungsnetzbetreiber",
+        "texto": "operadores de red (50Hertz, TenneT, Amprion, TransnetBW)."
+      },
+      {
+        "sigla": "KfW",
+        "texto": "banco de desarrollo; financia la transición."
+      }
+    ],
+    "transicion_titulo": "Transición y economía",
+    "transicion_html": "<p>La <b>Energiewende</b> busca descarbonizar con renovables, pero el shock de 2022 mostró que la seguridad de suministro (gas, respaldo, red) es tan crítica como la sostenibilidad. La industria pesa el costo energético.</p>",
+    "transicion_cita": "IEA 2024; AGEB."
+  },
+  "crisis": {
+    "src": "Wargaming · Cone of Plausibility",
+    "matriz_titulo": "Matriz Probabilidad × Impacto",
+    "matriz": {
+      "esquina": "Impacto ↓ / Prob →",
+      "prob_labels": [
+        "Muy bajo",
+        "Bajo",
+        "Medio",
+        "Alto",
+        "Muy alto"
+      ],
+      "filas": [
+        {
+          "impacto": "Catastrófico",
+          "celdas": [
+            {
+              "nivel": 3
+            },
+            {
+              "nivel": 4
+            },
+            {
+              "nivel": 5,
+              "texto": "Corte total de gas"
+            },
+            {
+              "nivel": 5
+            },
+            {
+              "nivel": 5
+            }
+          ]
+        },
+        {
+          "impacto": "Mayor",
+          "celdas": [
+            {
+              "nivel": 2
+            },
+            {
+              "nivel": 3
+            },
+            {
+              "nivel": 4,
+              "texto": "Dunkelflaute"
+            },
+            {
+              "nivel": 4,
+              "texto": "Sabotaje de ductos"
+            },
+            {
+              "nivel": 5
+            }
+          ]
+        },
+        {
+          "impacto": "Moderado",
+          "celdas": [
+            {
+              "nivel": 1
+            },
+            {
+              "nivel": 2
+            },
+            {
+              "nivel": 3,
+              "texto": "Cuello de red sur"
+            },
+            {
+              "nivel": 4,
+              "texto": "Precios industriales"
+            },
+            {
+              "nivel": 4
+            }
+          ]
+        },
+        {
+          "impacto": "Menor",
+          "celdas": [
+            {
+              "nivel": 1
+            },
+            {
+              "nivel": 1
+            },
+            {
+              "nivel": 2
+            },
+            {
+              "nivel": 3
+            },
+            {
+              "nivel": 3
+            }
+          ]
+        },
+        {
+          "impacto": "Insignif.",
+          "celdas": [
+            {
+              "nivel": 1
+            },
+            {
+              "nivel": 1
+            },
+            {
+              "nivel": 1
+            },
+            {
+              "nivel": 2
+            },
+            {
+              "nivel": 2
+            }
+          ]
+        }
+      ]
+    },
+    "matriz_cita": "Escala HM Treasury Orange Book.",
+    "escenarios_titulo": "Escenarios calibrados",
+    "escenarios": [
+      {
+        "nivel": "high",
+        "tag": "A",
+        "texto_html": "<b>Corte total de gas</b> en invierno. <i>Respuesta:</i> almacenamiento lleno, GNL, racionamiento industrial priorizado."
+      },
+      {
+        "nivel": "high",
+        "tag": "B",
+        "texto_html": "<b>Dunkelflaute</b> — semanas sin sol ni viento. <i>Respuesta:</i> respaldo de gas/hidrógeno, importación UE."
+      },
+      {
+        "nivel": "med",
+        "tag": "C",
+        "texto_html": "<b>Sabotaje de ductos/cables</b> (Nord Stream 2022). <i>Respuesta:</i> vigilancia militar de infraestructura submarina."
+      },
+      {
+        "nivel": "med",
+        "tag": "D",
+        "texto_html": "<b>Fuga industrial</b> por precios. <i>Respuesta:</i> precio industrial de electricidad, eficiencia."
+      }
+    ],
+    "vectores_titulo": "Respuesta estratégica integrada — vectores",
+    "vectores": [
+      {
+        "titulo": "DIVERSIFICAR GAS",
+        "texto": "GNL y Noruega; almacenamiento estacional lleno."
+      },
+      {
+        "titulo": "ACELERAR RENOVABLES",
+        "texto": "Eólica marina, solar y red norte-sur (SuedLink)."
+      },
+      {
+        "titulo": "RESPALDO H₂",
+        "texto": "Centrales flexibles listas para hidrógeno."
+      },
+      {
+        "titulo": "PROTEGER INFRAESTRUCTURA",
+        "texto": "Vigilancia de ductos y cables submarinos."
+      }
+    ]
+  },
+  "referencias": {
+    "src": "Triangulación multi-fuente",
+    "titulo": "Fuentes primarias y académicas",
+    "items": [
+      "IEA (2024). <i>Germany Energy Profile</i>. París.",
+      "AGEB (2024). <i>Energiebilanz</i>.",
+      "BNetzA (2024). <i>Monitoringbericht</i>.",
+      "Ember (2024). <i>Electricity Data Explorer</i>.",
+      "APERC (2007). <i>A Quest for Energy Security in the 21st Century</i>. Tokio."
+    ]
+  },
+  "footer": "Documento de sustentación · Rúbrica Slide18 · Logística Militar · Mayo 2026"
+}

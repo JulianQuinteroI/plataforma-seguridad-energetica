@@ -168,10 +168,15 @@
 </head>
 <body>
 
-  <div class="doc-header">
-    <div class="eyebrow">Portafolio · Seguridad Energética por País</div>
-    <h1>Seguridad Energética por País — Panel Mundial</h1>
-    <div class="sub">Mapa mundi coroplético del puntaje APERC (0–10) por país. Cargue las entregas de los estudiantes (archivos <code>.json</code>) y haga clic en un país para abrir su tablero analítico.</div>
+  <div class="doc-header" style="display:flex;align-items:center;gap:22px;flex-wrap:wrap">
+    <div style="flex:1;min-width:300px">
+      <div class="eyebrow">Portafolio · Seguridad Energética por País</div>
+      <h1>Seguridad Energética por País — Panel Mundial</h1>
+      <div class="sub">Mapa mundi coroplético del puntaje APERC (0–10) por país. Cargue las entregas de los estudiantes (archivos <code>.json</code>) y haga clic en un país para abrir su tablero analítico.</div>
+    </div>
+    <a href="https://www.esdegue.edu.co/" target="_blank" rel="noopener" title="Escuela Superior de Guerra «General Rafael Reyes Prieto»" style="flex-shrink:0">
+      <img src="assets/esdegue-logo.png" alt="Escuela Superior de Guerra (ESDEGUE)" style="height:66px;width:auto;display:block" />
+    </a>
   </div>
 
   <div class="world-layout">
@@ -214,10 +219,28 @@
         </div>
       </div>
 
+      <div class="side-block">
+        <h3>Créditos</h3>
+        <div style="display:flex;align-items:center;gap:12px">
+          <a href="https://www.esdegue.edu.co/" target="_blank" rel="noopener" title="Escuela Superior de Guerra">
+            <img src="assets/esdegue-logo.png" alt="ESDEGUE" style="height:46px;width:auto;display:block;flex-shrink:0" />
+          </a>
+          <div class="sans" style="font-size:11.5px;color:var(--ink-2);line-height:1.5">
+            Tableros elaborados por la <b>primera cohorte</b> de la materia de <b>Seguridad Energética</b>.<br/>
+            <a href="https://www.esdegue.edu.co/" target="_blank" rel="noopener" style="color:var(--accent)">Escuela Superior de Guerra «General Rafael Reyes Prieto»</a> · Colombia.
+          </div>
+        </div>
+      </div>
+
     </div>
 
-    <footer class="foot sans">
-      Plataforma de Seguridad Energética por País · Coropleta por puntaje APERC · Datos servidos vía manifest.json y/o cargados localmente en el navegador.
+    <footer class="foot sans" style="display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;text-align:left">
+      <img src="assets/esdegue-logo.png" alt="ESDEGUE" style="height:40px;width:auto" />
+      <span>
+        <b>Escuela Superior de Guerra «General Rafael Reyes Prieto»</b> · Materia de Seguridad Energética.
+        Tableros elaborados por la <b>primera cohorte</b> de la asignatura.<br/>
+        Plataforma: coropleta por puntaje APERC · datos vía <code>manifest.json</code> o cargados localmente en el navegador.
+      </span>
     </footer>
   </div>
 

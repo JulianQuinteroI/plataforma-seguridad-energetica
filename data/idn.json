@@ -1,0 +1,989 @@
+{
+  "schema_version": "1.0.0",
+  "meta": {
+    "pais": "Indonesia",
+    "pais_iso": "IDN",
+    "pais_iso2": "ID",
+    "subtitulo_pais": "República de",
+    "eyebrow": "Portafolio · Seguridad Energética por País",
+    "titulo": "Seguridad Energética de Indonesia:<br/>carbón, níquel y los estrechos del archipiélago",
+    "subtitulo": "Mayor economía del Sudeste Asiático y gigante del carbón; importadora neta de petróleo, líder en geotermia y níquel para baterías, con el desafío de abastecer un vasto archipiélago y custodiar estrechos clave.",
+    "estudiante": "Cátedra (ejemplo de referencia)",
+    "asignatura": "Logística Militar · Rúbrica Slide18",
+    "tipo_doc": "Documento de sustentación",
+    "fecha": "Mayo 2026",
+    "fuerzas_armadas": "Fuerzas Armadas de Indonesia (TNI)",
+    "aperc_global": 5.6,
+    "cita_corta": "IEA, 2024; ESDM; Ember.",
+    "portafolio_label": "Rúbrica Slide18<br/>Logística Militar<br/>v2 — académica",
+    "map_view": {
+      "lat": -2,
+      "lng": 118,
+      "zoom": 4
+    }
+  },
+  "resumen": {
+    "tesis_html": "Indonesia es el <b>mayor exportador de carbón térmico</b> del mundo y la mayor economía del Sudeste Asiático. Su petróleo declinó (hoy es <i>importador neto</i> y salió de la OPEP), compensado con gas/GNL (Bontang, Tangguh) y liderazgo en <b>geotermia</b> (Anillo de Fuego). El <b>níquel</b> es su nueva carta para baterías (prohibición de exportar mineral → industrialización). Retos: acceso en un archipiélago de 17.000 islas y custodia de los estrechos de Malaca, Lombok y Sonda.",
+    "conclusion_html": "APERC <b>5.6/10</b>: buena <i>availability</i> (carbón, gas, geotermia, níquel) pero <i>acceptability</i> baja por el carbón y <i>accessibility</i> compleja por la geografía. La TNI custodia estrechos y la seguridad archipelágica.",
+    "kpis": [
+      {
+        "valor": 1,
+        "unidad": "º",
+        "etiqueta": "Exportador de carbón térmico"
+      },
+      {
+        "valor": 60,
+        "unidad": "%",
+        "etiqueta": "Carbón en electricidad"
+      },
+      {
+        "valor": 1,
+        "unidad": "º",
+        "etiqueta": "Productor de níquel mundial"
+      },
+      {
+        "valor": 85,
+        "unidad": "%",
+        "etiqueta": "Tasa de electrificación"
+      }
+    ]
+  },
+  "aperc": {
+    "src": "APERC 2007 · ESDM 2024",
+    "definicion_html": "<p>Indonesia tiene <i>availability</i> (carbón, gas, geotermia, níquel) pero su <i>acceptability</i> sufre por la dependencia del carbón y su <i>accessibility</i> es un reto geográfico (archipiélago). La política de <i>downstreaming</i> del níquel busca capturar valor de la transición.</p>",
+    "definicion_cita": "ESDM; IEA 2024.",
+    "scorecard_titulo": "Scorecard de Indonesia bajo APERC",
+    "scores": [
+      {
+        "letra": "A",
+        "nombre": "vailability",
+        "desc": "Carbón, gas, geotermia y níquel abundantes.",
+        "score": 7
+      },
+      {
+        "letra": "A",
+        "nombre": "ccessibility",
+        "desc": "Archipiélago; importa petróleo; controla estrechos.",
+        "score": 5
+      },
+      {
+        "letra": "A",
+        "nombre": "ffordability",
+        "desc": "Subsidios a combustible y electricidad.",
+        "score": 5.5
+      },
+      {
+        "letra": "A",
+        "nombre": "cceptability",
+        "desc": "Alto peso del carbón; gran potencial geotérmico/solar.",
+        "score": 4.9
+      }
+    ],
+    "scorecard_cita": "Scores propios sobre indicadores normalizados.",
+    "comparador": {
+      "pais_b": "Australia",
+      "pais_c": "China"
+    },
+    "indicadores_titulo": "Indicadores cuantitativos aplicados",
+    "indicadores": [
+      {
+        "indicador": "Carbón en electricidad (%)",
+        "definicion": "Generación",
+        "propio": "60",
+        "b": "46",
+        "c": "60",
+        "interp": {
+          "texto": "Alto",
+          "pill": "warn"
+        }
+      },
+      {
+        "indicador": "Níquel mundial (%)",
+        "definicion": "Producción",
+        "propio": "50",
+        "b": "0",
+        "c": "0",
+        "interp": {
+          "texto": "Dominante",
+          "pill": "ok"
+        }
+      },
+      {
+        "indicador": "Dependencia petróleo importado (%)",
+        "definicion": "Neta",
+        "propio": "alta",
+        "b": "−330%",
+        "c": "70%",
+        "interp": {
+          "texto": "Importador neto"
+        }
+      },
+      {
+        "indicador": "Geotermia instalada (GW)",
+        "definicion": "Capacidad",
+        "propio": "2.4",
+        "b": "—",
+        "c": "—",
+        "interp": {
+          "texto": "2º mundial",
+          "pill": "ok"
+        }
+      }
+    ],
+    "indicadores_nota": "Comparación con Australia (exportador de carbón) y China (gran consumidor)."
+  },
+  "matriz": {
+    "src": "ESDM · Ember 2024",
+    "primaria_titulo": "Energía Primaria (TPES, %)",
+    "primaria": [
+      {
+        "label": "Carbón",
+        "valor": 38,
+        "color": "#8a4a4a"
+      },
+      {
+        "label": "Petróleo",
+        "valor": 31,
+        "color": "#c4570e"
+      },
+      {
+        "label": "Gas natural",
+        "valor": 18,
+        "color": "#0b5394"
+      },
+      {
+        "label": "Renovables/Geotermia",
+        "valor": 13,
+        "color": "#a17c1c"
+      }
+    ],
+    "primaria_cita": "Carbón 38 · Petróleo 31 · Gas 18 · Renov. 13. <i>Fuente: ESDM 2024.</i>",
+    "electrica_titulo": "Generación Eléctrica (%)",
+    "electrica": [
+      {
+        "label": "Carbón",
+        "valor": 60,
+        "color": "#8a4a4a"
+      },
+      {
+        "label": "Gas",
+        "valor": 18,
+        "color": "#0b5394"
+      },
+      {
+        "label": "Geotermia",
+        "valor": 6,
+        "color": "#a17c1c"
+      },
+      {
+        "label": "Hidro",
+        "valor": 8,
+        "color": "#2e7d32"
+      },
+      {
+        "label": "Otros renov.",
+        "valor": 8,
+        "color": "#6a8caf"
+      }
+    ],
+    "electrica_cita": "Carbón 60 · Gas 18 · Hidro 8 · Geotermia 6. <i>Fuente: Ember 2024.</i>",
+    "comparativa_titulo": "Comparativa Internacional — Mix Eléctrico (%)",
+    "comparativa": {
+      "paises": [
+        "Indonesia",
+        "Australia",
+        "China"
+      ],
+      "series": [
+        {
+          "label": "Carbón",
+          "data": [
+            60,
+            46,
+            60
+          ],
+          "color": "#8a4a4a"
+        },
+        {
+          "label": "Gas",
+          "data": [
+            18,
+            16,
+            3
+          ],
+          "color": "#0b5394"
+        },
+        {
+          "label": "Hidro",
+          "data": [
+            8,
+            6,
+            14
+          ],
+          "color": "#2e7d32"
+        },
+        {
+          "label": "Geotermia/Otros",
+          "data": [
+            6,
+            0,
+            5
+          ],
+          "color": "#6b4e8e"
+        },
+        {
+          "label": "Solar/Eólica",
+          "data": [
+            8,
+            32,
+            18
+          ],
+          "color": "#a17c1c"
+        }
+      ]
+    },
+    "comparativa_nota": "Indonesia y Australia, ambas carbón-intensivas; Australia avanza más en solar/eólica."
+  },
+  "sankey": {
+    "src": "Producción → Transformación → Uso final",
+    "titulo_panel": "Flujos físicos de energía, Indonesia (PJ aprox.)",
+    "flujos": [
+      {
+        "from": "Carbón (prod.)",
+        "to": "Exportación de carbón",
+        "flow": 9000
+      },
+      {
+        "from": "Carbón (prod.)",
+        "to": "Generación eléctrica",
+        "flow": 3500
+      },
+      {
+        "from": "Gas natural",
+        "to": "Exportación GNL",
+        "flow": 2500
+      },
+      {
+        "from": "Gas natural",
+        "to": "Industria & residencial",
+        "flow": 1500
+      },
+      {
+        "from": "Petróleo importado",
+        "to": "Refinación local",
+        "flow": 3000
+      },
+      {
+        "from": "Refinación local",
+        "to": "Transporte",
+        "flow": 2800
+      },
+      {
+        "from": "Geotermia/Hidro",
+        "to": "Generación eléctrica",
+        "flow": 1100
+      },
+      {
+        "from": "Generación eléctrica",
+        "to": "Industria & residencial",
+        "flow": 4200
+      }
+    ],
+    "nodos": {
+      "Carbón (prod.)": {
+        "color": "#8a4a4a",
+        "label": "Carbón (producción)"
+      },
+      "Gas natural": {
+        "color": "#0b5394",
+        "label": "Gas natural"
+      },
+      "Petróleo importado": {
+        "color": "#c4570e",
+        "label": "Petróleo importado"
+      },
+      "Geotermia/Hidro": {
+        "color": "#a17c1c",
+        "label": "Geotermia & Hidro"
+      },
+      "Refinación local": {
+        "color": "#c4570e",
+        "label": "Refinerías"
+      },
+      "Generación eléctrica": {
+        "color": "#6b4e8e",
+        "label": "Generación eléctrica"
+      },
+      "Exportación de carbón": {
+        "color": "#8a4a4a",
+        "label": "EXPORT · Carbón"
+      },
+      "Exportación GNL": {
+        "color": "#0b5394",
+        "label": "EXPORT · GNL"
+      },
+      "Industria & residencial": {
+        "color": "#4a5870",
+        "label": "Industria + Residencial"
+      },
+      "Transporte": {
+        "color": "#c4570e",
+        "label": "Transporte"
+      }
+    },
+    "cita": "Exporta carbón y GNL, pero importa petróleo: la paradoja del exportador-importador. <i>Datos estilizados.</i>"
+  },
+  "evolucion": {
+    "src": "2000–2050 · transición y níquel",
+    "historico_titulo": "Mix Eléctrico Histórico y Proyectado (%)",
+    "anios": [
+      "2000",
+      "2010",
+      "2020",
+      "2024",
+      "2035",
+      "2050"
+    ],
+    "series": [
+      {
+        "label": "Carbón",
+        "data": [
+          35,
+          44,
+          62,
+          60,
+          40,
+          15
+        ],
+        "color": "#8a4a4a"
+      },
+      {
+        "label": "Gas",
+        "data": [
+          35,
+          30,
+          22,
+          18,
+          18,
+          12
+        ],
+        "color": "#0b5394"
+      },
+      {
+        "label": "Renovables/Geotermia",
+        "data": [
+          20,
+          18,
+          13,
+          18,
+          38,
+          68
+        ],
+        "color": "#a17c1c"
+      },
+      {
+        "label": "Petróleo",
+        "data": [
+          10,
+          8,
+          3,
+          4,
+          4,
+          5
+        ],
+        "color": "#c4570e"
+      }
+    ],
+    "historico_cita": "Meta net-zero 2060; retiro gradual del carbón con apoyo del JETP.",
+    "hitos_titulo": "Hitos del Régimen Energético",
+    "hitos": [
+      {
+        "anio": "1977",
+        "evento": "Inicio de exportaciones de GNL desde Bontang."
+      },
+      {
+        "anio": "2008",
+        "evento": "Salida de la OPEP (importador neto de petróleo)."
+      },
+      {
+        "anio": "2020",
+        "evento": "Prohibición de exportar mineral de níquel (downstreaming)."
+      },
+      {
+        "anio": "2022",
+        "evento": "JETP: 20 mil M USD para acelerar la transición."
+      },
+      {
+        "anio": "2024",
+        "evento": "Auge de plantas de níquel/baterías (Morowali)."
+      }
+    ]
+  },
+  "infraestructura": {
+    "src": "Mapa Leaflet · GEM",
+    "mapa_titulo": "Carbón, GNL, geotermia, níquel y estrechos",
+    "pines": [
+      {
+        "lat": 0.13,
+        "lng": 117.47,
+        "tipo": "gnl",
+        "nombre": "GNL Bontang",
+        "desc": "Gran terminal de exportación (Kalimantan)"
+      },
+      {
+        "lat": -2.4,
+        "lng": 133.4,
+        "tipo": "gnl",
+        "nombre": "GNL Tangguh",
+        "desc": "Terminal de GNL (Papúa Occidental)"
+      },
+      {
+        "lat": -1.5,
+        "lng": 115,
+        "tipo": "refineria",
+        "nombre": "Carbón de Kalimantan",
+        "desc": "Mayor zona de carbón térmico para exportación"
+      },
+      {
+        "lat": -7.13,
+        "lng": 107.8,
+        "tipo": "minerales",
+        "nombre": "Geotérmica de Kamojang (Java)",
+        "desc": "Energía del Anillo de Fuego"
+      },
+      {
+        "lat": -2.6,
+        "lng": 122.1,
+        "tipo": "minerales",
+        "nombre": "Níquel de Morowali (Sulawesi)",
+        "desc": "Parque industrial de níquel/baterías"
+      },
+      {
+        "lat": 2.5,
+        "lng": 101.4,
+        "tipo": "sloc",
+        "nombre": "Estrecho de Malaca",
+        "desc": "Mayor cuello de botella marítimo"
+      },
+      {
+        "lat": -8.4,
+        "lng": 115.9,
+        "tipo": "sloc",
+        "nombre": "Estrecho de Lombok",
+        "desc": "Ruta alterna profunda"
+      },
+      {
+        "lat": -6,
+        "lng": 105.7,
+        "tipo": "sloc",
+        "nombre": "Estrecho de Sonda",
+        "desc": "Paso entre Java y Sumatra"
+      }
+    ],
+    "rutas": [
+      {
+        "puntos": [
+          [
+            2.5,
+            101.4
+          ],
+          [
+            0,
+            105
+          ],
+          [
+            -6,
+            105.7
+          ]
+        ],
+        "tooltip": "Estrechos: Malaca y Sonda"
+      }
+    ],
+    "leyenda": [
+      {
+        "color": "#8a4a4a",
+        "label": "Carbón"
+      },
+      {
+        "color": "#0b5394",
+        "label": "GNL"
+      },
+      {
+        "color": "#a17c1c",
+        "label": "Geotermia / níquel"
+      },
+      {
+        "color": "#c62828",
+        "label": "Estrechos críticos"
+      }
+    ],
+    "mapa_cita": "Coordenadas reales de Bontang, Tangguh, Kamojang, Morowali y los estrechos. <i>Fuentes: GEM 2024.</i>",
+    "vulnerabilidades_titulo": "Vulnerabilidades técnicas",
+    "vulnerabilidades": [
+      {
+        "nivel": "high",
+        "tag": "CRÍT",
+        "texto_html": "<b>Dependencia del carbón</b> · alta intensidad de carbono y exposición a la transición global."
+      },
+      {
+        "nivel": "med",
+        "tag": "ALTO",
+        "texto_html": "<b>Importación de petróleo</b> · refinación insuficiente para la demanda de transporte."
+      },
+      {
+        "nivel": "med",
+        "tag": "ALTO",
+        "texto_html": "<b>Geografía archipelágica</b> · electrificar 17.000 islas exige sistemas aislados."
+      },
+      {
+        "nivel": "med",
+        "tag": "ALTO",
+        "texto_html": "<b>Custodia de estrechos</b> · Malaca, Lombok y Sonda son SLOC globales."
+      }
+    ],
+    "capacidad_titulo": "Capacidad instalada (GW)",
+    "capacidad": {
+      "anios": [
+        "2020",
+        "2024",
+        "2030",
+        "2040"
+      ],
+      "y_titulo": "GW",
+      "series": [
+        {
+          "label": "Carbón (GW)",
+          "tipo": "bar",
+          "data": [
+            35,
+            42,
+            40,
+            25
+          ],
+          "color": "#8a4a4a"
+        },
+        {
+          "label": "Renovables (GW)",
+          "tipo": "bar",
+          "data": [
+            10,
+            14,
+            35,
+            90
+          ],
+          "color": "#a17c1c"
+        },
+        {
+          "label": "Demanda pico (GW)",
+          "tipo": "line",
+          "data": [
+            45,
+            55,
+            75,
+            110
+          ],
+          "color": "#c4570e"
+        }
+      ]
+    },
+    "capacidad_cita": "El JETP busca adelantar el pico del carbón y crecer renovables. <i>Fuente: PLN/IEA.</i>"
+  },
+  "geopolitica": {
+    "src": "Radar APERC normalizado",
+    "radar_titulo": "Radar APERC: Indonesia vs Australia vs China",
+    "radar": {
+      "ejes": [
+        "Availability",
+        "Accessibility",
+        "Affordability",
+        "Acceptability",
+        "Sovereignty",
+        "Robustness",
+        "Resilience"
+      ],
+      "series": [
+        {
+          "label": "Indonesia",
+          "data": [
+            7,
+            5,
+            5.5,
+            4.9,
+            6.5,
+            5.5,
+            5.5
+          ],
+          "color": "#c4570e"
+        },
+        {
+          "label": "Australia",
+          "data": [
+            8.5,
+            4.8,
+            6,
+            5.5,
+            7,
+            6.2,
+            6.5
+          ],
+          "color": "#2e7d32"
+        },
+        {
+          "label": "China",
+          "data": [
+            7.5,
+            4.5,
+            6,
+            4,
+            7,
+            6.5,
+            6
+          ],
+          "color": "#0b5394"
+        }
+      ]
+    },
+    "radar_cita": "Normalización min-max sobre indicadores §01.",
+    "dependencias_titulo": "Dependencias y socios",
+    "dependencias": [
+      {
+        "vinculo": "Exportación de carbón a China/India",
+        "pct": "70",
+        "riesgo": {
+          "texto": "Demanda asiática",
+          "pill": "warn"
+        }
+      },
+      {
+        "vinculo": "Exportación de GNL a Asia oriental",
+        "pct": "—",
+        "riesgo": {
+          "texto": "Divisas estables",
+          "pill": "ok"
+        }
+      },
+      {
+        "vinculo": "Importación de petróleo y derivados",
+        "pct": "—",
+        "riesgo": {
+          "texto": "Importador neto",
+          "pill": "warn"
+        }
+      },
+      {
+        "vinculo": "Inversión china en níquel/baterías",
+        "pct": "—",
+        "riesgo": {
+          "texto": "Downstreaming",
+          "pill": "warn"
+        }
+      }
+    ],
+    "dependencias_cita": "ESDM; IEA 2024.",
+    "minerales_titulo": "Minerales y energía",
+    "minerales": [
+      {
+        "valor": "#1",
+        "unidad": " mundial",
+        "etiqueta": "NÍQUEL Y CARBÓN TÉRMICO"
+      },
+      {
+        "valor": "#2",
+        "unidad": " mundial",
+        "etiqueta": "GEOTERMIA"
+      },
+      {
+        "valor": "~24",
+        "unidad": " GW",
+        "etiqueta": "POTENCIAL GEOTÉRMICO"
+      }
+    ],
+    "minerales_cita": "USGS; IEA 2024."
+  },
+  "militar": {
+    "titulo_seccion": "Combustibles Militares y Rol Operacional de la TNI",
+    "nav_label": "Combustibles militares",
+    "src": "IISS · Kementerian Pertahanan",
+    "combustibles_titulo": "Demanda de combustibles de la TNI",
+    "combustibles": [
+      {
+        "codigo": "Jet A-1 / Avtur",
+        "tipo": "Queroseno de aviación",
+        "usuario": "TNI-AU (aérea)",
+        "ml_anio": "300"
+      },
+      {
+        "codigo": "Diésel naval",
+        "tipo": "Diésel",
+        "usuario": "TNI-AL (naval)",
+        "ml_anio": "350"
+      },
+      {
+        "codigo": "Diésel terrestre",
+        "tipo": "Diésel",
+        "usuario": "TNI-AD (terrestre)",
+        "ml_anio": "200"
+      }
+    ],
+    "combustibles_total": "~850",
+    "combustibles_cita": "Estimación de orden de magnitud (gran componente naval por el archipiélago).",
+    "vulnerabilidades_titulo": "Vulnerabilidades específicas de defensa",
+    "vulnerabilidades": [
+      {
+        "nivel": "high",
+        "tag": "CRÍT",
+        "texto_html": "<b>Custodia de estrechos</b> · Malaca, Lombok y Sonda son SLOC globales y puntos de riesgo."
+      },
+      {
+        "nivel": "med",
+        "tag": "ALTO",
+        "texto_html": "<b>Vastedad archipelágica</b> · proteger recursos e infraestructura dispersos en 17.000 islas."
+      },
+      {
+        "nivel": "med",
+        "tag": "ALTO",
+        "texto_html": "<b>Mar de China Meridional</b> · tensiones en las Natuna."
+      }
+    ],
+    "mision_titulo": "Misión en Seguridad Energética",
+    "mision": [
+      {
+        "titulo": "SEGURIDAD DE ESTRECHOS",
+        "texto_html": "La TNI-AL vigila Malaca, Lombok y Sonda (con Malasia y Singapur)."
+      },
+      {
+        "titulo": "RECURSOS DE NATUNA",
+        "texto_html": "Protección de campos de gas frente a incursiones."
+      },
+      {
+        "titulo": "INFRAESTRUCTURA INSULAR",
+        "texto_html": "Custodia de terminales de GNL y plantas de níquel."
+      },
+      {
+        "titulo": "HADR",
+        "texto_html": "Respuesta ante desastres (sismos/volcanes) que afectan la energía."
+      }
+    ],
+    "mision_cita": "IISS 2024."
+  },
+  "politicas": {
+    "src": "ESDM · PLN",
+    "planes_titulo": "Planes nacionales",
+    "planes": [
+      {
+        "nombre": "JETP (2022)",
+        "texto": "20 mil M USD para adelantar el pico del carbón."
+      },
+      {
+        "nombre": "Downstreaming del níquel",
+        "texto": "Prohibición de exportar mineral; industria de baterías."
+      },
+      {
+        "nombre": "RUEN / RUPTL",
+        "texto": "Planes nacionales de energía y de electricidad (PLN)."
+      },
+      {
+        "nombre": "Net-zero 2060",
+        "texto": "Meta de neutralidad con apoyo internacional."
+      }
+    ],
+    "instituciones_titulo": "Instituciones clave",
+    "instituciones": [
+      {
+        "sigla": "ESDM",
+        "texto": "ministerio de energía y recursos minerales."
+      },
+      {
+        "sigla": "Pertamina",
+        "texto": "petrolera y gasista estatal."
+      },
+      {
+        "sigla": "PLN",
+        "texto": "empresa eléctrica estatal (monopolio)."
+      },
+      {
+        "sigla": "MIND ID",
+        "texto": "holding minero estatal (níquel)."
+      }
+    ],
+    "transicion_titulo": "Transición y economía",
+    "transicion_html": "<p>Indonesia equilibra su <b>renta del carbón</b> con la presión de descarbonizar (JETP), apostando al <b>níquel</b> para capturar valor de la cadena de baterías y a la <b>geotermia/solar</b> para diversificar en un archipiélago complejo.</p>",
+    "transicion_cita": "ESDM; IEA 2024."
+  },
+  "crisis": {
+    "src": "Wargaming · Cone of Plausibility",
+    "matriz_titulo": "Matriz Probabilidad × Impacto",
+    "matriz": {
+      "esquina": "Impacto ↓ / Prob →",
+      "prob_labels": [
+        "Muy bajo",
+        "Bajo",
+        "Medio",
+        "Alto",
+        "Muy alto"
+      ],
+      "filas": [
+        {
+          "impacto": "Catastrófico",
+          "celdas": [
+            {
+              "nivel": 3
+            },
+            {
+              "nivel": 4
+            },
+            {
+              "nivel": 5,
+              "texto": "Bloqueo de Malaca"
+            },
+            {
+              "nivel": 5
+            },
+            {
+              "nivel": 5
+            }
+          ]
+        },
+        {
+          "impacto": "Mayor",
+          "celdas": [
+            {
+              "nivel": 2
+            },
+            {
+              "nivel": 3
+            },
+            {
+              "nivel": 4,
+              "texto": "Shock del precio del petróleo"
+            },
+            {
+              "nivel": 4,
+              "texto": "Caída del carbón (transición)"
+            },
+            {
+              "nivel": 5
+            }
+          ]
+        },
+        {
+          "impacto": "Moderado",
+          "celdas": [
+            {
+              "nivel": 1
+            },
+            {
+              "nivel": 2
+            },
+            {
+              "nivel": 3,
+              "texto": "Sismo/volcán (infra)"
+            },
+            {
+              "nivel": 4,
+              "texto": "Tensión en Natuna"
+            },
+            {
+              "nivel": 4
+            }
+          ]
+        },
+        {
+          "impacto": "Menor",
+          "celdas": [
+            {
+              "nivel": 1
+            },
+            {
+              "nivel": 1
+            },
+            {
+              "nivel": 2
+            },
+            {
+              "nivel": 3
+            },
+            {
+              "nivel": 3
+            }
+          ]
+        },
+        {
+          "impacto": "Insignif.",
+          "celdas": [
+            {
+              "nivel": 1
+            },
+            {
+              "nivel": 1
+            },
+            {
+              "nivel": 1
+            },
+            {
+              "nivel": 2
+            },
+            {
+              "nivel": 2
+            }
+          ]
+        }
+      ]
+    },
+    "matriz_cita": "Escala HM Treasury Orange Book.",
+    "escenarios_titulo": "Escenarios calibrados",
+    "escenarios": [
+      {
+        "nivel": "high",
+        "tag": "A",
+        "texto_html": "<b>Bloqueo de Malaca</b> — disrupción del comercio energético regional. <i>Respuesta:</i> rutas alternas (Lombok/Sonda), TNI-AL, reservas."
+      },
+      {
+        "nivel": "high",
+        "tag": "B",
+        "texto_html": "<b>Shock del precio del petróleo</b> — golpe fiscal por importación y subsidios. <i>Respuesta:</i> biodiésel (B35), eficiencia."
+      },
+      {
+        "nivel": "med",
+        "tag": "C",
+        "texto_html": "<b>Caída de la demanda de carbón</b> (transición global). <i>Respuesta:</i> downstreaming del níquel, diversificación."
+      },
+      {
+        "nivel": "med",
+        "tag": "D",
+        "texto_html": "<b>Sismo/volcán</b> — daño a infraestructura insular. <i>Respuesta:</i> redundancia, microrredes, HADR."
+      }
+    ],
+    "vectores_titulo": "Respuesta estratégica integrada — vectores",
+    "vectores": [
+      {
+        "titulo": "DIVERSIFICAR ESTRECHOS",
+        "texto": "Lombok y Sonda como alternativas a Malaca."
+      },
+      {
+        "titulo": "NÍQUEL Y BATERÍAS",
+        "texto": "Capturar valor de la cadena de transición."
+      },
+      {
+        "titulo": "GEOTERMIA Y SOLAR",
+        "texto": "Aprovechar el Anillo de Fuego y reducir carbón."
+      },
+      {
+        "titulo": "BIOCOMBUSTIBLES",
+        "texto": "Biodiésel para bajar la factura de importación."
+      }
+    ]
+  },
+  "referencias": {
+    "src": "Triangulación multi-fuente",
+    "titulo": "Fuentes primarias y académicas",
+    "items": [
+      "IEA (2024). <i>Indonesia Energy Profile / Outlook</i>.",
+      "ESDM (2024). <i>Handbook of Energy & Economic Statistics</i>.",
+      "Ember (2024). <i>Electricity Data Explorer</i>.",
+      "USGS (2024). <i>Mineral Commodity Summaries</i> (níquel).",
+      "APERC (2007). <i>A Quest for Energy Security in the 21st Century</i>. Tokio."
+    ]
+  },
+  "footer": "Documento de sustentación · Rúbrica Slide18 · Logística Militar · Mayo 2026"
+}

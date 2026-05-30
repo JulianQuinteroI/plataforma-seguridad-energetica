@@ -1,0 +1,1035 @@
+{
+  "schema_version": "1.0.0",
+  "meta": {
+    "pais": "Arabia Saudita",
+    "pais_iso": "SAU",
+    "pais_iso2": "SA",
+    "subtitulo_pais": "Reino de",
+    "eyebrow": "Portafolio · Seguridad Energética por País",
+    "titulo": "Seguridad Energética de Arabia Saudita:<br/>renta del crudo, concentración y Visión 2030",
+    "subtitulo": "Mayor exportador mundial de petróleo y líder de la OPEP+: máxima disponibilidad de hidrocarburos frente a una severa monodependencia y baja aceptabilidad ambiental.",
+    "estudiante": "Cátedra (ejemplo de referencia)",
+    "asignatura": "Logística Militar · Rúbrica Slide18",
+    "tipo_doc": "Documento de sustentación",
+    "fecha": "Mayo 2026",
+    "fuerzas_armadas": "Fuerzas Armadas Reales Saudíes",
+    "aperc_global": 5.7,
+    "cita_corta": "IEA, 2024; Aramco, 2024; OPEP, 2024; APERC, 2007.",
+    "portafolio_label": "Rúbrica Slide18<br/>Logística Militar<br/>v2 — académica",
+    "map_view": {
+      "lat": 24,
+      "lng": 45,
+      "zoom": 5
+    }
+  },
+  "resumen": {
+    "tesis_html": "Arabia Saudita encarna la <i>paradoja del rentista</i>: posee ~17% de las reservas mundiales de crudo y es el primer exportador, con disponibilidad y asequibilidad internas altísimas, pero su seguridad energética es frágil por <b>monodependencia</b> del petróleo (renta fiscal y mix), un nexo agua-energía intensivo (desalación) y nula diversificación histórica. La <b>Visión 2030</b> y NEOM impulsan solar y reducción del crudo quemado para electricidad.",
+    "conclusion_html": "En métricas APERC obtiene <b>5.7/10</b>: lidera en <i>availability</i> pero se hunde en <i>acceptability</i> y diversificación. El rol militar es decisivo para proteger Abqaiq/Ras Tanura y los estrechos de Ormuz y Bab el-Mandeb tras los ataques de 2019.",
+    "kpis": [
+      {
+        "valor": 17,
+        "unidad": "%",
+        "etiqueta": "Reservas mundiales de crudo"
+      },
+      {
+        "valor": 9.6,
+        "unidad": "Mb/d",
+        "etiqueta": "Producción de crudo",
+        "decimal": true
+      },
+      {
+        "valor": 99,
+        "unidad": "%",
+        "etiqueta": "Mix eléctrico fósil"
+      },
+      {
+        "valor": 62,
+        "unidad": "%",
+        "etiqueta": "Ingresos fiscales del petróleo"
+      }
+    ]
+  },
+  "aperc": {
+    "src": "APERC 2007 · IEA 2024",
+    "definicion_html": "<p>Bajo el marco <b>APERC</b>, Arabia Saudita combina una <i>availability</i> sobresaliente (Ghawar, mayor campo del mundo) con una <i>acceptability</i> muy baja (alta intensidad de carbono, quema de crudo para electricidad y desalación).</p><p>La seguridad de demanda (compradores asiáticos) y la transición global son hoy su mayor riesgo estratégico de largo plazo.</p>",
+    "definicion_cita": "APERC (2007); IEA, Saudi Arabia Energy Profile 2024.",
+    "scorecard_titulo": "Scorecard de Arabia Saudita bajo APERC",
+    "scores": [
+      {
+        "letra": "A",
+        "nombre": "vailability",
+        "desc": "Mayores reservas y producción de crudo; gas asociado.",
+        "score": 9.5
+      },
+      {
+        "letra": "A",
+        "nombre": "ccessibility",
+        "desc": "Dependencia de Ormuz/Bab el-Mandeb; riesgo de ataques.",
+        "score": 4.5
+      },
+      {
+        "letra": "A",
+        "nombre": "ffordability",
+        "desc": "Energía interna subsidiada y barata.",
+        "score": 6.3
+      },
+      {
+        "letra": "A",
+        "nombre": "cceptability",
+        "desc": "Altísima intensidad de carbono; nula diversificación.",
+        "score": 2.5
+      }
+    ],
+    "scorecard_cita": "Scores propios sobre indicadores normalizados.",
+    "comparador": {
+      "pais_b": "Noruega",
+      "pais_c": "Rusia"
+    },
+    "indicadores_titulo": "Indicadores cuantitativos aplicados",
+    "indicadores": [
+      {
+        "indicador": "HHI mix primario",
+        "definicion": "Concentración (0–10 000)",
+        "propio": "6 800",
+        "b": "3 600",
+        "c": "4 200",
+        "interp": {
+          "texto": "Altísima concentración",
+          "pill": "danger"
+        }
+      },
+      {
+        "indicador": "Net Import Dep. (%)",
+        "definicion": "(Imp−Exp)/Consumo bruto",
+        "propio": "−320%",
+        "b": "−600%",
+        "c": "−85%",
+        "interp": {
+          "texto": "Gran exportador neto"
+        }
+      },
+      {
+        "indicador": "Intensidad de carbono (gCO₂/kWh)",
+        "definicion": "Generación eléctrica",
+        "propio": "615",
+        "b": "26",
+        "c": "360",
+        "interp": {
+          "texto": "Muy alta",
+          "pill": "danger"
+        }
+      },
+      {
+        "indicador": "Renovables en electricidad (%)",
+        "definicion": "Solar + eólica",
+        "propio": "2",
+        "b": "98",
+        "c": "20",
+        "interp": {
+          "texto": "Incipiente"
+        }
+      }
+    ],
+    "indicadores_nota": "Comparación con Noruega (descarbonizada) y Rusia (otro gran exportador)."
+  },
+  "matriz": {
+    "src": "IEA · Aramco 2024",
+    "primaria_titulo": "Energía Primaria (TPES, %)",
+    "primaria": [
+      {
+        "label": "Petróleo",
+        "valor": 62,
+        "color": "#c4570e"
+      },
+      {
+        "label": "Gas natural",
+        "valor": 36,
+        "color": "#0b5394"
+      },
+      {
+        "label": "Renovables",
+        "valor": 2,
+        "color": "#a17c1c"
+      }
+    ],
+    "primaria_cita": "Petróleo 62 · Gas 36 · Renovables 2. <i>Fuente: IEA 2024.</i>",
+    "electrica_titulo": "Generación Eléctrica (%)",
+    "electrica": [
+      {
+        "label": "Gas",
+        "valor": 60,
+        "color": "#0b5394"
+      },
+      {
+        "label": "Petróleo",
+        "valor": 38,
+        "color": "#c4570e"
+      },
+      {
+        "label": "Solar",
+        "valor": 2,
+        "color": "#a17c1c"
+      }
+    ],
+    "electrica_cita": "Gas 60 · Petróleo 38 · Solar 2. <i>Fuente: Ember 2024.</i>",
+    "comparativa_titulo": "Comparativa Internacional — Mix Eléctrico (%)",
+    "comparativa": {
+      "paises": [
+        "Arabia Saudita",
+        "Noruega",
+        "Rusia"
+      ],
+      "series": [
+        {
+          "label": "Gas",
+          "data": [
+            60,
+            1,
+            46
+          ],
+          "color": "#0b5394"
+        },
+        {
+          "label": "Petróleo",
+          "data": [
+            38,
+            0,
+            1
+          ],
+          "color": "#c4570e"
+        },
+        {
+          "label": "Hidro",
+          "data": [
+            0,
+            88,
+            18
+          ],
+          "color": "#2e7d32"
+        },
+        {
+          "label": "Nuclear",
+          "data": [
+            0,
+            0,
+            20
+          ],
+          "color": "#6b4e8e"
+        },
+        {
+          "label": "Solar/Eólica",
+          "data": [
+            2,
+            11,
+            1
+          ],
+          "color": "#a17c1c"
+        },
+        {
+          "label": "Carbón",
+          "data": [
+            0,
+            0,
+            14
+          ],
+          "color": "#8a4a4a"
+        }
+      ]
+    },
+    "comparativa_nota": "Arabia Saudita: único mix 100% fósil del trío."
+  },
+  "sankey": {
+    "src": "Producción → Transformación → Uso final",
+    "titulo_panel": "Flujos físicos de energía, Arabia Saudita (PJ aprox.)",
+    "flujos": [
+      {
+        "from": "Crudo (prod.)",
+        "to": "Exportación de crudo",
+        "flow": 13000
+      },
+      {
+        "from": "Crudo (prod.)",
+        "to": "Refinación local",
+        "flow": 3500
+      },
+      {
+        "from": "Gas natural (prod.)",
+        "to": "Generación eléctrica",
+        "flow": 2600
+      },
+      {
+        "from": "Gas natural (prod.)",
+        "to": "Industria & desalación",
+        "flow": 1800
+      },
+      {
+        "from": "Refinación local",
+        "to": "Combustibles refinados",
+        "flow": 3300
+      },
+      {
+        "from": "Combustibles refinados",
+        "to": "Generación eléctrica",
+        "flow": 1400
+      },
+      {
+        "from": "Combustibles refinados",
+        "to": "Transporte",
+        "flow": 1700
+      },
+      {
+        "from": "Generación eléctrica",
+        "to": "Desalación de agua",
+        "flow": 1200
+      },
+      {
+        "from": "Generación eléctrica",
+        "to": "Residencial (A/C)",
+        "flow": 1500
+      }
+    ],
+    "nodos": {
+      "Crudo (prod.)": {
+        "color": "#c4570e",
+        "label": "Crudo (producción)"
+      },
+      "Gas natural (prod.)": {
+        "color": "#0b5394",
+        "label": "Gas natural"
+      },
+      "Refinación local": {
+        "color": "#c4570e",
+        "label": "Refinerías"
+      },
+      "Combustibles refinados": {
+        "color": "#a17c1c",
+        "label": "Combustibles refinados"
+      },
+      "Generación eléctrica": {
+        "color": "#6b4e8e",
+        "label": "Generación eléctrica"
+      },
+      "Exportación de crudo": {
+        "color": "#8a4a4a",
+        "label": "EXPORT · Crudo"
+      },
+      "Industria & desalación": {
+        "color": "#4a5870",
+        "label": "Industria + Desalación"
+      },
+      "Desalación de agua": {
+        "color": "#0b5394",
+        "label": "Desalación"
+      },
+      "Residencial (A/C)": {
+        "color": "#4a5870",
+        "label": "Residencial (A/C)"
+      },
+      "Transporte": {
+        "color": "#c4570e",
+        "label": "Transporte"
+      }
+    },
+    "cita": "El nexo agua-energía: la desalación consume una fracción enorme de la electricidad. <i>Datos estilizados sobre IEA 2024.</i>"
+  },
+  "evolucion": {
+    "src": "2000–2050 · Visión 2030",
+    "historico_titulo": "Mix Eléctrico Histórico y Proyectado (%)",
+    "anios": [
+      "2000",
+      "2010",
+      "2020",
+      "2024",
+      "2030",
+      "2040",
+      "2050"
+    ],
+    "series": [
+      {
+        "label": "Petróleo",
+        "data": [
+          50,
+          48,
+          42,
+          38,
+          20,
+          8,
+          3
+        ],
+        "color": "#c4570e"
+      },
+      {
+        "label": "Gas",
+        "data": [
+          50,
+          52,
+          57,
+          60,
+          58,
+          50,
+          37
+        ],
+        "color": "#0b5394"
+      },
+      {
+        "label": "Solar/Eólica",
+        "data": [
+          0,
+          0,
+          1,
+          2,
+          22,
+          40,
+          55
+        ],
+        "color": "#a17c1c"
+      },
+      {
+        "label": "Nuclear",
+        "data": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          5
+        ],
+        "color": "#6b4e8e"
+      }
+    ],
+    "historico_cita": "Meta Visión 2030: 50% renovables en electricidad y desplazar el crudo quemado.",
+    "hitos_titulo": "Hitos del Régimen Energético",
+    "hitos": [
+      {
+        "anio": "1938",
+        "evento": "Descubrimiento de petróleo en Dammam."
+      },
+      {
+        "anio": "1960",
+        "evento": "Cofundación de la OPEP."
+      },
+      {
+        "anio": "1980",
+        "evento": "Nacionalización completa de Aramco."
+      },
+      {
+        "anio": "2016",
+        "evento": "Lanzamiento de Visión 2030; IPO parcial de Aramco (2019)."
+      },
+      {
+        "anio": "2019",
+        "evento": "Ataques con drones a Abqaiq/Khurais: -5% oferta mundial momentánea."
+      },
+      {
+        "anio": "2021",
+        "evento": "Saudi Green Initiative; meta net-zero 2060."
+      },
+      {
+        "anio": "2025",
+        "evento": "Plantas solares Sakaka y Sudair en operación; NEOM/Helios H₂ verde."
+      }
+    ]
+  },
+  "infraestructura": {
+    "src": "Mapa Leaflet · GEM",
+    "mapa_titulo": "Campos, terminales y estrechos críticos",
+    "pines": [
+      {
+        "lat": 25.4,
+        "lng": 49.6,
+        "tipo": "refineria",
+        "nombre": "Campo Ghawar",
+        "desc": "Mayor campo de petróleo del mundo (Aramco)"
+      },
+      {
+        "lat": 25.93,
+        "lng": 49.67,
+        "tipo": "refineria",
+        "nombre": "Abqaiq (Buqayq)",
+        "desc": "Mayor planta de procesamiento de crudo; atacada en 2019"
+      },
+      {
+        "lat": 26.64,
+        "lng": 50.16,
+        "tipo": "gnl",
+        "nombre": "Ras Tanura",
+        "desc": "Mayor terminal/refinería de exportación"
+      },
+      {
+        "lat": 24.09,
+        "lng": 38.06,
+        "tipo": "gnl",
+        "nombre": "Yanbu",
+        "desc": "Terminal y refinerías en el Mar Rojo"
+      },
+      {
+        "lat": 27,
+        "lng": 49.66,
+        "tipo": "refineria",
+        "nombre": "Jubail",
+        "desc": "Complejo industrial y petroquímico"
+      },
+      {
+        "lat": 29.9,
+        "lng": 40.2,
+        "tipo": "minerales",
+        "nombre": "Solar Sakaka",
+        "desc": "300 MW · primera fotovoltaica utility-scale"
+      },
+      {
+        "lat": 25.6,
+        "lng": 45.6,
+        "tipo": "minerales",
+        "nombre": "Solar Sudair",
+        "desc": "1.5 GW · una de las mayores del mundo"
+      },
+      {
+        "lat": 26.57,
+        "lng": 56.25,
+        "tipo": "sloc",
+        "nombre": "Estrecho de Ormuz",
+        "desc": "Paso de ~20% del petróleo mundial"
+      },
+      {
+        "lat": 12.6,
+        "lng": 43.3,
+        "tipo": "sloc",
+        "nombre": "Bab el-Mandeb",
+        "desc": "Ruta hacia el Mar Rojo y Suez"
+      }
+    ],
+    "rutas": [
+      {
+        "puntos": [
+          [
+            26.64,
+            50.16
+          ],
+          [
+            26.57,
+            56.25
+          ],
+          [
+            22,
+            60
+          ],
+          [
+            10,
+            72
+          ]
+        ],
+        "tooltip": "SLOC: Golfo → Ormuz → Asia"
+      },
+      {
+        "puntos": [
+          [
+            24.09,
+            38.06
+          ],
+          [
+            12.6,
+            43.3
+          ],
+          [
+            20,
+            38
+          ],
+          [
+            30,
+            32.55
+          ]
+        ],
+        "tooltip": "SLOC: Yanbu → Bab el-Mandeb → Suez"
+      }
+    ],
+    "leyenda": [
+      {
+        "color": "#c4570e",
+        "label": "Campos / refinerías"
+      },
+      {
+        "color": "#0b5394",
+        "label": "Terminales de exportación"
+      },
+      {
+        "color": "#a17c1c",
+        "label": "Solar (Visión 2030)"
+      },
+      {
+        "color": "#c62828",
+        "label": "Estrechos críticos"
+      }
+    ],
+    "mapa_cita": "Coordenadas reales de Ghawar, Abqaiq, Ras Tanura, Yanbu, Jubail, Sakaka y Sudair. <i>Fuentes: GEM 2024; Aramco.</i>",
+    "vulnerabilidades_titulo": "Vulnerabilidades técnicas",
+    "vulnerabilidades": [
+      {
+        "nivel": "high",
+        "tag": "CRÍT",
+        "texto_html": "<b>Concentración física</b> · Abqaiq procesa una parte enorme del crudo: un solo punto de falla estratégico (ataque 2019)."
+      },
+      {
+        "nivel": "high",
+        "tag": "CRÍT",
+        "texto_html": "<b>Estrecho de Ormuz</b> · la mayoría de las exportaciones pasa por un cuello de botella; el oleoducto Este-Oeste mitiga parcialmente."
+      },
+      {
+        "nivel": "med",
+        "tag": "ALTO",
+        "texto_html": "<b>Nexo agua-energía</b> · la desalación consume crudo/gas que compiten con la exportación."
+      },
+      {
+        "nivel": "med",
+        "tag": "ALTO",
+        "texto_html": "<b>Pico de demanda por A/C</b> · veranos extremos disparan el consumo eléctrico interno."
+      }
+    ],
+    "capacidad_titulo": "Capacidad vs Demanda (GW)",
+    "capacidad": {
+      "anios": [
+        "2024",
+        "2030",
+        "2040",
+        "2050"
+      ],
+      "y_titulo": "GW",
+      "series": [
+        {
+          "label": "Fósil (GW)",
+          "tipo": "bar",
+          "data": [
+            80,
+            78,
+            60,
+            35
+          ],
+          "color": "#8a4a4a"
+        },
+        {
+          "label": "Solar/Eólica (GW)",
+          "tipo": "bar",
+          "data": [
+            3,
+            58,
+            120,
+            180
+          ],
+          "color": "#a17c1c"
+        },
+        {
+          "label": "Demanda pico (GW)",
+          "tipo": "line",
+          "data": [
+            62,
+            75,
+            95,
+            120
+          ],
+          "color": "#c4570e"
+        }
+      ]
+    },
+    "capacidad_cita": "Visión 2030: 130 GW renovables a 2030. <i>Fuente: KAPSARC; PIF.</i>"
+  },
+  "geopolitica": {
+    "src": "Radar APERC normalizado",
+    "radar_titulo": "Radar APERC: Arabia Saudita vs Noruega vs Rusia",
+    "radar": {
+      "ejes": [
+        "Availability",
+        "Accessibility",
+        "Affordability",
+        "Acceptability",
+        "Sovereignty",
+        "Robustness",
+        "Resilience"
+      ],
+      "series": [
+        {
+          "label": "Arabia Saudita",
+          "data": [
+            9.5,
+            4.5,
+            6.3,
+            2.5,
+            8.5,
+            6.5,
+            4.5
+          ],
+          "color": "#c4570e"
+        },
+        {
+          "label": "Noruega",
+          "data": [
+            9,
+            8.5,
+            7.5,
+            9.5,
+            9,
+            9,
+            9
+          ],
+          "color": "#2e7d32"
+        },
+        {
+          "label": "Rusia",
+          "data": [
+            9,
+            4,
+            7,
+            4.8,
+            8.5,
+            6.5,
+            5.5
+          ],
+          "color": "#0b5394"
+        }
+      ]
+    },
+    "radar_cita": "Normalización min-max sobre indicadores §01.",
+    "dependencias_titulo": "Dependencias y socios",
+    "dependencias": [
+      {
+        "vinculo": "Exportación crudo a China",
+        "pct": "25",
+        "riesgo": {
+          "texto": "Cliente clave",
+          "pill": "warn"
+        }
+      },
+      {
+        "vinculo": "Exportación crudo a India/Japón/Corea",
+        "pct": "45",
+        "riesgo": {
+          "texto": "Asia dependiente",
+          "pill": "ok"
+        }
+      },
+      {
+        "vinculo": "Coordinación OPEP+ con Rusia",
+        "pct": "—",
+        "riesgo": {
+          "texto": "Cártel de oferta",
+          "pill": "warn"
+        }
+      },
+      {
+        "vinculo": "Seguridad con EE.UU.",
+        "pct": "—",
+        "riesgo": {
+          "texto": "Garante histórico",
+          "pill": "ok"
+        }
+      }
+    ],
+    "dependencias_cita": "JODI; OPEP 2024.",
+    "minerales_titulo": "Posición energética global",
+    "minerales": [
+      {
+        "valor": "#1",
+        "unidad": " mundial",
+        "etiqueta": "EXPORTADOR DE CRUDO"
+      },
+      {
+        "valor": "17",
+        "unidad": "%",
+        "etiqueta": "RESERVAS MUNDIALES"
+      },
+      {
+        "valor": "~12",
+        "unidad": " Mb/d",
+        "etiqueta": "CAPACIDAD INSTALADA"
+      }
+    ],
+    "minerales_cita": "OPEP Annual Statistical Bulletin 2024."
+  },
+  "militar": {
+    "titulo_seccion": "Combustibles Militares y Rol Operacional de las Fuerzas Armadas Reales Saudíes",
+    "nav_label": "Combustibles militares",
+    "src": "SIPRI · Ministerio de Defensa KSA",
+    "combustibles_titulo": "Demanda de combustibles de las Fuerzas Armadas",
+    "combustibles": [
+      {
+        "codigo": "F-34 (JP-8)",
+        "tipo": "Queroseno militar",
+        "usuario": "RSAF (aviación)",
+        "ml_anio": "650"
+      },
+      {
+        "codigo": "F-76",
+        "tipo": "Diésel naval",
+        "usuario": "Royal Saudi Navy",
+        "ml_anio": "180"
+      },
+      {
+        "codigo": "F-54",
+        "tipo": "Diésel terrestre",
+        "usuario": "RSLF (tierra)",
+        "ml_anio": "260"
+      }
+    ],
+    "combustibles_total": "~1090",
+    "combustibles_cita": "Estimación de orden de magnitud (presupuesto de defensa entre los mayores del mundo).",
+    "vulnerabilidades_titulo": "Vulnerabilidades específicas de defensa",
+    "vulnerabilidades": [
+      {
+        "nivel": "high",
+        "tag": "CRÍT",
+        "texto_html": "<b>Defensa de infraestructura</b> · ataques con drones/misiles a instalaciones petroleras (Abqaiq 2019, ataques hutíes)."
+      },
+      {
+        "nivel": "med",
+        "tag": "ALTO",
+        "texto_html": "<b>Defensa antiaérea</b> · saturación de sistemas Patriot frente a enjambres de drones baratos."
+      },
+      {
+        "nivel": "med",
+        "tag": "ALTO",
+        "texto_html": "<b>Seguridad marítima</b> · protección de Ormuz y del Mar Rojo (ataques a buques)."
+      }
+    ],
+    "mision_titulo": "Misión en Seguridad Energética",
+    "mision": [
+      {
+        "titulo": "PROTECCIÓN DE INSTALACIONES",
+        "texto_html": "Defensa de Abqaiq, Ras Tanura y campos por la Saudi Aramco Industrial Security Force y las FF.AA."
+      },
+      {
+        "titulo": "DEFENSA AÉREA",
+        "texto_html": "Interceptación de drones/misiles balísticos; integración de sensores y antiaéreos."
+      },
+      {
+        "titulo": "SEGURIDAD MARÍTIMA",
+        "texto_html": "Escolta y vigilancia en Ormuz y Mar Rojo; coordinación con coaliciones."
+      },
+      {
+        "titulo": "DISUASIÓN REGIONAL",
+        "texto_html": "Equilibrio frente a Irán; rutas alternas (oleoducto Este-Oeste a Yanbu)."
+      }
+    ],
+    "mision_cita": "IISS Military Balance 2024."
+  },
+  "politicas": {
+    "src": "PIF · Ministerio de Energía",
+    "planes_titulo": "Planes nacionales",
+    "planes": [
+      {
+        "nombre": "Visión 2030",
+        "texto": "Diversificación económica y energética; reducir dependencia del crudo."
+      },
+      {
+        "nombre": "National Renewable Energy Program",
+        "texto": "~130 GW renovables a 2030."
+      },
+      {
+        "nombre": "Saudi Green Initiative",
+        "texto": "Net-zero 2060; economía circular del carbono."
+      },
+      {
+        "nombre": "NEOM / Helios",
+        "texto": "Hidrógeno verde a gran escala para exportación."
+      }
+    ],
+    "instituciones_titulo": "Instituciones clave",
+    "instituciones": [
+      {
+        "sigla": "Saudi Aramco",
+        "texto": "petrolera nacional; mayor productora del mundo."
+      },
+      {
+        "sigla": "Ministerio de Energía",
+        "texto": "rectoría del sector."
+      },
+      {
+        "sigla": "PIF",
+        "texto": "fondo soberano; financia la transición (ACWA Power)."
+      },
+      {
+        "sigla": "KAPSARC",
+        "texto": "centro de investigación de política energética."
+      }
+    ],
+    "transicion_titulo": "Transición y economía",
+    "transicion_html": "<p>El reto es <b>diversificar la renta</b> antes de que la demanda global de petróleo decline. La transición es financiada por el propio petróleo (PIF), apostando a solar, hidrógeno verde y petroquímica de valor agregado.</p>",
+    "transicion_cita": "PIF; IEA 2024."
+  },
+  "crisis": {
+    "src": "Wargaming · Cone of Plausibility",
+    "matriz_titulo": "Matriz Probabilidad × Impacto",
+    "matriz": {
+      "esquina": "Impacto ↓ / Prob →",
+      "prob_labels": [
+        "Muy bajo",
+        "Bajo",
+        "Medio",
+        "Alto",
+        "Muy alto"
+      ],
+      "filas": [
+        {
+          "impacto": "Catastrófico",
+          "celdas": [
+            {
+              "nivel": 3
+            },
+            {
+              "nivel": 4
+            },
+            {
+              "nivel": 5,
+              "texto": "Cierre de Ormuz"
+            },
+            {
+              "nivel": 5,
+              "texto": "Ataque mayor a Abqaiq"
+            },
+            {
+              "nivel": 5
+            }
+          ]
+        },
+        {
+          "impacto": "Mayor",
+          "celdas": [
+            {
+              "nivel": 2
+            },
+            {
+              "nivel": 3
+            },
+            {
+              "nivel": 4,
+              "texto": "Guerra de precios"
+            },
+            {
+              "nivel": 4,
+              "texto": "Drones hutíes"
+            },
+            {
+              "nivel": 5
+            }
+          ]
+        },
+        {
+          "impacto": "Moderado",
+          "celdas": [
+            {
+              "nivel": 1
+            },
+            {
+              "nivel": 2
+            },
+            {
+              "nivel": 3,
+              "texto": "Caída demanda"
+            },
+            {
+              "nivel": 4,
+              "texto": "Pico A/C"
+            },
+            {
+              "nivel": 4
+            }
+          ]
+        },
+        {
+          "impacto": "Menor",
+          "celdas": [
+            {
+              "nivel": 1
+            },
+            {
+              "nivel": 1
+            },
+            {
+              "nivel": 2
+            },
+            {
+              "nivel": 3
+            },
+            {
+              "nivel": 3
+            }
+          ]
+        },
+        {
+          "impacto": "Insignif.",
+          "celdas": [
+            {
+              "nivel": 1
+            },
+            {
+              "nivel": 1
+            },
+            {
+              "nivel": 1
+            },
+            {
+              "nivel": 2
+            },
+            {
+              "nivel": 2
+            }
+          ]
+        }
+      ]
+    },
+    "matriz_cita": "Escala HM Treasury Orange Book.",
+    "escenarios_titulo": "Escenarios calibrados",
+    "escenarios": [
+      {
+        "nivel": "high",
+        "tag": "A",
+        "texto_html": "<b>Cierre de Ormuz</b> — bloqueo de exportaciones. <i>Respuesta:</i> oleoducto Este-Oeste a Yanbu, reservas, coalición naval."
+      },
+      {
+        "nivel": "high",
+        "tag": "B",
+        "texto_html": "<b>Ataque a Abqaiq</b> — pérdida temporal de procesamiento. <i>Respuesta:</i> defensa aérea, redundancia, liberación de inventarios."
+      },
+      {
+        "nivel": "med",
+        "tag": "C",
+        "texto_html": "<b>Transición global acelerada</b> — caída estructural de la demanda. <i>Respuesta:</i> Visión 2030, diversificación."
+      },
+      {
+        "nivel": "med",
+        "tag": "D",
+        "texto_html": "<b>Ola de calor + pico de A/C</b> — estrés de la red. <i>Respuesta:</i> solar diurna, eficiencia, tarifas."
+      }
+    ],
+    "vectores_titulo": "Respuesta estratégica integrada — vectores",
+    "vectores": [
+      {
+        "titulo": "DIVERSIFICACIÓN",
+        "texto": "Solar, hidrógeno verde y petroquímica de valor agregado."
+      },
+      {
+        "titulo": "RUTAS ALTERNAS",
+        "texto": "Oleoducto Este-Oeste para evitar Ormuz."
+      },
+      {
+        "titulo": "DEFENSA",
+        "texto": "Antiaérea en capas contra drones/misiles."
+      },
+      {
+        "titulo": "ALIANZAS",
+        "texto": "OPEP+ para gestionar la oferta; seguridad con EE.UU."
+      }
+    ]
+  },
+  "referencias": {
+    "src": "Triangulación multi-fuente",
+    "titulo": "Fuentes primarias y académicas",
+    "items": [
+      "IEA (2024). <i>Saudi Arabia Energy Profile</i>. París.",
+      "OPEC (2024). <i>Annual Statistical Bulletin</i>.",
+      "Saudi Aramco (2024). <i>Annual Report</i>.",
+      "KAPSARC (2023). Estudios de política energética. Riad.",
+      "IISS (2024). <i>The Military Balance</i>.",
+      "APERC (2007). <i>A Quest for Energy Security in the 21st Century</i>. Tokio."
+    ]
+  },
+  "footer": "Documento de sustentación · Rúbrica Slide18 · Logística Militar · Mayo 2026"
+}

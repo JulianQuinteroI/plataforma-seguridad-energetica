@@ -1,0 +1,901 @@
+{
+  "schema_version": "1.0.0",
+  "meta": {
+    "pais": "Venezuela",
+    "pais_iso": "VEN",
+    "pais_iso2": "VE",
+    "subtitulo_pais": "República Bolivariana de",
+    "eyebrow": "Portafolio · Seguridad Energética por País",
+    "titulo": "Seguridad Energética de Venezuela:<br/>las mayores reservas, el sistema colapsado",
+    "subtitulo": "Posee las mayores reservas probadas de crudo del mundo (Faja del Orinoco) pero su seguridad energética se desplomó por el colapso de PDVSA, las sanciones y la fragilidad hidroeléctrica.",
+    "estudiante": "Cátedra (ejemplo de referencia)",
+    "asignatura": "Logística Militar · Rúbrica Slide18",
+    "tipo_doc": "Documento de sustentación",
+    "fecha": "Mayo 2026",
+    "fuerzas_armadas": "Fuerza Armada Nacional Bolivariana (FANB)",
+    "aperc_global": 3.8,
+    "cita_corta": "OPEP, 2024; IEA, 2024; PDVSA.",
+    "portafolio_label": "Rúbrica Slide18<br/>Logística Militar<br/>v2 — académica",
+    "map_view": {
+      "lat": 7,
+      "lng": -66,
+      "zoom": 5
+    }
+  },
+  "resumen": {
+    "tesis_html": "Venezuela vive la <b>paradoja extrema</b>: las <i>mayores reservas probadas de crudo del mundo</i> (Faja del Orinoco, extrapesado) conviven con un sistema energético colapsado — producción de PDVSA hundida, refinación degradada, sanciones y fuga de talento. La electricidad, ~75% hidro y dependiente del <b>Guri</b>, sufre apagones nacionales (marzo 2019). Hay escasez interna de gasolina pese a ser un país petrolero.",
+    "conclusion_html": "APERC <b>3.8/10</b>, el más bajo del portafolio: alta <i>availability</i> en reservas pero <i>affordability</i>, <i>robustness</i> y gobernanza en mínimos. La FANB protege la Faja, el Guri y los terminales.",
+    "kpis": [
+      {
+        "valor": 303,
+        "unidad": "Gbbl",
+        "etiqueta": "Reservas probadas de crudo"
+      },
+      {
+        "valor": 0.8,
+        "unidad": "Mb/d",
+        "etiqueta": "Producción actual de crudo",
+        "decimal": true
+      },
+      {
+        "valor": 75,
+        "unidad": "%",
+        "etiqueta": "Electricidad de origen hidro"
+      },
+      {
+        "valor": 3,
+        "unidad": "Mb/d",
+        "etiqueta": "Producción pico (2000s)"
+      }
+    ]
+  },
+  "aperc": {
+    "src": "APERC 2007 · OPEP 2024",
+    "definicion_html": "<p>Venezuela ilustra que la <i>availability</i> de recursos no garantiza seguridad: sin inversión, gobernanza ni mantenimiento, la <i>robustness</i> del sistema colapsa y la <i>affordability</i> se vuelve negativa pese a subsidios.</p>",
+    "definicion_cita": "OPEP 2024; IEA.",
+    "scorecard_titulo": "Scorecard de Venezuela bajo APERC",
+    "scores": [
+      {
+        "letra": "A",
+        "nombre": "vailability",
+        "desc": "Mayores reservas de crudo; gran hidro (Guri).",
+        "score": 8.5
+      },
+      {
+        "letra": "A",
+        "nombre": "ccessibility",
+        "desc": "Sanciones; refinación e infraestructura degradadas.",
+        "score": 3
+      },
+      {
+        "letra": "A",
+        "nombre": "ffordability",
+        "desc": "Subsidios insostenibles; escasez de gasolina.",
+        "score": 2.5
+      },
+      {
+        "letra": "A",
+        "nombre": "cceptability",
+        "desc": "Quema de gas; derrames; apagones.",
+        "score": 1.2
+      }
+    ],
+    "scorecard_cita": "Scores propios sobre indicadores normalizados.",
+    "comparador": {
+      "pais_b": "Colombia",
+      "pais_c": "Arabia Saudita"
+    },
+    "indicadores_titulo": "Indicadores cuantitativos aplicados",
+    "indicadores": [
+      {
+        "indicador": "Reservas de crudo (Gbbl)",
+        "definicion": "Probadas",
+        "propio": "303",
+        "b": "2",
+        "c": "267",
+        "interp": {
+          "texto": "Las mayores del mundo",
+          "pill": "ok"
+        }
+      },
+      {
+        "indicador": "Utilización refinación (%)",
+        "definicion": "Capacidad usada",
+        "propio": "20",
+        "b": "70",
+        "c": "90",
+        "interp": {
+          "texto": "Colapsada",
+          "pill": "danger"
+        }
+      },
+      {
+        "indicador": "Días de apagón/año",
+        "definicion": "Estimado",
+        "propio": "alto",
+        "b": "bajo",
+        "c": "muy bajo",
+        "interp": {
+          "texto": "Crisis eléctrica",
+          "pill": "danger"
+        }
+      },
+      {
+        "indicador": "Hidro en electricidad (%)",
+        "definicion": "Generación",
+        "propio": "75",
+        "b": "70",
+        "c": "0",
+        "interp": {
+          "texto": "Hiperdependencia del Guri"
+        }
+      }
+    ],
+    "indicadores_nota": "Comparación con Colombia (vecino) y Arabia Saudita (otro gran petrolero)."
+  },
+  "matriz": {
+    "src": "OPEP · IEA 2024",
+    "primaria_titulo": "Energía Primaria (TPES, %)",
+    "primaria": [
+      {
+        "label": "Petróleo",
+        "valor": 58,
+        "color": "#c4570e"
+      },
+      {
+        "label": "Gas natural",
+        "valor": 30,
+        "color": "#0b5394"
+      },
+      {
+        "label": "Hidro",
+        "valor": 12,
+        "color": "#2e7d32"
+      }
+    ],
+    "primaria_cita": "Petróleo 58 · Gas 30 · Hidro 12. <i>Fuente: OPEP/IEA.</i>",
+    "electrica_titulo": "Generación Eléctrica (%)",
+    "electrica": [
+      {
+        "label": "Hidro",
+        "valor": 75,
+        "color": "#2e7d32"
+      },
+      {
+        "label": "Gas",
+        "valor": 15,
+        "color": "#0b5394"
+      },
+      {
+        "label": "Petróleo",
+        "valor": 10,
+        "color": "#c4570e"
+      }
+    ],
+    "electrica_cita": "Hidro 75 · Gas 15 · Petróleo 10. <i>Fuente: IEA.</i>",
+    "comparativa_titulo": "Comparativa Internacional — Mix Eléctrico (%)",
+    "comparativa": {
+      "paises": [
+        "Venezuela",
+        "Colombia",
+        "Arabia Saudita"
+      ],
+      "series": [
+        {
+          "label": "Hidro",
+          "data": [
+            75,
+            70,
+            0
+          ],
+          "color": "#2e7d32"
+        },
+        {
+          "label": "Gas",
+          "data": [
+            15,
+            16,
+            60
+          ],
+          "color": "#0b5394"
+        },
+        {
+          "label": "Petróleo",
+          "data": [
+            10,
+            2,
+            38
+          ],
+          "color": "#c4570e"
+        },
+        {
+          "label": "Carbón",
+          "data": [
+            0,
+            8,
+            0
+          ],
+          "color": "#8a4a4a"
+        },
+        {
+          "label": "Solar/Eólica",
+          "data": [
+            0,
+            4,
+            2
+          ],
+          "color": "#a17c1c"
+        }
+      ]
+    },
+    "comparativa_nota": "Hiperdependencia hidroeléctrica del Guri (vulnerable a sequía)."
+  },
+  "sankey": {
+    "src": "Producción → Transformación → Uso final",
+    "titulo_panel": "Flujos físicos de energía, Venezuela (PJ aprox.)",
+    "flujos": [
+      {
+        "from": "Crudo (Faja Orinoco)",
+        "to": "Exportación de crudo",
+        "flow": 4000
+      },
+      {
+        "from": "Crudo (Faja Orinoco)",
+        "to": "Refinación local",
+        "flow": 1200
+      },
+      {
+        "from": "Refinación local",
+        "to": "Combustibles refinados",
+        "flow": 800
+      },
+      {
+        "from": "Combustibles refinados",
+        "to": "Transporte",
+        "flow": 700
+      },
+      {
+        "from": "Hidro (Guri)",
+        "to": "Generación eléctrica",
+        "flow": 1600
+      },
+      {
+        "from": "Gas natural",
+        "to": "Generación eléctrica",
+        "flow": 400
+      },
+      {
+        "from": "Generación eléctrica",
+        "to": "Industria & residencial",
+        "flow": 1700
+      }
+    ],
+    "nodos": {
+      "Crudo (Faja Orinoco)": {
+        "color": "#c4570e",
+        "label": "Crudo (Faja Orinoco)"
+      },
+      "Hidro (Guri)": {
+        "color": "#2e7d32",
+        "label": "Hidro (Guri)"
+      },
+      "Gas natural": {
+        "color": "#0b5394",
+        "label": "Gas natural"
+      },
+      "Refinación local": {
+        "color": "#c4570e",
+        "label": "Refinerías (degradadas)"
+      },
+      "Combustibles refinados": {
+        "color": "#a17c1c",
+        "label": "Combustibles"
+      },
+      "Generación eléctrica": {
+        "color": "#6b4e8e",
+        "label": "Generación eléctrica"
+      },
+      "Exportación de crudo": {
+        "color": "#8a4a4a",
+        "label": "EXPORT · Crudo"
+      },
+      "Industria & residencial": {
+        "color": "#4a5870",
+        "label": "Industria + Residencial"
+      },
+      "Transporte": {
+        "color": "#c4570e",
+        "label": "Transporte"
+      }
+    },
+    "cita": "La refinación opera muy por debajo de su capacidad; de ahí la escasez interna de gasolina. <i>Datos estilizados.</i>"
+  },
+  "evolucion": {
+    "src": "2000–2024 · colapso y sanciones",
+    "historico_titulo": "Producción de crudo (Mb/d)",
+    "anios": [
+      "2000",
+      "2008",
+      "2013",
+      "2016",
+      "2019",
+      "2024"
+    ],
+    "series": [
+      {
+        "label": "Producción de crudo",
+        "data": [
+          3.2,
+          3.2,
+          2.5,
+          2.2,
+          0.9,
+          0.8
+        ],
+        "color": "#c4570e"
+      }
+    ],
+    "historico_cita": "Caída de ~3.2 a <1 Mb/d por desinversión, mala gestión y sanciones.",
+    "hitos_titulo": "Hitos del Régimen Energético",
+    "hitos": [
+      {
+        "anio": "1976",
+        "evento": "Nacionalización del petróleo; nace PDVSA."
+      },
+      {
+        "anio": "1986",
+        "evento": "Inauguración de la represa del Guri (10 GW)."
+      },
+      {
+        "anio": "2003",
+        "evento": "Paro petrolero; despido masivo en PDVSA."
+      },
+      {
+        "anio": "2007",
+        "evento": "Estatización de la Faja del Orinoco."
+      },
+      {
+        "anio": "2017",
+        "evento": "Sanciones de EE.UU. al sector petrolero."
+      },
+      {
+        "anio": "2019",
+        "evento": "Apagón nacional de varios días (falla del SEN/Guri)."
+      }
+    ]
+  },
+  "infraestructura": {
+    "src": "Mapa Leaflet · GEM",
+    "mapa_titulo": "Crudo, refinerías e hidroeléctrica",
+    "pines": [
+      {
+        "lat": 8.5,
+        "lng": -64,
+        "tipo": "refineria",
+        "nombre": "Faja del Orinoco",
+        "desc": "Mayor reserva de crudo extrapesado del mundo"
+      },
+      {
+        "lat": 7.76,
+        "lng": -62.99,
+        "tipo": "almacenamiento",
+        "nombre": "Represa del Guri",
+        "desc": "Central Simón Bolívar · ~10 GW · base del SEN"
+      },
+      {
+        "lat": 11.75,
+        "lng": -70.2,
+        "tipo": "refineria",
+        "nombre": "Complejo Paraguaná (Amuay/Cardón)",
+        "desc": "Mayor complejo refinador; opera degradado"
+      },
+      {
+        "lat": 10.2,
+        "lng": -64.6,
+        "tipo": "refineria",
+        "nombre": "Refinería Puerto La Cruz",
+        "desc": "Oriente del país"
+      },
+      {
+        "lat": 10.1,
+        "lng": -64.7,
+        "tipo": "gnl",
+        "nombre": "Terminal José",
+        "desc": "Mayor terminal de exportación de crudo"
+      },
+      {
+        "lat": 10,
+        "lng": -71.5,
+        "tipo": "refineria",
+        "nombre": "Lago de Maracaibo",
+        "desc": "Cuenca petrolera histórica"
+      }
+    ],
+    "rutas": [
+      {
+        "puntos": [
+          [
+            10.1,
+            -64.7
+          ],
+          [
+            12,
+            -68
+          ],
+          [
+            15,
+            -72
+          ],
+          [
+            20,
+            -80
+          ]
+        ],
+        "tooltip": "SLOC: José → Caribe → Asia (con descuentos)"
+      }
+    ],
+    "leyenda": [
+      {
+        "color": "#c4570e",
+        "label": "Crudo / refinerías"
+      },
+      {
+        "color": "#2e7d32",
+        "label": "Hidroeléctrica"
+      },
+      {
+        "color": "#0b5394",
+        "label": "Terminales"
+      }
+    ],
+    "mapa_cita": "Coordenadas reales de Orinoco, Guri, Paraguaná, José y Maracaibo. <i>Fuentes: GEM.</i>",
+    "vulnerabilidades_titulo": "Vulnerabilidades técnicas",
+    "vulnerabilidades": [
+      {
+        "nivel": "high",
+        "tag": "CRÍT",
+        "texto_html": "<b>Hiperdependencia del Guri</b> · una falla deja sin luz a gran parte del país (2019)."
+      },
+      {
+        "nivel": "high",
+        "tag": "CRÍT",
+        "texto_html": "<b>Refinación colapsada</b> · escasez crónica de gasolina pese a las reservas."
+      },
+      {
+        "nivel": "med",
+        "tag": "ALTO",
+        "texto_html": "<b>Mantenimiento</b> · décadas de desinversión en PDVSA y el SEN."
+      },
+      {
+        "nivel": "med",
+        "tag": "ALTO",
+        "texto_html": "<b>Sanciones</b> · limitan exportación, importación de diluyentes y repuestos."
+      }
+    ],
+    "capacidad_titulo": "Capacidad vs Demanda eléctrica (GW)",
+    "capacidad": {
+      "anios": [
+        "2010",
+        "2016",
+        "2019",
+        "2024"
+      ],
+      "y_titulo": "GW",
+      "series": [
+        {
+          "label": "Capacidad efectiva (GW)",
+          "tipo": "bar",
+          "data": [
+            22,
+            18,
+            12,
+            14
+          ],
+          "color": "#2e7d32"
+        },
+        {
+          "label": "Demanda (GW)",
+          "tipo": "line",
+          "data": [
+            17,
+            18,
+            16,
+            15
+          ],
+          "color": "#c4570e"
+        }
+      ]
+    },
+    "capacidad_cita": "La capacidad efectiva cayó por falta de mantenimiento. <i>Estimación.</i>"
+  },
+  "geopolitica": {
+    "src": "Radar APERC normalizado",
+    "radar_titulo": "Radar APERC: Venezuela vs Colombia vs Arabia Saudita",
+    "radar": {
+      "ejes": [
+        "Availability",
+        "Accessibility",
+        "Affordability",
+        "Acceptability",
+        "Sovereignty",
+        "Robustness",
+        "Resilience"
+      ],
+      "series": [
+        {
+          "label": "Venezuela",
+          "data": [
+            8.5,
+            3,
+            2.5,
+            1.2,
+            6,
+            2.5,
+            2
+          ],
+          "color": "#c4570e"
+        },
+        {
+          "label": "Colombia",
+          "data": [
+            6.5,
+            6,
+            6,
+            6.5,
+            6.5,
+            6,
+            5.5
+          ],
+          "color": "#2e7d32"
+        },
+        {
+          "label": "Arabia Saudita",
+          "data": [
+            9.5,
+            4.5,
+            6.3,
+            2.5,
+            8.5,
+            6.5,
+            4.5
+          ],
+          "color": "#0b5394"
+        }
+      ]
+    },
+    "radar_cita": "Normalización min-max sobre indicadores §01.",
+    "dependencias_titulo": "Dependencias y socios",
+    "dependencias": [
+      {
+        "vinculo": "Exportación de crudo a China",
+        "pct": "60",
+        "riesgo": {
+          "texto": "Pago de deuda/descuentos",
+          "pill": "warn"
+        }
+      },
+      {
+        "vinculo": "Sanciones de EE.UU.",
+        "pct": "—",
+        "riesgo": {
+          "texto": "Restricción severa",
+          "pill": "danger"
+        }
+      },
+      {
+        "vinculo": "Importación de diluyentes/nafta",
+        "pct": "—",
+        "riesgo": {
+          "texto": "Necesaria para el extrapesado",
+          "pill": "danger"
+        }
+      },
+      {
+        "vinculo": "Apoyo técnico de Irán",
+        "pct": "—",
+        "riesgo": {
+          "texto": "Reparación de refinerías",
+          "pill": "warn"
+        }
+      }
+    ],
+    "dependencias_cita": "OPEP; prensa especializada 2024.",
+    "minerales_titulo": "Posición energética global",
+    "minerales": [
+      {
+        "valor": "#1",
+        "unidad": " mundial",
+        "etiqueta": "RESERVAS DE CRUDO"
+      },
+      {
+        "valor": "303",
+        "unidad": " Gbbl",
+        "etiqueta": "RESERVAS PROBADAS"
+      },
+      {
+        "valor": "~10",
+        "unidad": " GW",
+        "etiqueta": "HIDRO DEL GURI"
+      }
+    ],
+    "minerales_cita": "OPEP Annual Statistical Bulletin 2024."
+  },
+  "militar": {
+    "titulo_seccion": "Combustibles Militares y Rol Operacional de la FANB",
+    "nav_label": "Combustibles militares",
+    "src": "IISS · FANB",
+    "combustibles_titulo": "Demanda de combustibles de la FANB",
+    "combustibles": [
+      {
+        "codigo": "Jet A-1",
+        "tipo": "Queroseno de aviación",
+        "usuario": "Aviación Militar Bolivariana",
+        "ml_anio": "120"
+      },
+      {
+        "codigo": "Diésel naval",
+        "tipo": "Diésel/fuelóleo",
+        "usuario": "Armada Bolivariana",
+        "ml_anio": "60"
+      },
+      {
+        "codigo": "Gasoil terrestre",
+        "tipo": "Diésel",
+        "usuario": "Ejército Bolivariano",
+        "ml_anio": "90"
+      }
+    ],
+    "combustibles_total": "~270",
+    "combustibles_cita": "Estimación de orden de magnitud.",
+    "vulnerabilidades_titulo": "Vulnerabilidades específicas de defensa",
+    "vulnerabilidades": [
+      {
+        "nivel": "high",
+        "tag": "CRÍT",
+        "texto_html": "<b>Escasez de combustible</b> · incluso operaciones militares sufren la crisis de refinación."
+      },
+      {
+        "nivel": "med",
+        "tag": "ALTO",
+        "texto_html": "<b>Protección de infraestructura</b> · Faja, Guri y terminales son objetivos críticos."
+      },
+      {
+        "nivel": "med",
+        "tag": "ALTO",
+        "texto_html": "<b>Contrabando de combustible</b> · fronteras porosas con Colombia."
+      }
+    ],
+    "mision_titulo": "Misión en Seguridad Energética",
+    "mision": [
+      {
+        "titulo": "PROTECCIÓN DEL GURI",
+        "texto_html": "Custodia de la represa y del Sistema Eléctrico Nacional."
+      },
+      {
+        "titulo": "FAJA Y TERMINALES",
+        "texto_html": "Seguridad de la Faja del Orinoco y del terminal José."
+      },
+      {
+        "titulo": "ANTI-CONTRABANDO",
+        "texto_html": "Control del desvío de combustible subsidiado."
+      },
+      {
+        "titulo": "SOBERANÍA",
+        "texto_html": "Discurso de defensa de los recursos frente a sanciones."
+      }
+    ],
+    "mision_cita": "IISS 2024."
+  },
+  "politicas": {
+    "src": "PDVSA · CORPOELEC",
+    "planes_titulo": "Planes nacionales",
+    "planes": [
+      {
+        "nombre": "Plan de la Patria",
+        "texto": "Marco político con metas de recuperación petrolera (incumplidas)."
+      },
+      {
+        "nombre": "Licencias OFAC (Chevron)",
+        "texto": "Alivios parciales para reactivar producción y exportación."
+      },
+      {
+        "nombre": "Recuperación del SEN",
+        "texto": "Intentos de rehabilitar generación y transmisión."
+      }
+    ],
+    "instituciones_titulo": "Instituciones clave",
+    "instituciones": [
+      {
+        "sigla": "PDVSA",
+        "texto": "petrolera estatal; eje del colapso y la recuperación."
+      },
+      {
+        "sigla": "CORPOELEC",
+        "texto": "operador eléctrico nacional."
+      },
+      {
+        "sigla": "Ministerio del Poder Popular de Petróleo",
+        "texto": "rectoría."
+      }
+    ],
+    "transicion_titulo": "Transición y economía",
+    "transicion_html": "<p>El reto no es transición sino <b>reconstrucción</b>: recuperar producción, refinación y red eléctrica tras años de desinversión, sanciones y éxodo de personal calificado.</p>",
+    "transicion_cita": "IEA; OPEP 2024."
+  },
+  "crisis": {
+    "src": "Wargaming · Cone of Plausibility",
+    "matriz_titulo": "Matriz Probabilidad × Impacto",
+    "matriz": {
+      "esquina": "Impacto ↓ / Prob →",
+      "prob_labels": [
+        "Muy bajo",
+        "Bajo",
+        "Medio",
+        "Alto",
+        "Muy alto"
+      ],
+      "filas": [
+        {
+          "impacto": "Catastrófico",
+          "celdas": [
+            {
+              "nivel": 3
+            },
+            {
+              "nivel": 4
+            },
+            {
+              "nivel": 5,
+              "texto": "Apagón nacional"
+            },
+            {
+              "nivel": 5,
+              "texto": "Colapso del Guri"
+            },
+            {
+              "nivel": 5
+            }
+          ]
+        },
+        {
+          "impacto": "Mayor",
+          "celdas": [
+            {
+              "nivel": 2
+            },
+            {
+              "nivel": 3
+            },
+            {
+              "nivel": 4,
+              "texto": "Escasez de gasolina"
+            },
+            {
+              "nivel": 4
+            },
+            {
+              "nivel": 5
+            }
+          ]
+        },
+        {
+          "impacto": "Moderado",
+          "celdas": [
+            {
+              "nivel": 1
+            },
+            {
+              "nivel": 2
+            },
+            {
+              "nivel": 3,
+              "texto": "Falla de refinería"
+            },
+            {
+              "nivel": 4,
+              "texto": "Sequía/El Niño"
+            },
+            {
+              "nivel": 4
+            }
+          ]
+        },
+        {
+          "impacto": "Menor",
+          "celdas": [
+            {
+              "nivel": 1
+            },
+            {
+              "nivel": 1
+            },
+            {
+              "nivel": 2
+            },
+            {
+              "nivel": 3
+            },
+            {
+              "nivel": 3
+            }
+          ]
+        },
+        {
+          "impacto": "Insignif.",
+          "celdas": [
+            {
+              "nivel": 1
+            },
+            {
+              "nivel": 1
+            },
+            {
+              "nivel": 1
+            },
+            {
+              "nivel": 2
+            },
+            {
+              "nivel": 2
+            }
+          ]
+        }
+      ]
+    },
+    "matriz_cita": "Escala HM Treasury Orange Book.",
+    "escenarios_titulo": "Escenarios calibrados",
+    "escenarios": [
+      {
+        "nivel": "high",
+        "tag": "A",
+        "texto_html": "<b>Colapso del Guri</b> — apagón nacional prolongado. <i>Respuesta:</i> generación distribuida, racionamiento, reparación."
+      },
+      {
+        "nivel": "high",
+        "tag": "B",
+        "texto_html": "<b>Escasez total de gasolina</b> — parálisis. <i>Respuesta:</i> importación, rehabilitación de refinerías (Irán)."
+      },
+      {
+        "nivel": "med",
+        "tag": "C",
+        "texto_html": "<b>El Niño / sequía</b> — baja el embalse del Guri. <i>Respuesta:</i> termoeléctricas de respaldo (deterioradas)."
+      },
+      {
+        "nivel": "med",
+        "tag": "D",
+        "texto_html": "<b>Endurecimiento de sanciones</b> — caída de exportación. <i>Respuesta:</i> ventas a China con descuento."
+      }
+    ],
+    "vectores_titulo": "Respuesta estratégica integrada — vectores",
+    "vectores": [
+      {
+        "titulo": "RECONSTRUCCIÓN",
+        "texto": "Inversión y socios técnicos para PDVSA y el SEN."
+      },
+      {
+        "titulo": "DIVERSIFICAR GENERACIÓN",
+        "texto": "Reducir la hiperdependencia del Guri."
+      },
+      {
+        "titulo": "REFINACIÓN",
+        "texto": "Rehabilitar Paraguaná y Puerto La Cruz."
+      },
+      {
+        "titulo": "ALIVIO DE SANCIONES",
+        "texto": "Licencias (Chevron) para reactivar el sector."
+      }
+    ]
+  },
+  "referencias": {
+    "src": "Triangulación multi-fuente",
+    "titulo": "Fuentes primarias y académicas",
+    "items": [
+      "OPEC (2024). <i>Annual Statistical Bulletin</i>.",
+      "IEA (2024). <i>Venezuela Energy Profile</i>.",
+      "Monaldi, F. (2023). Estudios sobre el sector petrolero venezolano.",
+      "IISS (2024). <i>The Military Balance</i>.",
+      "APERC (2007). <i>A Quest for Energy Security in the 21st Century</i>. Tokio."
+    ]
+  },
+  "footer": "Documento de sustentación · Rúbrica Slide18 · Logística Militar · Mayo 2026"
+}

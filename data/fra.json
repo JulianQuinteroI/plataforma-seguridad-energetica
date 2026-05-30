@@ -1,0 +1,1004 @@
+{
+  "schema_version": "1.0.0",
+  "meta": {
+    "pais": "Francia",
+    "pais_iso": "FRA",
+    "pais_iso2": "FR",
+    "subtitulo_pais": "República",
+    "eyebrow": "Portafolio · Seguridad Energética por País",
+    "titulo": "Seguridad Energética de Francia:<br/>soberanía nuclear y dependencia de hidrocarburos",
+    "subtitulo": "Caso atípico de descarbonización vía energía nuclear (~65-70% de la electricidad): fuerte soberanía eléctrica frente a una dependencia casi total de petróleo, gas y uranio importados.",
+    "estudiante": "Cátedra (ejemplo de referencia)",
+    "asignatura": "Logística Militar · Rúbrica Slide18",
+    "tipo_doc": "Documento de sustentación",
+    "fecha": "Mayo 2026",
+    "fuerzas_armadas": "Fuerzas Armadas Francesas",
+    "aperc_global": 7.7,
+    "cita_corta": "IEA, 2024; RTE, 2024; EDF.",
+    "portafolio_label": "Rúbrica Slide18<br/>Logística Militar<br/>v2 — académica",
+    "map_view": {
+      "lat": 46.5,
+      "lng": 2.5,
+      "zoom": 5
+    }
+  },
+  "resumen": {
+    "tesis_html": "Francia es el <b>caso nuclear</b>: 56 reactores (EDF) generan ~65-70% de su electricidad, con baja intensidad de carbono y fuerte soberanía eléctrica. Pero importa <i>casi todo</i> el petróleo y el gas, y el <b>uranio</b> (Níger, Kazajistán, Canadá, Australia). El reto: envejecimiento del parque (corrosión 2022) y la relance con nuevos <b>EPR2</b>.",
+    "conclusion_html": "APERC <b>7.7/10</b>: alta <i>acceptability</i> (bajas emisiones) y <i>sovereignty</i> eléctrica, pero <i>availability</i> de fósiles importados limitada. El vínculo defensa-energía es directo: disuasión nuclear y autonomía estratégica.",
+    "kpis": [
+      {
+        "valor": 68,
+        "unidad": "%",
+        "etiqueta": "Electricidad nuclear"
+      },
+      {
+        "valor": 56,
+        "unidad": "",
+        "etiqueta": "Reactores nucleares"
+      },
+      {
+        "valor": 56,
+        "unidad": "gCO₂/kWh",
+        "etiqueta": "Intensidad de carbono eléctrica"
+      },
+      {
+        "valor": 99,
+        "unidad": "%",
+        "etiqueta": "Petróleo y gas importados"
+      }
+    ]
+  },
+  "aperc": {
+    "src": "APERC 2007 · IEA 2024",
+    "definicion_html": "<p>Francia maximiza la <i>acceptability</i> y la <i>sovereignty</i> en electricidad gracias al nucleoeléctrico, pero su <i>availability</i> de hidrocarburos es importada. El uranio importado es su dependencia upstream clave, mitigada por reservas y reprocesamiento (La Hague).</p>",
+    "definicion_cita": "IEA, France Energy Profile 2024.",
+    "scorecard_titulo": "Scorecard de Francia bajo APERC",
+    "scores": [
+      {
+        "letra": "A",
+        "nombre": "vailability",
+        "desc": "Nuclear robusto; importa fósiles y uranio.",
+        "score": 7.5
+      },
+      {
+        "letra": "A",
+        "nombre": "ccessibility",
+        "desc": "Diversifica proveedores de gas (Noruega/GNL).",
+        "score": 8
+      },
+      {
+        "letra": "A",
+        "nombre": "ffordability",
+        "desc": "Tarifa regulada; crisis de precios 2022.",
+        "score": 7
+      },
+      {
+        "letra": "A",
+        "nombre": "cceptability",
+        "desc": "Muy baja huella de carbono eléctrica.",
+        "score": 8.5
+      }
+    ],
+    "scorecard_cita": "Scores propios sobre indicadores normalizados.",
+    "comparador": {
+      "pais_b": "Alemania",
+      "pais_c": "Noruega"
+    },
+    "indicadores_titulo": "Indicadores cuantitativos aplicados",
+    "indicadores": [
+      {
+        "indicador": "Intensidad de carbono (gCO₂/kWh)",
+        "definicion": "Generación",
+        "propio": "56",
+        "b": "380",
+        "c": "26",
+        "interp": {
+          "texto": "Muy baja",
+          "pill": "ok"
+        }
+      },
+      {
+        "indicador": "Nuclear en electricidad (%)",
+        "definicion": "Generación",
+        "propio": "68",
+        "b": "0",
+        "c": "0",
+        "interp": {
+          "texto": "El más alto del mundo"
+        }
+      },
+      {
+        "indicador": "Net Import Dep. fósiles (%)",
+        "definicion": "Petróleo+gas",
+        "propio": "99",
+        "b": "95",
+        "c": "−600%",
+        "interp": {
+          "texto": "Alta",
+          "pill": "warn"
+        }
+      },
+      {
+        "indicador": "Disponibilidad del parque nuclear (%)",
+        "definicion": "Factor de carga",
+        "propio": "70",
+        "b": "—",
+        "c": "—",
+        "interp": {
+          "texto": "Recuperándose (corrosión 2022)"
+        }
+      }
+    ],
+    "indicadores_nota": "Comparación con Alemania (salió de la nuclear) y Noruega (hidro)."
+  },
+  "matriz": {
+    "src": "IEA · RTE 2024",
+    "primaria_titulo": "Energía Primaria (TPES, %)",
+    "primaria": [
+      {
+        "label": "Nuclear",
+        "valor": 40,
+        "color": "#6b4e8e"
+      },
+      {
+        "label": "Petróleo",
+        "valor": 28,
+        "color": "#c4570e"
+      },
+      {
+        "label": "Gas natural",
+        "valor": 16,
+        "color": "#0b5394"
+      },
+      {
+        "label": "Renovables",
+        "valor": 14,
+        "color": "#a17c1c"
+      },
+      {
+        "label": "Carbón",
+        "valor": 2,
+        "color": "#8a4a4a"
+      }
+    ],
+    "primaria_cita": "Nuclear 40 · Petróleo 28 · Gas 16 · Renov. 14 · Carbón 2. <i>Fuente: IEA 2024.</i>",
+    "electrica_titulo": "Generación Eléctrica (%)",
+    "electrica": [
+      {
+        "label": "Nuclear",
+        "valor": 68,
+        "color": "#6b4e8e"
+      },
+      {
+        "label": "Hidro",
+        "valor": 11,
+        "color": "#2e7d32"
+      },
+      {
+        "label": "Eólica",
+        "valor": 9,
+        "color": "#6a8caf"
+      },
+      {
+        "label": "Solar",
+        "valor": 5,
+        "color": "#a17c1c"
+      },
+      {
+        "label": "Gas",
+        "valor": 5,
+        "color": "#0b5394"
+      },
+      {
+        "label": "Otros",
+        "valor": 2,
+        "color": "#4a5870"
+      }
+    ],
+    "electrica_cita": "Nuclear 68 · Hidro 11 · Eólica 9 · Solar 5 · Gas 5. <i>Fuente: RTE 2024.</i>",
+    "comparativa_titulo": "Comparativa Internacional — Mix Eléctrico (%)",
+    "comparativa": {
+      "paises": [
+        "Francia",
+        "Alemania",
+        "Noruega"
+      ],
+      "series": [
+        {
+          "label": "Nuclear",
+          "data": [
+            68,
+            0,
+            0
+          ],
+          "color": "#6b4e8e"
+        },
+        {
+          "label": "Hidro",
+          "data": [
+            11,
+            4,
+            88
+          ],
+          "color": "#2e7d32"
+        },
+        {
+          "label": "Eólica",
+          "data": [
+            9,
+            27,
+            9
+          ],
+          "color": "#6a8caf"
+        },
+        {
+          "label": "Solar",
+          "data": [
+            5,
+            12,
+            0
+          ],
+          "color": "#a17c1c"
+        },
+        {
+          "label": "Gas",
+          "data": [
+            5,
+            14,
+            1
+          ],
+          "color": "#0b5394"
+        },
+        {
+          "label": "Carbón",
+          "data": [
+            1,
+            25,
+            0
+          ],
+          "color": "#8a4a4a"
+        }
+      ]
+    },
+    "comparativa_nota": "Francia (nuclear) vs Alemania (renovables+carbón) vs Noruega (hidro): tres caminos a baja/alta emisión."
+  },
+  "sankey": {
+    "src": "Producción → Transformación → Uso final",
+    "titulo_panel": "Flujos físicos de energía, Francia (PJ aprox.)",
+    "flujos": [
+      {
+        "from": "Uranio importado",
+        "to": "Generación nuclear",
+        "flow": 4500
+      },
+      {
+        "from": "Generación nuclear",
+        "to": "Electricidad",
+        "flow": 4200
+      },
+      {
+        "from": "Generación nuclear",
+        "to": "Exportación eléctrica",
+        "flow": 600
+      },
+      {
+        "from": "Petróleo importado",
+        "to": "Refinación local",
+        "flow": 3000
+      },
+      {
+        "from": "Refinación local",
+        "to": "Transporte",
+        "flow": 2600
+      },
+      {
+        "from": "Gas importado",
+        "to": "Industria & residencial",
+        "flow": 1800
+      },
+      {
+        "from": "Renovables (hidro/eólica)",
+        "to": "Electricidad",
+        "flow": 1100
+      },
+      {
+        "from": "Electricidad",
+        "to": "Industria & residencial",
+        "flow": 4700
+      }
+    ],
+    "nodos": {
+      "Uranio importado": {
+        "color": "#6b4e8e",
+        "label": "Uranio importado"
+      },
+      "Generación nuclear": {
+        "color": "#6b4e8e",
+        "label": "Generación nuclear"
+      },
+      "Petróleo importado": {
+        "color": "#c4570e",
+        "label": "Petróleo importado"
+      },
+      "Gas importado": {
+        "color": "#0b5394",
+        "label": "Gas importado"
+      },
+      "Renovables (hidro/eólica)": {
+        "color": "#2e7d32",
+        "label": "Renovables"
+      },
+      "Refinación local": {
+        "color": "#c4570e",
+        "label": "Refinerías"
+      },
+      "Electricidad": {
+        "color": "#a17c1c",
+        "label": "Electricidad"
+      },
+      "Exportación eléctrica": {
+        "color": "#2e7d32",
+        "label": "EXPORT · Electricidad"
+      },
+      "Industria & residencial": {
+        "color": "#4a5870",
+        "label": "Industria + Residencial"
+      },
+      "Transporte": {
+        "color": "#c4570e",
+        "label": "Transporte"
+      }
+    },
+    "cita": "Francia es exportador neto de electricidad gracias al nuclear, pero importa todo el uranio y los fósiles. <i>Datos estilizados.</i>"
+  },
+  "evolucion": {
+    "src": "1970–2050 · relance du nucléaire",
+    "historico_titulo": "Mix Eléctrico Histórico y Proyectado (%)",
+    "anios": [
+      "1980",
+      "2000",
+      "2015",
+      "2024",
+      "2035",
+      "2050"
+    ],
+    "series": [
+      {
+        "label": "Nuclear",
+        "data": [
+          24,
+          77,
+          76,
+          68,
+          60,
+          50
+        ],
+        "color": "#6b4e8e"
+      },
+      {
+        "label": "Hidro",
+        "data": [
+          30,
+          14,
+          11,
+          11,
+          10,
+          9
+        ],
+        "color": "#2e7d32"
+      },
+      {
+        "label": "Renovables (eól/sol)",
+        "data": [
+          0,
+          1,
+          6,
+          14,
+          28,
+          40
+        ],
+        "color": "#a17c1c"
+      },
+      {
+        "label": "Fósiles",
+        "data": [
+          46,
+          8,
+          7,
+          7,
+          2,
+          1
+        ],
+        "color": "#8a4a4a"
+      }
+    ],
+    "historico_cita": "Plan Messmer (1974) creó el parque nuclear; la relance prevé 6+8 EPR2.",
+    "hitos_titulo": "Hitos del Régimen Energético",
+    "hitos": [
+      {
+        "anio": "1974",
+        "evento": "Plan Messmer: gran programa nuclear tras la crisis del petróleo."
+      },
+      {
+        "anio": "1986",
+        "evento": "La Hague consolida el reprocesamiento de combustible."
+      },
+      {
+        "anio": "2015",
+        "evento": "Ley de Transición Energética (objetivo de reducir nuclear, luego revertido)."
+      },
+      {
+        "anio": "2022",
+        "evento": "Corrosión bajo tensión: baja disponibilidad del parque; crisis de precios."
+      },
+      {
+        "anio": "2023",
+        "evento": "Relance du nucléaire: 6 EPR2 (opción a 8) + renovables."
+      },
+      {
+        "anio": "2024",
+        "evento": "EPR de Flamanville conectado a la red."
+      }
+    ]
+  },
+  "infraestructura": {
+    "src": "Mapa Leaflet · GEM",
+    "mapa_titulo": "Reactores, terminales y reprocesamiento",
+    "pines": [
+      {
+        "lat": 51.01,
+        "lng": 2.14,
+        "tipo": "almacenamiento",
+        "nombre": "Central nuclear Gravelines",
+        "desc": "Mayor central nuclear de Europa occidental (EDF)"
+      },
+      {
+        "lat": 49.54,
+        "lng": -1.88,
+        "tipo": "almacenamiento",
+        "nombre": "EPR Flamanville",
+        "desc": "Reactor EPR conectado en 2024"
+      },
+      {
+        "lat": 49.68,
+        "lng": -1.88,
+        "tipo": "minerales",
+        "nombre": "La Hague (Orano)",
+        "desc": "Planta de reprocesamiento de combustible"
+      },
+      {
+        "lat": 44.33,
+        "lng": 4.73,
+        "tipo": "almacenamiento",
+        "nombre": "Central Tricastin",
+        "desc": "Nuclear + enriquecimiento de uranio"
+      },
+      {
+        "lat": 51.03,
+        "lng": 2.34,
+        "tipo": "gnl",
+        "nombre": "Terminal GNL Dunkerque",
+        "desc": "Importación de GNL (Norte)"
+      },
+      {
+        "lat": 43.42,
+        "lng": 4.86,
+        "tipo": "gnl",
+        "nombre": "Terminal GNL Fos-sur-Mer",
+        "desc": "Importación de GNL (Mediterráneo)"
+      },
+      {
+        "lat": 45.2,
+        "lng": 6.12,
+        "tipo": "minerales",
+        "nombre": "Hidro Grand'Maison (Alpes)",
+        "desc": "Bombeo · mayor central de bombeo de Francia"
+      }
+    ],
+    "rutas": [
+      {
+        "puntos": [
+          [
+            60,
+            3
+          ],
+          [
+            55,
+            4
+          ],
+          [
+            51.03,
+            2.34
+          ]
+        ],
+        "tooltip": "GNL/gas desde Noruega y el Mar del Norte"
+      }
+    ],
+    "leyenda": [
+      {
+        "color": "#6b4e8e",
+        "label": "Nuclear / enriquecimiento"
+      },
+      {
+        "color": "#0b5394",
+        "label": "Terminales GNL"
+      },
+      {
+        "color": "#2e7d32",
+        "label": "Hidro / bombeo"
+      },
+      {
+        "color": "#a17c1c",
+        "label": "Reprocesamiento"
+      }
+    ],
+    "mapa_cita": "Coordenadas reales de Gravelines, Flamanville, La Hague, Tricastin, Dunkerque y Fos. <i>Fuentes: GEM 2024.</i>",
+    "vulnerabilidades_titulo": "Vulnerabilidades técnicas",
+    "vulnerabilidades": [
+      {
+        "nivel": "high",
+        "tag": "CRÍT",
+        "texto_html": "<b>Envejecimiento nuclear</b> · corrosión bajo tensión (2022) redujo la disponibilidad a mínimos históricos."
+      },
+      {
+        "nivel": "med",
+        "tag": "ALTO",
+        "texto_html": "<b>Uranio importado</b> · dependencia de Níger, Kazajistán, Canadá, Australia."
+      },
+      {
+        "nivel": "med",
+        "tag": "ALTO",
+        "texto_html": "<b>Petróleo y gas importados</b> · sin producción propia significativa."
+      },
+      {
+        "nivel": "low",
+        "tag": "MED",
+        "texto_html": "<b>Sequía</b> · el agua de refrigeración de reactores se restringe en olas de calor."
+      }
+    ],
+    "capacidad_titulo": "Capacidad instalada (GW)",
+    "capacidad": {
+      "anios": [
+        "2024",
+        "2030",
+        "2040",
+        "2050"
+      ],
+      "y_titulo": "GW",
+      "series": [
+        {
+          "label": "Nuclear (GW)",
+          "tipo": "bar",
+          "data": [
+            61,
+            63,
+            70,
+            75
+          ],
+          "color": "#6b4e8e"
+        },
+        {
+          "label": "Renovables (GW)",
+          "tipo": "bar",
+          "data": [
+            40,
+            75,
+            120,
+            160
+          ],
+          "color": "#a17c1c"
+        },
+        {
+          "label": "Demanda pico (GW)",
+          "tipo": "line",
+          "data": [
+            85,
+            90,
+            100,
+            110
+          ],
+          "color": "#c4570e"
+        }
+      ]
+    },
+    "capacidad_cita": "Relance: nuevos EPR2 + crecimiento renovable. <i>Fuente: RTE Futurs énergétiques 2050.</i>"
+  },
+  "geopolitica": {
+    "src": "Radar APERC normalizado",
+    "radar_titulo": "Radar APERC: Francia vs Alemania vs Noruega",
+    "radar": {
+      "ejes": [
+        "Availability",
+        "Accessibility",
+        "Affordability",
+        "Acceptability",
+        "Sovereignty",
+        "Robustness",
+        "Resilience"
+      ],
+      "series": [
+        {
+          "label": "Francia",
+          "data": [
+            7.5,
+            8,
+            7,
+            8.5,
+            8,
+            7.5,
+            7.5
+          ],
+          "color": "#0b5394"
+        },
+        {
+          "label": "Alemania",
+          "data": [
+            5.5,
+            6,
+            6.5,
+            7.2,
+            5.5,
+            6,
+            6.5
+          ],
+          "color": "#8a4a4a"
+        },
+        {
+          "label": "Noruega",
+          "data": [
+            9,
+            8.5,
+            7.5,
+            9.5,
+            9,
+            9,
+            9
+          ],
+          "color": "#2e7d32"
+        }
+      ]
+    },
+    "radar_cita": "Normalización min-max sobre indicadores §01.",
+    "dependencias_titulo": "Dependencias y socios",
+    "dependencias": [
+      {
+        "vinculo": "Uranio de Níger/Kazajistán/Canadá",
+        "pct": "—",
+        "riesgo": {
+          "texto": "Diversificado, golpe en Níger",
+          "pill": "warn"
+        }
+      },
+      {
+        "vinculo": "Gas de Noruega/GNL (EE.UU./Catar)",
+        "pct": "—",
+        "riesgo": {
+          "texto": "Diversificado post-Rusia",
+          "pill": "ok"
+        }
+      },
+      {
+        "vinculo": "Exportación eléctrica a la UE",
+        "pct": "—",
+        "riesgo": {
+          "texto": "Exportador neto",
+          "pill": "ok"
+        }
+      },
+      {
+        "vinculo": "Interconexión con Alemania/España",
+        "pct": "—",
+        "riesgo": {
+          "texto": "Resiliencia de red",
+          "pill": "ok"
+        }
+      }
+    ],
+    "dependencias_cita": "RTE; Orano 2024.",
+    "minerales_titulo": "Posición energética global",
+    "minerales": [
+      {
+        "valor": "#1",
+        "unidad": " mundial",
+        "etiqueta": "% NUCLEAR EN ELECTRICIDAD"
+      },
+      {
+        "valor": "56",
+        "unidad": " gCO₂/kWh",
+        "etiqueta": "INTENSIDAD DE CARBONO"
+      },
+      {
+        "valor": "#1",
+        "unidad": " UE",
+        "etiqueta": "EXPORTADOR DE ELECTRICIDAD"
+      }
+    ],
+    "minerales_cita": "RTE; Ember 2024."
+  },
+  "militar": {
+    "titulo_seccion": "Combustibles Militares y Rol Operacional de las Fuerzas Armadas Francesas",
+    "nav_label": "Combustibles militares",
+    "src": "IISS · Ministère des Armées",
+    "combustibles_titulo": "Demanda de combustibles de las Armées",
+    "combustibles": [
+      {
+        "codigo": "F-34 (JP-8)",
+        "tipo": "Queroseno militar",
+        "usuario": "Armée de l'Air",
+        "ml_anio": "500"
+      },
+      {
+        "codigo": "F-44 (JP-5)",
+        "tipo": "Queroseno alto flash",
+        "usuario": "Aéronavale (PA Charles de Gaulle)",
+        "ml_anio": "120"
+      },
+      {
+        "codigo": "F-76",
+        "tipo": "Diésel naval",
+        "usuario": "Marine nationale",
+        "ml_anio": "150"
+      }
+    ],
+    "combustibles_total": "~770",
+    "combustibles_cita": "Estimación de orden de magnitud.",
+    "vulnerabilidades_titulo": "Vulnerabilidades específicas de defensa",
+    "vulnerabilidades": [
+      {
+        "nivel": "med",
+        "tag": "ALTO",
+        "texto_html": "<b>Combustible importado</b> · dependencia de derivados para operaciones expedicionarias (Sahel, Índico)."
+      },
+      {
+        "nivel": "low",
+        "tag": "MED",
+        "texto_html": "<b>Cadena del uranio</b> · golpe de Estado en Níger (2023) elevó el foco en el suministro."
+      },
+      {
+        "nivel": "low",
+        "tag": "MED",
+        "texto_html": "<b>Resiliencia de bases</b> · transición de bases a energías limpias en curso."
+      }
+    ],
+    "mision_titulo": "Misión en Seguridad Energética",
+    "mision": [
+      {
+        "titulo": "DISUASIÓN NUCLEAR",
+        "texto_html": "La <i>force de dissuasion</i> sustenta la autonomía estratégica; sinergia con la industria nuclear civil."
+      },
+      {
+        "titulo": "AUTONOMÍA ESTRATÉGICA",
+        "texto_html": "Independencia eléctrica como pilar de soberanía nacional y europea."
+      },
+      {
+        "titulo": "PROYECCIÓN EXTERIOR",
+        "texto_html": "Logística de combustible para operaciones en África e Indo-Pacífico."
+      },
+      {
+        "titulo": "SEGURIDAD DEL URANIO",
+        "texto_html": "Diversificación de proveedores y reservas estratégicas."
+      }
+    ],
+    "mision_cita": "IISS 2024; Ministère des Armées."
+  },
+  "politicas": {
+    "src": "DGEC · RTE · CEA",
+    "planes_titulo": "Planes nacionales",
+    "planes": [
+      {
+        "nombre": "Relance du nucléaire (2022)",
+        "texto": "6 reactores EPR2, con opción a 8 adicionales."
+      },
+      {
+        "nombre": "PPE",
+        "texto": "Programación plurianual de la energía: nuclear + renovables."
+      },
+      {
+        "nombre": "SNBC",
+        "texto": "Estrategia nacional baja en carbono: neutralidad 2050."
+      },
+      {
+        "nombre": "Plan de sobriété énergétique",
+        "texto": "Reducción de demanda tras la crisis de 2022."
+      }
+    ],
+    "instituciones_titulo": "Instituciones clave",
+    "instituciones": [
+      {
+        "sigla": "EDF",
+        "texto": "operador (re-nacionalizado) del parque nuclear."
+      },
+      {
+        "sigla": "Orano",
+        "texto": "ciclo del combustible (minería, enriquecimiento, La Hague)."
+      },
+      {
+        "sigla": "RTE",
+        "texto": "operador de la red de transmisión."
+      },
+      {
+        "sigla": "CEA / ASN",
+        "texto": "investigación y seguridad nuclear."
+      }
+    ],
+    "transicion_titulo": "Transición y economía",
+    "transicion_html": "<p>Francia apuesta a un modelo <b>nuclear + renovables</b> para mantener baja intensidad de carbono y soberanía, mientras moderniza un parque envejecido y descarboniza transporte e industria por electrificación.</p>",
+    "transicion_cita": "RTE Futurs énergétiques 2050."
+  },
+  "crisis": {
+    "src": "Wargaming · Cone of Plausibility",
+    "matriz_titulo": "Matriz Probabilidad × Impacto",
+    "matriz": {
+      "esquina": "Impacto ↓ / Prob →",
+      "prob_labels": [
+        "Muy bajo",
+        "Bajo",
+        "Medio",
+        "Alto",
+        "Muy alto"
+      ],
+      "filas": [
+        {
+          "impacto": "Catastrófico",
+          "celdas": [
+            {
+              "nivel": 3
+            },
+            {
+              "nivel": 4
+            },
+            {
+              "nivel": 5,
+              "texto": "Parada masiva nuclear"
+            },
+            {
+              "nivel": 5
+            },
+            {
+              "nivel": 5
+            }
+          ]
+        },
+        {
+          "impacto": "Mayor",
+          "celdas": [
+            {
+              "nivel": 2
+            },
+            {
+              "nivel": 3
+            },
+            {
+              "nivel": 4,
+              "texto": "Crisis de gas"
+            },
+            {
+              "nivel": 4,
+              "texto": "Corrosión del parque"
+            },
+            {
+              "nivel": 5
+            }
+          ]
+        },
+        {
+          "impacto": "Moderado",
+          "celdas": [
+            {
+              "nivel": 1
+            },
+            {
+              "nivel": 2
+            },
+            {
+              "nivel": 3,
+              "texto": "Ola de calor (refrig.)"
+            },
+            {
+              "nivel": 4,
+              "texto": "Golpe en Níger (uranio)"
+            },
+            {
+              "nivel": 4
+            }
+          ]
+        },
+        {
+          "impacto": "Menor",
+          "celdas": [
+            {
+              "nivel": 1
+            },
+            {
+              "nivel": 1
+            },
+            {
+              "nivel": 2
+            },
+            {
+              "nivel": 3
+            },
+            {
+              "nivel": 3
+            }
+          ]
+        },
+        {
+          "impacto": "Insignif.",
+          "celdas": [
+            {
+              "nivel": 1
+            },
+            {
+              "nivel": 1
+            },
+            {
+              "nivel": 1
+            },
+            {
+              "nivel": 2
+            },
+            {
+              "nivel": 2
+            }
+          ]
+        }
+      ]
+    },
+    "matriz_cita": "Escala HM Treasury Orange Book.",
+    "escenarios_titulo": "Escenarios calibrados",
+    "escenarios": [
+      {
+        "nivel": "high",
+        "tag": "A",
+        "texto_html": "<b>Parada masiva del parque</b> — defecto genérico (corrosión). <i>Respuesta:</i> importación UE, sobriété, renovables."
+      },
+      {
+        "nivel": "med",
+        "tag": "B",
+        "texto_html": "<b>Crisis de gas</b> — corte de suministro. <i>Respuesta:</i> GNL diversificado, electrificación, reservas."
+      },
+      {
+        "nivel": "med",
+        "tag": "C",
+        "texto_html": "<b>Ola de calor</b> — restricción de refrigeración de reactores. <i>Respuesta:</i> gestión de ríos, importación puntual."
+      },
+      {
+        "nivel": "med",
+        "tag": "D",
+        "texto_html": "<b>Inestabilidad en el Sahel</b> — riesgo en el uranio. <i>Respuesta:</i> diversificar minas y reservas."
+      }
+    ],
+    "vectores_titulo": "Respuesta estratégica integrada — vectores",
+    "vectores": [
+      {
+        "titulo": "RELANCE NUCLEAR",
+        "texto": "EPR2 y extensión de vida útil del parque."
+      },
+      {
+        "titulo": "RENOVABLES",
+        "texto": "Eólica marina y solar para complementar."
+      },
+      {
+        "titulo": "DIVERSIFICAR GAS",
+        "texto": "GNL (EE.UU./Catar) y Noruega tras Rusia."
+      },
+      {
+        "titulo": "AUTONOMÍA EUROPEA",
+        "texto": "Interconexiones y soberanía industrial del ciclo nuclear."
+      }
+    ]
+  },
+  "referencias": {
+    "src": "Triangulación multi-fuente",
+    "titulo": "Fuentes primarias y académicas",
+    "items": [
+      "IEA (2024). <i>France Energy Profile</i>. París.",
+      "RTE (2022). <i>Futurs énergétiques 2050</i>.",
+      "EDF / Orano (2024). Reportes anuales.",
+      "IISS (2024). <i>The Military Balance</i>.",
+      "APERC (2007). <i>A Quest for Energy Security in the 21st Century</i>. Tokio."
+    ]
+  },
+  "footer": "Documento de sustentación · Rúbrica Slide18 · Logística Militar · Mayo 2026"
+}

@@ -1,0 +1,947 @@
+{
+  "schema_version": "1.0.0",
+  "meta": {
+    "pais": "Ecuador",
+    "pais_iso": "ECU",
+    "pais_iso2": "EC",
+    "subtitulo_pais": "República del",
+    "eyebrow": "Portafolio · Seguridad Energética por País",
+    "titulo": "Seguridad Energética del Ecuador:<br/>crudo amazónico e hidrodependencia",
+    "subtitulo": "Exportador de crudo amazónico con una electricidad muy hidrodependiente: los estiajes provocan apagones, los subsidios pesan en las finanzas y la refinación es deficitaria.",
+    "estudiante": "Cátedra (ejemplo de referencia)",
+    "asignatura": "Logística Militar · Rúbrica Slide18",
+    "tipo_doc": "Documento de sustentación",
+    "fecha": "Mayo 2026",
+    "fuerzas_armadas": "Fuerzas Armadas del Ecuador",
+    "aperc_global": 5,
+    "cita_corta": "MEM, 2024; ARCONEL; OPEP.",
+    "portafolio_label": "Rúbrica Slide18<br/>Logística Militar<br/>v2 — académica",
+    "map_view": {
+      "lat": -1.5,
+      "lng": -78.5,
+      "zoom": 6
+    }
+  },
+  "resumen": {
+    "tesis_html": "Ecuador es <b>exportador de crudo amazónico</b> (ex-OPEP) con una electricidad <i>muy hidrodependiente</i> (Coca Codo Sinclair). Los <b>estiajes</b> de 2023-2024 provocaron apagones nacionales. Carga con fuertes <b>subsidios a combustibles</b> y un déficit de refinación que obliga a importar derivados; el debate ITT/Yasuní marca su política petrolera.",
+    "conclusion_html": "APERC <b>5.0/10</b>: <i>availability</i> en crudo pero <i>robustness</i> y <i>affordability</i> débiles (apagones, subsidios). Las FF.AA. protegen el SOTE/OCP y la infraestructura amazónica.",
+    "kpis": [
+      {
+        "valor": 0.46,
+        "unidad": "Mb/d",
+        "etiqueta": "Producción de crudo",
+        "decimal": true
+      },
+      {
+        "valor": 79,
+        "unidad": "%",
+        "etiqueta": "Hidro en electricidad"
+      },
+      {
+        "valor": 4,
+        "unidad": "Bbbl",
+        "etiqueta": "Reservas de crudo"
+      },
+      {
+        "valor": 12,
+        "unidad": "h/día",
+        "etiqueta": "Apagones pico (2024)"
+      }
+    ]
+  },
+  "aperc": {
+    "src": "APERC 2007 · MEM 2024",
+    "definicion_html": "<p>Ecuador muestra cómo la <i>hidrodependencia</i> sin respaldo erosiona la <i>robustness</i>: en estiaje, la baja del embalse de Coca Codo Sinclair deja al país a oscuras. La <i>affordability</i> sufre por subsidios insostenibles.</p>",
+    "definicion_cita": "MEM; ARCONEL 2024.",
+    "scorecard_titulo": "Scorecard del Ecuador bajo APERC",
+    "scores": [
+      {
+        "letra": "A",
+        "nombre": "vailability",
+        "desc": "Crudo amazónico; gran hidro; potencial solar.",
+        "score": 6
+      },
+      {
+        "letra": "A",
+        "nombre": "ccessibility",
+        "desc": "Déficit de refinación; importa derivados.",
+        "score": 4.5
+      },
+      {
+        "letra": "A",
+        "nombre": "ffordability",
+        "desc": "Subsidios costosos; apagones.",
+        "score": 4.5
+      },
+      {
+        "letra": "A",
+        "nombre": "cceptability",
+        "desc": "Electricidad limpia, pero crudo en Amazonía (Yasuní).",
+        "score": 5
+      }
+    ],
+    "scorecard_cita": "Scores propios sobre indicadores normalizados.",
+    "comparador": {
+      "pais_b": "Colombia",
+      "pais_c": "Perú"
+    },
+    "indicadores_titulo": "Indicadores cuantitativos aplicados",
+    "indicadores": [
+      {
+        "indicador": "Hidro en electricidad (%)",
+        "definicion": "Generación",
+        "propio": "79",
+        "b": "70",
+        "c": "55",
+        "interp": {
+          "texto": "Hiperdependiente",
+          "pill": "warn"
+        }
+      },
+      {
+        "indicador": "Horas de apagón (2024)",
+        "definicion": "Pico",
+        "propio": "hasta 12/día",
+        "b": "bajo",
+        "c": "bajo",
+        "interp": {
+          "texto": "Crisis por estiaje",
+          "pill": "danger"
+        }
+      },
+      {
+        "indicador": "Subsidio a combustibles (% PIB)",
+        "definicion": "Estimado",
+        "propio": "~3",
+        "b": "0",
+        "c": "0",
+        "interp": {
+          "texto": "Carga fiscal",
+          "pill": "warn"
+        }
+      },
+      {
+        "indicador": "Utilización de refinación (%)",
+        "definicion": "Esmeraldas",
+        "propio": "60",
+        "b": "70",
+        "c": "70",
+        "interp": {
+          "texto": "Deficitaria"
+        }
+      }
+    ],
+    "indicadores_nota": "Comparación con Colombia y Perú (vecinos andinos)."
+  },
+  "matriz": {
+    "src": "MEM · Ember 2024",
+    "primaria_titulo": "Energía Primaria (TPES, %)",
+    "primaria": [
+      {
+        "label": "Petróleo",
+        "valor": 70,
+        "color": "#c4570e"
+      },
+      {
+        "label": "Hidro",
+        "valor": 16,
+        "color": "#2e7d32"
+      },
+      {
+        "label": "Gas natural",
+        "valor": 8,
+        "color": "#0b5394"
+      },
+      {
+        "label": "Biomasa/otros",
+        "valor": 6,
+        "color": "#a17c1c"
+      }
+    ],
+    "primaria_cita": "Petróleo 70 · Hidro 16 · Gas 8. <i>Fuente: MEM 2024.</i>",
+    "electrica_titulo": "Generación Eléctrica (%)",
+    "electrica": [
+      {
+        "label": "Hidro",
+        "valor": 79,
+        "color": "#2e7d32"
+      },
+      {
+        "label": "Petróleo/Térmica",
+        "valor": 18,
+        "color": "#c4570e"
+      },
+      {
+        "label": "Solar/Eólica",
+        "valor": 3,
+        "color": "#a17c1c"
+      }
+    ],
+    "electrica_cita": "Hidro 79 · Térmica 18 · Renov. 3. <i>Fuente: ARCONEL 2024.</i>",
+    "comparativa_titulo": "Comparativa Internacional — Mix Eléctrico (%)",
+    "comparativa": {
+      "paises": [
+        "Ecuador",
+        "Colombia",
+        "Perú"
+      ],
+      "series": [
+        {
+          "label": "Hidro",
+          "data": [
+            79,
+            70,
+            55
+          ],
+          "color": "#2e7d32"
+        },
+        {
+          "label": "Térmica/Petróleo",
+          "data": [
+            18,
+            2,
+            0
+          ],
+          "color": "#c4570e"
+        },
+        {
+          "label": "Gas",
+          "data": [
+            0,
+            16,
+            40
+          ],
+          "color": "#0b5394"
+        },
+        {
+          "label": "Carbón",
+          "data": [
+            0,
+            8,
+            0
+          ],
+          "color": "#8a4a4a"
+        },
+        {
+          "label": "Solar/Eólica",
+          "data": [
+            3,
+            4,
+            5
+          ],
+          "color": "#a17c1c"
+        }
+      ]
+    },
+    "comparativa_nota": "Mayor hidrodependencia de la región → mayor riesgo en estiaje."
+  },
+  "sankey": {
+    "src": "Producción → Transformación → Uso final",
+    "titulo_panel": "Flujos físicos de energía, Ecuador (PJ aprox.)",
+    "flujos": [
+      {
+        "from": "Crudo amazónico",
+        "to": "Exportación de crudo",
+        "flow": 1500
+      },
+      {
+        "from": "Crudo amazónico",
+        "to": "Refinación local",
+        "flow": 800
+      },
+      {
+        "from": "Refinación local",
+        "to": "Combustibles refinados",
+        "flow": 600
+      },
+      {
+        "from": "Combustibles importados",
+        "to": "Transporte",
+        "flow": 900
+      },
+      {
+        "from": "Combustibles refinados",
+        "to": "Transporte",
+        "flow": 550
+      },
+      {
+        "from": "Hidro (Coca Codo)",
+        "to": "Generación eléctrica",
+        "flow": 1400
+      },
+      {
+        "from": "Térmica",
+        "to": "Generación eléctrica",
+        "flow": 350
+      },
+      {
+        "from": "Generación eléctrica",
+        "to": "Industria & residencial",
+        "flow": 1600
+      }
+    ],
+    "nodos": {
+      "Crudo amazónico": {
+        "color": "#c4570e",
+        "label": "Crudo amazónico"
+      },
+      "Combustibles importados": {
+        "color": "#a82822",
+        "label": "Derivados importados"
+      },
+      "Hidro (Coca Codo)": {
+        "color": "#2e7d32",
+        "label": "Hidro (Coca Codo)"
+      },
+      "Térmica": {
+        "color": "#8a4a4a",
+        "label": "Térmica"
+      },
+      "Refinación local": {
+        "color": "#c4570e",
+        "label": "Refinería Esmeraldas"
+      },
+      "Combustibles refinados": {
+        "color": "#a17c1c",
+        "label": "Combustibles"
+      },
+      "Generación eléctrica": {
+        "color": "#6b4e8e",
+        "label": "Generación eléctrica"
+      },
+      "Exportación de crudo": {
+        "color": "#8a4a4a",
+        "label": "EXPORT · Crudo"
+      },
+      "Industria & residencial": {
+        "color": "#4a5870",
+        "label": "Industria + Residencial"
+      },
+      "Transporte": {
+        "color": "#c4570e",
+        "label": "Transporte"
+      }
+    },
+    "cita": "Exporta crudo pero importa derivados; la electricidad depende del agua. <i>Datos estilizados.</i>"
+  },
+  "evolucion": {
+    "src": "2000–2050 · hidro y subsidios",
+    "historico_titulo": "Mix Eléctrico Histórico y Proyectado (%)",
+    "anios": [
+      "2000",
+      "2010",
+      "2016",
+      "2024",
+      "2035",
+      "2050"
+    ],
+    "series": [
+      {
+        "label": "Hidro",
+        "data": [
+          70,
+          55,
+          75,
+          79,
+          70,
+          60
+        ],
+        "color": "#2e7d32"
+      },
+      {
+        "label": "Térmica/Petróleo",
+        "data": [
+          30,
+          44,
+          23,
+          18,
+          12,
+          5
+        ],
+        "color": "#c4570e"
+      },
+      {
+        "label": "Solar/Eólica",
+        "data": [
+          0,
+          1,
+          2,
+          3,
+          18,
+          35
+        ],
+        "color": "#a17c1c"
+      }
+    ],
+    "historico_cita": "Coca Codo Sinclair (2016) elevó la hidro, pero aumentó la exposición al estiaje.",
+    "hitos_titulo": "Hitos del Régimen Energético",
+    "hitos": [
+      {
+        "anio": "1972",
+        "evento": "Inicio de la exportación petrolera (SOTE)."
+      },
+      {
+        "anio": "1973",
+        "evento": "Ingreso a la OPEP (salió en 2020)."
+      },
+      {
+        "anio": "2016",
+        "evento": "Entrada de Coca Codo Sinclair (1.5 GW)."
+      },
+      {
+        "anio": "2023",
+        "evento": "Consulta del Yasuní: dejar el crudo del ITT bajo tierra."
+      },
+      {
+        "anio": "2024",
+        "evento": "Apagones nacionales por estiaje severo."
+      }
+    ]
+  },
+  "infraestructura": {
+    "src": "Mapa Leaflet · GEM",
+    "mapa_titulo": "Hidro, crudo y refinación",
+    "pines": [
+      {
+        "lat": -0.12,
+        "lng": -77.55,
+        "tipo": "almacenamiento",
+        "nombre": "Hidro Coca Codo Sinclair",
+        "desc": "1.5 GW · base del sistema (estiaje crítico)"
+      },
+      {
+        "lat": 0.98,
+        "lng": -79.65,
+        "tipo": "refineria",
+        "nombre": "Refinería de Esmeraldas",
+        "desc": "Principal refinería del país"
+      },
+      {
+        "lat": -0.95,
+        "lng": -75.4,
+        "tipo": "refineria",
+        "nombre": "Bloques amazónicos / ITT",
+        "desc": "Crudo pesado de la Amazonía (Yasuní)"
+      },
+      {
+        "lat": 0.95,
+        "lng": -79.62,
+        "tipo": "gnl",
+        "nombre": "Terminal Balao",
+        "desc": "Exportación de crudo (fin del SOTE)"
+      },
+      {
+        "lat": -2.2,
+        "lng": -79.9,
+        "tipo": "almacenamiento",
+        "nombre": "Hidro Paute-Molino",
+        "desc": "Complejo hidroeléctrico del sur"
+      }
+    ],
+    "rutas": [
+      {
+        "puntos": [
+          [
+            -0.95,
+            -75.4
+          ],
+          [
+            -0.3,
+            -78
+          ],
+          [
+            0.98,
+            -79.65
+          ],
+          [
+            0.95,
+            -79.62
+          ]
+        ],
+        "tooltip": "Oleoducto SOTE: Amazonía → Esmeraldas/Balao"
+      }
+    ],
+    "leyenda": [
+      {
+        "color": "#2e7d32",
+        "label": "Hidroeléctrica"
+      },
+      {
+        "color": "#c4570e",
+        "label": "Crudo / refinería"
+      },
+      {
+        "color": "#0b5394",
+        "label": "Terminal de exportación"
+      }
+    ],
+    "mapa_cita": "Coordenadas reales de Coca Codo, Esmeraldas, ITT, Balao, Paute. <i>Fuentes: GEM 2024.</i>",
+    "vulnerabilidades_titulo": "Vulnerabilidades técnicas",
+    "vulnerabilidades": [
+      {
+        "nivel": "high",
+        "tag": "CRÍT",
+        "texto_html": "<b>Estiaje hidroeléctrico</b> · sin respaldo, el país sufre apagones de hasta 12 h/día (2024)."
+      },
+      {
+        "nivel": "high",
+        "tag": "CRÍT",
+        "texto_html": "<b>Subsidios</b> · presión fiscal y contrabando hacia países vecinos."
+      },
+      {
+        "nivel": "med",
+        "tag": "ALTO",
+        "texto_html": "<b>SOTE/OCP</b> · oleoductos expuestos a deslizamientos (erosión regresiva del río Coca) y derrames."
+      },
+      {
+        "nivel": "low",
+        "tag": "MED",
+        "texto_html": "<b>Déficit de refinación</b> · importación de derivados."
+      }
+    ],
+    "capacidad_titulo": "Capacidad vs Demanda eléctrica (GW)",
+    "capacidad": {
+      "anios": [
+        "2016",
+        "2020",
+        "2024",
+        "2030"
+      ],
+      "y_titulo": "GW",
+      "series": [
+        {
+          "label": "Hidro (GW)",
+          "tipo": "bar",
+          "data": [
+            4.5,
+            5,
+            5.1,
+            5.8
+          ],
+          "color": "#2e7d32"
+        },
+        {
+          "label": "Térmica/Renov. (GW)",
+          "tipo": "bar",
+          "data": [
+            2,
+            1.8,
+            1.7,
+            2.5
+          ],
+          "color": "#c4570e"
+        },
+        {
+          "label": "Demanda pico (GW)",
+          "tipo": "line",
+          "data": [
+            3.6,
+            3.9,
+            4.4,
+            5.2
+          ],
+          "color": "#a17c1c"
+        }
+      ]
+    },
+    "capacidad_cita": "Poco respaldo térmico/renovable agrava el estiaje. <i>Fuente: CENACE.</i>"
+  },
+  "geopolitica": {
+    "src": "Radar APERC normalizado",
+    "radar_titulo": "Radar APERC: Ecuador vs Colombia vs Perú",
+    "radar": {
+      "ejes": [
+        "Availability",
+        "Accessibility",
+        "Affordability",
+        "Acceptability",
+        "Sovereignty",
+        "Robustness",
+        "Resilience"
+      ],
+      "series": [
+        {
+          "label": "Ecuador",
+          "data": [
+            6,
+            4.5,
+            4.5,
+            5,
+            5.5,
+            3.5,
+            4
+          ],
+          "color": "#c4570e"
+        },
+        {
+          "label": "Colombia",
+          "data": [
+            6.5,
+            6,
+            6,
+            6.5,
+            6.5,
+            6,
+            5.5
+          ],
+          "color": "#2e7d32"
+        },
+        {
+          "label": "Perú",
+          "data": [
+            6.5,
+            6,
+            6.3,
+            6,
+            6.5,
+            5.5,
+            6
+          ],
+          "color": "#0b5394"
+        }
+      ]
+    },
+    "radar_cita": "Normalización min-max sobre indicadores §01.",
+    "dependencias_titulo": "Dependencias y socios",
+    "dependencias": [
+      {
+        "vinculo": "Exportación de crudo a EE.UU./Asia",
+        "pct": "—",
+        "riesgo": {
+          "texto": "Ingreso fiscal clave",
+          "pill": "warn"
+        }
+      },
+      {
+        "vinculo": "Importación de derivados",
+        "pct": "—",
+        "riesgo": {
+          "texto": "Déficit de refinación",
+          "pill": "danger"
+        }
+      },
+      {
+        "vinculo": "Importación de electricidad de Colombia",
+        "pct": "—",
+        "riesgo": {
+          "texto": "Respaldo en estiaje",
+          "pill": "warn"
+        }
+      },
+      {
+        "vinculo": "Preventas de crudo a China",
+        "pct": "—",
+        "riesgo": {
+          "texto": "Compromiso de volúmenes",
+          "pill": "warn"
+        }
+      }
+    ],
+    "dependencias_cita": "MEM; BCE 2024.",
+    "minerales_titulo": "Posición energética",
+    "minerales": [
+      {
+        "valor": "79",
+        "unidad": "%",
+        "etiqueta": "HIDRO ELÉCTRICA"
+      },
+      {
+        "valor": "4",
+        "unidad": " Bbbl",
+        "etiqueta": "RESERVAS DE CRUDO"
+      },
+      {
+        "valor": "ITT",
+        "unidad": "",
+        "etiqueta": "DEBATE YASUNÍ"
+      }
+    ],
+    "minerales_cita": "OPEP; MEM 2024."
+  },
+  "militar": {
+    "titulo_seccion": "Combustibles Militares y Rol Operacional de las Fuerzas Armadas del Ecuador",
+    "nav_label": "Combustibles militares",
+    "src": "IISS · Ministerio de Defensa",
+    "combustibles_titulo": "Demanda de combustibles de las FF.AA.",
+    "combustibles": [
+      {
+        "codigo": "Jet A-1",
+        "tipo": "Queroseno de aviación",
+        "usuario": "Fuerza Aérea",
+        "ml_anio": "70"
+      },
+      {
+        "codigo": "Diésel naval",
+        "tipo": "Diésel",
+        "usuario": "Armada",
+        "ml_anio": "45"
+      },
+      {
+        "codigo": "Diésel terrestre",
+        "tipo": "Diésel",
+        "usuario": "Ejército",
+        "ml_anio": "60"
+      }
+    ],
+    "combustibles_total": "~175",
+    "combustibles_cita": "Estimación de orden de magnitud.",
+    "vulnerabilidades_titulo": "Vulnerabilidades específicas de defensa",
+    "vulnerabilidades": [
+      {
+        "nivel": "high",
+        "tag": "CRÍT",
+        "texto_html": "<b>Protección del SOTE/OCP</b> · oleoductos clave y vulnerables (erosión, atentados)."
+      },
+      {
+        "nivel": "med",
+        "tag": "ALTO",
+        "texto_html": "<b>Crimen organizado</b> · presión sobre infraestructura y combustible."
+      },
+      {
+        "nivel": "med",
+        "tag": "ALTO",
+        "texto_html": "<b>Contrabando de combustible</b> · fronteras con Colombia y Perú."
+      }
+    ],
+    "mision_titulo": "Misión en Seguridad Energética",
+    "mision": [
+      {
+        "titulo": "PROTECCIÓN DE OLEODUCTOS",
+        "texto_html": "Seguridad del SOTE/OCP y de la Amazonía petrolera."
+      },
+      {
+        "titulo": "ANTI-CONTRABANDO",
+        "texto_html": "Control del desvío de combustible subsidiado."
+      },
+      {
+        "titulo": "INFRAESTRUCTURA ELÉCTRICA",
+        "texto_html": "Custodia de hidroeléctricas en crisis."
+      },
+      {
+        "titulo": "ORDEN INTERNO",
+        "texto_html": "Apoyo ante la violencia del crimen organizado."
+      }
+    ],
+    "mision_cita": "IISS 2024."
+  },
+  "politicas": {
+    "src": "MEM · ARCONEL · CENACE",
+    "planes_titulo": "Planes nacionales",
+    "planes": [
+      {
+        "nombre": "Plan Maestro de Electricidad",
+        "texto": "Expansión y diversificación de la generación."
+      },
+      {
+        "nombre": "Focalización de subsidios",
+        "texto": "Reducir el costo fiscal de los combustibles."
+      },
+      {
+        "nombre": "Bloque ITT / Yasuní",
+        "texto": "Cierre progresivo tras la consulta de 2023."
+      },
+      {
+        "nombre": "Renovables no convencionales",
+        "texto": "Solar, eólica y geotermia."
+      }
+    ],
+    "instituciones_titulo": "Instituciones clave",
+    "instituciones": [
+      {
+        "sigla": "MEM",
+        "texto": "ministerio de energía y minas."
+      },
+      {
+        "sigla": "Petroecuador",
+        "texto": "petrolera estatal."
+      },
+      {
+        "sigla": "ARCONEL / CENACE",
+        "texto": "regulación y operación eléctrica."
+      },
+      {
+        "sigla": "CELEC EP",
+        "texto": "generación pública (hidro)."
+      }
+    ],
+    "transicion_titulo": "Transición y economía",
+    "transicion_html": "<p>El reto inmediato es <b>respaldar la hidro</b> (térmica/renovable/importación) para evitar apagones, racionalizar subsidios y decidir el futuro del crudo amazónico tras el mandato del Yasuní.</p>",
+    "transicion_cita": "MEM; IEA 2024."
+  },
+  "crisis": {
+    "src": "Wargaming · Cone of Plausibility",
+    "matriz_titulo": "Matriz Probabilidad × Impacto",
+    "matriz": {
+      "esquina": "Impacto ↓ / Prob →",
+      "prob_labels": [
+        "Muy bajo",
+        "Bajo",
+        "Medio",
+        "Alto",
+        "Muy alto"
+      ],
+      "filas": [
+        {
+          "impacto": "Catastrófico",
+          "celdas": [
+            {
+              "nivel": 3
+            },
+            {
+              "nivel": 4
+            },
+            {
+              "nivel": 5,
+              "texto": "Apagón nacional"
+            },
+            {
+              "nivel": 5,
+              "texto": "Estiaje severo"
+            },
+            {
+              "nivel": 5
+            }
+          ]
+        },
+        {
+          "impacto": "Mayor",
+          "celdas": [
+            {
+              "nivel": 2
+            },
+            {
+              "nivel": 3
+            },
+            {
+              "nivel": 4,
+              "texto": "Crisis fiscal por subsidios"
+            },
+            {
+              "nivel": 4
+            },
+            {
+              "nivel": 5
+            }
+          ]
+        },
+        {
+          "impacto": "Moderado",
+          "celdas": [
+            {
+              "nivel": 1
+            },
+            {
+              "nivel": 2
+            },
+            {
+              "nivel": 3,
+              "texto": "Ruptura del SOTE"
+            },
+            {
+              "nivel": 4,
+              "texto": "Ataques a infraestructura"
+            },
+            {
+              "nivel": 4
+            }
+          ]
+        },
+        {
+          "impacto": "Menor",
+          "celdas": [
+            {
+              "nivel": 1
+            },
+            {
+              "nivel": 1
+            },
+            {
+              "nivel": 2
+            },
+            {
+              "nivel": 3
+            },
+            {
+              "nivel": 3
+            }
+          ]
+        },
+        {
+          "impacto": "Insignif.",
+          "celdas": [
+            {
+              "nivel": 1
+            },
+            {
+              "nivel": 1
+            },
+            {
+              "nivel": 1
+            },
+            {
+              "nivel": 2
+            },
+            {
+              "nivel": 2
+            }
+          ]
+        }
+      ]
+    },
+    "matriz_cita": "Escala HM Treasury Orange Book.",
+    "escenarios_titulo": "Escenarios calibrados",
+    "escenarios": [
+      {
+        "nivel": "high",
+        "tag": "A",
+        "texto_html": "<b>Estiaje severo</b> — apagones nacionales (2024). <i>Respuesta:</i> térmicas, importación de Colombia, gestión de demanda."
+      },
+      {
+        "nivel": "high",
+        "tag": "B",
+        "texto_html": "<b>Crisis fiscal por subsidios</b> — insostenibilidad. <i>Respuesta:</i> focalización gradual."
+      },
+      {
+        "nivel": "med",
+        "tag": "C",
+        "texto_html": "<b>Ruptura del SOTE</b> (erosión del río Coca) — derrame y corte de exportación. <i>Respuesta:</i> variantes, contención ambiental."
+      },
+      {
+        "nivel": "med",
+        "tag": "D",
+        "texto_html": "<b>Ataques del crimen organizado</b> a infraestructura. <i>Respuesta:</i> protección militar."
+      }
+    ],
+    "vectores_titulo": "Respuesta estratégica integrada — vectores",
+    "vectores": [
+      {
+        "titulo": "RESPALDO DE GENERACIÓN",
+        "texto": "Térmica y renovable para no depender solo del agua."
+      },
+      {
+        "titulo": "INTERCONEXIÓN",
+        "texto": "Importar electricidad de Colombia en estiaje."
+      },
+      {
+        "titulo": "FOCALIZAR SUBSIDIOS",
+        "texto": "Aliviar la carga fiscal."
+      },
+      {
+        "titulo": "PROTEGER OLEODUCTOS",
+        "texto": "Seguridad del SOTE/OCP."
+      }
+    ]
+  },
+  "referencias": {
+    "src": "Triangulación multi-fuente",
+    "titulo": "Fuentes primarias y académicas",
+    "items": [
+      "MEM Ecuador (2024). <i>Balance Energético Nacional</i>.",
+      "ARCONEL / CENACE (2024). Informes del sector eléctrico.",
+      "OPEC (2020). <i>Annual Statistical Bulletin</i>.",
+      "IEA (2024). <i>Ecuador Energy Profile</i>.",
+      "APERC (2007). <i>A Quest for Energy Security in the 21st Century</i>. Tokio."
+    ]
+  },
+  "footer": "Documento de sustentación · Rúbrica Slide18 · Logística Militar · Mayo 2026"
+}

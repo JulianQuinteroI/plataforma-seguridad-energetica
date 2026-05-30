@@ -1,0 +1,1012 @@
+{
+  "schema_version": "1.0.0",
+  "meta": {
+    "pais": "Rusia",
+    "pais_iso": "RUS",
+    "pais_iso2": "RU",
+    "subtitulo_pais": "Federación de",
+    "eyebrow": "Portafolio · Seguridad Energética por País",
+    "titulo": "Seguridad Energética de Rusia:<br/>superpotencia de hidrocarburos bajo sanciones",
+    "subtitulo": "Mayores reservas de gas y top-3 en petróleo: enorme disponibilidad y soberanía frente a una accesibilidad golpeada por las sanciones y el giro forzado hacia Asia.",
+    "estudiante": "Cátedra (ejemplo de referencia)",
+    "asignatura": "Logística Militar · Rúbrica Slide18",
+    "tipo_doc": "Documento de sustentación",
+    "fecha": "Mayo 2026",
+    "fuerzas_armadas": "Fuerzas Armadas de la Federación de Rusia",
+    "aperc_global": 6.2,
+    "cita_corta": "IEA, 2024; BP, 2023; Gazprom, 2024.",
+    "portafolio_label": "Rúbrica Slide18<br/>Logística Militar<br/>v2 — académica",
+    "map_view": {
+      "lat": 62,
+      "lng": 90,
+      "zoom": 3
+    }
+  },
+  "resumen": {
+    "tesis_html": "Rusia es una <b>superpotencia energética</b>: mayores reservas mundiales de gas y top-3 en petróleo, con disponibilidad y soberanía sobresalientes y el hidrocarburo como <i>instrumento geopolítico</i>. Tras 2022, las sanciones del G7 y el tope de precios degradan su <b>accesibilidad</b> a mercados y la obligan a reorientar exportaciones de Europa hacia China e India con descuento.",
+    "conclusion_html": "APERC <b>6.2/10</b>: altísima <i>availability/sovereignty</i> pero <i>accessibility</i> y <i>resilience</i> erosionadas por sanciones, daño a Nord Stream y dependencia de ingresos por hidrocarburos. El componente militar protege la Ruta Marítima del Norte y la infraestructura ártica.",
+    "kpis": [
+      {
+        "valor": 20,
+        "unidad": "%",
+        "etiqueta": "Reservas mundiales de gas"
+      },
+      {
+        "valor": 10.5,
+        "unidad": "Mb/d",
+        "etiqueta": "Producción de petróleo",
+        "decimal": true
+      },
+      {
+        "valor": 45,
+        "unidad": "%",
+        "etiqueta": "Ingresos fiscales energéticos"
+      },
+      {
+        "valor": 38,
+        "unidad": "%",
+        "etiqueta": "Gas en el mix primario"
+      }
+    ]
+  },
+  "aperc": {
+    "src": "APERC 2007 · IEA 2024",
+    "definicion_html": "<p>Rusia maximiza <i>availability</i> y <i>sovereignty</i> (control estatal de Gazprom/Rosneft), pero las sanciones convierten la <i>accessibility</i> a mercados y tecnología en su talón de Aquiles.</p>",
+    "definicion_cita": "IEA, Russia Energy Profile 2024.",
+    "scorecard_titulo": "Scorecard de Rusia bajo APERC",
+    "scores": [
+      {
+        "letra": "A",
+        "nombre": "vailability",
+        "desc": "Mayores reservas de gas; vasto petróleo y carbón.",
+        "score": 9
+      },
+      {
+        "letra": "A",
+        "nombre": "ccessibility",
+        "desc": "Sanciones, tope de precios, pérdida del mercado europeo.",
+        "score": 4
+      },
+      {
+        "letra": "A",
+        "nombre": "ffordability",
+        "desc": "Energía interna muy barata.",
+        "score": 7
+      },
+      {
+        "letra": "A",
+        "nombre": "cceptability",
+        "desc": "Alta huella; quema de gas; Ártico frágil.",
+        "score": 4.8
+      }
+    ],
+    "scorecard_cita": "Scores propios sobre indicadores normalizados.",
+    "comparador": {
+      "pais_b": "Arabia Saudita",
+      "pais_c": "Noruega"
+    },
+    "indicadores_titulo": "Indicadores cuantitativos aplicados",
+    "indicadores": [
+      {
+        "indicador": "HHI mix primario",
+        "definicion": "Concentración (0–10 000)",
+        "propio": "4 200",
+        "b": "6 800",
+        "c": "3 600",
+        "interp": {
+          "texto": "Concentrado en gas/petróleo"
+        }
+      },
+      {
+        "indicador": "Net Import Dep. (%)",
+        "definicion": "(Imp−Exp)/Consumo",
+        "propio": "−85%",
+        "b": "−320%",
+        "c": "−600%",
+        "interp": {
+          "texto": "Gran exportador"
+        }
+      },
+      {
+        "indicador": "Exportaciones a Asia (%)",
+        "definicion": "Reorientación post-2022",
+        "propio": "55",
+        "b": "70",
+        "c": "10",
+        "interp": {
+          "texto": "Giro a Asia",
+          "pill": "warn"
+        }
+      },
+      {
+        "indicador": "Intensidad de carbono (gCO₂/kWh)",
+        "definicion": "Generación",
+        "propio": "360",
+        "b": "615",
+        "c": "26",
+        "interp": {
+          "texto": "Media-alta"
+        }
+      }
+    ],
+    "indicadores_nota": "Comparación con otros dos grandes exportadores."
+  },
+  "matriz": {
+    "src": "IEA · BP 2024",
+    "primaria_titulo": "Energía Primaria (TPES, %)",
+    "primaria": [
+      {
+        "label": "Gas natural",
+        "valor": 54,
+        "color": "#0b5394"
+      },
+      {
+        "label": "Petróleo",
+        "valor": 22,
+        "color": "#c4570e"
+      },
+      {
+        "label": "Carbón",
+        "valor": 16,
+        "color": "#8a4a4a"
+      },
+      {
+        "label": "Nuclear",
+        "valor": 5,
+        "color": "#6b4e8e"
+      },
+      {
+        "label": "Hidro/Renov.",
+        "valor": 3,
+        "color": "#2e7d32"
+      }
+    ],
+    "primaria_cita": "Gas 54 · Petróleo 22 · Carbón 16 · Nuclear 5 · Hidro 3. <i>Fuente: BP 2023.</i>",
+    "electrica_titulo": "Generación Eléctrica (%)",
+    "electrica": [
+      {
+        "label": "Gas",
+        "valor": 46,
+        "color": "#0b5394"
+      },
+      {
+        "label": "Nuclear",
+        "valor": 20,
+        "color": "#6b4e8e"
+      },
+      {
+        "label": "Hidro",
+        "valor": 18,
+        "color": "#2e7d32"
+      },
+      {
+        "label": "Carbón",
+        "valor": 14,
+        "color": "#8a4a4a"
+      },
+      {
+        "label": "Otros",
+        "valor": 2,
+        "color": "#a17c1c"
+      }
+    ],
+    "electrica_cita": "Gas 46 · Nuclear 20 · Hidro 18 · Carbón 14. <i>Fuente: Ember 2024.</i>",
+    "comparativa_titulo": "Comparativa Internacional — Mix Eléctrico (%)",
+    "comparativa": {
+      "paises": [
+        "Rusia",
+        "Arabia Saudita",
+        "Noruega"
+      ],
+      "series": [
+        {
+          "label": "Gas",
+          "data": [
+            46,
+            60,
+            1
+          ],
+          "color": "#0b5394"
+        },
+        {
+          "label": "Nuclear",
+          "data": [
+            20,
+            0,
+            0
+          ],
+          "color": "#6b4e8e"
+        },
+        {
+          "label": "Hidro",
+          "data": [
+            18,
+            0,
+            88
+          ],
+          "color": "#2e7d32"
+        },
+        {
+          "label": "Carbón",
+          "data": [
+            14,
+            0,
+            0
+          ],
+          "color": "#8a4a4a"
+        },
+        {
+          "label": "Petróleo",
+          "data": [
+            0,
+            38,
+            0
+          ],
+          "color": "#c4570e"
+        },
+        {
+          "label": "Solar/Eólica",
+          "data": [
+            2,
+            2,
+            11
+          ],
+          "color": "#a17c1c"
+        }
+      ]
+    },
+    "comparativa_nota": "Rusia: mix más diverso del trío, con nuclear e hidro relevantes."
+  },
+  "sankey": {
+    "src": "Producción → Transformación → Uso final",
+    "titulo_panel": "Flujos físicos de energía, Rusia (PJ aprox.)",
+    "flujos": [
+      {
+        "from": "Gas natural (prod.)",
+        "to": "Exportación de gas",
+        "flow": 9000
+      },
+      {
+        "from": "Gas natural (prod.)",
+        "to": "Generación eléctrica",
+        "flow": 3000
+      },
+      {
+        "from": "Gas natural (prod.)",
+        "to": "Industria & residencial",
+        "flow": 4000
+      },
+      {
+        "from": "Petróleo (prod.)",
+        "to": "Exportación de crudo",
+        "flow": 8000
+      },
+      {
+        "from": "Petróleo (prod.)",
+        "to": "Refinación local",
+        "flow": 5000
+      },
+      {
+        "from": "Refinación local",
+        "to": "Exportación de derivados",
+        "flow": 2500
+      },
+      {
+        "from": "Refinación local",
+        "to": "Transporte",
+        "flow": 2000
+      },
+      {
+        "from": "Carbón (prod.)",
+        "to": "Exportación de carbón",
+        "flow": 3500
+      },
+      {
+        "from": "Generación eléctrica",
+        "to": "Industria & residencial",
+        "flow": 2600
+      }
+    ],
+    "nodos": {
+      "Gas natural (prod.)": {
+        "color": "#0b5394",
+        "label": "Gas natural"
+      },
+      "Petróleo (prod.)": {
+        "color": "#c4570e",
+        "label": "Petróleo"
+      },
+      "Carbón (prod.)": {
+        "color": "#8a4a4a",
+        "label": "Carbón"
+      },
+      "Refinación local": {
+        "color": "#c4570e",
+        "label": "Refinerías"
+      },
+      "Generación eléctrica": {
+        "color": "#6b4e8e",
+        "label": "Generación eléctrica"
+      },
+      "Exportación de gas": {
+        "color": "#0b5394",
+        "label": "EXPORT · Gas"
+      },
+      "Exportación de crudo": {
+        "color": "#8a4a4a",
+        "label": "EXPORT · Crudo"
+      },
+      "Exportación de derivados": {
+        "color": "#a17c1c",
+        "label": "EXPORT · Derivados"
+      },
+      "Exportación de carbón": {
+        "color": "#8a4a4a",
+        "label": "EXPORT · Carbón"
+      },
+      "Industria & residencial": {
+        "color": "#4a5870",
+        "label": "Industria + Residencial"
+      },
+      "Transporte": {
+        "color": "#c4570e",
+        "label": "Transporte"
+      }
+    },
+    "cita": "El gas y el crudo de exportación son la columna fiscal del Estado. <i>Datos estilizados sobre IEA/BP.</i>"
+  },
+  "evolucion": {
+    "src": "2000–2050 · post-sanciones",
+    "historico_titulo": "Destino de las exportaciones de hidrocarburos (%)",
+    "anios": [
+      "2000",
+      "2010",
+      "2020",
+      "2022",
+      "2024",
+      "2030"
+    ],
+    "series": [
+      {
+        "label": "Europa",
+        "data": [
+          70,
+          72,
+          65,
+          50,
+          25,
+          15
+        ],
+        "color": "#0b5394"
+      },
+      {
+        "label": "Asia (China/India)",
+        "data": [
+          10,
+          15,
+          25,
+          40,
+          60,
+          70
+        ],
+        "color": "#c4570e"
+      },
+      {
+        "label": "Resto",
+        "data": [
+          20,
+          13,
+          10,
+          10,
+          15,
+          15
+        ],
+        "color": "#a17c1c"
+      }
+    ],
+    "historico_cita": "Reorientación forzada de Europa a Asia tras 2022 (con descuentos).",
+    "hitos_titulo": "Hitos del Régimen Energético",
+    "hitos": [
+      {
+        "anio": "2006",
+        "evento": "Cortes de gas a Ucrania: el gas como instrumento político."
+      },
+      {
+        "anio": "2011",
+        "evento": "Inicio de Nord Stream 1."
+      },
+      {
+        "anio": "2014",
+        "evento": "Primeras sanciones (Crimea)."
+      },
+      {
+        "anio": "2019",
+        "evento": "Inauguración de Power of Siberia a China."
+      },
+      {
+        "anio": "2022",
+        "evento": "Invasión; sanciones del G7, tope de precios y daño a Nord Stream."
+      },
+      {
+        "anio": "2024",
+        "evento": "Mayoría de exportaciones reorientadas a Asia."
+      }
+    ]
+  },
+  "infraestructura": {
+    "src": "Mapa Leaflet · GEM",
+    "mapa_titulo": "Campos, gasoductos y terminales",
+    "pines": [
+      {
+        "lat": 71.3,
+        "lng": 72.1,
+        "tipo": "gnl",
+        "nombre": "Yamal LNG (Sabetta)",
+        "desc": "Novatek · GNL ártico"
+      },
+      {
+        "lat": 66,
+        "lng": 76.6,
+        "tipo": "gnl",
+        "nombre": "Campo Urengoy",
+        "desc": "Uno de los mayores yacimientos de gas"
+      },
+      {
+        "lat": 44.72,
+        "lng": 37.79,
+        "tipo": "refineria",
+        "nombre": "Novorossiysk",
+        "desc": "Mayor puerto petrolero del Mar Negro"
+      },
+      {
+        "lat": 42.73,
+        "lng": 133,
+        "tipo": "gnl",
+        "nombre": "Kozmino",
+        "desc": "Terminal del oleoducto ESPO al Pacífico"
+      },
+      {
+        "lat": 46.63,
+        "lng": 142.9,
+        "tipo": "gnl",
+        "nombre": "Sakhalin-2 LNG",
+        "desc": "Prigorodnoye · GNL al Pacífico"
+      },
+      {
+        "lat": 59.85,
+        "lng": 29.05,
+        "tipo": "almacenamiento",
+        "nombre": "Nuclear Leningrado",
+        "desc": "Rosatom"
+      },
+      {
+        "lat": 52.83,
+        "lng": 91.37,
+        "tipo": "almacenamiento",
+        "nombre": "Hidro Sayano-Shúshenskaya",
+        "desc": "Mayor central hidroeléctrica de Rusia"
+      }
+    ],
+    "rutas": [
+      {
+        "puntos": [
+          [
+            66,
+            76.6
+          ],
+          [
+            55,
+            80
+          ],
+          [
+            50.2,
+            127.5
+          ],
+          [
+            40,
+            116
+          ]
+        ],
+        "tooltip": "Gasoducto Power of Siberia → China"
+      },
+      {
+        "puntos": [
+          [
+            44.72,
+            37.79
+          ],
+          [
+            41,
+            29
+          ],
+          [
+            37,
+            26
+          ]
+        ],
+        "tooltip": "SLOC: Mar Negro → Bósforo"
+      }
+    ],
+    "leyenda": [
+      {
+        "color": "#c4570e",
+        "label": "Petróleo / refinerías"
+      },
+      {
+        "color": "#0b5394",
+        "label": "Gas / GNL"
+      },
+      {
+        "color": "#2e7d32",
+        "label": "Hidro"
+      },
+      {
+        "color": "#6b4e8e",
+        "label": "Nuclear"
+      }
+    ],
+    "mapa_cita": "Coordenadas reales de Yamal, Urengoy, Novorossiysk, Kozmino, Sakhalin. <i>Fuentes: GEM 2024.</i>",
+    "vulnerabilidades_titulo": "Vulnerabilidades técnicas",
+    "vulnerabilidades": [
+      {
+        "nivel": "high",
+        "tag": "CRÍT",
+        "texto_html": "<b>Acceso a mercados</b> · sanciones y tope de precios reducen ingresos y obligan a vender con descuento."
+      },
+      {
+        "nivel": "high",
+        "tag": "CRÍT",
+        "texto_html": "<b>Tecnología</b> · dependencia de equipos occidentales para GNL y campos difíciles (Ártico)."
+      },
+      {
+        "nivel": "med",
+        "tag": "ALTO",
+        "texto_html": "<b>Infraestructura fija</b> · gasoductos a Europa (Nord Stream dañado) difíciles de reorientar a Asia."
+      },
+      {
+        "nivel": "med",
+        "tag": "ALTO",
+        "texto_html": "<b>Logística ártica</b> · Ruta Marítima del Norte exige rompehielos y es estacional."
+      }
+    ],
+    "capacidad_titulo": "Exportaciones por vector (Mtep)",
+    "capacidad": {
+      "anios": [
+        "2021",
+        "2022",
+        "2024",
+        "2030"
+      ],
+      "y_titulo": "Mtep",
+      "series": [
+        {
+          "label": "Gas a Europa",
+          "tipo": "bar",
+          "data": [
+            180,
+            120,
+            40,
+            25
+          ],
+          "color": "#0b5394"
+        },
+        {
+          "label": "Petróleo/gas a Asia",
+          "tipo": "bar",
+          "data": [
+            120,
+            160,
+            230,
+            290
+          ],
+          "color": "#c4570e"
+        },
+        {
+          "label": "Ingreso energético (índice)",
+          "tipo": "line",
+          "data": [
+            100,
+            130,
+            90,
+            95
+          ],
+          "color": "#a17c1c"
+        }
+      ]
+    },
+    "capacidad_cita": "Reorientación de volúmenes 2021–2030. <i>Fuente: IEA estimaciones.</i>"
+  },
+  "geopolitica": {
+    "src": "Radar APERC normalizado",
+    "radar_titulo": "Radar APERC: Rusia vs Arabia Saudita vs Noruega",
+    "radar": {
+      "ejes": [
+        "Availability",
+        "Accessibility",
+        "Affordability",
+        "Acceptability",
+        "Sovereignty",
+        "Robustness",
+        "Resilience"
+      ],
+      "series": [
+        {
+          "label": "Rusia",
+          "data": [
+            9,
+            4,
+            7,
+            4.8,
+            8.5,
+            6.5,
+            5.5
+          ],
+          "color": "#0b5394"
+        },
+        {
+          "label": "Arabia Saudita",
+          "data": [
+            9.5,
+            4.5,
+            6.3,
+            2.5,
+            8.5,
+            6.5,
+            4.5
+          ],
+          "color": "#c4570e"
+        },
+        {
+          "label": "Noruega",
+          "data": [
+            9,
+            8.5,
+            7.5,
+            9.5,
+            9,
+            9,
+            9
+          ],
+          "color": "#2e7d32"
+        }
+      ]
+    },
+    "radar_cita": "Normalización min-max sobre indicadores §01.",
+    "dependencias_titulo": "Dependencias y socios",
+    "dependencias": [
+      {
+        "vinculo": "Exportación a China (gas/petróleo)",
+        "pct": "35",
+        "riesgo": {
+          "texto": "Comprador dominante",
+          "pill": "warn"
+        }
+      },
+      {
+        "vinculo": "Exportación a India (crudo)",
+        "pct": "20",
+        "riesgo": {
+          "texto": "Nuevo gran cliente",
+          "pill": "ok"
+        }
+      },
+      {
+        "vinculo": "Mercado europeo (histórico)",
+        "pct": "15",
+        "riesgo": {
+          "texto": "En contracción",
+          "pill": "danger"
+        }
+      },
+      {
+        "vinculo": "Tecnología GNL occidental",
+        "pct": "—",
+        "riesgo": {
+          "texto": "Restringida",
+          "pill": "danger"
+        }
+      }
+    ],
+    "dependencias_cita": "IEA; aduanas 2024.",
+    "minerales_titulo": "Posición energética global",
+    "minerales": [
+      {
+        "valor": "#1",
+        "unidad": " mundial",
+        "etiqueta": "RESERVAS DE GAS"
+      },
+      {
+        "valor": "#1",
+        "unidad": " export.",
+        "etiqueta": "EXPORTADOR DE TRIGO Y GAS"
+      },
+      {
+        "valor": "~40",
+        "unidad": "%",
+        "etiqueta": "URANIO ENRIQUECIDO (Rosatom)"
+      }
+    ],
+    "minerales_cita": "BP 2023; IAEA."
+  },
+  "militar": {
+    "titulo_seccion": "Combustibles Militares y Rol Operacional de las Fuerzas Armadas de Rusia",
+    "nav_label": "Combustibles militares",
+    "src": "IISS Military Balance 2024",
+    "combustibles_titulo": "Demanda de combustibles de las Fuerzas Armadas",
+    "combustibles": [
+      {
+        "codigo": "TS-1 / RT",
+        "tipo": "Queroseno de aviación",
+        "usuario": "VKS (aeroespacial)",
+        "ml_anio": "1200"
+      },
+      {
+        "codigo": "F-76 / Flота",
+        "tipo": "Diésel/fuelóleo naval",
+        "usuario": "Armada",
+        "ml_anio": "500"
+      },
+      {
+        "codigo": "Diésel terrestre",
+        "tipo": "Diésel",
+        "usuario": "Fuerzas Terrestres",
+        "ml_anio": "700"
+      }
+    ],
+    "combustibles_total": "~2400",
+    "combustibles_cita": "Estimación de orden de magnitud.",
+    "vulnerabilidades_titulo": "Vulnerabilidades específicas de defensa",
+    "vulnerabilidades": [
+      {
+        "nivel": "high",
+        "tag": "CRÍT",
+        "texto_html": "<b>Ataques a refinerías</b> · drones de largo alcance contra refinerías han afectado el suministro interno de combustible."
+      },
+      {
+        "nivel": "med",
+        "tag": "ALTO",
+        "texto_html": "<b>Logística ártica</b> · proteger la Ruta Marítima del Norte y bases del Ártico."
+      },
+      {
+        "nivel": "med",
+        "tag": "ALTO",
+        "texto_html": "<b>Repuestos y tecnología</b> · sanciones afectan mantenimiento."
+      }
+    ],
+    "mision_titulo": "Misión en Seguridad Energética",
+    "mision": [
+      {
+        "titulo": "ARMA ENERGÉTICA",
+        "texto_html": "El gas/petróleo como herramienta de coerción y financiación estatal."
+      },
+      {
+        "titulo": "ÁRTICO",
+        "texto_html": "Flota del Norte y rompehielos para asegurar Yamal y la Ruta Marítima del Norte."
+      },
+      {
+        "titulo": "PROTECCIÓN DE REFINERÍAS",
+        "texto_html": "Defensa antiaérea de infraestructura energética interna."
+      },
+      {
+        "titulo": "EXPORTACIÓN NUCLEAR",
+        "texto_html": "Rosatom: reactores y combustible como influencia geopolítica."
+      }
+    ],
+    "mision_cita": "IISS 2024."
+  },
+  "politicas": {
+    "src": "Ministerio de Energía · Gazprom",
+    "planes_titulo": "Planes nacionales",
+    "planes": [
+      {
+        "nombre": "Estrategia Energética 2035",
+        "texto": "Maximizar exportaciones y giro a mercados asiáticos."
+      },
+      {
+        "nombre": "Power of Siberia 2",
+        "texto": "Nuevo gasoducto a China (en negociación)."
+      },
+      {
+        "nombre": "Doctrina Ártica",
+        "texto": "Desarrollo de la Ruta Marítima del Norte y campos árticos."
+      }
+    ],
+    "instituciones_titulo": "Instituciones clave",
+    "instituciones": [
+      {
+        "sigla": "Gazprom",
+        "texto": "monopolio del gas y de exportación por ducto."
+      },
+      {
+        "sigla": "Rosneft",
+        "texto": "mayor petrolera estatal."
+      },
+      {
+        "sigla": "Novatek",
+        "texto": "GNL (Yamal, Arctic LNG-2)."
+      },
+      {
+        "sigla": "Rosatom",
+        "texto": "energía nuclear y exportación de reactores."
+      }
+    ],
+    "transicion_titulo": "Transición y economía",
+    "transicion_html": "<p>El modelo depende de la <b>renta de hidrocarburos</b>; las sanciones y la transición global presionan a diversificar clientes (Asia) más que tecnologías. La descarbonización interna es secundaria.</p>",
+    "transicion_cita": "IEA 2024."
+  },
+  "crisis": {
+    "src": "Wargaming · Cone of Plausibility",
+    "matriz_titulo": "Matriz Probabilidad × Impacto",
+    "matriz": {
+      "esquina": "Impacto ↓ / Prob →",
+      "prob_labels": [
+        "Muy bajo",
+        "Bajo",
+        "Medio",
+        "Alto",
+        "Muy alto"
+      ],
+      "filas": [
+        {
+          "impacto": "Catastrófico",
+          "celdas": [
+            {
+              "nivel": 3
+            },
+            {
+              "nivel": 4
+            },
+            {
+              "nivel": 5,
+              "texto": "Embargo total"
+            },
+            {
+              "nivel": 5
+            },
+            {
+              "nivel": 5
+            }
+          ]
+        },
+        {
+          "impacto": "Mayor",
+          "celdas": [
+            {
+              "nivel": 2
+            },
+            {
+              "nivel": 3
+            },
+            {
+              "nivel": 4,
+              "texto": "Ataques a refinerías"
+            },
+            {
+              "nivel": 4,
+              "texto": "Caída de precios"
+            },
+            {
+              "nivel": 5
+            }
+          ]
+        },
+        {
+          "impacto": "Moderado",
+          "celdas": [
+            {
+              "nivel": 1
+            },
+            {
+              "nivel": 2
+            },
+            {
+              "nivel": 3,
+              "texto": "Cuello logístico Asia"
+            },
+            {
+              "nivel": 4
+            },
+            {
+              "nivel": 4
+            }
+          ]
+        },
+        {
+          "impacto": "Menor",
+          "celdas": [
+            {
+              "nivel": 1
+            },
+            {
+              "nivel": 1
+            },
+            {
+              "nivel": 2
+            },
+            {
+              "nivel": 3
+            },
+            {
+              "nivel": 3
+            }
+          ]
+        },
+        {
+          "impacto": "Insignif.",
+          "celdas": [
+            {
+              "nivel": 1
+            },
+            {
+              "nivel": 1
+            },
+            {
+              "nivel": 1
+            },
+            {
+              "nivel": 2
+            },
+            {
+              "nivel": 2
+            }
+          ]
+        }
+      ]
+    },
+    "matriz_cita": "Escala HM Treasury Orange Book.",
+    "escenarios_titulo": "Escenarios calibrados",
+    "escenarios": [
+      {
+        "nivel": "high",
+        "tag": "A",
+        "texto_html": "<b>Endurecimiento del embargo</b> — caída de ingresos. <i>Respuesta:</i> descuentos a Asia, flota fantasma."
+      },
+      {
+        "nivel": "high",
+        "tag": "B",
+        "texto_html": "<b>Ataques a refinerías</b> — escasez interna de combustible. <i>Respuesta:</i> defensa aérea, racionamiento de exportación de gasolina."
+      },
+      {
+        "nivel": "med",
+        "tag": "C",
+        "texto_html": "<b>Sobre-dependencia de China</b> — poder de negociación del comprador. <i>Respuesta:</i> diversificar (India, Power of Siberia 2)."
+      },
+      {
+        "nivel": "med",
+        "tag": "D",
+        "texto_html": "<b>Caída estructural de precios</b> — déficit fiscal. <i>Respuesta:</i> fondo de reserva, recorte de gasto."
+      }
+    ],
+    "vectores_titulo": "Respuesta estratégica integrada — vectores",
+    "vectores": [
+      {
+        "titulo": "GIRO A ASIA",
+        "texto": "Power of Siberia 2, ESPO, GNL ártico hacia China/India."
+      },
+      {
+        "titulo": "FLOTA FANTASMA",
+        "texto": "Evadir el tope de precios con buques y seguros propios."
+      },
+      {
+        "titulo": "ÁRTICO",
+        "texto": "Ruta Marítima del Norte como corredor estratégico."
+      },
+      {
+        "titulo": "NUCLEAR",
+        "texto": "Rosatom como palanca de influencia y divisas."
+      }
+    ]
+  },
+  "referencias": {
+    "src": "Triangulación multi-fuente",
+    "titulo": "Fuentes primarias y académicas",
+    "items": [
+      "IEA (2024). <i>Russia Energy Profile</i>. París.",
+      "BP (2023). <i>Statistical Review of World Energy</i>.",
+      "Gazprom / Novatek (2024). Reportes anuales.",
+      "IISS (2024). <i>The Military Balance</i>.",
+      "APERC (2007). <i>A Quest for Energy Security in the 21st Century</i>. Tokio."
+    ]
+  },
+  "footer": "Documento de sustentación · Rúbrica Slide18 · Logística Militar · Mayo 2026"
+}

@@ -1,0 +1,1003 @@
+{
+  "schema_version": "1.0.0",
+  "meta": {
+    "pais": "Estados Unidos",
+    "pais_iso": "USA",
+    "pais_iso2": "US",
+    "subtitulo_pais": "Estados Unidos de",
+    "eyebrow": "Portafolio · Seguridad Energética por País",
+    "titulo": "Seguridad Energética de Estados Unidos:<br/>la revolución del esquisto y el dominio energético",
+    "subtitulo": "Mayor productor mundial de petróleo y gas y a la vez mayor consumidor: exportador neto de GNL con un mix diversificado, pero con retos de resiliencia de red y ciberseguridad.",
+    "estudiante": "Cátedra (ejemplo de referencia)",
+    "asignatura": "Logística Militar · Rúbrica Slide18",
+    "tipo_doc": "Documento de sustentación",
+    "fecha": "Mayo 2026",
+    "fuerzas_armadas": "Fuerzas Armadas de los EE.UU.",
+    "aperc_global": 7.8,
+    "cita_corta": "EIA, 2024; IEA, 2024.",
+    "portafolio_label": "Rúbrica Slide18<br/>Logística Militar<br/>v2 — académica",
+    "map_view": {
+      "lat": 39.5,
+      "lng": -98.5,
+      "zoom": 4
+    }
+  },
+  "resumen": {
+    "tesis_html": "La <b>revolución del esquisto</b> convirtió a EE.UU. en el <i>mayor productor mundial</i> de petróleo y gas y en exportador neto de GNL, con un mix diversificado (gas, renovables en alza, gran flota nuclear, carbón en declive) y una <b>SPR</b> estratégica. Sus vulnerabilidades son internas: resiliencia de la red (apagón de Texas 2021) y ciberseguridad (Colonial Pipeline 2021).",
+    "conclusion_html": "APERC <b>7.8/10</b>: alta <i>availability</i>, <i>sovereignty</i> y <i>resilience</i>; menor <i>acceptability</i> por emisiones aún elevadas. El componente militar protege SLOC globales y posee la mayor logística de combustible del mundo (DLA Energy).",
+    "kpis": [
+      {
+        "valor": 13,
+        "unidad": "Mb/d",
+        "etiqueta": "Producción de crudo"
+      },
+      {
+        "valor": 1,
+        "unidad": "º",
+        "etiqueta": "Exportador de GNL"
+      },
+      {
+        "valor": 60,
+        "unidad": "%",
+        "etiqueta": "Mix eléctrico fósil"
+      },
+      {
+        "valor": 18,
+        "unidad": "%",
+        "etiqueta": "Electricidad nuclear"
+      }
+    ]
+  },
+  "aperc": {
+    "src": "APERC 2007 · EIA 2024",
+    "definicion_html": "<p>EE.UU. logró <i>availability</i> y <i>sovereignty</i> tras el esquisto, pasando de gran importador a exportador neto. Su agenda gira hacia <i>resilience</i> de red y ciberseguridad, y hacia la <i>acceptability</i> (IRA, renovables, EV).</p>",
+    "definicion_cita": "EIA, Annual Energy Outlook 2024.",
+    "scorecard_titulo": "Scorecard de EE.UU. bajo APERC",
+    "scores": [
+      {
+        "letra": "A",
+        "nombre": "vailability",
+        "desc": "Mayor productor de petróleo y gas; gran nuclear.",
+        "score": 9
+      },
+      {
+        "letra": "A",
+        "nombre": "ccessibility",
+        "desc": "Autosuficiente; exportador neto de GNL.",
+        "score": 7.5
+      },
+      {
+        "letra": "A",
+        "nombre": "ffordability",
+        "desc": "Energía relativamente barata; volatilidad.",
+        "score": 7
+      },
+      {
+        "letra": "A",
+        "nombre": "cceptability",
+        "desc": "Emisiones aún altas; transición vía IRA.",
+        "score": 7.7
+      }
+    ],
+    "scorecard_cita": "Scores propios sobre indicadores normalizados.",
+    "comparador": {
+      "pais_b": "China",
+      "pais_c": "Noruega"
+    },
+    "indicadores_titulo": "Indicadores cuantitativos aplicados",
+    "indicadores": [
+      {
+        "indicador": "Net Import Dep. (%)",
+        "definicion": "(Imp−Exp)/Consumo",
+        "propio": "−8%",
+        "b": "20%",
+        "c": "−600%",
+        "interp": {
+          "texto": "Exportador neto",
+          "pill": "ok"
+        }
+      },
+      {
+        "indicador": "Producción de crudo (Mb/d)",
+        "definicion": "2024",
+        "propio": "13",
+        "b": "4",
+        "c": "1.8",
+        "interp": {
+          "texto": "El mayor del mundo"
+        }
+      },
+      {
+        "indicador": "Días de SPR petróleo",
+        "definicion": "Reserva estratégica",
+        "propio": "—",
+        "b": "90",
+        "c": "—",
+        "interp": {
+          "texto": "SPR reducida tras 2022",
+          "pill": "warn"
+        }
+      },
+      {
+        "indicador": "Intensidad de carbono (gCO₂/kWh)",
+        "definicion": "Generación",
+        "propio": "370",
+        "b": "530",
+        "c": "26",
+        "interp": {
+          "texto": "Media, en mejora"
+        }
+      }
+    ],
+    "indicadores_nota": "Comparación con China (rival/importador) y Noruega (descarbonizado)."
+  },
+  "matriz": {
+    "src": "EIA · Ember 2024",
+    "primaria_titulo": "Energía Primaria (TPES, %)",
+    "primaria": [
+      {
+        "label": "Petróleo",
+        "valor": 36,
+        "color": "#c4570e"
+      },
+      {
+        "label": "Gas natural",
+        "valor": 33,
+        "color": "#0b5394"
+      },
+      {
+        "label": "Renovables",
+        "valor": 13,
+        "color": "#a17c1c"
+      },
+      {
+        "label": "Nuclear",
+        "valor": 9,
+        "color": "#6b4e8e"
+      },
+      {
+        "label": "Carbón",
+        "valor": 9,
+        "color": "#8a4a4a"
+      }
+    ],
+    "primaria_cita": "Petróleo 36 · Gas 33 · Renov. 13 · Nuclear 9 · Carbón 9. <i>Fuente: EIA 2024.</i>",
+    "electrica_titulo": "Generación Eléctrica (%)",
+    "electrica": [
+      {
+        "label": "Gas",
+        "valor": 43,
+        "color": "#0b5394"
+      },
+      {
+        "label": "Nuclear",
+        "valor": 18,
+        "color": "#6b4e8e"
+      },
+      {
+        "label": "Carbón",
+        "valor": 16,
+        "color": "#8a4a4a"
+      },
+      {
+        "label": "Eólica",
+        "valor": 10,
+        "color": "#6a8caf"
+      },
+      {
+        "label": "Solar",
+        "valor": 6,
+        "color": "#a17c1c"
+      },
+      {
+        "label": "Hidro",
+        "valor": 6,
+        "color": "#2e7d32"
+      }
+    ],
+    "electrica_cita": "Gas 43 · Nuclear 18 · Carbón 16 · Eólica 10 · Solar 6 · Hidro 6. <i>Fuente: Ember 2024.</i>",
+    "comparativa_titulo": "Comparativa Internacional — Mix Eléctrico (%)",
+    "comparativa": {
+      "paises": [
+        "Estados Unidos",
+        "China",
+        "Noruega"
+      ],
+      "series": [
+        {
+          "label": "Gas",
+          "data": [
+            43,
+            3,
+            1
+          ],
+          "color": "#0b5394"
+        },
+        {
+          "label": "Carbón",
+          "data": [
+            16,
+            60,
+            0
+          ],
+          "color": "#8a4a4a"
+        },
+        {
+          "label": "Nuclear",
+          "data": [
+            18,
+            5,
+            0
+          ],
+          "color": "#6b4e8e"
+        },
+        {
+          "label": "Hidro",
+          "data": [
+            6,
+            14,
+            88
+          ],
+          "color": "#2e7d32"
+        },
+        {
+          "label": "Solar/Eólica",
+          "data": [
+            16,
+            18,
+            11
+          ],
+          "color": "#a17c1c"
+        }
+      ]
+    },
+    "comparativa_nota": "Gas como columna del mix estadounidense desde el esquisto."
+  },
+  "sankey": {
+    "src": "Producción → Transformación → Uso final",
+    "titulo_panel": "Flujos físicos de energía, EE.UU. (PJ aprox.)",
+    "flujos": [
+      {
+        "from": "Petróleo (esquisto)",
+        "to": "Refinación local",
+        "flow": 9000
+      },
+      {
+        "from": "Petróleo (esquisto)",
+        "to": "Exportación de crudo",
+        "flow": 2500
+      },
+      {
+        "from": "Refinación local",
+        "to": "Transporte",
+        "flow": 8000
+      },
+      {
+        "from": "Gas natural (esquisto)",
+        "to": "Generación eléctrica",
+        "flow": 6000
+      },
+      {
+        "from": "Gas natural (esquisto)",
+        "to": "Exportación GNL",
+        "flow": 3000
+      },
+      {
+        "from": "Gas natural (esquisto)",
+        "to": "Industria & residencial",
+        "flow": 4000
+      },
+      {
+        "from": "Nuclear",
+        "to": "Generación eléctrica",
+        "flow": 2500
+      },
+      {
+        "from": "Renovables",
+        "to": "Generación eléctrica",
+        "flow": 2200
+      },
+      {
+        "from": "Generación eléctrica",
+        "to": "Industria & residencial",
+        "flow": 9500
+      }
+    ],
+    "nodos": {
+      "Petróleo (esquisto)": {
+        "color": "#c4570e",
+        "label": "Petróleo (esquisto)"
+      },
+      "Gas natural (esquisto)": {
+        "color": "#0b5394",
+        "label": "Gas (esquisto)"
+      },
+      "Nuclear": {
+        "color": "#6b4e8e",
+        "label": "Nuclear"
+      },
+      "Renovables": {
+        "color": "#a17c1c",
+        "label": "Renovables"
+      },
+      "Refinación local": {
+        "color": "#c4570e",
+        "label": "Refinerías"
+      },
+      "Generación eléctrica": {
+        "color": "#6b4e8e",
+        "label": "Generación eléctrica"
+      },
+      "Exportación de crudo": {
+        "color": "#8a4a4a",
+        "label": "EXPORT · Crudo"
+      },
+      "Exportación GNL": {
+        "color": "#0b5394",
+        "label": "EXPORT · GNL"
+      },
+      "Industria & residencial": {
+        "color": "#4a5870",
+        "label": "Industria + Residencial"
+      },
+      "Transporte": {
+        "color": "#c4570e",
+        "label": "Transporte"
+      }
+    },
+    "cita": "El esquisto hace a EE.UU. exportador neto de crudo y GNL. <i>Datos estilizados sobre EIA.</i>"
+  },
+  "evolucion": {
+    "src": "2000–2050 · esquisto e IRA",
+    "historico_titulo": "Mix Eléctrico Histórico y Proyectado (%)",
+    "anios": [
+      "2000",
+      "2010",
+      "2020",
+      "2024",
+      "2035",
+      "2050"
+    ],
+    "series": [
+      {
+        "label": "Carbón",
+        "data": [
+          52,
+          45,
+          19,
+          16,
+          5,
+          1
+        ],
+        "color": "#8a4a4a"
+      },
+      {
+        "label": "Gas",
+        "data": [
+          16,
+          24,
+          40,
+          43,
+          38,
+          30
+        ],
+        "color": "#0b5394"
+      },
+      {
+        "label": "Nuclear",
+        "data": [
+          20,
+          19,
+          20,
+          18,
+          16,
+          14
+        ],
+        "color": "#6b4e8e"
+      },
+      {
+        "label": "Renovables",
+        "data": [
+          9,
+          10,
+          20,
+          22,
+          40,
+          54
+        ],
+        "color": "#a17c1c"
+      }
+    ],
+    "historico_cita": "El carbón cede ante gas y renovables; la IRA (2022) acelera la transición.",
+    "hitos_titulo": "Hitos del Régimen Energético",
+    "hitos": [
+      {
+        "anio": "1975",
+        "evento": "Creación de la Reserva Estratégica de Petróleo (SPR)."
+      },
+      {
+        "anio": "2008",
+        "evento": "Despegue del fracking (esquisto): gas y petróleo."
+      },
+      {
+        "anio": "2016",
+        "evento": "Levantamiento de la prohibición de exportar crudo."
+      },
+      {
+        "anio": "2021",
+        "evento": "Apagón de Texas (Uri); ciberataque a Colonial Pipeline."
+      },
+      {
+        "anio": "2022",
+        "evento": "Inflation Reduction Act (IRA): mayor impulso climático de la historia de EE.UU."
+      },
+      {
+        "anio": "2023",
+        "evento": "EE.UU. consolidado como mayor exportador de GNL."
+      }
+    ]
+  },
+  "infraestructura": {
+    "src": "Mapa Leaflet · GEM",
+    "mapa_titulo": "Cuencas, hubs y terminales",
+    "pines": [
+      {
+        "lat": 31.8,
+        "lng": -102.3,
+        "tipo": "refineria",
+        "nombre": "Cuenca Pérmica",
+        "desc": "Mayor zona productora de petróleo de esquisto"
+      },
+      {
+        "lat": 29.73,
+        "lng": -93.87,
+        "tipo": "gnl",
+        "nombre": "Sabine Pass LNG",
+        "desc": "Mayor terminal de exportación de GNL"
+      },
+      {
+        "lat": 30,
+        "lng": -92.3,
+        "tipo": "gnl",
+        "nombre": "Henry Hub",
+        "desc": "Referencia de precio del gas en EE.UU."
+      },
+      {
+        "lat": 35.97,
+        "lng": -96.77,
+        "tipo": "almacenamiento",
+        "nombre": "Hub de Cushing (OK)",
+        "desc": "Punto de entrega del WTI"
+      },
+      {
+        "lat": 33.39,
+        "lng": -112.86,
+        "tipo": "minerales",
+        "nombre": "Nuclear Palo Verde",
+        "desc": "Mayor central nuclear de EE.UU."
+      },
+      {
+        "lat": 36.02,
+        "lng": -114.74,
+        "tipo": "almacenamiento",
+        "nombre": "Presa Hoover",
+        "desc": "Hidroeléctrica histórica"
+      },
+      {
+        "lat": 47.8,
+        "lng": -103.3,
+        "tipo": "refineria",
+        "nombre": "Bakken (ND)",
+        "desc": "Esquisto del norte"
+      }
+    ],
+    "rutas": [
+      {
+        "puntos": [
+          [
+            29.73,
+            -93.87
+          ],
+          [
+            25,
+            -90
+          ],
+          [
+            20,
+            -85
+          ],
+          [
+            9,
+            -79.6
+          ]
+        ],
+        "tooltip": "SLOC: Golfo de México → Canal de Panamá"
+      }
+    ],
+    "leyenda": [
+      {
+        "color": "#c4570e",
+        "label": "Petróleo / cuencas"
+      },
+      {
+        "color": "#0b5394",
+        "label": "Gas / GNL"
+      },
+      {
+        "color": "#6b4e8e",
+        "label": "Nuclear"
+      },
+      {
+        "color": "#2e7d32",
+        "label": "Hidro"
+      }
+    ],
+    "mapa_cita": "Coordenadas reales de Pérmica, Sabine Pass, Henry Hub, Cushing, Palo Verde, Hoover y Bakken. <i>Fuentes: EIA; GEM.</i>",
+    "vulnerabilidades_titulo": "Vulnerabilidades técnicas",
+    "vulnerabilidades": [
+      {
+        "nivel": "high",
+        "tag": "CRÍT",
+        "texto_html": "<b>Resiliencia de red</b> · redes regionales (ERCOT) aisladas; apagón de Texas 2021."
+      },
+      {
+        "nivel": "high",
+        "tag": "CRÍT",
+        "texto_html": "<b>Ciberseguridad</b> · ataque a Colonial Pipeline (2021) detuvo el suministro de la costa Este."
+      },
+      {
+        "nivel": "med",
+        "tag": "ALTO",
+        "texto_html": "<b>SPR reducida</b> · liberaciones de 2022 bajaron la reserva a mínimos."
+      },
+      {
+        "nivel": "low",
+        "tag": "MED",
+        "texto_html": "<b>Permisos de transmisión</b> · cuellos para conectar renovables."
+      }
+    ],
+    "capacidad_titulo": "Capacidad instalada (GW)",
+    "capacidad": {
+      "anios": [
+        "2024",
+        "2030",
+        "2040",
+        "2050"
+      ],
+      "y_titulo": "GW",
+      "series": [
+        {
+          "label": "Fósil (GW)",
+          "tipo": "bar",
+          "data": [
+            800,
+            700,
+            500,
+            350
+          ],
+          "color": "#8a4a4a"
+        },
+        {
+          "label": "Renovables (GW)",
+          "tipo": "bar",
+          "data": [
+            400,
+            750,
+            1200,
+            1700
+          ],
+          "color": "#a17c1c"
+        },
+        {
+          "label": "Demanda pico (GW)",
+          "tipo": "line",
+          "data": [
+            780,
+            850,
+            980,
+            1150
+          ],
+          "color": "#c4570e"
+        }
+      ]
+    },
+    "capacidad_cita": "Crecimiento renovable impulsado por la IRA. <i>Fuente: EIA AEO 2024.</i>"
+  },
+  "geopolitica": {
+    "src": "Radar APERC normalizado",
+    "radar_titulo": "Radar APERC: EE.UU. vs China vs Noruega",
+    "radar": {
+      "ejes": [
+        "Availability",
+        "Accessibility",
+        "Affordability",
+        "Acceptability",
+        "Sovereignty",
+        "Robustness",
+        "Resilience"
+      ],
+      "series": [
+        {
+          "label": "Estados Unidos",
+          "data": [
+            9,
+            7.5,
+            7,
+            7.7,
+            8,
+            8,
+            8
+          ],
+          "color": "#0b5394"
+        },
+        {
+          "label": "China",
+          "data": [
+            7.5,
+            4.5,
+            6,
+            4,
+            7,
+            6.5,
+            6
+          ],
+          "color": "#c4570e"
+        },
+        {
+          "label": "Noruega",
+          "data": [
+            9,
+            8.5,
+            7.5,
+            9.5,
+            9,
+            9,
+            9
+          ],
+          "color": "#2e7d32"
+        }
+      ]
+    },
+    "radar_cita": "Normalización min-max sobre indicadores §01.",
+    "dependencias_titulo": "Dependencias y socios",
+    "dependencias": [
+      {
+        "vinculo": "Exportación de GNL a Europa/Asia",
+        "pct": "—",
+        "riesgo": {
+          "texto": "Palanca geopolítica",
+          "pill": "ok"
+        }
+      },
+      {
+        "vinculo": "Importación de crudo de Canadá",
+        "pct": "60",
+        "riesgo": {
+          "texto": "Vecino estable",
+          "pill": "ok"
+        }
+      },
+      {
+        "vinculo": "Minerales críticos de China",
+        "pct": "—",
+        "riesgo": {
+          "texto": "Concentración de cadena",
+          "pill": "warn"
+        }
+      },
+      {
+        "vinculo": "Integración de red con Canadá/México",
+        "pct": "—",
+        "riesgo": {
+          "texto": "Resiliencia regional",
+          "pill": "ok"
+        }
+      }
+    ],
+    "dependencias_cita": "EIA; USGS 2024.",
+    "minerales_titulo": "Posición energética global",
+    "minerales": [
+      {
+        "valor": "#1",
+        "unidad": " mundial",
+        "etiqueta": "PRODUCTOR DE PETRÓLEO Y GAS"
+      },
+      {
+        "valor": "#1",
+        "unidad": " export.",
+        "etiqueta": "GNL"
+      },
+      {
+        "valor": "94",
+        "unidad": "",
+        "etiqueta": "REACTORES NUCLEARES"
+      }
+    ],
+    "minerales_cita": "EIA 2024."
+  },
+  "militar": {
+    "titulo_seccion": "Combustibles Militares y Rol Operacional de las Fuerzas Armadas de EE.UU.",
+    "nav_label": "Combustibles militares",
+    "src": "DLA Energy · DoD",
+    "combustibles_titulo": "Demanda de combustibles de las FF.AA.",
+    "combustibles": [
+      {
+        "codigo": "JP-8 / F-24",
+        "tipo": "Queroseno militar",
+        "usuario": "Air Force / Army",
+        "ml_anio": "9000"
+      },
+      {
+        "codigo": "F-44 (JP-5)",
+        "tipo": "Queroseno alto flash",
+        "usuario": "Navy (portaaviones)",
+        "ml_anio": "2500"
+      },
+      {
+        "codigo": "F-76",
+        "tipo": "Diésel naval",
+        "usuario": "Navy (buques)",
+        "ml_anio": "3000"
+      }
+    ],
+    "combustibles_total": "~14500",
+    "combustibles_cita": "El DoD es el mayor consumidor institucional de combustible del mundo (DLA Energy).",
+    "vulnerabilidades_titulo": "Vulnerabilidades específicas de defensa",
+    "vulnerabilidades": [
+      {
+        "nivel": "med",
+        "tag": "ALTO",
+        "texto_html": "<b>Logística global</b> · cadena de combustible expedicionaria extensa y costosa de proteger."
+      },
+      {
+        "nivel": "med",
+        "tag": "ALTO",
+        "texto_html": "<b>Ciber-OT</b> · redes e infraestructura crítica como objetivo de adversarios."
+      },
+      {
+        "nivel": "low",
+        "tag": "MED",
+        "texto_html": "<b>Microrredes en bases</b> · dependencia de la red civil; programas de resiliencia en curso."
+      }
+    ],
+    "mision_titulo": "Misión en Seguridad Energética",
+    "mision": [
+      {
+        "titulo": "PROTECCIÓN DE SLOC",
+        "texto_html": "La US Navy asegura las rutas marítimas globales (Ormuz, Malaca, Bab el-Mandeb)."
+      },
+      {
+        "titulo": "DLA ENERGY",
+        "texto_html": "Mayor logística de combustible del mundo para operaciones globales."
+      },
+      {
+        "titulo": "RESILIENCIA DE BASES",
+        "texto_html": "Microrredes y energías limpias para continuidad operativa."
+      },
+      {
+        "titulo": "DOMINIO ENERGÉTICO",
+        "texto_html": "El GNL como herramienta de política exterior (\"freedom gas\")."
+      }
+    ],
+    "mision_cita": "DoD Operational Energy Strategy; DLA Energy."
+  },
+  "politicas": {
+    "src": "DOE · FERC · EIA",
+    "planes_titulo": "Planes nacionales",
+    "planes": [
+      {
+        "nombre": "Inflation Reduction Act 2022",
+        "texto": "~370 mil M USD para energía limpia y manufactura."
+      },
+      {
+        "nombre": "Bipartisan Infrastructure Law",
+        "texto": "Red, transmisión, hidrógeno y captura de carbono."
+      },
+      {
+        "nombre": "Strategic Petroleum Reserve",
+        "texto": "Reserva estratégica; recompra tras liberaciones 2022."
+      },
+      {
+        "nombre": "Hubs de hidrógeno",
+        "texto": "Siete hubs regionales de H₂."
+      }
+    ],
+    "instituciones_titulo": "Instituciones clave",
+    "instituciones": [
+      {
+        "sigla": "DOE",
+        "texto": "departamento de energía; SPR; I+D."
+      },
+      {
+        "sigla": "FERC",
+        "texto": "regulador de transmisión y mercados mayoristas."
+      },
+      {
+        "sigla": "NERC",
+        "texto": "fiabilidad de la red."
+      },
+      {
+        "sigla": "EIA",
+        "texto": "estadística y prospectiva energética."
+      }
+    ],
+    "transicion_titulo": "Transición y economía",
+    "transicion_html": "<p>EE.UU. combina <b>dominio fósil</b> (esquisto, GNL) con una transición acelerada por la IRA, buscando re-shoring de la manufactura limpia y reducir dependencia de China en minerales y baterías.</p>",
+    "transicion_cita": "EIA AEO 2024; DOE."
+  },
+  "crisis": {
+    "src": "Wargaming · Cone of Plausibility",
+    "matriz_titulo": "Matriz Probabilidad × Impacto",
+    "matriz": {
+      "esquina": "Impacto ↓ / Prob →",
+      "prob_labels": [
+        "Muy bajo",
+        "Bajo",
+        "Medio",
+        "Alto",
+        "Muy alto"
+      ],
+      "filas": [
+        {
+          "impacto": "Catastrófico",
+          "celdas": [
+            {
+              "nivel": 3
+            },
+            {
+              "nivel": 4
+            },
+            {
+              "nivel": 5,
+              "texto": "Ciberataque masivo a red"
+            },
+            {
+              "nivel": 5
+            },
+            {
+              "nivel": 5
+            }
+          ]
+        },
+        {
+          "impacto": "Mayor",
+          "celdas": [
+            {
+              "nivel": 2
+            },
+            {
+              "nivel": 3
+            },
+            {
+              "nivel": 4,
+              "texto": "Huracán Golfo (refinerías)"
+            },
+            {
+              "nivel": 4,
+              "texto": "Apagón regional"
+            },
+            {
+              "nivel": 5
+            }
+          ]
+        },
+        {
+          "impacto": "Moderado",
+          "celdas": [
+            {
+              "nivel": 1
+            },
+            {
+              "nivel": 2
+            },
+            {
+              "nivel": 3,
+              "texto": "Ola de frío (ERCOT)"
+            },
+            {
+              "nivel": 4
+            },
+            {
+              "nivel": 4
+            }
+          ]
+        },
+        {
+          "impacto": "Menor",
+          "celdas": [
+            {
+              "nivel": 1
+            },
+            {
+              "nivel": 1
+            },
+            {
+              "nivel": 2
+            },
+            {
+              "nivel": 3
+            },
+            {
+              "nivel": 3
+            }
+          ]
+        },
+        {
+          "impacto": "Insignif.",
+          "celdas": [
+            {
+              "nivel": 1
+            },
+            {
+              "nivel": 1
+            },
+            {
+              "nivel": 1
+            },
+            {
+              "nivel": 2
+            },
+            {
+              "nivel": 2
+            }
+          ]
+        }
+      ]
+    },
+    "matriz_cita": "Escala HM Treasury Orange Book.",
+    "escenarios_titulo": "Escenarios calibrados",
+    "escenarios": [
+      {
+        "nivel": "high",
+        "tag": "A",
+        "texto_html": "<b>Ciberataque a la red/ductos</b> — réplica de Colonial a mayor escala. <i>Respuesta:</i> CISA, segmentación OT, reservas."
+      },
+      {
+        "nivel": "high",
+        "tag": "B",
+        "texto_html": "<b>Evento extremo en ERCOT</b> — ola de frío/calor (Uri 2021). <i>Respuesta:</i> interconexión, reserva, weatherization."
+      },
+      {
+        "nivel": "med",
+        "tag": "C",
+        "texto_html": "<b>Huracán en el Golfo</b> — paro de refinerías y exportación. <i>Respuesta:</i> SPR, redundancia logística."
+      },
+      {
+        "nivel": "med",
+        "tag": "D",
+        "texto_html": "<b>Dependencia de minerales de China</b> — restricción de insumos. <i>Respuesta:</i> re-shoring, IRA, aliados."
+      }
+    ],
+    "vectores_titulo": "Respuesta estratégica integrada — vectores",
+    "vectores": [
+      {
+        "titulo": "RESILIENCIA DE RED",
+        "texto": "Interconexión, weatherization y almacenamiento."
+      },
+      {
+        "titulo": "CIBERSEGURIDAD",
+        "texto": "Protección de sistemas OT/SCADA críticos."
+      },
+      {
+        "titulo": "DOMINIO GNL",
+        "texto": "Exportación como palanca geopolítica."
+      },
+      {
+        "titulo": "CADENAS LIMPIAS",
+        "texto": "Re-shoring de baterías y minerales (IRA)."
+      }
+    ]
+  },
+  "referencias": {
+    "src": "Triangulación multi-fuente",
+    "titulo": "Fuentes primarias y académicas",
+    "items": [
+      "EIA (2024). <i>Annual Energy Outlook</i>. Washington.",
+      "IEA (2024). <i>United States Energy Profile</i>.",
+      "DoD (2023). <i>Operational Energy Strategy</i>.",
+      "Ember (2024). <i>Electricity Data Explorer</i>.",
+      "APERC (2007). <i>A Quest for Energy Security in the 21st Century</i>. Tokio."
+    ]
+  },
+  "footer": "Documento de sustentación · Rúbrica Slide18 · Logística Militar · Mayo 2026"
+}

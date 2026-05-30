@@ -1,0 +1,942 @@
+{
+  "schema_version": "1.0.0",
+  "meta": {
+    "pais": "Perú",
+    "pais_iso": "PER",
+    "pais_iso2": "PE",
+    "subtitulo_pais": "República del",
+    "eyebrow": "Portafolio · Seguridad Energética por País",
+    "titulo": "Seguridad Energética del Perú:<br/>el gas de Camisea y la demanda minera",
+    "subtitulo": "Gas natural de Camisea como eje, electricidad con fuerte hidroeléctrica y una gran demanda energética de la minería; vulnerabilidad por la concentración en un solo sistema de transporte.",
+    "estudiante": "Cátedra (ejemplo de referencia)",
+    "asignatura": "Logística Militar · Rúbrica Slide18",
+    "tipo_doc": "Documento de sustentación",
+    "fecha": "Mayo 2026",
+    "fuerzas_armadas": "Fuerzas Armadas del Perú",
+    "aperc_global": 6.2,
+    "cita_corta": "MINEM, 2024; Osinergmin; IEA.",
+    "portafolio_label": "Rúbrica Slide18<br/>Logística Militar<br/>v2 — académica",
+    "map_view": {
+      "lat": -10,
+      "lng": -75,
+      "zoom": 5
+    }
+  },
+  "resumen": {
+    "tesis_html": "Perú gira en torno al <b>gas de Camisea</b>: cambió su matriz hacia el gas y la hidroeléctrica, exporta <b>GNL</b> desde Pampa Melchorita y abastece una enorme demanda <b>minera</b> (cobre). Su seguridad depende de pocos activos críticos (Camisea y su ducto), con riesgo por conflictividad social y déficit de refinación.",
+    "conclusion_html": "APERC <b>6.2/10</b>: buena <i>availability</i> y <i>acceptability</i>, pero <i>robustness</i> limitada por la concentración en Camisea. Las FF.AA. protegen el gasoducto y la infraestructura crítica.",
+    "kpis": [
+      {
+        "valor": 40,
+        "unidad": "%",
+        "etiqueta": "Gas en generación eléctrica"
+      },
+      {
+        "valor": 55,
+        "unidad": "%",
+        "etiqueta": "Hidro en electricidad"
+      },
+      {
+        "valor": 2,
+        "unidad": "º",
+        "etiqueta": "Productor de cobre mundial"
+      },
+      {
+        "valor": 1,
+        "unidad": "",
+        "etiqueta": "Planta de GNL (Melchorita)"
+      }
+    ]
+  },
+  "aperc": {
+    "src": "APERC 2007 · MINEM 2024",
+    "definicion_html": "<p>Perú logró <i>availability</i> y <i>acceptability</i> con Camisea e hidro, pero su <i>robustness</i> está atada a un sistema de transporte concentrado y a la licencia social minera.</p>",
+    "definicion_cita": "MINEM, Balance Energético Nacional 2024.",
+    "scorecard_titulo": "Scorecard del Perú bajo APERC",
+    "scores": [
+      {
+        "letra": "A",
+        "nombre": "vailability",
+        "desc": "Gas de Camisea; hidro; potencial solar/eólico.",
+        "score": 6.5
+      },
+      {
+        "letra": "A",
+        "nombre": "ccessibility",
+        "desc": "Concentración en Camisea y su ducto.",
+        "score": 6
+      },
+      {
+        "letra": "A",
+        "nombre": "ffordability",
+        "desc": "Energía relativamente asequible.",
+        "score": 6.3
+      },
+      {
+        "letra": "A",
+        "nombre": "cceptability",
+        "desc": "Matriz baja en carbono; conflictos socioambientales.",
+        "score": 6
+      }
+    ],
+    "scorecard_cita": "Scores propios sobre indicadores normalizados.",
+    "comparador": {
+      "pais_b": "Chile",
+      "pais_c": "Colombia"
+    },
+    "indicadores_titulo": "Indicadores cuantitativos aplicados",
+    "indicadores": [
+      {
+        "indicador": "Hidro en electricidad (%)",
+        "definicion": "Generación",
+        "propio": "55",
+        "b": "30",
+        "c": "70",
+        "interp": {
+          "texto": "Alta"
+        }
+      },
+      {
+        "indicador": "Gas en electricidad (%)",
+        "definicion": "Generación",
+        "propio": "40",
+        "b": "20",
+        "c": "16",
+        "interp": {
+          "texto": "Eje del sistema"
+        }
+      },
+      {
+        "indicador": "Producción de cobre (Mt)",
+        "definicion": "Anual",
+        "propio": "2.6",
+        "b": "5.3",
+        "c": "1.0",
+        "interp": {
+          "texto": "Gran demanda minera"
+        }
+      },
+      {
+        "indicador": "Concentración de transporte gas",
+        "definicion": "Camisea",
+        "propio": "alta",
+        "b": "media",
+        "c": "media",
+        "interp": {
+          "texto": "Riesgo de cuello",
+          "pill": "warn"
+        }
+      }
+    ],
+    "indicadores_nota": "Comparación con Chile (minero) y Colombia (vecino hidro)."
+  },
+  "matriz": {
+    "src": "MINEM · Ember 2024",
+    "primaria_titulo": "Energía Primaria (TPES, %)",
+    "primaria": [
+      {
+        "label": "Petróleo",
+        "valor": 40,
+        "color": "#c4570e"
+      },
+      {
+        "label": "Gas natural",
+        "valor": 32,
+        "color": "#0b5394"
+      },
+      {
+        "label": "Hidro",
+        "valor": 16,
+        "color": "#2e7d32"
+      },
+      {
+        "label": "Biomasa/otros",
+        "valor": 8,
+        "color": "#a17c1c"
+      },
+      {
+        "label": "Carbón",
+        "valor": 4,
+        "color": "#8a4a4a"
+      }
+    ],
+    "primaria_cita": "Petróleo 40 · Gas 32 · Hidro 16. <i>Fuente: MINEM 2024.</i>",
+    "electrica_titulo": "Generación Eléctrica (%)",
+    "electrica": [
+      {
+        "label": "Hidro",
+        "valor": 55,
+        "color": "#2e7d32"
+      },
+      {
+        "label": "Gas",
+        "valor": 40,
+        "color": "#0b5394"
+      },
+      {
+        "label": "Solar/Eólica",
+        "valor": 5,
+        "color": "#a17c1c"
+      }
+    ],
+    "electrica_cita": "Hidro 55 · Gas 40 · Solar/Eólica 5. <i>Fuente: Ember 2024.</i>",
+    "comparativa_titulo": "Comparativa Internacional — Mix Eléctrico (%)",
+    "comparativa": {
+      "paises": [
+        "Perú",
+        "Chile",
+        "Colombia"
+      ],
+      "series": [
+        {
+          "label": "Hidro",
+          "data": [
+            55,
+            30,
+            70
+          ],
+          "color": "#2e7d32"
+        },
+        {
+          "label": "Gas",
+          "data": [
+            40,
+            20,
+            16
+          ],
+          "color": "#0b5394"
+        },
+        {
+          "label": "Solar/Eólica",
+          "data": [
+            5,
+            35,
+            4
+          ],
+          "color": "#a17c1c"
+        },
+        {
+          "label": "Carbón",
+          "data": [
+            0,
+            15,
+            8
+          ],
+          "color": "#8a4a4a"
+        }
+      ]
+    },
+    "comparativa_nota": "Perú apoyado en hidro+gas; Chile lidera en solar/eólica."
+  },
+  "sankey": {
+    "src": "Producción → Transformación → Uso final",
+    "titulo_panel": "Flujos físicos de energía, Perú (PJ aprox.)",
+    "flujos": [
+      {
+        "from": "Gas de Camisea",
+        "to": "Generación eléctrica",
+        "flow": 1800
+      },
+      {
+        "from": "Gas de Camisea",
+        "to": "Exportación GNL",
+        "flow": 1200
+      },
+      {
+        "from": "Gas de Camisea",
+        "to": "Industria & residencial",
+        "flow": 700
+      },
+      {
+        "from": "Petróleo importado",
+        "to": "Refinación local",
+        "flow": 1500
+      },
+      {
+        "from": "Refinación local",
+        "to": "Transporte",
+        "flow": 1300
+      },
+      {
+        "from": "Hidro",
+        "to": "Generación eléctrica",
+        "flow": 2000
+      },
+      {
+        "from": "Generación eléctrica",
+        "to": "Minería",
+        "flow": 1500
+      },
+      {
+        "from": "Generación eléctrica",
+        "to": "Industria & residencial",
+        "flow": 1800
+      }
+    ],
+    "nodos": {
+      "Gas de Camisea": {
+        "color": "#0b5394",
+        "label": "Gas de Camisea"
+      },
+      "Petróleo importado": {
+        "color": "#c4570e",
+        "label": "Petróleo importado"
+      },
+      "Hidro": {
+        "color": "#2e7d32",
+        "label": "Hidro"
+      },
+      "Refinación local": {
+        "color": "#c4570e",
+        "label": "Refinerías"
+      },
+      "Generación eléctrica": {
+        "color": "#6b4e8e",
+        "label": "Generación eléctrica"
+      },
+      "Exportación GNL": {
+        "color": "#0b5394",
+        "label": "EXPORT · GNL"
+      },
+      "Minería": {
+        "color": "#a17c1c",
+        "label": "Minería (cobre)"
+      },
+      "Industria & residencial": {
+        "color": "#4a5870",
+        "label": "Industria + Residencial"
+      },
+      "Transporte": {
+        "color": "#c4570e",
+        "label": "Transporte"
+      }
+    },
+    "cita": "La minería es un gran consumidor; Camisea alimenta electricidad, exportación e industria. <i>Datos estilizados.</i>"
+  },
+  "evolucion": {
+    "src": "2000–2050 · era Camisea",
+    "historico_titulo": "Mix Eléctrico Histórico y Proyectado (%)",
+    "anios": [
+      "2000",
+      "2010",
+      "2020",
+      "2024",
+      "2035",
+      "2050"
+    ],
+    "series": [
+      {
+        "label": "Hidro",
+        "data": [
+          85,
+          60,
+          55,
+          55,
+          50,
+          45
+        ],
+        "color": "#2e7d32"
+      },
+      {
+        "label": "Gas",
+        "data": [
+          5,
+          35,
+          40,
+          40,
+          35,
+          25
+        ],
+        "color": "#0b5394"
+      },
+      {
+        "label": "Solar/Eólica",
+        "data": [
+          0,
+          1,
+          4,
+          5,
+          15,
+          30
+        ],
+        "color": "#a17c1c"
+      }
+    ],
+    "historico_cita": "Camisea (2004) transformó la matriz; el sur tiene gran potencial solar.",
+    "hitos_titulo": "Hitos del Régimen Energético",
+    "hitos": [
+      {
+        "anio": "2004",
+        "evento": "Inicio de producción del gas de Camisea."
+      },
+      {
+        "anio": "2010",
+        "evento": "Exportación de GNL desde Pampa Melchorita."
+      },
+      {
+        "anio": "2016",
+        "evento": "Auge de la inversión minera (cobre)."
+      },
+      {
+        "anio": "2022",
+        "evento": "Conflictividad social afecta corredor minero del sur."
+      },
+      {
+        "anio": "2024",
+        "evento": "Subastas de renovables; debate del Gasoducto Sur Peruano."
+      }
+    ]
+  },
+  "infraestructura": {
+    "src": "Mapa Leaflet · GEM",
+    "mapa_titulo": "Gas, hidro y minería",
+    "pines": [
+      {
+        "lat": -11.8,
+        "lng": -72.7,
+        "tipo": "gnl",
+        "nombre": "Gas de Camisea",
+        "desc": "Yacimiento clave (Cusco)"
+      },
+      {
+        "lat": -13.3,
+        "lng": -76.4,
+        "tipo": "gnl",
+        "nombre": "GNL Pampa Melchorita",
+        "desc": "Planta de licuefacción y exportación"
+      },
+      {
+        "lat": -12.4,
+        "lng": -74.9,
+        "tipo": "almacenamiento",
+        "nombre": "Hidro del Mantaro",
+        "desc": "Mayor complejo hidroeléctrico"
+      },
+      {
+        "lat": -4.58,
+        "lng": -81.27,
+        "tipo": "refineria",
+        "nombre": "Refinería de Talara",
+        "desc": "Modernizada por Petroperú"
+      },
+      {
+        "lat": -16.53,
+        "lng": -71.58,
+        "tipo": "minerales",
+        "nombre": "Cobre Cerro Verde",
+        "desc": "Gran mina (Arequipa)"
+      },
+      {
+        "lat": -14.07,
+        "lng": -72.33,
+        "tipo": "minerales",
+        "nombre": "Cobre Las Bambas",
+        "desc": "Mina y corredor minero del sur"
+      }
+    ],
+    "rutas": [
+      {
+        "puntos": [
+          [
+            -11.8,
+            -72.7
+          ],
+          [
+            -12.5,
+            -75
+          ],
+          [
+            -13.3,
+            -76.4
+          ]
+        ],
+        "tooltip": "Ducto de gas: Camisea → costa"
+      }
+    ],
+    "leyenda": [
+      {
+        "color": "#0b5394",
+        "label": "Gas / GNL"
+      },
+      {
+        "color": "#2e7d32",
+        "label": "Hidro"
+      },
+      {
+        "color": "#a17c1c",
+        "label": "Minería"
+      },
+      {
+        "color": "#c4570e",
+        "label": "Refinería"
+      }
+    ],
+    "mapa_cita": "Coordenadas reales de Camisea, Melchorita, Mantaro, Talara, Cerro Verde, Las Bambas. <i>Fuentes: GEM 2024.</i>",
+    "vulnerabilidades_titulo": "Vulnerabilidades técnicas",
+    "vulnerabilidades": [
+      {
+        "nivel": "high",
+        "tag": "CRÍT",
+        "texto_html": "<b>Concentración en Camisea</b> · un solo ducto principal: punto único de falla."
+      },
+      {
+        "nivel": "med",
+        "tag": "ALTO",
+        "texto_html": "<b>Conflictividad social</b> · bloqueos en el corredor minero del sur."
+      },
+      {
+        "nivel": "med",
+        "tag": "ALTO",
+        "texto_html": "<b>Déficit de refinación</b> · dependencia de importación de derivados."
+      },
+      {
+        "nivel": "low",
+        "tag": "MED",
+        "texto_html": "<b>Sismicidad</b> · riesgo geológico para infraestructura."
+      }
+    ],
+    "capacidad_titulo": "Capacidad instalada (GW)",
+    "capacidad": {
+      "anios": [
+        "2020",
+        "2024",
+        "2030",
+        "2040"
+      ],
+      "y_titulo": "GW",
+      "series": [
+        {
+          "label": "Hidro (GW)",
+          "tipo": "bar",
+          "data": [
+            5.3,
+            5.8,
+            6.5,
+            7.5
+          ],
+          "color": "#2e7d32"
+        },
+        {
+          "label": "Gas (GW)",
+          "tipo": "bar",
+          "data": [
+            4.5,
+            5,
+            5.5,
+            5
+          ],
+          "color": "#0b5394"
+        },
+        {
+          "label": "Solar/Eólica (GW)",
+          "tipo": "bar",
+          "data": [
+            0.7,
+            1.5,
+            4,
+            9
+          ],
+          "color": "#a17c1c"
+        }
+      ]
+    },
+    "capacidad_cita": "Gran potencial solar en el sur aún por desarrollar. <i>Fuente: COES/MINEM.</i>"
+  },
+  "geopolitica": {
+    "src": "Radar APERC normalizado",
+    "radar_titulo": "Radar APERC: Perú vs Chile vs Colombia",
+    "radar": {
+      "ejes": [
+        "Availability",
+        "Accessibility",
+        "Affordability",
+        "Acceptability",
+        "Sovereignty",
+        "Robustness",
+        "Resilience"
+      ],
+      "series": [
+        {
+          "label": "Perú",
+          "data": [
+            6.5,
+            6,
+            6.3,
+            6,
+            6.5,
+            5.5,
+            6
+          ],
+          "color": "#a17c1c"
+        },
+        {
+          "label": "Chile",
+          "data": [
+            6,
+            6.5,
+            6,
+            7.5,
+            6.5,
+            6.5,
+            7
+          ],
+          "color": "#0b5394"
+        },
+        {
+          "label": "Colombia",
+          "data": [
+            6.5,
+            6,
+            6,
+            6.5,
+            6.5,
+            6,
+            5.5
+          ],
+          "color": "#2e7d32"
+        }
+      ]
+    },
+    "radar_cita": "Normalización min-max sobre indicadores §01.",
+    "dependencias_titulo": "Dependencias y socios",
+    "dependencias": [
+      {
+        "vinculo": "Exportación de GNL a Asia/Europa",
+        "pct": "—",
+        "riesgo": {
+          "texto": "Mercado spot",
+          "pill": "ok"
+        }
+      },
+      {
+        "vinculo": "Exportación de cobre a China",
+        "pct": "60",
+        "riesgo": {
+          "texto": "Cliente dominante",
+          "pill": "warn"
+        }
+      },
+      {
+        "vinculo": "Importación de derivados",
+        "pct": "—",
+        "riesgo": {
+          "texto": "Déficit de refinación",
+          "pill": "warn"
+        }
+      },
+      {
+        "vinculo": "Inversión minera extranjera",
+        "pct": "—",
+        "riesgo": {
+          "texto": "Sensible a estabilidad",
+          "pill": "warn"
+        }
+      }
+    ],
+    "dependencias_cita": "MINEM; BCRP 2024.",
+    "minerales_titulo": "Posición minero-energética",
+    "minerales": [
+      {
+        "valor": "#2",
+        "unidad": " mundial",
+        "etiqueta": "COBRE"
+      },
+      {
+        "valor": "#2",
+        "unidad": " mundial",
+        "etiqueta": "ZINC Y PLATA"
+      },
+      {
+        "valor": "55",
+        "unidad": "%",
+        "etiqueta": "HIDRO ELÉCTRICA"
+      }
+    ],
+    "minerales_cita": "USGS; MINEM 2024."
+  },
+  "militar": {
+    "titulo_seccion": "Combustibles Militares y Rol Operacional de las Fuerzas Armadas del Perú",
+    "nav_label": "Combustibles militares",
+    "src": "IISS · Ministerio de Defensa",
+    "combustibles_titulo": "Demanda de combustibles de las FF.AA.",
+    "combustibles": [
+      {
+        "codigo": "Jet A-1",
+        "tipo": "Queroseno de aviación",
+        "usuario": "Fuerza Aérea del Perú",
+        "ml_anio": "150"
+      },
+      {
+        "codigo": "Diésel naval",
+        "tipo": "Diésel",
+        "usuario": "Marina de Guerra",
+        "ml_anio": "90"
+      },
+      {
+        "codigo": "Diésel terrestre",
+        "tipo": "Diésel",
+        "usuario": "Ejército",
+        "ml_anio": "110"
+      }
+    ],
+    "combustibles_total": "~350",
+    "combustibles_cita": "Estimación de orden de magnitud.",
+    "vulnerabilidades_titulo": "Vulnerabilidades específicas de defensa",
+    "vulnerabilidades": [
+      {
+        "nivel": "high",
+        "tag": "CRÍT",
+        "texto_html": "<b>Protección del gasoducto de Camisea</b> · objetivo crítico en zona VRAEM."
+      },
+      {
+        "nivel": "med",
+        "tag": "ALTO",
+        "texto_html": "<b>Corredor minero</b> · seguridad ante bloqueos y conflictividad."
+      },
+      {
+        "nivel": "low",
+        "tag": "MED",
+        "texto_html": "<b>Infraestructura andina</b> · acceso difícil para respuesta rápida."
+      }
+    ],
+    "mision_titulo": "Misión en Seguridad Energética",
+    "mision": [
+      {
+        "titulo": "PROTECCIÓN DE CAMISEA",
+        "texto_html": "Seguridad del ducto y de las instalaciones de gas."
+      },
+      {
+        "titulo": "CORREDOR MINERO",
+        "texto_html": "Apoyo al orden público para la continuidad de operaciones."
+      },
+      {
+        "titulo": "INFRAESTRUCTURA CRÍTICA",
+        "texto_html": "Custodia de hidroeléctricas y refinería de Talara."
+      },
+      {
+        "titulo": "FRONTERAS",
+        "texto_html": "Control del contrabando de combustible."
+      }
+    ],
+    "mision_cita": "IISS 2024."
+  },
+  "politicas": {
+    "src": "MINEM · Osinergmin · COES",
+    "planes_titulo": "Planes nacionales",
+    "planes": [
+      {
+        "nombre": "Política Energética Nacional 2010–2040",
+        "texto": "Diversificación y seguridad de suministro."
+      },
+      {
+        "nombre": "Masificación del gas natural",
+        "texto": "Llevar gas a regiones (SiteGas)."
+      },
+      {
+        "nombre": "Subastas RER",
+        "texto": "Recursos energéticos renovables."
+      },
+      {
+        "nombre": "Modernización de Talara",
+        "texto": "Reducir déficit de refinación."
+      }
+    ],
+    "instituciones_titulo": "Instituciones clave",
+    "instituciones": [
+      {
+        "sigla": "MINEM",
+        "texto": "ministerio de energía y minas."
+      },
+      {
+        "sigla": "Osinergmin",
+        "texto": "regulador de energía y minería."
+      },
+      {
+        "sigla": "COES",
+        "texto": "operador del sistema eléctrico."
+      },
+      {
+        "sigla": "Petroperú",
+        "texto": "petrolera estatal (refinación)."
+      }
+    ],
+    "transicion_titulo": "Transición y economía",
+    "transicion_html": "<p>El reto es <b>diversificar</b> más allá de Camisea (solar del sur, segundo ducto) y resolver el déficit de refinación, mientras la minería del cobre crece como demanda y motor fiscal.</p>",
+    "transicion_cita": "MINEM PEN; IEA 2024."
+  },
+  "crisis": {
+    "src": "Wargaming · Cone of Plausibility",
+    "matriz_titulo": "Matriz Probabilidad × Impacto",
+    "matriz": {
+      "esquina": "Impacto ↓ / Prob →",
+      "prob_labels": [
+        "Muy bajo",
+        "Bajo",
+        "Medio",
+        "Alto",
+        "Muy alto"
+      ],
+      "filas": [
+        {
+          "impacto": "Catastrófico",
+          "celdas": [
+            {
+              "nivel": 3
+            },
+            {
+              "nivel": 4
+            },
+            {
+              "nivel": 5,
+              "texto": "Corte del ducto Camisea"
+            },
+            {
+              "nivel": 5
+            },
+            {
+              "nivel": 5
+            }
+          ]
+        },
+        {
+          "impacto": "Mayor",
+          "celdas": [
+            {
+              "nivel": 2
+            },
+            {
+              "nivel": 3
+            },
+            {
+              "nivel": 4,
+              "texto": "Bloqueos corredor minero"
+            },
+            {
+              "nivel": 4
+            },
+            {
+              "nivel": 5
+            }
+          ]
+        },
+        {
+          "impacto": "Moderado",
+          "celdas": [
+            {
+              "nivel": 1
+            },
+            {
+              "nivel": 2
+            },
+            {
+              "nivel": 3,
+              "texto": "Sequía (hidro)"
+            },
+            {
+              "nivel": 4,
+              "texto": "Sismo mayor"
+            },
+            {
+              "nivel": 4
+            }
+          ]
+        },
+        {
+          "impacto": "Menor",
+          "celdas": [
+            {
+              "nivel": 1
+            },
+            {
+              "nivel": 1
+            },
+            {
+              "nivel": 2
+            },
+            {
+              "nivel": 3
+            },
+            {
+              "nivel": 3
+            }
+          ]
+        },
+        {
+          "impacto": "Insignif.",
+          "celdas": [
+            {
+              "nivel": 1
+            },
+            {
+              "nivel": 1
+            },
+            {
+              "nivel": 1
+            },
+            {
+              "nivel": 2
+            },
+            {
+              "nivel": 2
+            }
+          ]
+        }
+      ]
+    },
+    "matriz_cita": "Escala HM Treasury Orange Book.",
+    "escenarios_titulo": "Escenarios calibrados",
+    "escenarios": [
+      {
+        "nivel": "high",
+        "tag": "A",
+        "texto_html": "<b>Corte del ducto de Camisea</b> — crisis de gas y electricidad. <i>Respuesta:</i> reservas, segundo ducto, diésel de respaldo."
+      },
+      {
+        "nivel": "med",
+        "tag": "B",
+        "texto_html": "<b>Bloqueos en el corredor minero</b> — parálisis de exportación. <i>Respuesta:</i> diálogo, seguridad, rutas alternas."
+      },
+      {
+        "nivel": "med",
+        "tag": "C",
+        "texto_html": "<b>Sismo mayor</b> — daño a infraestructura. <i>Respuesta:</i> redundancia, normas sísmicas."
+      },
+      {
+        "nivel": "med",
+        "tag": "D",
+        "texto_html": "<b>Sequía</b> — baja hidro. <i>Respuesta:</i> gas y renovables de respaldo."
+      }
+    ],
+    "vectores_titulo": "Respuesta estratégica integrada — vectores",
+    "vectores": [
+      {
+        "titulo": "DIVERSIFICAR TRANSPORTE",
+        "texto": "Segundo ducto y redundancia de gas."
+      },
+      {
+        "titulo": "SOLAR DEL SUR",
+        "texto": "Aprovechar el potencial del altiplano."
+      },
+      {
+        "titulo": "REFINACIÓN",
+        "texto": "Talara para reducir importación de derivados."
+      },
+      {
+        "titulo": "SEGURIDAD MINERA",
+        "texto": "Continuidad del corredor del cobre."
+      }
+    ]
+  },
+  "referencias": {
+    "src": "Triangulación multi-fuente",
+    "titulo": "Fuentes primarias y académicas",
+    "items": [
+      "MINEM (2024). <i>Balance Energético Nacional</i>.",
+      "Osinergmin (2024). <i>La industria del gas natural en el Perú</i>.",
+      "IEA (2024). <i>Peru Energy Profile</i>.",
+      "USGS (2024). <i>Mineral Commodity Summaries</i>.",
+      "APERC (2007). <i>A Quest for Energy Security in the 21st Century</i>. Tokio."
+    ]
+  },
+  "footer": "Documento de sustentación · Rúbrica Slide18 · Logística Militar · Mayo 2026"
+}

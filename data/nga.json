@@ -1,0 +1,950 @@
+{
+  "schema_version": "1.0.0",
+  "meta": {
+    "pais": "Nigeria",
+    "pais_iso": "NGA",
+    "pais_iso2": "NG",
+    "subtitulo_pais": "República Federal de",
+    "eyebrow": "Portafolio · Seguridad Energética por País",
+    "titulo": "Seguridad Energética de Nigeria:<br/>petróleo del Delta y déficit de refinación",
+    "subtitulo": "Mayor productor de petróleo de África con gran GNL, pero atrapado en la paradoja de importar derivados, sufrir robo de crudo y un déficit eléctrico crónico que la refinería Dangote empieza a aliviar.",
+    "estudiante": "Cátedra (ejemplo de referencia)",
+    "asignatura": "Logística Militar · Rúbrica Slide18",
+    "tipo_doc": "Documento de sustentación",
+    "fecha": "Mayo 2026",
+    "fuerzas_armadas": "Fuerzas Armadas de Nigeria",
+    "aperc_global": 4.5,
+    "cita_corta": "OPEP, 2024; IEA, 2024; NNPC.",
+    "portafolio_label": "Rúbrica Slide18<br/>Logística Militar<br/>v2 — académica",
+    "map_view": {
+      "lat": 9.5,
+      "lng": 8,
+      "zoom": 6
+    }
+  },
+  "resumen": {
+    "tesis_html": "Nigeria es el <b>mayor productor de petróleo de África</b> (OPEP), con crudo del Delta del Níger y GNL (Bonny/NLNG). Vive la <i>paradoja del refinado</i>: por años importó casi toda su gasolina por el colapso de sus refinerías — la megarefinería <b>Dangote</b> (2024) cambia el panorama. Sufre robo de crudo, vandalismo de oleoductos, quema de gas y un <b>déficit eléctrico</b> crónico cubierto con generadores diésel.",
+    "conclusion_html": "APERC <b>4.5/10</b>: alta <i>availability</i> en crudo/gas pero <i>robustness</i>, <i>affordability</i> y <i>acceptability</i> débiles. Las FF.AA. enfrentan la seguridad del Delta, los oleoductos y el Golfo de Guinea.",
+    "kpis": [
+      {
+        "valor": 1.4,
+        "unidad": "Mb/d",
+        "etiqueta": "Producción de crudo",
+        "decimal": true
+      },
+      {
+        "valor": 45,
+        "unidad": "%",
+        "etiqueta": "Población con electricidad"
+      },
+      {
+        "valor": 650,
+        "unidad": "kb/d",
+        "etiqueta": "Refinería Dangote"
+      },
+      {
+        "valor": 1,
+        "unidad": "º",
+        "etiqueta": "Petróleo de África"
+      }
+    ]
+  },
+  "aperc": {
+    "src": "APERC 2007 · OPEP 2024",
+    "definicion_html": "<p>Nigeria muestra que exportar crudo no asegura energía: el <i>déficit de refinación</i> y la <i>red eléctrica frágil</i> hunden la <i>robustness</i> y la <i>affordability</i>. Dangote y reformas de subsidios buscan revertirlo.</p>",
+    "definicion_cita": "OPEP; IEA 2024.",
+    "scorecard_titulo": "Scorecard de Nigeria bajo APERC",
+    "scores": [
+      {
+        "letra": "A",
+        "nombre": "vailability",
+        "desc": "Gran crudo y gas; déficit de generación fiable.",
+        "score": 7.5
+      },
+      {
+        "letra": "A",
+        "nombre": "ccessibility",
+        "desc": "Refinación histórica colapsada; Dangote mejora.",
+        "score": 3.5
+      },
+      {
+        "letra": "A",
+        "nombre": "ffordability",
+        "desc": "Fin del subsidio a la gasolina (2023) elevó precios.",
+        "score": 3.5
+      },
+      {
+        "letra": "A",
+        "nombre": "cceptability",
+        "desc": "Quema de gas (flaring); derrames en el Delta.",
+        "score": 3.5
+      }
+    ],
+    "scorecard_cita": "Scores propios sobre indicadores normalizados.",
+    "comparador": {
+      "pais_b": "Arabia Saudita",
+      "pais_c": "Angola"
+    },
+    "indicadores_titulo": "Indicadores cuantitativos aplicados",
+    "indicadores": [
+      {
+        "indicador": "Producción de crudo (Mb/d)",
+        "definicion": "OPEP",
+        "propio": "1.4",
+        "b": "9.6",
+        "c": "1.1",
+        "interp": {
+          "texto": "Mayor de África"
+        }
+      },
+      {
+        "indicador": "Tasa de electrificación (%)",
+        "definicion": "Población",
+        "propio": "45",
+        "b": "100",
+        "c": "47",
+        "interp": {
+          "texto": "Baja",
+          "pill": "warn"
+        }
+      },
+      {
+        "indicador": "Robo de crudo (%)",
+        "definicion": "De la producción",
+        "propio": "~10",
+        "b": "0",
+        "c": "bajo",
+        "interp": {
+          "texto": "Pérdidas severas",
+          "pill": "danger"
+        }
+      },
+      {
+        "indicador": "Capacidad de generación fiable (GW)",
+        "definicion": "Despachable real",
+        "propio": "~4.5",
+        "b": "—",
+        "c": "—",
+        "interp": {
+          "texto": "Insuficiente para 220 M hab.",
+          "pill": "danger"
+        }
+      }
+    ],
+    "indicadores_nota": "Comparación con Arabia Saudita y Angola (petroleros)."
+  },
+  "matriz": {
+    "src": "OPEP · IEA 2024",
+    "primaria_titulo": "Energía Primaria (TPES, %)",
+    "primaria": [
+      {
+        "label": "Biomasa/leña",
+        "valor": 74,
+        "color": "#8a4a4a"
+      },
+      {
+        "label": "Petróleo",
+        "valor": 13,
+        "color": "#c4570e"
+      },
+      {
+        "label": "Gas natural",
+        "valor": 12,
+        "color": "#0b5394"
+      },
+      {
+        "label": "Hidro",
+        "valor": 1,
+        "color": "#2e7d32"
+      }
+    ],
+    "primaria_cita": "Biomasa 74 · Petróleo 13 · Gas 12 · Hidro 1. <i>Fuente: IEA 2024.</i>",
+    "electrica_titulo": "Generación Eléctrica (red, %)",
+    "electrica": [
+      {
+        "label": "Gas",
+        "valor": 75,
+        "color": "#0b5394"
+      },
+      {
+        "label": "Hidro",
+        "valor": 18,
+        "color": "#2e7d32"
+      },
+      {
+        "label": "Diésel/Otros",
+        "valor": 7,
+        "color": "#c4570e"
+      }
+    ],
+    "electrica_cita": "Gas 75 · Hidro 18 · Diésel 7 (red); enormes generadores diésel fuera de red. <i>Fuente: Ember.</i>",
+    "comparativa_titulo": "Comparativa Internacional — Mix Eléctrico (%)",
+    "comparativa": {
+      "paises": [
+        "Nigeria",
+        "Arabia Saudita",
+        "Sudáfrica"
+      ],
+      "series": [
+        {
+          "label": "Gas",
+          "data": [
+            75,
+            60,
+            0
+          ],
+          "color": "#0b5394"
+        },
+        {
+          "label": "Hidro",
+          "data": [
+            18,
+            0,
+            1
+          ],
+          "color": "#2e7d32"
+        },
+        {
+          "label": "Petróleo",
+          "data": [
+            7,
+            38,
+            0
+          ],
+          "color": "#c4570e"
+        },
+        {
+          "label": "Carbón",
+          "data": [
+            0,
+            0,
+            80
+          ],
+          "color": "#8a4a4a"
+        },
+        {
+          "label": "Solar/Otros",
+          "data": [
+            0,
+            2,
+            19
+          ],
+          "color": "#a17c1c"
+        }
+      ]
+    },
+    "comparativa_nota": "La red nigeriana es gas+hidro, pero cubre a menos de la mitad de la población."
+  },
+  "sankey": {
+    "src": "Producción → Transformación → Uso final",
+    "titulo_panel": "Flujos físicos de energía, Nigeria (PJ aprox.)",
+    "flujos": [
+      {
+        "from": "Crudo (Delta del Níger)",
+        "to": "Exportación de crudo",
+        "flow": 3500
+      },
+      {
+        "from": "Crudo (Delta del Níger)",
+        "to": "Refinación (Dangote)",
+        "flow": 1500
+      },
+      {
+        "from": "Refinación (Dangote)",
+        "to": "Combustibles refinados",
+        "flow": 1300
+      },
+      {
+        "from": "Combustibles refinados",
+        "to": "Transporte & generadores",
+        "flow": 1700
+      },
+      {
+        "from": "Gas natural",
+        "to": "Exportación GNL (Bonny)",
+        "flow": 2000
+      },
+      {
+        "from": "Gas natural",
+        "to": "Generación eléctrica",
+        "flow": 900
+      },
+      {
+        "from": "Biomasa/leña",
+        "to": "Cocción residencial",
+        "flow": 4000
+      },
+      {
+        "from": "Generación eléctrica",
+        "to": "Industria & residencial",
+        "flow": 800
+      }
+    ],
+    "nodos": {
+      "Crudo (Delta del Níger)": {
+        "color": "#c4570e",
+        "label": "Crudo (Delta del Níger)"
+      },
+      "Gas natural": {
+        "color": "#0b5394",
+        "label": "Gas natural"
+      },
+      "Biomasa/leña": {
+        "color": "#8a4a4a",
+        "label": "Biomasa / leña"
+      },
+      "Refinación (Dangote)": {
+        "color": "#c4570e",
+        "label": "Refinería Dangote"
+      },
+      "Combustibles refinados": {
+        "color": "#a17c1c",
+        "label": "Combustibles"
+      },
+      "Generación eléctrica": {
+        "color": "#6b4e8e",
+        "label": "Generación eléctrica"
+      },
+      "Exportación de crudo": {
+        "color": "#8a4a4a",
+        "label": "EXPORT · Crudo"
+      },
+      "Exportación GNL (Bonny)": {
+        "color": "#0b5394",
+        "label": "EXPORT · GNL"
+      },
+      "Cocción residencial": {
+        "color": "#4a5870",
+        "label": "Cocción (leña)"
+      },
+      "Industria & residencial": {
+        "color": "#4a5870",
+        "label": "Industria + Residencial"
+      },
+      "Transporte & generadores": {
+        "color": "#c4570e",
+        "label": "Transporte + generadores"
+      }
+    },
+    "cita": "Exportaba crudo e importaba gasolina; Dangote (2024) busca cerrar esa brecha. <i>Datos estilizados.</i>"
+  },
+  "evolucion": {
+    "src": "2000–2050 · Dangote y reformas",
+    "historico_titulo": "Balance de combustibles refinados (índice)",
+    "anios": [
+      "2000",
+      "2010",
+      "2020",
+      "2024",
+      "2030",
+      "2040"
+    ],
+    "series": [
+      {
+        "label": "Importación de gasolina",
+        "data": [
+          60,
+          80,
+          95,
+          50,
+          20,
+          10
+        ],
+        "color": "#c4570e"
+      },
+      {
+        "label": "Refinación local",
+        "data": [
+          40,
+          20,
+          5,
+          50,
+          80,
+          90
+        ],
+        "color": "#2e7d32"
+      }
+    ],
+    "historico_cita": "La refinería Dangote (650 kb/d) invierte la dependencia de importación de derivados.",
+    "hitos_titulo": "Hitos del Régimen Energético",
+    "hitos": [
+      {
+        "anio": "1956",
+        "evento": "Descubrimiento de petróleo en Oloibiri (Delta)."
+      },
+      {
+        "anio": "1971",
+        "evento": "Ingreso a la OPEP."
+      },
+      {
+        "anio": "1999",
+        "evento": "Inicio de exportaciones de GNL (Bonny/NLNG)."
+      },
+      {
+        "anio": "2023",
+        "evento": "Eliminación del subsidio a la gasolina; alza de precios."
+      },
+      {
+        "anio": "2024",
+        "evento": "Arranque de la megarefinería Dangote."
+      }
+    ]
+  },
+  "infraestructura": {
+    "src": "Mapa Leaflet · GEM",
+    "mapa_titulo": "Crudo, GNL, refinación y SLOC",
+    "pines": [
+      {
+        "lat": 4.8,
+        "lng": 6,
+        "tipo": "refineria",
+        "nombre": "Crudo del Delta del Níger",
+        "desc": "Principal zona productora (Bonny Light)"
+      },
+      {
+        "lat": 4.43,
+        "lng": 7.16,
+        "tipo": "gnl",
+        "nombre": "GNL Bonny Island (NLNG)",
+        "desc": "Gran terminal de exportación de GNL"
+      },
+      {
+        "lat": 6.43,
+        "lng": 3.65,
+        "tipo": "refineria",
+        "nombre": "Refinería Dangote (Lekki)",
+        "desc": "650 kb/d · mayor de África"
+      },
+      {
+        "lat": 4.79,
+        "lng": 7,
+        "tipo": "refineria",
+        "nombre": "Refinería Port Harcourt",
+        "desc": "Estatal (NNPC), en rehabilitación"
+      },
+      {
+        "lat": 9.87,
+        "lng": 4.61,
+        "tipo": "almacenamiento",
+        "nombre": "Presa de Kainji",
+        "desc": "Principal hidroeléctrica"
+      },
+      {
+        "lat": 3,
+        "lng": 5,
+        "tipo": "sloc",
+        "nombre": "Golfo de Guinea",
+        "desc": "Ruta de exportación; piratería"
+      }
+    ],
+    "rutas": [
+      {
+        "puntos": [
+          [
+            4.43,
+            7.16
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            36,
+            -6
+          ]
+        ],
+        "tooltip": "SLOC: Golfo de Guinea → Europa/Asia"
+      }
+    ],
+    "leyenda": [
+      {
+        "color": "#c4570e",
+        "label": "Crudo / refinerías"
+      },
+      {
+        "color": "#0b5394",
+        "label": "GNL"
+      },
+      {
+        "color": "#2e7d32",
+        "label": "Hidro"
+      },
+      {
+        "color": "#c62828",
+        "label": "SLOC / piratería"
+      }
+    ],
+    "mapa_cita": "Coordenadas reales del Delta, Bonny, Dangote-Lekki, Port Harcourt, Kainji. <i>Fuentes: GEM 2024.</i>",
+    "vulnerabilidades_titulo": "Vulnerabilidades técnicas",
+    "vulnerabilidades": [
+      {
+        "nivel": "high",
+        "tag": "CRÍT",
+        "texto_html": "<b>Robo de crudo y vandalismo</b> · pérdidas de ~10% de la producción en el Delta."
+      },
+      {
+        "nivel": "high",
+        "tag": "CRÍT",
+        "texto_html": "<b>Déficit eléctrico</b> · la red sirve a <50% de la población; colapsos del grid nacional."
+      },
+      {
+        "nivel": "med",
+        "tag": "ALTO",
+        "texto_html": "<b>Quema de gas (flaring)</b> · desperdicio masivo y emisiones."
+      },
+      {
+        "nivel": "med",
+        "tag": "ALTO",
+        "texto_html": "<b>Piratería en el Golfo de Guinea</b> · riesgo para la exportación."
+      }
+    ],
+    "capacidad_titulo": "Capacidad vs Demanda eléctrica (GW)",
+    "capacidad": {
+      "anios": [
+        "2020",
+        "2024",
+        "2030",
+        "2040"
+      ],
+      "y_titulo": "GW",
+      "series": [
+        {
+          "label": "Capacidad fiable (GW)",
+          "tipo": "bar",
+          "data": [
+            4,
+            4.5,
+            8,
+            15
+          ],
+          "color": "#0b5394"
+        },
+        {
+          "label": "Generadores diésel (GW)",
+          "tipo": "bar",
+          "data": [
+            14,
+            14,
+            10,
+            5
+          ],
+          "color": "#c4570e"
+        },
+        {
+          "label": "Demanda reprimida (GW)",
+          "tipo": "line",
+          "data": [
+            25,
+            28,
+            35,
+            50
+          ],
+          "color": "#a17c1c"
+        }
+      ]
+    },
+    "capacidad_cita": "La demanda reprimida es enorme; los generadores diésel suplen a la red. <i>Fuente: IEA.</i>"
+  },
+  "geopolitica": {
+    "src": "Radar APERC normalizado",
+    "radar_titulo": "Radar APERC: Nigeria vs Arabia Saudita vs Sudáfrica",
+    "radar": {
+      "ejes": [
+        "Availability",
+        "Accessibility",
+        "Affordability",
+        "Acceptability",
+        "Sovereignty",
+        "Robustness",
+        "Resilience"
+      ],
+      "series": [
+        {
+          "label": "Nigeria",
+          "data": [
+            7.5,
+            3.5,
+            3.5,
+            3.5,
+            5,
+            3.5,
+            3.5
+          ],
+          "color": "#c4570e"
+        },
+        {
+          "label": "Arabia Saudita",
+          "data": [
+            9.5,
+            4.5,
+            6.3,
+            2.5,
+            8.5,
+            6.5,
+            4.5
+          ],
+          "color": "#0b5394"
+        },
+        {
+          "label": "Sudáfrica",
+          "data": [
+            6,
+            5,
+            5,
+            3,
+            6,
+            4,
+            4.5
+          ],
+          "color": "#2e7d32"
+        }
+      ]
+    },
+    "radar_cita": "Normalización min-max sobre indicadores §01.",
+    "dependencias_titulo": "Dependencias y socios",
+    "dependencias": [
+      {
+        "vinculo": "Exportación de crudo a Europa/Asia",
+        "pct": "—",
+        "riesgo": {
+          "texto": "Ingreso fiscal clave",
+          "pill": "warn"
+        }
+      },
+      {
+        "vinculo": "Exportación de GNL (NLNG)",
+        "pct": "—",
+        "riesgo": {
+          "texto": "Divisas estables",
+          "pill": "ok"
+        }
+      },
+      {
+        "vinculo": "Importación de derivados (histórica)",
+        "pct": "—",
+        "riesgo": {
+          "texto": "Revertida por Dangote",
+          "pill": "ok"
+        }
+      },
+      {
+        "vinculo": "Inversión de majors en el Delta",
+        "pct": "—",
+        "riesgo": {
+          "texto": "Desinversión onshore",
+          "pill": "warn"
+        }
+      }
+    ],
+    "dependencias_cita": "OPEP; NNPC 2024.",
+    "minerales_titulo": "Posición energética",
+    "minerales": [
+      {
+        "valor": "#1",
+        "unidad": " África",
+        "etiqueta": "PRODUCTOR DE PETRÓLEO"
+      },
+      {
+        "valor": "#1",
+        "unidad": " África",
+        "etiqueta": "RESERVAS DE GAS"
+      },
+      {
+        "valor": "650",
+        "unidad": " kb/d",
+        "etiqueta": "REFINERÍA DANGOTE"
+      }
+    ],
+    "minerales_cita": "OPEP Annual Statistical Bulletin 2024."
+  },
+  "militar": {
+    "titulo_seccion": "Combustibles Militares y Rol Operacional de las Fuerzas Armadas de Nigeria",
+    "nav_label": "Combustibles militares",
+    "src": "IISS · Ministerio de Defensa",
+    "combustibles_titulo": "Demanda de combustibles de las FF.AA.",
+    "combustibles": [
+      {
+        "codigo": "Jet A-1",
+        "tipo": "Queroseno de aviación",
+        "usuario": "Fuerza Aérea de Nigeria",
+        "ml_anio": "200"
+      },
+      {
+        "codigo": "Diésel naval",
+        "tipo": "Diésel",
+        "usuario": "Armada de Nigeria",
+        "ml_anio": "150"
+      },
+      {
+        "codigo": "Diésel terrestre",
+        "tipo": "Diésel",
+        "usuario": "Ejército",
+        "ml_anio": "250"
+      }
+    ],
+    "combustibles_total": "~600",
+    "combustibles_cita": "Estimación de orden de magnitud.",
+    "vulnerabilidades_titulo": "Vulnerabilidades específicas de defensa",
+    "vulnerabilidades": [
+      {
+        "nivel": "high",
+        "tag": "CRÍT",
+        "texto_html": "<b>Seguridad del Delta</b> · robo de crudo, militancia y oleoductos vandalizados."
+      },
+      {
+        "nivel": "high",
+        "tag": "CRÍT",
+        "texto_html": "<b>Piratería en el Golfo de Guinea</b> · una de las zonas de mayor riesgo del mundo."
+      },
+      {
+        "nivel": "med",
+        "tag": "ALTO",
+        "texto_html": "<b>Insurgencia (noreste)</b> · presión adicional sobre recursos y logística."
+      }
+    ],
+    "mision_titulo": "Misión en Seguridad Energética",
+    "mision": [
+      {
+        "titulo": "SEGURIDAD DEL DELTA",
+        "texto_html": "Protección de campos y oleoductos contra el robo de crudo."
+      },
+      {
+        "titulo": "GOLFO DE GUINEA",
+        "texto_html": "Operaciones navales (Deep Blue) contra la piratería."
+      },
+      {
+        "titulo": "INFRAESTRUCTURA ENERGÉTICA",
+        "texto_html": "Custodia de refinerías y terminales de GNL."
+      },
+      {
+        "titulo": "COOPERACIÓN REGIONAL",
+        "texto_html": "Coordinación marítima en África Occidental."
+      }
+    ],
+    "mision_cita": "IISS 2024; IMB Piracy Report."
+  },
+  "politicas": {
+    "src": "NNPC · NMDPRA",
+    "planes_titulo": "Planes nacionales",
+    "planes": [
+      {
+        "nombre": "Petroleum Industry Act 2021",
+        "texto": "Reforma del sector; reestructura de NNPC."
+      },
+      {
+        "nombre": "Fin del subsidio a la gasolina (2023)",
+        "texto": "Liberación de precios; alivio fiscal con costo social."
+      },
+      {
+        "nombre": "Decade of Gas",
+        "texto": "Gas para electricidad, industria y transporte (GNC/GLP)."
+      },
+      {
+        "nombre": "Energy Transition Plan",
+        "texto": "Acceso universal y net-zero 2060."
+      }
+    ],
+    "instituciones_titulo": "Instituciones clave",
+    "instituciones": [
+      {
+        "sigla": "NNPC Ltd",
+        "texto": "compañía nacional de petróleo."
+      },
+      {
+        "sigla": "NMDPRA / NUPRC",
+        "texto": "reguladores midstream/downstream y upstream."
+      },
+      {
+        "sigla": "TCN",
+        "texto": "compañía de transmisión eléctrica."
+      },
+      {
+        "sigla": "NLNG",
+        "texto": "consorcio de gas natural licuado."
+      }
+    ],
+    "transicion_titulo": "Transición y economía",
+    "transicion_html": "<p>Nigeria busca <b>monetizar su gas</b> (\"Decade of Gas\"), recuperar la refinación (Dangote), reparar la red eléctrica y expandir el acceso, mientras gestiona el costo social del fin de los subsidios.</p>",
+    "transicion_cita": "NNPC; IEA 2024."
+  },
+  "crisis": {
+    "src": "Wargaming · Cone of Plausibility",
+    "matriz_titulo": "Matriz Probabilidad × Impacto",
+    "matriz": {
+      "esquina": "Impacto ↓ / Prob →",
+      "prob_labels": [
+        "Muy bajo",
+        "Bajo",
+        "Medio",
+        "Alto",
+        "Muy alto"
+      ],
+      "filas": [
+        {
+          "impacto": "Catastrófico",
+          "celdas": [
+            {
+              "nivel": 3
+            },
+            {
+              "nivel": 4
+            },
+            {
+              "nivel": 5,
+              "texto": "Colapso del grid nacional"
+            },
+            {
+              "nivel": 5,
+              "texto": "Insurgencia en el Delta"
+            },
+            {
+              "nivel": 5
+            }
+          ]
+        },
+        {
+          "impacto": "Mayor",
+          "celdas": [
+            {
+              "nivel": 2
+            },
+            {
+              "nivel": 3
+            },
+            {
+              "nivel": 4,
+              "texto": "Robo masivo de crudo"
+            },
+            {
+              "nivel": 4,
+              "texto": "Crisis de precios"
+            },
+            {
+              "nivel": 5
+            }
+          ]
+        },
+        {
+          "impacto": "Moderado",
+          "celdas": [
+            {
+              "nivel": 1
+            },
+            {
+              "nivel": 2
+            },
+            {
+              "nivel": 3,
+              "texto": "Piratería"
+            },
+            {
+              "nivel": 4
+            },
+            {
+              "nivel": 4
+            }
+          ]
+        },
+        {
+          "impacto": "Menor",
+          "celdas": [
+            {
+              "nivel": 1
+            },
+            {
+              "nivel": 1
+            },
+            {
+              "nivel": 2
+            },
+            {
+              "nivel": 3
+            },
+            {
+              "nivel": 3
+            }
+          ]
+        },
+        {
+          "impacto": "Insignif.",
+          "celdas": [
+            {
+              "nivel": 1
+            },
+            {
+              "nivel": 1
+            },
+            {
+              "nivel": 1
+            },
+            {
+              "nivel": 2
+            },
+            {
+              "nivel": 2
+            }
+          ]
+        }
+      ]
+    },
+    "matriz_cita": "Escala HM Treasury Orange Book.",
+    "escenarios_titulo": "Escenarios calibrados",
+    "escenarios": [
+      {
+        "nivel": "high",
+        "tag": "A",
+        "texto_html": "<b>Insurgencia/robo en el Delta</b> — caída de producción. <i>Respuesta:</i> seguridad, vigilancia de oleoductos, acuerdos comunitarios."
+      },
+      {
+        "nivel": "high",
+        "tag": "B",
+        "texto_html": "<b>Colapso del grid nacional</b> — apagón total recurrente. <i>Respuesta:</i> reparar transmisión, descentralizar (solar)."
+      },
+      {
+        "nivel": "med",
+        "tag": "C",
+        "texto_html": "<b>Piratería</b> en el Golfo de Guinea. <i>Respuesta:</i> Deep Blue Project, cooperación regional."
+      },
+      {
+        "nivel": "med",
+        "tag": "D",
+        "texto_html": "<b>Choque social por precios</b> tras el fin del subsidio. <i>Respuesta:</i> transferencias, GNC/GLP más baratos."
+      }
+    ],
+    "vectores_titulo": "Respuesta estratégica integrada — vectores",
+    "vectores": [
+      {
+        "titulo": "REFINACIÓN",
+        "texto": "Dangote y rehabilitación estatal cierran la brecha de derivados."
+      },
+      {
+        "titulo": "GAS DOMÉSTICO",
+        "texto": "\"Decade of Gas\" para electricidad y transporte."
+      },
+      {
+        "titulo": "DESCENTRALIZAR",
+        "texto": "Mini-redes y solar para el acceso rural."
+      },
+      {
+        "titulo": "SEGURIDAD",
+        "texto": "Proteger el Delta y el Golfo de Guinea."
+      }
+    ]
+  },
+  "referencias": {
+    "src": "Triangulación multi-fuente",
+    "titulo": "Fuentes primarias y académicas",
+    "items": [
+      "OPEC (2024). <i>Annual Statistical Bulletin</i>.",
+      "IEA (2024). <i>Nigeria Energy Profile / Outlook</i>.",
+      "NNPC (2024). Reportes corporativos.",
+      "IMB (2024). <i>Piracy and Armed Robbery Report</i>.",
+      "APERC (2007). <i>A Quest for Energy Security in the 21st Century</i>. Tokio."
+    ]
+  },
+  "footer": "Documento de sustentación · Rúbrica Slide18 · Logística Militar · Mayo 2026"
+}

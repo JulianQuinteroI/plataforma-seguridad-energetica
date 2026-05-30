@@ -1,0 +1,1032 @@
+{
+  "schema_version": "1.0.0",
+  "meta": {
+    "pais": "China",
+    "pais_iso": "CHN",
+    "pais_iso2": "CN",
+    "subtitulo_pais": "República Popular",
+    "eyebrow": "Portafolio · Seguridad Energética por País",
+    "titulo": "Seguridad Energética de China:<br/>el mayor consumidor y el dilema de Malaca",
+    "subtitulo": "Mayor consumidor e importador de energía: mix aún dominado por el carbón pero líder absoluto en renovables, con la accesibilidad expuesta a las rutas marítimas del Indo-Pacífico.",
+    "estudiante": "Cátedra (ejemplo de referencia)",
+    "asignatura": "Logística Militar · Rúbrica Slide18",
+    "tipo_doc": "Documento de sustentación",
+    "fecha": "Mayo 2026",
+    "fuerzas_armadas": "Ejército Popular de Liberación (EPL)",
+    "aperc_global": 5.5,
+    "cita_corta": "IEA, 2024; Ember, 2024; CNPC.",
+    "portafolio_label": "Rúbrica Slide18<br/>Logística Militar<br/>v2 — académica",
+    "map_view": {
+      "lat": 35,
+      "lng": 105,
+      "zoom": 4
+    }
+  },
+  "resumen": {
+    "tesis_html": "China es el <b>mayor consumidor e importador</b> de energía del mundo. Su mix sigue dominado por el <b>carbón</b>, pero lidera por amplio margen el despliegue de <i>solar, eólica, hidro, nuclear y vehículos eléctricos</i>. Su talón de Aquiles es la <b>accesibilidad</b>: ~70% del petróleo es importado por mar, sobre todo a través del <b>Estrecho de Malaca</b> (\"dilema de Malaca\").",
+    "conclusion_html": "APERC <b>5.5/10</b>: gran <i>availability</i> agregada y <i>robustness</i> creciente (renovables, SPR) pero <i>accessibility</i> vulnerable a los SLOC. El EPL desarrolla capacidad naval para asegurar rutas y diversifica vía ductos terrestres.",
+    "kpis": [
+      {
+        "valor": 70,
+        "unidad": "%",
+        "etiqueta": "Petróleo importado"
+      },
+      {
+        "valor": 55,
+        "unidad": "%",
+        "etiqueta": "Carbón en el mix primario"
+      },
+      {
+        "valor": 1,
+        "unidad": "º",
+        "etiqueta": "Capacidad solar y eólica mundial"
+      },
+      {
+        "valor": 60,
+        "unidad": "%",
+        "etiqueta": "EV vendidos a nivel mundial"
+      }
+    ]
+  },
+  "aperc": {
+    "src": "APERC 2007 · IEA 2024",
+    "definicion_html": "<p>China combina escala (mayor productor y consumidor de casi todo) con dependencia de importación de crudo y gas. Su estrategia: diversificar rutas (ductos terrestres), acumular reservas (SPR) y dominar la cadena de renovables y minerales críticos.</p>",
+    "definicion_cita": "IEA, China Energy Profile 2024.",
+    "scorecard_titulo": "Scorecard de China bajo APERC",
+    "scores": [
+      {
+        "letra": "A",
+        "nombre": "vailability",
+        "desc": "Enorme carbón propio y mayor parque renovable.",
+        "score": 7.5
+      },
+      {
+        "letra": "A",
+        "nombre": "ccessibility",
+        "desc": "Dilema de Malaca; ~70% del crudo importado.",
+        "score": 4.5
+      },
+      {
+        "letra": "A",
+        "nombre": "ffordability",
+        "desc": "Energía relativamente asequible; subsidios.",
+        "score": 6
+      },
+      {
+        "letra": "A",
+        "nombre": "cceptability",
+        "desc": "Carbón aún alto, pero descarbonización acelerada.",
+        "score": 4
+      }
+    ],
+    "scorecard_cita": "Scores propios sobre indicadores normalizados.",
+    "comparador": {
+      "pais_b": "Estados Unidos",
+      "pais_c": "India"
+    },
+    "indicadores_titulo": "Indicadores cuantitativos aplicados",
+    "indicadores": [
+      {
+        "indicador": "Dependencia importación petróleo (%)",
+        "definicion": "Neta",
+        "propio": "70",
+        "b": "−10",
+        "c": "85",
+        "interp": {
+          "texto": "Alta",
+          "pill": "warn"
+        }
+      },
+      {
+        "indicador": "Carbón en electricidad (%)",
+        "definicion": "Generación",
+        "propio": "60",
+        "b": "16",
+        "c": "73",
+        "interp": {
+          "texto": "Dominante, en descenso"
+        }
+      },
+      {
+        "indicador": "Capacidad renovable (GW)",
+        "definicion": "Solar+eólica",
+        "propio": "1200",
+        "b": "390",
+        "c": "130",
+        "interp": {
+          "texto": "Líder mundial",
+          "pill": "ok"
+        }
+      },
+      {
+        "indicador": "Días de SPR petróleo",
+        "definicion": "Reserva estratégica",
+        "propio": "90",
+        "b": "—",
+        "c": "75",
+        "interp": {
+          "texto": "En estándar IEA"
+        }
+      }
+    ],
+    "indicadores_nota": "Comparación con EE.UU. (productor) e India (otro gran importador asiático)."
+  },
+  "matriz": {
+    "src": "IEA · Ember 2024",
+    "primaria_titulo": "Energía Primaria (TPES, %)",
+    "primaria": [
+      {
+        "label": "Carbón",
+        "valor": 55,
+        "color": "#8a4a4a"
+      },
+      {
+        "label": "Petróleo",
+        "valor": 19,
+        "color": "#c4570e"
+      },
+      {
+        "label": "Gas natural",
+        "valor": 9,
+        "color": "#0b5394"
+      },
+      {
+        "label": "Renovables",
+        "valor": 12,
+        "color": "#a17c1c"
+      },
+      {
+        "label": "Nuclear/Hidro",
+        "valor": 5,
+        "color": "#6b4e8e"
+      }
+    ],
+    "primaria_cita": "Carbón 55 · Petróleo 19 · Gas 9 · Renov. 12 · Nuclear/Hidro 5. <i>Fuente: IEA 2024.</i>",
+    "electrica_titulo": "Generación Eléctrica (%)",
+    "electrica": [
+      {
+        "label": "Carbón",
+        "valor": 60,
+        "color": "#8a4a4a"
+      },
+      {
+        "label": "Hidro",
+        "valor": 14,
+        "color": "#2e7d32"
+      },
+      {
+        "label": "Solar",
+        "valor": 9,
+        "color": "#a17c1c"
+      },
+      {
+        "label": "Eólica",
+        "valor": 9,
+        "color": "#6a8caf"
+      },
+      {
+        "label": "Nuclear",
+        "valor": 5,
+        "color": "#6b4e8e"
+      },
+      {
+        "label": "Gas",
+        "valor": 3,
+        "color": "#0b5394"
+      }
+    ],
+    "electrica_cita": "Carbón 60 · Hidro 14 · Solar 9 · Eólica 9 · Nuclear 5. <i>Fuente: Ember 2024.</i>",
+    "comparativa_titulo": "Comparativa Internacional — Mix Eléctrico (%)",
+    "comparativa": {
+      "paises": [
+        "China",
+        "Estados Unidos",
+        "India"
+      ],
+      "series": [
+        {
+          "label": "Carbón",
+          "data": [
+            60,
+            16,
+            73
+          ],
+          "color": "#8a4a4a"
+        },
+        {
+          "label": "Gas",
+          "data": [
+            3,
+            43,
+            3
+          ],
+          "color": "#0b5394"
+        },
+        {
+          "label": "Hidro",
+          "data": [
+            14,
+            6,
+            10
+          ],
+          "color": "#2e7d32"
+        },
+        {
+          "label": "Nuclear",
+          "data": [
+            5,
+            18,
+            3
+          ],
+          "color": "#6b4e8e"
+        },
+        {
+          "label": "Solar/Eólica",
+          "data": [
+            18,
+            16,
+            11
+          ],
+          "color": "#a17c1c"
+        }
+      ]
+    },
+    "comparativa_nota": "China lidera en valor absoluto de renovables pese al peso del carbón."
+  },
+  "sankey": {
+    "src": "Producción → Transformación → Uso final",
+    "titulo_panel": "Flujos físicos de energía, China (PJ aprox.)",
+    "flujos": [
+      {
+        "from": "Carbón (prod.+imp.)",
+        "to": "Generación eléctrica",
+        "flow": 9000
+      },
+      {
+        "from": "Carbón (prod.+imp.)",
+        "to": "Industria (acero/cemento)",
+        "flow": 5000
+      },
+      {
+        "from": "Petróleo importado",
+        "to": "Refinación local",
+        "flow": 6000
+      },
+      {
+        "from": "Refinación local",
+        "to": "Transporte",
+        "flow": 4500
+      },
+      {
+        "from": "Gas (imp.+ductos)",
+        "to": "Industria & residencial",
+        "flow": 2500
+      },
+      {
+        "from": "Renovables (sol/viento)",
+        "to": "Generación eléctrica",
+        "flow": 2600
+      },
+      {
+        "from": "Hidro",
+        "to": "Generación eléctrica",
+        "flow": 1500
+      },
+      {
+        "from": "Generación eléctrica",
+        "to": "Industria & residencial",
+        "flow": 9000
+      }
+    ],
+    "nodos": {
+      "Carbón (prod.+imp.)": {
+        "color": "#8a4a4a",
+        "label": "Carbón"
+      },
+      "Petróleo importado": {
+        "color": "#c4570e",
+        "label": "Petróleo importado"
+      },
+      "Gas (imp.+ductos)": {
+        "color": "#0b5394",
+        "label": "Gas"
+      },
+      "Renovables (sol/viento)": {
+        "color": "#a17c1c",
+        "label": "Solar & Eólica"
+      },
+      "Hidro": {
+        "color": "#2e7d32",
+        "label": "Hidro"
+      },
+      "Refinación local": {
+        "color": "#c4570e",
+        "label": "Refinerías"
+      },
+      "Generación eléctrica": {
+        "color": "#6b4e8e",
+        "label": "Generación eléctrica"
+      },
+      "Industria (acero/cemento)": {
+        "color": "#4a5870",
+        "label": "Industria pesada"
+      },
+      "Industria & residencial": {
+        "color": "#4a5870",
+        "label": "Industria + Residencial"
+      },
+      "Transporte": {
+        "color": "#c4570e",
+        "label": "Transporte"
+      }
+    },
+    "cita": "El petróleo importado (vía Malaca) alimenta el transporte; el carbón, la electricidad e industria. <i>Datos estilizados.</i>"
+  },
+  "evolucion": {
+    "src": "2000–2050 · doble objetivo de carbono",
+    "historico_titulo": "Mix Eléctrico Histórico y Proyectado (%)",
+    "anios": [
+      "2000",
+      "2010",
+      "2020",
+      "2024",
+      "2030",
+      "2040",
+      "2050"
+    ],
+    "series": [
+      {
+        "label": "Carbón",
+        "data": [
+          78,
+          79,
+          67,
+          60,
+          45,
+          25,
+          10
+        ],
+        "color": "#8a4a4a"
+      },
+      {
+        "label": "Renovables",
+        "data": [
+          17,
+          18,
+          28,
+          32,
+          45,
+          60,
+          75
+        ],
+        "color": "#a17c1c"
+      },
+      {
+        "label": "Nuclear",
+        "data": [
+          1,
+          2,
+          5,
+          5,
+          7,
+          10,
+          12
+        ],
+        "color": "#6b4e8e"
+      },
+      {
+        "label": "Gas",
+        "data": [
+          4,
+          1,
+          3,
+          3,
+          3,
+          5,
+          3
+        ],
+        "color": "#0b5394"
+      }
+    ],
+    "historico_cita": "Doble objetivo: pico de emisiones antes de 2030, neutralidad en 2060.",
+    "hitos_titulo": "Hitos del Régimen Energético",
+    "hitos": [
+      {
+        "anio": "1993",
+        "evento": "China pasa a ser importador neto de petróleo."
+      },
+      {
+        "anio": "2003",
+        "evento": "Hu Jintao plantea el \"dilema de Malaca\"."
+      },
+      {
+        "anio": "2009",
+        "evento": "Inicio de la Presa de las Tres Gargantas a plena capacidad."
+      },
+      {
+        "anio": "2013",
+        "evento": "Lanzamiento de la Franja y la Ruta (energía)."
+      },
+      {
+        "anio": "2019",
+        "evento": "Inauguración de Power of Siberia (gas ruso)."
+      },
+      {
+        "anio": "2020",
+        "evento": "Anuncio del doble objetivo de carbono (2030/2060)."
+      }
+    ]
+  },
+  "infraestructura": {
+    "src": "Mapa Leaflet · GEM",
+    "mapa_titulo": "Generación, importación y SLOC",
+    "pines": [
+      {
+        "lat": 30.82,
+        "lng": 111,
+        "tipo": "almacenamiento",
+        "nombre": "Presa Tres Gargantas",
+        "desc": "Mayor central hidroeléctrica del mundo (22.5 GW)"
+      },
+      {
+        "lat": 46.6,
+        "lng": 125,
+        "tipo": "refineria",
+        "nombre": "Campo petrolero Daqing",
+        "desc": "Mayor yacimiento histórico de China"
+      },
+      {
+        "lat": 30.6,
+        "lng": 122.1,
+        "tipo": "gnl",
+        "nombre": "Terminal GNL Yangshan/Shanghái",
+        "desc": "Importación de GNL"
+      },
+      {
+        "lat": 21.93,
+        "lng": 112.97,
+        "tipo": "almacenamiento",
+        "nombre": "Nuclear Taishan (EPR)",
+        "desc": "Primeros EPR del mundo en operación"
+      },
+      {
+        "lat": 40.4,
+        "lng": 108.8,
+        "tipo": "minerales",
+        "nombre": "Base solar/eólica de Kubuqi (Gobi)",
+        "desc": "Megabases renovables del desierto"
+      },
+      {
+        "lat": 37.9,
+        "lng": 112.5,
+        "tipo": "minerales",
+        "nombre": "Carbón de Shanxi",
+        "desc": "Corazón carbonífero"
+      },
+      {
+        "lat": 2.5,
+        "lng": 101.4,
+        "tipo": "sloc",
+        "nombre": "Estrecho de Malaca",
+        "desc": "~80% del crudo importado pasa por aquí"
+      },
+      {
+        "lat": 15,
+        "lng": 114,
+        "tipo": "sloc",
+        "nombre": "Mar de China Meridional",
+        "desc": "Ruta y disputa estratégica"
+      }
+    ],
+    "rutas": [
+      {
+        "puntos": [
+          [
+            26,
+            56.25
+          ],
+          [
+            10,
+            75
+          ],
+          [
+            2.5,
+            101.4
+          ],
+          [
+            22,
+            114
+          ],
+          [
+            30.6,
+            122.1
+          ]
+        ],
+        "tooltip": "SLOC: Golfo → Malaca → costa china"
+      },
+      {
+        "puntos": [
+          [
+            50.2,
+            127.5
+          ],
+          [
+            45,
+            124
+          ],
+          [
+            40,
+            116
+          ]
+        ],
+        "tooltip": "Power of Siberia (gas ruso por ducto)"
+      }
+    ],
+    "leyenda": [
+      {
+        "color": "#c4570e",
+        "label": "Petróleo / refinerías"
+      },
+      {
+        "color": "#2e7d32",
+        "label": "Hidro"
+      },
+      {
+        "color": "#a17c1c",
+        "label": "Renovables / carbón"
+      },
+      {
+        "color": "#c62828",
+        "label": "SLOC críticos"
+      }
+    ],
+    "mapa_cita": "Coordenadas reales de Tres Gargantas, Daqing, Taishan, Kubuqi y los estrechos. <i>Fuentes: GEM 2024.</i>",
+    "vulnerabilidades_titulo": "Vulnerabilidades técnicas",
+    "vulnerabilidades": [
+      {
+        "nivel": "high",
+        "tag": "CRÍT",
+        "texto_html": "<b>Dilema de Malaca</b> · la mayoría del crudo importado cruza un estrecho controlable por terceros."
+      },
+      {
+        "nivel": "med",
+        "tag": "ALTO",
+        "texto_html": "<b>Peso del carbón</b> · transición lenta del lado de la demanda industrial."
+      },
+      {
+        "nivel": "med",
+        "tag": "ALTO",
+        "texto_html": "<b>Integración de renovables</b> · curtailment y necesidad de almacenamiento/red."
+      },
+      {
+        "nivel": "low",
+        "tag": "MED",
+        "texto_html": "<b>Minerales críticos</b> · domina la cadena, pero depende de insumos importados (litio)."
+      }
+    ],
+    "capacidad_titulo": "Capacidad instalada (GW)",
+    "capacidad": {
+      "anios": [
+        "2020",
+        "2024",
+        "2030",
+        "2040"
+      ],
+      "y_titulo": "GW",
+      "series": [
+        {
+          "label": "Carbón (GW)",
+          "tipo": "bar",
+          "data": [
+            1080,
+            1170,
+            1100,
+            700
+          ],
+          "color": "#8a4a4a"
+        },
+        {
+          "label": "Solar/Eólica (GW)",
+          "tipo": "bar",
+          "data": [
+            530,
+            1200,
+            2400,
+            4000
+          ],
+          "color": "#a17c1c"
+        },
+        {
+          "label": "Demanda pico (GW)",
+          "tipo": "line",
+          "data": [
+            1100,
+            1450,
+            1800,
+            2300
+          ],
+          "color": "#c4570e"
+        }
+      ]
+    },
+    "capacidad_cita": "Crecimiento histórico de renovables. <i>Fuente: NEA/IEA.</i>"
+  },
+  "geopolitica": {
+    "src": "Radar APERC normalizado",
+    "radar_titulo": "Radar APERC: China vs EE.UU. vs India",
+    "radar": {
+      "ejes": [
+        "Availability",
+        "Accessibility",
+        "Affordability",
+        "Acceptability",
+        "Sovereignty",
+        "Robustness",
+        "Resilience"
+      ],
+      "series": [
+        {
+          "label": "China",
+          "data": [
+            7.5,
+            4.5,
+            6,
+            4,
+            7,
+            6.5,
+            6
+          ],
+          "color": "#c4570e"
+        },
+        {
+          "label": "Estados Unidos",
+          "data": [
+            9,
+            7.5,
+            7,
+            6,
+            8,
+            8,
+            8
+          ],
+          "color": "#0b5394"
+        },
+        {
+          "label": "India",
+          "data": [
+            5,
+            3.5,
+            5.5,
+            3.5,
+            5,
+            5,
+            5
+          ],
+          "color": "#a17c1c"
+        }
+      ]
+    },
+    "radar_cita": "Normalización min-max sobre indicadores §01.",
+    "dependencias_titulo": "Dependencias y socios",
+    "dependencias": [
+      {
+        "vinculo": "Importación crudo Golfo Pérsico",
+        "pct": "45",
+        "riesgo": {
+          "texto": "Vía Malaca",
+          "pill": "danger"
+        }
+      },
+      {
+        "vinculo": "Gas por ducto desde Rusia/Asia Central",
+        "pct": "—",
+        "riesgo": {
+          "texto": "Diversificación terrestre",
+          "pill": "ok"
+        }
+      },
+      {
+        "vinculo": "Importación de litio",
+        "pct": "—",
+        "riesgo": {
+          "texto": "Insumo de baterías",
+          "pill": "warn"
+        }
+      },
+      {
+        "vinculo": "Exportación de paneles/baterías",
+        "pct": "—",
+        "riesgo": {
+          "texto": "Dominio de la cadena",
+          "pill": "ok"
+        }
+      }
+    ],
+    "dependencias_cita": "IEA; aduanas 2024.",
+    "minerales_titulo": "Dominio de la cadena de transición",
+    "minerales": [
+      {
+        "valor": "#1",
+        "unidad": " mundial",
+        "etiqueta": "PANELES SOLARES"
+      },
+      {
+        "valor": "~75",
+        "unidad": "%",
+        "etiqueta": "BATERÍAS DE LITIO"
+      },
+      {
+        "valor": "~60",
+        "unidad": "%",
+        "etiqueta": "PROCESO DE TIERRAS RARAS"
+      }
+    ],
+    "minerales_cita": "IEA Critical Minerals 2024."
+  },
+  "militar": {
+    "titulo_seccion": "Combustibles Militares y Rol Operacional del EPL",
+    "nav_label": "Combustibles militares",
+    "src": "IISS Military Balance 2024",
+    "combustibles_titulo": "Demanda de combustibles del EPL",
+    "combustibles": [
+      {
+        "codigo": "RP-3 / Jet",
+        "tipo": "Queroseno de aviación",
+        "usuario": "Fuerza Aérea del EPL",
+        "ml_anio": "1500"
+      },
+      {
+        "codigo": "Diésel naval",
+        "tipo": "Diésel/fuelóleo",
+        "usuario": "Armada del EPL (PLAN)",
+        "ml_anio": "900"
+      },
+      {
+        "codigo": "Diésel terrestre",
+        "tipo": "Diésel",
+        "usuario": "Fuerzas Terrestres",
+        "ml_anio": "800"
+      }
+    ],
+    "combustibles_total": "~3200",
+    "combustibles_cita": "Estimación de orden de magnitud.",
+    "vulnerabilidades_titulo": "Vulnerabilidades específicas de defensa",
+    "vulnerabilidades": [
+      {
+        "nivel": "high",
+        "tag": "CRÍT",
+        "texto_html": "<b>SLOC de importación</b> · el suministro de crudo depende de rutas marítimas vulnerables a bloqueo."
+      },
+      {
+        "nivel": "med",
+        "tag": "ALTO",
+        "texto_html": "<b>Proyección naval</b> · necesidad de asegurar el Índico (\"collar de perlas\")."
+      },
+      {
+        "nivel": "med",
+        "tag": "ALTO",
+        "texto_html": "<b>Reservas operativas</b> · dependencia de SPR civil ante crisis."
+      }
+    ],
+    "mision_titulo": "Misión en Seguridad Energética",
+    "mision": [
+      {
+        "titulo": "ASEGURAR SLOC",
+        "texto_html": "Desarrollo de la PLAN para proteger rutas del Índico y Malaca."
+      },
+      {
+        "titulo": "COLLAR DE PERLAS",
+        "texto_html": "Bases e instalaciones logísticas (Yibuti, Gwadar, Hambantota)."
+      },
+      {
+        "titulo": "DIVERSIFICACIÓN TERRESTRE",
+        "texto_html": "Ductos desde Rusia, Asia Central y Myanmar evitan Malaca."
+      },
+      {
+        "titulo": "RESERVAS Y AUTARQUÍA",
+        "texto_html": "SPR y dominio de la cadena renovable como resiliencia."
+      }
+    ],
+    "mision_cita": "IISS 2024; US DoD China Military Power Report."
+  },
+  "politicas": {
+    "src": "NDRC · NEA",
+    "planes_titulo": "Planes nacionales",
+    "planes": [
+      {
+        "nombre": "Doble objetivo de carbono",
+        "texto": "Pico de emisiones antes de 2030; neutralidad en 2060."
+      },
+      {
+        "nombre": "14º Plan Quinquenal",
+        "texto": "Megabases renovables en desiertos; nuclear; red ultra-alta tensión."
+      },
+      {
+        "nombre": "Reserva estratégica de petróleo (SPR)",
+        "texto": "Acumulación hacia el estándar IEA."
+      },
+      {
+        "nombre": "Franja y la Ruta (energía)",
+        "texto": "Ductos e inversión energética en Eurasia."
+      }
+    ],
+    "instituciones_titulo": "Instituciones clave",
+    "instituciones": [
+      {
+        "sigla": "NDRC",
+        "texto": "comisión de planificación; precios de energía."
+      },
+      {
+        "sigla": "NEA",
+        "texto": "administración nacional de energía."
+      },
+      {
+        "sigla": "CNPC / Sinopec / CNOOC",
+        "texto": "petroleras estatales."
+      },
+      {
+        "sigla": "State Grid",
+        "texto": "mayor operador de red del mundo."
+      }
+    ],
+    "transicion_titulo": "Transición y economía",
+    "transicion_html": "<p>China apuesta a <b>dominar la cadena de la transición</b> (paneles, baterías, EV, procesamiento de minerales) mientras gestiona la salida gradual del carbón sin comprometer la seguridad de suministro.</p>",
+    "transicion_cita": "IEA 2024."
+  },
+  "crisis": {
+    "src": "Wargaming · Cone of Plausibility",
+    "matriz_titulo": "Matriz Probabilidad × Impacto",
+    "matriz": {
+      "esquina": "Impacto ↓ / Prob →",
+      "prob_labels": [
+        "Muy bajo",
+        "Bajo",
+        "Medio",
+        "Alto",
+        "Muy alto"
+      ],
+      "filas": [
+        {
+          "impacto": "Catastrófico",
+          "celdas": [
+            {
+              "nivel": 3
+            },
+            {
+              "nivel": 4
+            },
+            {
+              "nivel": 5,
+              "texto": "Bloqueo de Malaca"
+            },
+            {
+              "nivel": 5,
+              "texto": "Conflicto Taiwán"
+            },
+            {
+              "nivel": 5
+            }
+          ]
+        },
+        {
+          "impacto": "Mayor",
+          "celdas": [
+            {
+              "nivel": 2
+            },
+            {
+              "nivel": 3
+            },
+            {
+              "nivel": 4,
+              "texto": "Disrupción GNL"
+            },
+            {
+              "nivel": 4
+            },
+            {
+              "nivel": 5
+            }
+          ]
+        },
+        {
+          "impacto": "Moderado",
+          "celdas": [
+            {
+              "nivel": 1
+            },
+            {
+              "nivel": 2
+            },
+            {
+              "nivel": 3,
+              "texto": "Curtailment renovable"
+            },
+            {
+              "nivel": 4,
+              "texto": "Sequía hidro"
+            },
+            {
+              "nivel": 4
+            }
+          ]
+        },
+        {
+          "impacto": "Menor",
+          "celdas": [
+            {
+              "nivel": 1
+            },
+            {
+              "nivel": 1
+            },
+            {
+              "nivel": 2
+            },
+            {
+              "nivel": 3
+            },
+            {
+              "nivel": 3
+            }
+          ]
+        },
+        {
+          "impacto": "Insignif.",
+          "celdas": [
+            {
+              "nivel": 1
+            },
+            {
+              "nivel": 1
+            },
+            {
+              "nivel": 1
+            },
+            {
+              "nivel": 2
+            },
+            {
+              "nivel": 2
+            }
+          ]
+        }
+      ]
+    },
+    "matriz_cita": "Escala HM Treasury Orange Book.",
+    "escenarios_titulo": "Escenarios calibrados",
+    "escenarios": [
+      {
+        "nivel": "high",
+        "tag": "A",
+        "texto_html": "<b>Bloqueo de Malaca</b> — corte del crudo importado. <i>Respuesta:</i> SPR, ductos terrestres, racionamiento priorizado."
+      },
+      {
+        "nivel": "high",
+        "tag": "B",
+        "texto_html": "<b>Contingencia Taiwán</b> — sanciones y disrupción de SLOC. <i>Respuesta:</i> autarquía relativa (carbón+renovables)."
+      },
+      {
+        "nivel": "med",
+        "tag": "C",
+        "texto_html": "<b>Sequía + ola de calor</b> — caída hidro y pico de demanda (Sichuan 2022). <i>Respuesta:</i> carbón de respaldo, gestión de demanda."
+      },
+      {
+        "nivel": "med",
+        "tag": "D",
+        "texto_html": "<b>Cuello de litio</b> — restricción de insumos de baterías. <i>Respuesta:</i> reciclaje, inversiones mineras externas."
+      }
+    ],
+    "vectores_titulo": "Respuesta estratégica integrada — vectores",
+    "vectores": [
+      {
+        "titulo": "DIVERSIFICAR RUTAS",
+        "texto": "Ductos terrestres para evitar Malaca."
+      },
+      {
+        "titulo": "RENOVABLES + RED",
+        "texto": "Megabases y red de ultra-alta tensión."
+      },
+      {
+        "titulo": "SPR",
+        "texto": "Reservas estratégicas de petróleo y gas."
+      },
+      {
+        "titulo": "DOMINIO DE CADENA",
+        "texto": "Baterías, paneles, EV y minerales críticos."
+      }
+    ]
+  },
+  "referencias": {
+    "src": "Triangulación multi-fuente",
+    "titulo": "Fuentes primarias y académicas",
+    "items": [
+      "IEA (2024). <i>China Energy Profile / World Energy Outlook</i>. París.",
+      "Ember (2024). <i>Electricity Data Explorer</i>.",
+      "IEA (2024). <i>Critical Minerals Market Review</i>.",
+      "US DoD (2024). <i>China Military Power Report</i>.",
+      "APERC (2007). <i>A Quest for Energy Security in the 21st Century</i>. Tokio."
+    ]
+  },
+  "footer": "Documento de sustentación · Rúbrica Slide18 · Logística Militar · Mayo 2026"
+}

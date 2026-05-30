@@ -308,6 +308,8 @@ librerías CDN y apunte las etiquetas a copias locales:
 
 ## Créditos
 
+- **Escuela Superior de Guerra «General Rafael Reyes Prieto»** (ESDEGUE), Colombia — https://www.esdegue.edu.co/
+- Tableros de país elaborados por la **primera cohorte** de la materia de **Seguridad Energética**.
 - Basado en la **rúbrica Slide18** de la asignatura **Logística Militar**.
 - **Tablero de referencia:** dashboard de **Australia** (`data/aus.json`),
   que define la estética y el nivel de detalle esperado de cada portafolio.

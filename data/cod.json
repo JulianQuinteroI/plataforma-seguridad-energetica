@@ -1,0 +1,905 @@
+{
+  "schema_version": "1.0.0",
+  "meta": {
+    "pais": "RD del Congo",
+    "pais_iso": "COD",
+    "pais_iso2": "CD",
+    "subtitulo_pais": "República Democrática del",
+    "eyebrow": "Portafolio · Seguridad Energética por País",
+    "titulo": "Seguridad Energética de la RD del Congo:<br/>cobalto, cobre y el potencial de Inga",
+    "subtitulo": "Superpotencia de minerales críticos para la transición (primer productor de cobalto), con un enorme potencial hidroeléctrico (Inga) sin desarrollar y una electrificación nacional bajísima.",
+    "estudiante": "Cátedra (ejemplo de referencia)",
+    "asignatura": "Logística Militar · Rúbrica Slide18",
+    "tipo_doc": "Documento de sustentación",
+    "fecha": "Mayo 2026",
+    "fuerzas_armadas": "Fuerzas Armadas de la RDC (FARDC)",
+    "aperc_global": 4,
+    "cita_corta": "IEA, 2024; USGS, 2024; Banco Mundial.",
+    "portafolio_label": "Rúbrica Slide18<br/>Logística Militar<br/>v2 — académica",
+    "map_view": {
+      "lat": -2.5,
+      "lng": 23.5,
+      "zoom": 4
+    }
+  },
+  "resumen": {
+    "tesis_html": "La RDC es una <b>superpotencia de minerales críticos</b>: primer productor mundial de <b>cobalto</b> (~70%) y gran productor de cobre, insumos clave para baterías y la transición global. Posee un potencial hidroeléctrico colosal (complejo <b>Inga</b>, proyecto Gran Inga) mayormente sin desarrollar, mientras la <i>electrificación nacional es de las más bajas del mundo</i> (~20%). Gobernanza débil, conflicto en el este y minería artesanal de cobalto.",
+    "conclusion_html": "APERC <b>4.0/10</b>: <i>availability</i> de recursos enorme (minerales e hidro) pero <i>robustness</i>, <i>accessibility</i> y gobernanza muy débiles. Las FARDC enfrentan la protección de zonas mineras y de Inga en medio del conflicto.",
+    "kpis": [
+      {
+        "valor": 70,
+        "unidad": "%",
+        "etiqueta": "Cobalto mundial"
+      },
+      {
+        "valor": 21,
+        "unidad": "%",
+        "etiqueta": "Tasa de electrificación"
+      },
+      {
+        "valor": 100,
+        "unidad": "GW",
+        "etiqueta": "Potencial hidro (Gran Inga)"
+      },
+      {
+        "valor": 2,
+        "unidad": "GW",
+        "etiqueta": "Hidro instalada (Inga I/II)"
+      }
+    ]
+  },
+  "aperc": {
+    "src": "APERC 2007 · IEA 2024",
+    "definicion_html": "<p>La RDC ilustra la <i>paradoja de la abundancia</i>: dispone de recursos decisivos para la transición mundial (cobalto, cobre, hidro) pero su seguridad energética interna es ínfima por falta de inversión, gobernanza y estabilidad. La <i>accessibility</i> y la <i>robustness</i> son las dimensiones más críticas.</p>",
+    "definicion_cita": "IEA; Banco Mundial 2024.",
+    "scorecard_titulo": "Scorecard de la RDC bajo APERC",
+    "scores": [
+      {
+        "letra": "A",
+        "nombre": "vailability",
+        "desc": "Cobalto/cobre #1-2; potencial hidro de Inga.",
+        "score": 7
+      },
+      {
+        "letra": "A",
+        "nombre": "ccessibility",
+        "desc": "Electrificación ~20%; infraestructura escasa.",
+        "score": 2.5
+      },
+      {
+        "letra": "A",
+        "nombre": "ffordability",
+        "desc": "Acceso costoso; dependencia de leña/diésel.",
+        "score": 3
+      },
+      {
+        "letra": "A",
+        "nombre": "cceptability",
+        "desc": "Hidro limpia potencial; minería artesanal y deforestación.",
+        "score": 3.5
+      }
+    ],
+    "scorecard_cita": "Scores propios sobre indicadores normalizados.",
+    "comparador": {
+      "pais_b": "Nigeria",
+      "pais_c": "Sudáfrica"
+    },
+    "indicadores_titulo": "Indicadores cuantitativos aplicados",
+    "indicadores": [
+      {
+        "indicador": "Cobalto mundial (%)",
+        "definicion": "Producción",
+        "propio": "70",
+        "b": "0",
+        "c": "0",
+        "interp": {
+          "texto": "Dominante",
+          "pill": "ok"
+        }
+      },
+      {
+        "indicador": "Tasa de electrificación (%)",
+        "definicion": "Población con acceso",
+        "propio": "21",
+        "b": "60",
+        "c": "85",
+        "interp": {
+          "texto": "Muy baja",
+          "pill": "danger"
+        }
+      },
+      {
+        "indicador": "Hidro desarrollada vs potencial",
+        "definicion": "Inga",
+        "propio": "2%",
+        "b": "—",
+        "c": "—",
+        "interp": {
+          "texto": "Casi sin explotar",
+          "pill": "warn"
+        }
+      },
+      {
+        "indicador": "Consumo per cápita (kWh)",
+        "definicion": "Eléctrico",
+        "propio": "~110",
+        "b": "~150",
+        "c": "~3500",
+        "interp": {
+          "texto": "De los menores del mundo"
+        }
+      }
+    ],
+    "indicadores_nota": "Comparación con Nigeria y Sudáfrica (referentes africanos)."
+  },
+  "matriz": {
+    "src": "IEA · Banco Mundial 2024",
+    "primaria_titulo": "Energía Primaria (TPES, %)",
+    "primaria": [
+      {
+        "label": "Biomasa/leña",
+        "valor": 78,
+        "color": "#8a4a4a"
+      },
+      {
+        "label": "Petróleo (derivados)",
+        "valor": 14,
+        "color": "#c4570e"
+      },
+      {
+        "label": "Hidro",
+        "valor": 7,
+        "color": "#2e7d32"
+      },
+      {
+        "label": "Otros",
+        "valor": 1,
+        "color": "#a17c1c"
+      }
+    ],
+    "primaria_cita": "Biomasa 78 · Petróleo 14 · Hidro 7. <i>Fuente: IEA 2024.</i>",
+    "electrica_titulo": "Generación Eléctrica (%)",
+    "electrica": [
+      {
+        "label": "Hidro",
+        "valor": 96,
+        "color": "#2e7d32"
+      },
+      {
+        "label": "Térmica (diésel)",
+        "valor": 4,
+        "color": "#c4570e"
+      }
+    ],
+    "electrica_cita": "Hidro 96 · Térmica 4. <i>Fuente: Banco Mundial.</i>",
+    "comparativa_titulo": "Comparativa Internacional — Mix Eléctrico (%)",
+    "comparativa": {
+      "paises": [
+        "RD del Congo",
+        "Nigeria",
+        "Sudáfrica"
+      ],
+      "series": [
+        {
+          "label": "Hidro",
+          "data": [
+            96,
+            18,
+            1
+          ],
+          "color": "#2e7d32"
+        },
+        {
+          "label": "Gas",
+          "data": [
+            0,
+            75,
+            0
+          ],
+          "color": "#0b5394"
+        },
+        {
+          "label": "Carbón",
+          "data": [
+            0,
+            0,
+            80
+          ],
+          "color": "#8a4a4a"
+        },
+        {
+          "label": "Diésel/Otros",
+          "data": [
+            4,
+            7,
+            19
+          ],
+          "color": "#c4570e"
+        }
+      ]
+    },
+    "comparativa_nota": "Electricidad casi 100% hidro, pero con cobertura mínima de la población."
+  },
+  "sankey": {
+    "src": "Producción → Transformación → Uso final",
+    "titulo_panel": "Flujos físicos de energía, RDC (PJ aprox.)",
+    "flujos": [
+      {
+        "from": "Biomasa/leña",
+        "to": "Cocción residencial",
+        "flow": 5500
+      },
+      {
+        "from": "Hidro (Inga)",
+        "to": "Generación eléctrica",
+        "flow": 900
+      },
+      {
+        "from": "Generación eléctrica",
+        "to": "Minería (cobre/cobalto)",
+        "flow": 600
+      },
+      {
+        "from": "Generación eléctrica",
+        "to": "Residencial (urbano)",
+        "flow": 250
+      },
+      {
+        "from": "Petróleo importado",
+        "to": "Transporte & generadores",
+        "flow": 1000
+      },
+      {
+        "from": "Generación eléctrica",
+        "to": "Exportación a vecinos",
+        "flow": 50
+      }
+    ],
+    "nodos": {
+      "Biomasa/leña": {
+        "color": "#8a4a4a",
+        "label": "Biomasa / leña"
+      },
+      "Hidro (Inga)": {
+        "color": "#2e7d32",
+        "label": "Hidro (Inga)"
+      },
+      "Petróleo importado": {
+        "color": "#c4570e",
+        "label": "Derivados importados"
+      },
+      "Generación eléctrica": {
+        "color": "#6b4e8e",
+        "label": "Generación eléctrica"
+      },
+      "Minería (cobre/cobalto)": {
+        "color": "#a17c1c",
+        "label": "Minería (Cu/Co)"
+      },
+      "Cocción residencial": {
+        "color": "#4a5870",
+        "label": "Cocción (leña)"
+      },
+      "Residencial (urbano)": {
+        "color": "#4a5870",
+        "label": "Residencial urbano"
+      },
+      "Transporte & generadores": {
+        "color": "#c4570e",
+        "label": "Transporte + generadores"
+      },
+      "Exportación a vecinos": {
+        "color": "#2e7d32",
+        "label": "EXPORT · Electricidad"
+      }
+    },
+    "cita": "La leña domina el consumo; la mayor parte de la escasa electricidad va a la minería del cobre/cobalto. <i>Datos estilizados.</i>"
+  },
+  "evolucion": {
+    "src": "2000–2050 · acceso y minerales",
+    "historico_titulo": "Tasa de electrificación (%)",
+    "anios": [
+      "2000",
+      "2010",
+      "2020",
+      "2024",
+      "2035",
+      "2050"
+    ],
+    "series": [
+      {
+        "label": "Electrificación nacional",
+        "data": [
+          7,
+          14,
+          19,
+          21,
+          40,
+          70
+        ],
+        "color": "#a17c1c"
+      },
+      {
+        "label": "Electrificación rural",
+        "data": [
+          1,
+          2,
+          5,
+          6,
+          20,
+          50
+        ],
+        "color": "#2e7d32"
+      }
+    ],
+    "historico_cita": "El acceso crece muy lento pese al potencial de Inga; gran brecha rural.",
+    "hitos_titulo": "Hitos del Régimen Energético",
+    "hitos": [
+      {
+        "anio": "1972",
+        "evento": "Inga I entra en operación sobre el río Congo."
+      },
+      {
+        "anio": "1982",
+        "evento": "Inga II amplía la capacidad hidroeléctrica."
+      },
+      {
+        "anio": "2009",
+        "evento": "Boom del cobalto por la demanda de baterías."
+      },
+      {
+        "anio": "2018",
+        "evento": "Nuevo código minero; cobalto declarado \"mineral estratégico\"."
+      },
+      {
+        "anio": "2023",
+        "evento": "Acuerdos de minerales por infraestructura con socios extranjeros."
+      }
+    ]
+  },
+  "infraestructura": {
+    "src": "Mapa Leaflet · GEM",
+    "mapa_titulo": "Hidro de Inga y cinturón minero",
+    "pines": [
+      {
+        "lat": -5.52,
+        "lng": 13.62,
+        "tipo": "almacenamiento",
+        "nombre": "Represa de Inga I/II",
+        "desc": "Sobre el río Congo · ~2 GW operativos"
+      },
+      {
+        "lat": -5.53,
+        "lng": 13.55,
+        "tipo": "almacenamiento",
+        "nombre": "Sitio de Gran Inga",
+        "desc": "Potencial hasta ~40-44 GW (proyecto)"
+      },
+      {
+        "lat": -10.72,
+        "lng": 25.47,
+        "tipo": "minerales",
+        "nombre": "Cobalto/cobre de Kolwezi",
+        "desc": "Corazón del cinturón del cobre (Lualaba)"
+      },
+      {
+        "lat": -11.66,
+        "lng": 27.48,
+        "tipo": "minerales",
+        "nombre": "Lubumbashi (Katanga)",
+        "desc": "Hub minero del sureste"
+      },
+      {
+        "lat": -1.68,
+        "lng": 29.23,
+        "tipo": "sloc",
+        "nombre": "Conflicto del Kivu (este)",
+        "desc": "Inseguridad en zonas mineras"
+      }
+    ],
+    "rutas": [
+      {
+        "puntos": [
+          [
+            -10.72,
+            25.47
+          ],
+          [
+            -12,
+            28
+          ],
+          [
+            -15,
+            28
+          ],
+          [
+            -26,
+            28
+          ]
+        ],
+        "tooltip": "Exportación de minerales por el corredor sur (Zambia/Sudáfrica)"
+      }
+    ],
+    "leyenda": [
+      {
+        "color": "#2e7d32",
+        "label": "Hidroeléctrica (Inga)"
+      },
+      {
+        "color": "#a17c1c",
+        "label": "Cobalto / cobre"
+      },
+      {
+        "color": "#c62828",
+        "label": "Zona de conflicto"
+      }
+    ],
+    "mapa_cita": "Coordenadas reales de Inga, Kolwezi, Lubumbashi. <i>Fuentes: GEM 2024; USGS.</i>",
+    "vulnerabilidades_titulo": "Vulnerabilidades técnicas",
+    "vulnerabilidades": [
+      {
+        "nivel": "high",
+        "tag": "CRÍT",
+        "texto_html": "<b>Electrificación mínima</b> · ~80% de la población sin acceso fiable a la red."
+      },
+      {
+        "nivel": "high",
+        "tag": "CRÍT",
+        "texto_html": "<b>Conflicto en el este</b> · grupos armados y minería ilegal en zonas de minerales."
+      },
+      {
+        "nivel": "med",
+        "tag": "ALTO",
+        "texto_html": "<b>Inga subutilizada</b> · falta de financiación y transmisión para el potencial hidro."
+      },
+      {
+        "nivel": "med",
+        "tag": "ALTO",
+        "texto_html": "<b>Minería artesanal de cobalto</b> · condiciones precarias y trazabilidad."
+      }
+    ],
+    "capacidad_titulo": "Capacidad vs Potencial (GW)",
+    "capacidad": {
+      "anios": [
+        "2024",
+        "2030",
+        "2040",
+        "2050"
+      ],
+      "y_titulo": "GW",
+      "series": [
+        {
+          "label": "Hidro instalada (GW)",
+          "tipo": "bar",
+          "data": [
+            2.5,
+            4,
+            11,
+            25
+          ],
+          "color": "#2e7d32"
+        },
+        {
+          "label": "Potencial Inga (GW)",
+          "tipo": "bar",
+          "data": [
+            44,
+            44,
+            44,
+            44
+          ],
+          "color": "#6a8caf"
+        },
+        {
+          "label": "Demanda interna (GW)",
+          "tipo": "line",
+          "data": [
+            2,
+            4,
+            8,
+            18
+          ],
+          "color": "#c4570e"
+        }
+      ]
+    },
+    "capacidad_cita": "Gran Inga podría exportar electricidad a todo el continente. <i>Fuente: IEA; SNEL.</i>"
+  },
+  "geopolitica": {
+    "src": "Radar APERC normalizado",
+    "radar_titulo": "Radar APERC: RDC vs Nigeria vs Sudáfrica",
+    "radar": {
+      "ejes": [
+        "Availability",
+        "Accessibility",
+        "Affordability",
+        "Acceptability",
+        "Sovereignty",
+        "Robustness",
+        "Resilience"
+      ],
+      "series": [
+        {
+          "label": "RD del Congo",
+          "data": [
+            7,
+            2.5,
+            3,
+            3.5,
+            4,
+            2.5,
+            3
+          ],
+          "color": "#a17c1c"
+        },
+        {
+          "label": "Nigeria",
+          "data": [
+            7.5,
+            3.5,
+            3.5,
+            3.5,
+            5,
+            3.5,
+            3.5
+          ],
+          "color": "#c4570e"
+        },
+        {
+          "label": "Sudáfrica",
+          "data": [
+            6,
+            5,
+            5,
+            3,
+            6,
+            4,
+            4.5
+          ],
+          "color": "#0b5394"
+        }
+      ]
+    },
+    "radar_cita": "Normalización min-max sobre indicadores §01.",
+    "dependencias_titulo": "Dependencias y socios",
+    "dependencias": [
+      {
+        "vinculo": "Exportación de cobalto/cobre a China",
+        "pct": "70",
+        "riesgo": {
+          "texto": "Comprador y operador dominante",
+          "pill": "warn"
+        }
+      },
+      {
+        "vinculo": "Minerales por infraestructura",
+        "pct": "—",
+        "riesgo": {
+          "texto": "Acuerdos con China",
+          "pill": "warn"
+        }
+      },
+      {
+        "vinculo": "Importación de derivados",
+        "pct": "—",
+        "riesgo": {
+          "texto": "Sin refinación propia",
+          "pill": "danger"
+        }
+      },
+      {
+        "vinculo": "Corredor de exportación (Zambia/Sudáfrica)",
+        "pct": "—",
+        "riesgo": {
+          "texto": "Salida al mar lejana",
+          "pill": "warn"
+        }
+      }
+    ],
+    "dependencias_cita": "USGS; Banco Mundial 2024.",
+    "minerales_titulo": "Minerales de la transición",
+    "minerales": [
+      {
+        "valor": "#1",
+        "unidad": " mundial",
+        "etiqueta": "COBALTO (~70%)"
+      },
+      {
+        "valor": "#1",
+        "unidad": " África",
+        "etiqueta": "COBRE"
+      },
+      {
+        "valor": "~44",
+        "unidad": " GW",
+        "etiqueta": "POTENCIAL GRAN INGA"
+      }
+    ],
+    "minerales_cita": "USGS Mineral Commodity Summaries 2024."
+  },
+  "militar": {
+    "titulo_seccion": "Combustibles Militares y Rol Operacional de las FARDC",
+    "nav_label": "Combustibles militares",
+    "src": "IISS · FARDC",
+    "combustibles_titulo": "Demanda de combustibles de las FARDC",
+    "combustibles": [
+      {
+        "codigo": "Jet A-1",
+        "tipo": "Queroseno de aviación",
+        "usuario": "Fuerza Aérea",
+        "ml_anio": "40"
+      },
+      {
+        "codigo": "Diésel terrestre",
+        "tipo": "Diésel",
+        "usuario": "Ejército (operaciones en el este)",
+        "ml_anio": "120"
+      },
+      {
+        "codigo": "Gasolina",
+        "tipo": "Gasolina",
+        "usuario": "Movilidad táctica",
+        "ml_anio": "50"
+      }
+    ],
+    "combustibles_total": "~210",
+    "combustibles_cita": "Estimación de orden de magnitud (logística difícil por el terreno).",
+    "vulnerabilidades_titulo": "Vulnerabilidades específicas de defensa",
+    "vulnerabilidades": [
+      {
+        "nivel": "high",
+        "tag": "CRÍT",
+        "texto_html": "<b>Conflicto en el este</b> · grupos armados financiados por minería ilegal (3T, oro, coltán)."
+      },
+      {
+        "nivel": "high",
+        "tag": "CRÍT",
+        "texto_html": "<b>Protección de Inga y zonas mineras</b> · activos estratégicos en entorno inseguro."
+      },
+      {
+        "nivel": "med",
+        "tag": "ALTO",
+        "texto_html": "<b>Logística</b> · vastas distancias y red vial deficiente para el suministro de combustible."
+      }
+    ],
+    "mision_titulo": "Misión en Seguridad Energética",
+    "mision": [
+      {
+        "titulo": "PROTECCIÓN MINERA",
+        "texto_html": "Seguridad de las zonas de cobalto/cobre frente a grupos armados."
+      },
+      {
+        "titulo": "INFRAESTRUCTURA DE INGA",
+        "texto_html": "Custodia del complejo hidroeléctrico estratégico."
+      },
+      {
+        "titulo": "MINERALES DE CONFLICTO",
+        "texto_html": "Lucha contra el financiamiento armado vía minería ilegal."
+      },
+      {
+        "titulo": "ESTABILIZACIÓN",
+        "texto_html": "Operaciones en el este con apoyo regional/ONU (MONUSCO)."
+      }
+    ],
+    "mision_cita": "IISS 2024; ONU."
+  },
+  "politicas": {
+    "src": "Ministère des Ressources Hydrauliques · SNEL",
+    "planes_titulo": "Planes nacionales",
+    "planes": [
+      {
+        "nombre": "Proyecto Gran Inga",
+        "texto": "Megahidroeléctrica para consumo y exportación continental."
+      },
+      {
+        "nombre": "Código Minero 2018",
+        "texto": "Cobalto como mineral estratégico; mayores regalías."
+      },
+      {
+        "nombre": "Zona Económica de baterías",
+        "texto": "Procesar minerales localmente (con Zambia)."
+      },
+      {
+        "nombre": "Planes de electrificación rural",
+        "texto": "Mini-redes y solar descentralizada."
+      }
+    ],
+    "instituciones_titulo": "Instituciones clave",
+    "instituciones": [
+      {
+        "sigla": "SNEL",
+        "texto": "empresa nacional de electricidad (Inga)."
+      },
+      {
+        "sigla": "Gécamines",
+        "texto": "minera estatal de cobre/cobalto."
+      },
+      {
+        "sigla": "ARE/ANSER",
+        "texto": "regulación y electrificación rural."
+      },
+      {
+        "sigla": "Ministère des Mines",
+        "texto": "rectoría minera."
+      }
+    ],
+    "transicion_titulo": "Transición y economía",
+    "transicion_html": "<p>El reto es <b>convertir la riqueza mineral e hídrica en seguridad energética interna</b>: desarrollar Inga, electrificar al país y agregar valor a los minerales (baterías) en un entorno de gobernanza frágil y conflicto.</p>",
+    "transicion_cita": "IEA; Banco Mundial 2024."
+  },
+  "crisis": {
+    "src": "Wargaming · Cone of Plausibility",
+    "matriz_titulo": "Matriz Probabilidad × Impacto",
+    "matriz": {
+      "esquina": "Impacto ↓ / Prob →",
+      "prob_labels": [
+        "Muy bajo",
+        "Bajo",
+        "Medio",
+        "Alto",
+        "Muy alto"
+      ],
+      "filas": [
+        {
+          "impacto": "Catastrófico",
+          "celdas": [
+            {
+              "nivel": 3
+            },
+            {
+              "nivel": 4
+            },
+            {
+              "nivel": 5,
+              "texto": "Escalada en el este"
+            },
+            {
+              "nivel": 5
+            },
+            {
+              "nivel": 5
+            }
+          ]
+        },
+        {
+          "impacto": "Mayor",
+          "celdas": [
+            {
+              "nivel": 2
+            },
+            {
+              "nivel": 3
+            },
+            {
+              "nivel": 4,
+              "texto": "Corte de exportación minera"
+            },
+            {
+              "nivel": 4,
+              "texto": "Falla de Inga"
+            },
+            {
+              "nivel": 5
+            }
+          ]
+        },
+        {
+          "impacto": "Moderado",
+          "celdas": [
+            {
+              "nivel": 1
+            },
+            {
+              "nivel": 2
+            },
+            {
+              "nivel": 3,
+              "texto": "Escasez de diésel"
+            },
+            {
+              "nivel": 4
+            },
+            {
+              "nivel": 4
+            }
+          ]
+        },
+        {
+          "impacto": "Menor",
+          "celdas": [
+            {
+              "nivel": 1
+            },
+            {
+              "nivel": 1
+            },
+            {
+              "nivel": 2
+            },
+            {
+              "nivel": 3
+            },
+            {
+              "nivel": 3
+            }
+          ]
+        },
+        {
+          "impacto": "Insignif.",
+          "celdas": [
+            {
+              "nivel": 1
+            },
+            {
+              "nivel": 1
+            },
+            {
+              "nivel": 1
+            },
+            {
+              "nivel": 2
+            },
+            {
+              "nivel": 2
+            }
+          ]
+        }
+      ]
+    },
+    "matriz_cita": "Escala HM Treasury Orange Book.",
+    "escenarios_titulo": "Escenarios calibrados",
+    "escenarios": [
+      {
+        "nivel": "high",
+        "tag": "A",
+        "texto_html": "<b>Escalada en el este</b> — minería ilegal financia el conflicto. <i>Respuesta:</i> operaciones FARDC, trazabilidad, apoyo regional."
+      },
+      {
+        "nivel": "med",
+        "tag": "B",
+        "texto_html": "<b>Falla de Inga</b> — corte de la poca electricidad. <i>Respuesta:</i> mantenimiento, mini-redes, respaldo."
+      },
+      {
+        "nivel": "med",
+        "tag": "C",
+        "texto_html": "<b>Caída del precio del cobalto</b> — golpe fiscal. <i>Respuesta:</i> diversificación, valor agregado."
+      },
+      {
+        "nivel": "med",
+        "tag": "D",
+        "texto_html": "<b>Cuello del corredor de exportación</b> — bloqueo de salida al mar. <i>Respuesta:</i> rutas alternas, acuerdos regionales."
+      }
+    ],
+    "vectores_titulo": "Respuesta estratégica integrada — vectores",
+    "vectores": [
+      {
+        "titulo": "DESARROLLAR INGA",
+        "texto": "Hidro para electrificar y exportar."
+      },
+      {
+        "titulo": "VALOR AGREGADO",
+        "texto": "Procesar cobalto/cobre (baterías) localmente."
+      },
+      {
+        "titulo": "TRAZABILIDAD",
+        "texto": "Romper el vínculo minería-conflicto."
+      },
+      {
+        "titulo": "ELECTRIFICACIÓN",
+        "texto": "Mini-redes y solar para zonas rurales."
+      }
+    ]
+  },
+  "referencias": {
+    "src": "Triangulación multi-fuente",
+    "titulo": "Fuentes primarias y académicas",
+    "items": [
+      "USGS (2024). <i>Mineral Commodity Summaries</i> (cobalto, cobre).",
+      "IEA (2024). <i>DR Congo Energy Profile</i>.",
+      "Banco Mundial (2024). Indicadores de acceso a energía.",
+      "IEA (2023). <i>Critical Minerals Market Review</i>.",
+      "APERC (2007). <i>A Quest for Energy Security in the 21st Century</i>. Tokio."
+    ]
+  },
+  "footer": "Documento de sustentación · Rúbrica Slide18 · Logística Militar · Mayo 2026"
+}

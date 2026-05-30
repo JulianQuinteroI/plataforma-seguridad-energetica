@@ -1,7 +1,123 @@
 {
   "countries": [
-    { "iso": "AUS", "file": "aus.json", "pais": "Australia", "estudiante": "Cátedra (ejemplo de referencia)", "aperc_global": 6.2 },
-    { "iso": "COL", "file": "col.json", "pais": "Colombia", "estudiante": "Cátedra (ejemplo de referencia)", "aperc_global": 5.4 },
-    { "iso": "NOR", "file": "nor.json", "pais": "Noruega", "estudiante": "Cátedra (ejemplo de referencia)", "aperc_global": 8.4 }
+    {
+      "iso": "DEU",
+      "file": "deu.json",
+      "pais": "Alemania",
+      "estudiante": "Cátedra (ejemplo de referencia)",
+      "aperc_global": 6.3
+    },
+    {
+      "iso": "SAU",
+      "file": "sau.json",
+      "pais": "Arabia Saudita",
+      "estudiante": "Cátedra (ejemplo de referencia)",
+      "aperc_global": 5.7
+    },
+    {
+      "iso": "AUS",
+      "file": "aus.json",
+      "pais": "Australia",
+      "estudiante": "Cátedra (ejemplo de referencia)",
+      "aperc_global": 6.2
+    },
+    {
+      "iso": "BRA",
+      "file": "bra.json",
+      "pais": "Brasil",
+      "estudiante": "Cátedra (ejemplo de referencia)",
+      "aperc_global": 6.8
+    },
+    {
+      "iso": "CHL",
+      "file": "chl.json",
+      "pais": "Chile",
+      "estudiante": "Cátedra (ejemplo de referencia)",
+      "aperc_global": 6.5
+    },
+    {
+      "iso": "CHN",
+      "file": "chn.json",
+      "pais": "China",
+      "estudiante": "Cátedra (ejemplo de referencia)",
+      "aperc_global": 5.5
+    },
+    {
+      "iso": "COL",
+      "file": "col.json",
+      "pais": "Colombia",
+      "estudiante": "Cátedra (ejemplo de referencia)",
+      "aperc_global": 5.4
+    },
+    {
+      "iso": "ECU",
+      "file": "ecu.json",
+      "pais": "Ecuador",
+      "estudiante": "Cátedra (ejemplo de referencia)",
+      "aperc_global": 5
+    },
+    {
+      "iso": "USA",
+      "file": "usa.json",
+      "pais": "Estados Unidos",
+      "estudiante": "Cátedra (ejemplo de referencia)",
+      "aperc_global": 7.8
+    },
+    {
+      "iso": "FRA",
+      "file": "fra.json",
+      "pais": "Francia",
+      "estudiante": "Cátedra (ejemplo de referencia)",
+      "aperc_global": 7.7
+    },
+    {
+      "iso": "IDN",
+      "file": "idn.json",
+      "pais": "Indonesia",
+      "estudiante": "Cátedra (ejemplo de referencia)",
+      "aperc_global": 5.6
+    },
+    {
+      "iso": "NGA",
+      "file": "nga.json",
+      "pais": "Nigeria",
+      "estudiante": "Cátedra (ejemplo de referencia)",
+      "aperc_global": 4.5
+    },
+    {
+      "iso": "NOR",
+      "file": "nor.json",
+      "pais": "Noruega",
+      "estudiante": "Cátedra (ejemplo de referencia)",
+      "aperc_global": 8.4
+    },
+    {
+      "iso": "PER",
+      "file": "per.json",
+      "pais": "Perú",
+      "estudiante": "Cátedra (ejemplo de referencia)",
+      "aperc_global": 6.2
+    },
+    {
+      "iso": "COD",
+      "file": "cod.json",
+      "pais": "RD del Congo",
+      "estudiante": "Cátedra (ejemplo de referencia)",
+      "aperc_global": 4
+    },
+    {
+      "iso": "RUS",
+      "file": "rus.json",
+      "pais": "Rusia",
+      "estudiante": "Cátedra (ejemplo de referencia)",
+      "aperc_global": 6.2
+    },
+    {
+      "iso": "VEN",
+      "file": "ven.json",
+      "pais": "Venezuela",
+      "estudiante": "Cátedra (ejemplo de referencia)",
+      "aperc_global": 3.8
+    }
   ]
 }

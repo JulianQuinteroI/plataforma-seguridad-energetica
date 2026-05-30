@@ -1,0 +1,971 @@
+{
+  "schema_version": "1.0.0",
+  "meta": {
+    "pais": "Chile",
+    "pais_iso": "CHL",
+    "pais_iso2": "CL",
+    "subtitulo_pais": "República de",
+    "eyebrow": "Portafolio · Seguridad Energética por País",
+    "titulo": "Seguridad Energética de Chile:<br/>cobre, litio y el sol del Atacama",
+    "subtitulo": "Gran productor de cobre y litio con un potencial solar excepcional y una transición renovable agresiva, frente a una dependencia histórica de la importación de hidrocarburos.",
+    "estudiante": "Cátedra (ejemplo de referencia)",
+    "asignatura": "Logística Militar · Rúbrica Slide18",
+    "tipo_doc": "Documento de sustentación",
+    "fecha": "Mayo 2026",
+    "fuerzas_armadas": "Fuerzas Armadas de Chile",
+    "aperc_global": 6.5,
+    "cita_corta": "CNE, 2024; IEA, 2024; Coordinador Eléctrico.",
+    "portafolio_label": "Rúbrica Slide18<br/>Logística Militar<br/>v2 — académica",
+    "map_view": {
+      "lat": -35,
+      "lng": -71,
+      "zoom": 4
+    }
+  },
+  "resumen": {
+    "tesis_html": "Chile combina liderazgo en <b>cobre y litio</b> (Atacama) con el <i>mejor recurso solar del mundo</i> y una transición renovable acelerada (salida del carbón). Su debilidad histórica es la <b>dependencia de importación</b> de petróleo, gas y carbón. Apuesta fuerte por el <b>hidrógeno verde</b> y la electromovilidad.",
+    "conclusion_html": "APERC <b>6.5/10</b>: alta <i>acceptability</i> (renovables) y minerales de transición, pero <i>availability</i> de fósiles importada. Las FF.AA. protegen infraestructura crítica y la zona minera del norte.",
+    "kpis": [
+      {
+        "valor": 35,
+        "unidad": "%",
+        "etiqueta": "Solar+eólica en electricidad"
+      },
+      {
+        "valor": 1,
+        "unidad": "º",
+        "etiqueta": "Productor de cobre mundial"
+      },
+      {
+        "valor": 2,
+        "unidad": "º",
+        "etiqueta": "Productor de litio mundial"
+      },
+      {
+        "valor": 2040,
+        "unidad": "",
+        "etiqueta": "Meta de salida del carbón"
+      }
+    ]
+  },
+  "aperc": {
+    "src": "APERC 2007 · CNE 2024",
+    "definicion_html": "<p>Chile maximiza la <i>acceptability</i> con el sol del Atacama y los minerales de la transición, pero importa casi todos sus hidrocarburos. Su reto de <i>robustness</i> es la transmisión norte-centro y el estrés hídrico minero.</p>",
+    "definicion_cita": "CNE; IEA 2024.",
+    "scorecard_titulo": "Scorecard de Chile bajo APERC",
+    "scores": [
+      {
+        "letra": "A",
+        "nombre": "vailability",
+        "desc": "Sol/viento excepcional; importa fósiles.",
+        "score": 6
+      },
+      {
+        "letra": "A",
+        "nombre": "ccessibility",
+        "desc": "GNL diversificado; transmisión como cuello.",
+        "score": 6.5
+      },
+      {
+        "letra": "A",
+        "nombre": "ffordability",
+        "desc": "Costos a la baja por solar.",
+        "score": 6
+      },
+      {
+        "letra": "A",
+        "nombre": "cceptability",
+        "desc": "Descarbonización agresiva; H₂ verde.",
+        "score": 7.5
+      }
+    ],
+    "scorecard_cita": "Scores propios sobre indicadores normalizados.",
+    "comparador": {
+      "pais_b": "Perú",
+      "pais_c": "Australia"
+    },
+    "indicadores_titulo": "Indicadores cuantitativos aplicados",
+    "indicadores": [
+      {
+        "indicador": "Solar+eólica en electricidad (%)",
+        "definicion": "Generación",
+        "propio": "35",
+        "b": "5",
+        "c": "29",
+        "interp": {
+          "texto": "Líder regional",
+          "pill": "ok"
+        }
+      },
+      {
+        "indicador": "Producción de cobre (Mt)",
+        "definicion": "Anual",
+        "propio": "5.3",
+        "b": "2.6",
+        "c": "0.9",
+        "interp": {
+          "texto": "#1 mundial"
+        }
+      },
+      {
+        "indicador": "Producción de litio (kt)",
+        "definicion": "Anual",
+        "propio": "alto",
+        "b": "0",
+        "c": "alto",
+        "interp": {
+          "texto": "#2 mundial"
+        }
+      },
+      {
+        "indicador": "Dependencia fósil importada (%)",
+        "definicion": "Neta",
+        "propio": "alta",
+        "b": "media",
+        "c": "−330%",
+        "interp": {
+          "texto": "Importador neto",
+          "pill": "warn"
+        }
+      }
+    ],
+    "indicadores_nota": "Comparación con Perú (minero) y Australia (litio/exportador)."
+  },
+  "matriz": {
+    "src": "CNE · Ember 2024",
+    "primaria_titulo": "Energía Primaria (TPES, %)",
+    "primaria": [
+      {
+        "label": "Petróleo",
+        "valor": 42,
+        "color": "#c4570e"
+      },
+      {
+        "label": "Carbón",
+        "valor": 18,
+        "color": "#8a4a4a"
+      },
+      {
+        "label": "Gas natural",
+        "valor": 16,
+        "color": "#0b5394"
+      },
+      {
+        "label": "Renovables",
+        "valor": 18,
+        "color": "#a17c1c"
+      },
+      {
+        "label": "Hidro",
+        "valor": 6,
+        "color": "#2e7d32"
+      }
+    ],
+    "primaria_cita": "Petróleo 42 · Carbón 18 · Gas 16 · Renov. 18. <i>Fuente: CNE 2024.</i>",
+    "electrica_titulo": "Generación Eléctrica (%)",
+    "electrica": [
+      {
+        "label": "Solar",
+        "valor": 22,
+        "color": "#a17c1c"
+      },
+      {
+        "label": "Carbón",
+        "valor": 18,
+        "color": "#8a4a4a"
+      },
+      {
+        "label": "Hidro",
+        "valor": 23,
+        "color": "#2e7d32"
+      },
+      {
+        "label": "Gas",
+        "valor": 18,
+        "color": "#0b5394"
+      },
+      {
+        "label": "Eólica",
+        "valor": 13,
+        "color": "#6a8caf"
+      },
+      {
+        "label": "Otros",
+        "valor": 6,
+        "color": "#4a5870"
+      }
+    ],
+    "electrica_cita": "Solar 22 · Hidro 23 · Carbón 18 · Gas 18 · Eólica 13. <i>Fuente: Ember 2024.</i>",
+    "comparativa_titulo": "Comparativa Internacional — Mix Eléctrico (%)",
+    "comparativa": {
+      "paises": [
+        "Chile",
+        "Perú",
+        "Australia"
+      ],
+      "series": [
+        {
+          "label": "Solar/Eólica",
+          "data": [
+            35,
+            5,
+            29
+          ],
+          "color": "#a17c1c"
+        },
+        {
+          "label": "Hidro",
+          "data": [
+            23,
+            55,
+            6
+          ],
+          "color": "#2e7d32"
+        },
+        {
+          "label": "Carbón",
+          "data": [
+            18,
+            0,
+            46
+          ],
+          "color": "#8a4a4a"
+        },
+        {
+          "label": "Gas",
+          "data": [
+            18,
+            40,
+            16
+          ],
+          "color": "#0b5394"
+        }
+      ]
+    },
+    "comparativa_nota": "Chile lidera la penetración renovable variable de la región."
+  },
+  "sankey": {
+    "src": "Producción → Transformación → Uso final",
+    "titulo_panel": "Flujos físicos de energía, Chile (PJ aprox.)",
+    "flujos": [
+      {
+        "from": "Petróleo importado",
+        "to": "Refinación local",
+        "flow": 2200
+      },
+      {
+        "from": "Refinación local",
+        "to": "Transporte",
+        "flow": 2000
+      },
+      {
+        "from": "GNL importado",
+        "to": "Generación eléctrica",
+        "flow": 900
+      },
+      {
+        "from": "Carbón importado",
+        "to": "Generación eléctrica",
+        "flow": 800
+      },
+      {
+        "from": "Solar/Eólica",
+        "to": "Generación eléctrica",
+        "flow": 1600
+      },
+      {
+        "from": "Hidro",
+        "to": "Generación eléctrica",
+        "flow": 1000
+      },
+      {
+        "from": "Generación eléctrica",
+        "to": "Minería (cobre/litio)",
+        "flow": 1800
+      },
+      {
+        "from": "Generación eléctrica",
+        "to": "Industria & residencial",
+        "flow": 1700
+      }
+    ],
+    "nodos": {
+      "Petróleo importado": {
+        "color": "#c4570e",
+        "label": "Petróleo importado"
+      },
+      "GNL importado": {
+        "color": "#0b5394",
+        "label": "GNL importado"
+      },
+      "Carbón importado": {
+        "color": "#8a4a4a",
+        "label": "Carbón importado"
+      },
+      "Solar/Eólica": {
+        "color": "#a17c1c",
+        "label": "Solar & Eólica"
+      },
+      "Hidro": {
+        "color": "#2e7d32",
+        "label": "Hidro"
+      },
+      "Refinación local": {
+        "color": "#c4570e",
+        "label": "Refinerías"
+      },
+      "Generación eléctrica": {
+        "color": "#6b4e8e",
+        "label": "Generación eléctrica"
+      },
+      "Minería (cobre/litio)": {
+        "color": "#a17c1c",
+        "label": "Minería (cobre/litio)"
+      },
+      "Industria & residencial": {
+        "color": "#4a5870",
+        "label": "Industria + Residencial"
+      },
+      "Transporte": {
+        "color": "#c4570e",
+        "label": "Transporte"
+      }
+    },
+    "cita": "La minería del cobre/litio es el gran consumidor; la solar la abastece cada vez más. <i>Datos estilizados.</i>"
+  },
+  "evolucion": {
+    "src": "2000–2050 · descarbonización",
+    "historico_titulo": "Mix Eléctrico Histórico y Proyectado (%)",
+    "anios": [
+      "2000",
+      "2010",
+      "2020",
+      "2024",
+      "2035",
+      "2050"
+    ],
+    "series": [
+      {
+        "label": "Carbón",
+        "data": [
+          30,
+          40,
+          37,
+          18,
+          5,
+          0
+        ],
+        "color": "#8a4a4a"
+      },
+      {
+        "label": "Solar/Eólica",
+        "data": [
+          0,
+          1,
+          22,
+          35,
+          60,
+          75
+        ],
+        "color": "#a17c1c"
+      },
+      {
+        "label": "Hidro",
+        "data": [
+          50,
+          40,
+          26,
+          23,
+          20,
+          18
+        ],
+        "color": "#2e7d32"
+      },
+      {
+        "label": "Gas",
+        "data": [
+          15,
+          17,
+          14,
+          18,
+          12,
+          5
+        ],
+        "color": "#0b5394"
+      }
+    ],
+    "historico_cita": "Salida del carbón y boom solar del Atacama; meta de retiro a 2040 (o antes).",
+    "hitos_titulo": "Hitos del Régimen Energético",
+    "hitos": [
+      {
+        "anio": "2004",
+        "evento": "Crisis del gas argentino: cortes de suministro."
+      },
+      {
+        "anio": "2009",
+        "evento": "Primer terminal de GNL (Quintero)."
+      },
+      {
+        "anio": "2016",
+        "evento": "Subastas con récords mundiales de precio solar."
+      },
+      {
+        "anio": "2019",
+        "evento": "Plan de retiro de centrales a carbón."
+      },
+      {
+        "anio": "2022",
+        "evento": "Estrategia Nacional de Hidrógeno Verde."
+      },
+      {
+        "anio": "2023",
+        "evento": "Estrategia Nacional del Litio (mayor rol estatal)."
+      }
+    ]
+  },
+  "infraestructura": {
+    "src": "Mapa Leaflet · GEM",
+    "mapa_titulo": "Solar, litio, cobre y GNL",
+    "pines": [
+      {
+        "lat": -22.76,
+        "lng": -69.47,
+        "tipo": "minerales",
+        "nombre": "Solar Cerro Dominador",
+        "desc": "Termosolar + fotovoltaica (Atacama)"
+      },
+      {
+        "lat": -23.5,
+        "lng": -68.2,
+        "tipo": "minerales",
+        "nombre": "Litio Salar de Atacama",
+        "desc": "SQM/Albemarle · #2 mundial"
+      },
+      {
+        "lat": -24.27,
+        "lng": -69.07,
+        "tipo": "minerales",
+        "nombre": "Cobre Escondida",
+        "desc": "Mayor mina de cobre del mundo"
+      },
+      {
+        "lat": -32.78,
+        "lng": -71.53,
+        "tipo": "gnl",
+        "nombre": "Terminal GNL Quintero",
+        "desc": "Importación de GNL (zona central)"
+      },
+      {
+        "lat": -23.1,
+        "lng": -70.45,
+        "tipo": "gnl",
+        "nombre": "Mejillones (GNL/carbón)",
+        "desc": "Hub energético del norte"
+      }
+    ],
+    "rutas": [
+      {
+        "puntos": [
+          [
+            -22.76,
+            -69.47
+          ],
+          [
+            -25,
+            -70
+          ],
+          [
+            -30,
+            -71
+          ],
+          [
+            -33.4,
+            -70.7
+          ]
+        ],
+        "tooltip": "Transmisión: solar del norte → centro"
+      }
+    ],
+    "leyenda": [
+      {
+        "color": "#a17c1c",
+        "label": "Solar / litio"
+      },
+      {
+        "color": "#0b5394",
+        "label": "GNL"
+      },
+      {
+        "color": "#8a4a4a",
+        "label": "Cobre / carbón"
+      }
+    ],
+    "mapa_cita": "Coordenadas reales de Cerro Dominador, Salar de Atacama, Escondida, Quintero, Mejillones. <i>Fuentes: GEM 2024.</i>",
+    "vulnerabilidades_titulo": "Vulnerabilidades técnicas",
+    "vulnerabilidades": [
+      {
+        "nivel": "high",
+        "tag": "CRÍT",
+        "texto_html": "<b>Dependencia fósil importada</b> · sin petróleo ni gas propios significativos."
+      },
+      {
+        "nivel": "high",
+        "tag": "CRÍT",
+        "texto_html": "<b>Transmisión norte-centro</b> · la solar del Atacama necesita líneas para llegar a la demanda (curtailment)."
+      },
+      {
+        "nivel": "med",
+        "tag": "ALTO",
+        "texto_html": "<b>Estrés hídrico</b> · la minería compite por agua escasa en el norte."
+      },
+      {
+        "nivel": "low",
+        "tag": "MED",
+        "texto_html": "<b>Sismicidad</b> · uno de los países más sísmicos del mundo."
+      }
+    ],
+    "capacidad_titulo": "Capacidad instalada (GW)",
+    "capacidad": {
+      "anios": [
+        "2020",
+        "2024",
+        "2030",
+        "2040"
+      ],
+      "y_titulo": "GW",
+      "series": [
+        {
+          "label": "Solar/Eólica (GW)",
+          "tipo": "bar",
+          "data": [
+            7,
+            14,
+            30,
+            55
+          ],
+          "color": "#a17c1c"
+        },
+        {
+          "label": "Carbón (GW)",
+          "tipo": "bar",
+          "data": [
+            5,
+            3,
+            1,
+            0
+          ],
+          "color": "#8a4a4a"
+        },
+        {
+          "label": "Demanda pico (GW)",
+          "tipo": "line",
+          "data": [
+            11,
+            12,
+            16,
+            22
+          ],
+          "color": "#c4570e"
+        }
+      ]
+    },
+    "capacidad_cita": "Salida del carbón compensada por solar/eólica + almacenamiento. <i>Fuente: CNE.</i>"
+  },
+  "geopolitica": {
+    "src": "Radar APERC normalizado",
+    "radar_titulo": "Radar APERC: Chile vs Perú vs Australia",
+    "radar": {
+      "ejes": [
+        "Availability",
+        "Accessibility",
+        "Affordability",
+        "Acceptability",
+        "Sovereignty",
+        "Robustness",
+        "Resilience"
+      ],
+      "series": [
+        {
+          "label": "Chile",
+          "data": [
+            6,
+            6.5,
+            6,
+            7.5,
+            6.5,
+            6.5,
+            7
+          ],
+          "color": "#0b5394"
+        },
+        {
+          "label": "Perú",
+          "data": [
+            6.5,
+            6,
+            6.3,
+            6,
+            6.5,
+            5.5,
+            6
+          ],
+          "color": "#a17c1c"
+        },
+        {
+          "label": "Australia",
+          "data": [
+            8.5,
+            4.8,
+            6,
+            5.5,
+            7,
+            6.2,
+            6.5
+          ],
+          "color": "#2e7d32"
+        }
+      ]
+    },
+    "radar_cita": "Normalización min-max sobre indicadores §01.",
+    "dependencias_titulo": "Dependencias y socios",
+    "dependencias": [
+      {
+        "vinculo": "Exportación de cobre a China",
+        "pct": "55",
+        "riesgo": {
+          "texto": "Cliente dominante",
+          "pill": "warn"
+        }
+      },
+      {
+        "vinculo": "Exportación de litio (China/Corea)",
+        "pct": "—",
+        "riesgo": {
+          "texto": "Cadena de baterías",
+          "pill": "ok"
+        }
+      },
+      {
+        "vinculo": "Importación de GNL/petróleo/carbón",
+        "pct": "—",
+        "riesgo": {
+          "texto": "Sin fósiles propios",
+          "pill": "warn"
+        }
+      },
+      {
+        "vinculo": "Hidrógeno verde a Europa/Asia",
+        "pct": "—",
+        "riesgo": {
+          "texto": "Futuro vector de exportación",
+          "pill": "ok"
+        }
+      }
+    ],
+    "dependencias_cita": "CNE; Cochilco 2024.",
+    "minerales_titulo": "Minerales de la transición",
+    "minerales": [
+      {
+        "valor": "#1",
+        "unidad": " mundial",
+        "etiqueta": "COBRE"
+      },
+      {
+        "valor": "#2",
+        "unidad": " mundial",
+        "etiqueta": "LITIO"
+      },
+      {
+        "valor": "#1",
+        "unidad": " mundial",
+        "etiqueta": "RECURSO SOLAR (Atacama)"
+      }
+    ],
+    "minerales_cita": "USGS; Cochilco 2024."
+  },
+  "militar": {
+    "titulo_seccion": "Combustibles Militares y Rol Operacional de las Fuerzas Armadas de Chile",
+    "nav_label": "Combustibles militares",
+    "src": "IISS · Ministerio de Defensa",
+    "combustibles_titulo": "Demanda de combustibles de las FF.AA.",
+    "combustibles": [
+      {
+        "codigo": "JP-8 / Jet A-1",
+        "tipo": "Queroseno militar",
+        "usuario": "Fuerza Aérea",
+        "ml_anio": "180"
+      },
+      {
+        "codigo": "F-76",
+        "tipo": "Diésel naval",
+        "usuario": "Armada de Chile",
+        "ml_anio": "130"
+      },
+      {
+        "codigo": "Diésel terrestre",
+        "tipo": "Diésel",
+        "usuario": "Ejército",
+        "ml_anio": "120"
+      }
+    ],
+    "combustibles_total": "~430",
+    "combustibles_cita": "Estimación de orden de magnitud (Ley del Cobre financió equipamiento).",
+    "vulnerabilidades_titulo": "Vulnerabilidades específicas de defensa",
+    "vulnerabilidades": [
+      {
+        "nivel": "med",
+        "tag": "ALTO",
+        "texto_html": "<b>Protección de infraestructura minera</b> · cobre/litio son activos estratégicos nacionales."
+      },
+      {
+        "nivel": "med",
+        "tag": "ALTO",
+        "texto_html": "<b>Importación de combustible</b> · cadena marítima de suministro vulnerable."
+      },
+      {
+        "nivel": "low",
+        "tag": "MED",
+        "texto_html": "<b>Soberanía austral</b> · vastas zonas y rutas marítimas que vigilar."
+      }
+    ],
+    "mision_titulo": "Misión en Seguridad Energética",
+    "mision": [
+      {
+        "titulo": "INFRAESTRUCTURA CRÍTICA",
+        "texto_html": "Protección de minería, puertos y transmisión."
+      },
+      {
+        "titulo": "SEGURIDAD MARÍTIMA",
+        "texto_html": "Custodia de las rutas de importación de combustible."
+      },
+      {
+        "titulo": "SOBERANÍA DEL LITIO",
+        "texto_html": "Rol estatal en recursos estratégicos (Estrategia del Litio)."
+      },
+      {
+        "titulo": "HADR",
+        "texto_html": "Respuesta ante sismos y desastres que afectan la energía."
+      }
+    ],
+    "mision_cita": "IISS 2024."
+  },
+  "politicas": {
+    "src": "Ministerio de Energía · CNE",
+    "planes_titulo": "Planes nacionales",
+    "planes": [
+      {
+        "nombre": "Plan de Retiro del Carbón",
+        "texto": "Cierre de centrales a carbón (meta 2040 o antes)."
+      },
+      {
+        "nombre": "Estrategia Nacional de Hidrógeno Verde",
+        "texto": "Exportación de H₂ verde con el sol del Atacama."
+      },
+      {
+        "nombre": "Estrategia Nacional del Litio",
+        "texto": "Mayor rol estatal en la cadena del litio."
+      },
+      {
+        "nombre": "Carbono-neutralidad 2050",
+        "texto": "Compromiso climático nacional."
+      }
+    ],
+    "instituciones_titulo": "Instituciones clave",
+    "instituciones": [
+      {
+        "sigla": "Ministerio de Energía",
+        "texto": "rectoría del sector."
+      },
+      {
+        "sigla": "CNE",
+        "texto": "comisión nacional de energía."
+      },
+      {
+        "sigla": "Coordinador Eléctrico Nacional",
+        "texto": "operación del sistema."
+      },
+      {
+        "sigla": "ENAP / Codelco / SQM",
+        "texto": "petróleo estatal; cobre; litio."
+      }
+    ],
+    "transicion_titulo": "Transición y economía",
+    "transicion_html": "<p>Chile apuesta a ser <b>potencia de la transición</b>: sol del Atacama, cobre y litio para baterías, e hidrógeno verde de exportación. El cuello es la <b>transmisión</b> y el almacenamiento para mover la energía del norte al centro.</p>",
+    "transicion_cita": "CNE; IEA 2024."
+  },
+  "crisis": {
+    "src": "Wargaming · Cone of Plausibility",
+    "matriz_titulo": "Matriz Probabilidad × Impacto",
+    "matriz": {
+      "esquina": "Impacto ↓ / Prob →",
+      "prob_labels": [
+        "Muy bajo",
+        "Bajo",
+        "Medio",
+        "Alto",
+        "Muy alto"
+      ],
+      "filas": [
+        {
+          "impacto": "Catastrófico",
+          "celdas": [
+            {
+              "nivel": 3
+            },
+            {
+              "nivel": 4
+            },
+            {
+              "nivel": 5,
+              "texto": "Megasismo (infra)"
+            },
+            {
+              "nivel": 5
+            },
+            {
+              "nivel": 5
+            }
+          ]
+        },
+        {
+          "impacto": "Mayor",
+          "celdas": [
+            {
+              "nivel": 2
+            },
+            {
+              "nivel": 3
+            },
+            {
+              "nivel": 4,
+              "texto": "Crisis de GNL"
+            },
+            {
+              "nivel": 4,
+              "texto": "Curtailment masivo"
+            },
+            {
+              "nivel": 5
+            }
+          ]
+        },
+        {
+          "impacto": "Moderado",
+          "celdas": [
+            {
+              "nivel": 1
+            },
+            {
+              "nivel": 2
+            },
+            {
+              "nivel": 3,
+              "texto": "Estrés hídrico minero"
+            },
+            {
+              "nivel": 4
+            },
+            {
+              "nivel": 4
+            }
+          ]
+        },
+        {
+          "impacto": "Menor",
+          "celdas": [
+            {
+              "nivel": 1
+            },
+            {
+              "nivel": 1
+            },
+            {
+              "nivel": 2
+            },
+            {
+              "nivel": 3
+            },
+            {
+              "nivel": 3
+            }
+          ]
+        },
+        {
+          "impacto": "Insignif.",
+          "celdas": [
+            {
+              "nivel": 1
+            },
+            {
+              "nivel": 1
+            },
+            {
+              "nivel": 1
+            },
+            {
+              "nivel": 2
+            },
+            {
+              "nivel": 2
+            }
+          ]
+        }
+      ]
+    },
+    "matriz_cita": "Escala HM Treasury Orange Book.",
+    "escenarios_titulo": "Escenarios calibrados",
+    "escenarios": [
+      {
+        "nivel": "high",
+        "tag": "A",
+        "texto_html": "<b>Megasismo</b> — daño a puertos/transmisión. <i>Respuesta:</i> normas sísmicas, redundancia, HADR."
+      },
+      {
+        "nivel": "med",
+        "tag": "B",
+        "texto_html": "<b>Crisis de GNL</b> — corte de respaldo. <i>Respuesta:</i> diversificar proveedores, almacenamiento."
+      },
+      {
+        "nivel": "med",
+        "tag": "C",
+        "texto_html": "<b>Curtailment solar</b> — sin líneas, se pierde energía del norte. <i>Respuesta:</i> transmisión, baterías."
+      },
+      {
+        "nivel": "med",
+        "tag": "D",
+        "texto_html": "<b>Estrés hídrico</b> — minería vs agua. <i>Respuesta:</i> desalación, eficiencia."
+      }
+    ],
+    "vectores_titulo": "Respuesta estratégica integrada — vectores",
+    "vectores": [
+      {
+        "titulo": "TRANSMISIÓN + STORAGE",
+        "texto": "Mover y almacenar la solar del Atacama."
+      },
+      {
+        "titulo": "HIDRÓGENO VERDE",
+        "texto": "Nuevo vector de exportación."
+      },
+      {
+        "titulo": "DIVERSIFICAR GNL",
+        "texto": "Reducir riesgo de respaldo fósil."
+      },
+      {
+        "titulo": "DESALACIÓN",
+        "texto": "Aliviar el estrés hídrico minero."
+      }
+    ]
+  },
+  "referencias": {
+    "src": "Triangulación multi-fuente",
+    "titulo": "Fuentes primarias y académicas",
+    "items": [
+      "CNE Chile (2024). <i>Anuario Estadístico de Energía</i>.",
+      "Cochilco (2024). Estadísticas de cobre y litio.",
+      "IEA (2024). <i>Chile Energy Profile</i>.",
+      "Ember (2024). <i>Electricity Data Explorer</i>.",
+      "APERC (2007). <i>A Quest for Energy Security in the 21st Century</i>. Tokio."
+    ]
+  },
+  "footer": "Documento de sustentación · Rúbrica Slide18 · Logística Militar · Mayo 2026"
+}

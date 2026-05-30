@@ -1,0 +1,993 @@
+{
+  "schema_version": "1.0.0",
+  "meta": {
+    "pais": "Brasil",
+    "pais_iso": "BRA",
+    "pais_iso2": "BR",
+    "subtitulo_pais": "República Federativa de",
+    "eyebrow": "Portafolio · Seguridad Energética por País",
+    "titulo": "Seguridad Energética de Brasil:<br/>hidroelectricidad, presal y biocombustibles",
+    "subtitulo": "Matriz eléctrica de las más limpias del mundo (hidro dominante), gran petróleo del presal y liderazgo en etanol; principal vulnerabilidad: la dependencia hídrica frente a sequías.",
+    "estudiante": "Cátedra (ejemplo de referencia)",
+    "asignatura": "Logística Militar · Rúbrica Slide18",
+    "tipo_doc": "Documento de sustentación",
+    "fecha": "Mayo 2026",
+    "fuerzas_armadas": "Forças Armadas do Brasil",
+    "aperc_global": 6.8,
+    "cita_corta": "EPE, 2024; IEA, 2024; Petrobras.",
+    "portafolio_label": "Rúbrica Slide18<br/>Logística Militar<br/>v2 — académica",
+    "map_view": {
+      "lat": -14,
+      "lng": -52,
+      "zoom": 4
+    }
+  },
+  "resumen": {
+    "tesis_html": "Brasil tiene una de las matrices más <b>limpias</b> del mundo: ~60% de electricidad hidroeléctrica más eólica/solar en auge, y es líder en <b>etanol</b> de caña. El <b>presal</b> (Petrobras) lo volvió gran exportador de crudo. Su talón de Aquiles es la <i>hidrodependencia</i>: las sequías obligan a térmicas caras y suben tarifas. La 'Amazonía Azul' (presal offshore) es activo estratégico.",
+    "conclusion_html": "APERC <b>6.8/10</b>: alta <i>acceptability</i> y <i>availability</i>, pero <i>robustness</i> sensible al clima. Las Forças Armadas protegen el presal y la Amazonía.",
+    "kpis": [
+      {
+        "valor": 60,
+        "unidad": "%",
+        "etiqueta": "Electricidad hidroeléctrica"
+      },
+      {
+        "valor": 3.4,
+        "unidad": "Mb/d",
+        "etiqueta": "Producción de crudo",
+        "decimal": true
+      },
+      {
+        "valor": 85,
+        "unidad": "%",
+        "etiqueta": "Renovables en electricidad"
+      },
+      {
+        "valor": 1,
+        "unidad": "º",
+        "etiqueta": "Etanol (con EE.UU.)"
+      }
+    ]
+  },
+  "aperc": {
+    "src": "APERC 2007 · EPE 2024",
+    "definicion_html": "<p>Brasil combina <i>acceptability</i> (matriz limpia) con creciente <i>availability</i> (presal). El riesgo es la <i>robustness</i> climática: la hidrología manda sobre la seguridad eléctrica.</p>",
+    "definicion_cita": "EPE, Balanço Energético Nacional 2024.",
+    "scorecard_titulo": "Scorecard de Brasil bajo APERC",
+    "scores": [
+      {
+        "letra": "A",
+        "nombre": "vailability",
+        "desc": "Hidro, presal, biomasa, eólica/solar.",
+        "score": 7.5
+      },
+      {
+        "letra": "A",
+        "nombre": "ccessibility",
+        "desc": "Autosuficiente; exporta crudo.",
+        "score": 6.5
+      },
+      {
+        "letra": "A",
+        "nombre": "ffordability",
+        "desc": "Tarifas suben en sequía (térmicas).",
+        "score": 6
+      },
+      {
+        "letra": "A",
+        "nombre": "cceptability",
+        "desc": "Matriz muy limpia; deforestación como tensión.",
+        "score": 7.2
+      }
+    ],
+    "scorecard_cita": "Scores propios sobre indicadores normalizados.",
+    "comparador": {
+      "pais_b": "Colombia",
+      "pais_c": "Estados Unidos"
+    },
+    "indicadores_titulo": "Indicadores cuantitativos aplicados",
+    "indicadores": [
+      {
+        "indicador": "Renovables en electricidad (%)",
+        "definicion": "Generación",
+        "propio": "85",
+        "b": "70",
+        "c": "22",
+        "interp": {
+          "texto": "Muy alta",
+          "pill": "ok"
+        }
+      },
+      {
+        "indicador": "Hidro en electricidad (%)",
+        "definicion": "Generación",
+        "propio": "60",
+        "b": "70",
+        "c": "6",
+        "interp": {
+          "texto": "Dominante (riesgo sequía)"
+        }
+      },
+      {
+        "indicador": "Producción de crudo (Mb/d)",
+        "definicion": "Presal incluido",
+        "propio": "3.4",
+        "b": "0.8",
+        "c": "13",
+        "interp": {
+          "texto": "Gran productor"
+        }
+      },
+      {
+        "indicador": "Etanol en transporte (%)",
+        "definicion": "Flex-fuel",
+        "propio": "alto",
+        "b": "bajo",
+        "c": "medio",
+        "interp": {
+          "texto": "Líder mundial",
+          "pill": "ok"
+        }
+      }
+    ],
+    "indicadores_nota": "Comparación con Colombia (vecino hidro) y EE.UU. (gran productor)."
+  },
+  "matriz": {
+    "src": "EPE · Ember 2024",
+    "primaria_titulo": "Energía Primaria (TPES, %)",
+    "primaria": [
+      {
+        "label": "Petróleo",
+        "valor": 34,
+        "color": "#c4570e"
+      },
+      {
+        "label": "Biomasa/etanol",
+        "valor": 25,
+        "color": "#2e7d32"
+      },
+      {
+        "label": "Hidro",
+        "valor": 12,
+        "color": "#6a8caf"
+      },
+      {
+        "label": "Gas natural",
+        "valor": 12,
+        "color": "#0b5394"
+      },
+      {
+        "label": "Otros renov.",
+        "valor": 9,
+        "color": "#a17c1c"
+      },
+      {
+        "label": "Carbón",
+        "valor": 8,
+        "color": "#8a4a4a"
+      }
+    ],
+    "primaria_cita": "Petróleo 34 · Biomasa 25 · Hidro 12 · Gas 12. <i>Fuente: EPE BEN 2024.</i>",
+    "electrica_titulo": "Generación Eléctrica (%)",
+    "electrica": [
+      {
+        "label": "Hidro",
+        "valor": 60,
+        "color": "#2e7d32"
+      },
+      {
+        "label": "Eólica",
+        "valor": 13,
+        "color": "#6a8caf"
+      },
+      {
+        "label": "Gas",
+        "valor": 8,
+        "color": "#0b5394"
+      },
+      {
+        "label": "Solar",
+        "valor": 8,
+        "color": "#a17c1c"
+      },
+      {
+        "label": "Biomasa",
+        "valor": 7,
+        "color": "#8a4a4a"
+      },
+      {
+        "label": "Nuclear",
+        "valor": 4,
+        "color": "#6b4e8e"
+      }
+    ],
+    "electrica_cita": "Hidro 60 · Eólica 13 · Gas 8 · Solar 8 · Biomasa 7. <i>Fuente: Ember 2024.</i>",
+    "comparativa_titulo": "Comparativa Internacional — Mix Eléctrico (%)",
+    "comparativa": {
+      "paises": [
+        "Brasil",
+        "Colombia",
+        "Estados Unidos"
+      ],
+      "series": [
+        {
+          "label": "Hidro",
+          "data": [
+            60,
+            70,
+            6
+          ],
+          "color": "#2e7d32"
+        },
+        {
+          "label": "Eólica/Solar",
+          "data": [
+            21,
+            4,
+            16
+          ],
+          "color": "#a17c1c"
+        },
+        {
+          "label": "Gas",
+          "data": [
+            8,
+            16,
+            43
+          ],
+          "color": "#0b5394"
+        },
+        {
+          "label": "Carbón",
+          "data": [
+            7,
+            8,
+            16
+          ],
+          "color": "#8a4a4a"
+        },
+        {
+          "label": "Nuclear",
+          "data": [
+            4,
+            0,
+            18
+          ],
+          "color": "#6b4e8e"
+        }
+      ]
+    },
+    "comparativa_nota": "Brasil y Colombia: matrices hidro-dominantes; EE.UU.: gas+nuclear."
+  },
+  "sankey": {
+    "src": "Producción → Transformación → Uso final",
+    "titulo_panel": "Flujos físicos de energía, Brasil (PJ aprox.)",
+    "flujos": [
+      {
+        "from": "Petróleo (presal)",
+        "to": "Exportación de crudo",
+        "flow": 3500
+      },
+      {
+        "from": "Petróleo (presal)",
+        "to": "Refinación local",
+        "flow": 4000
+      },
+      {
+        "from": "Refinación local",
+        "to": "Transporte",
+        "flow": 3500
+      },
+      {
+        "from": "Caña de azúcar",
+        "to": "Etanol",
+        "flow": 2500
+      },
+      {
+        "from": "Etanol",
+        "to": "Transporte",
+        "flow": 2300
+      },
+      {
+        "from": "Hidro",
+        "to": "Generación eléctrica",
+        "flow": 4000
+      },
+      {
+        "from": "Eólica/Solar",
+        "to": "Generación eléctrica",
+        "flow": 1400
+      },
+      {
+        "from": "Generación eléctrica",
+        "to": "Industria & residencial",
+        "flow": 5000
+      }
+    ],
+    "nodos": {
+      "Petróleo (presal)": {
+        "color": "#c4570e",
+        "label": "Petróleo (presal)"
+      },
+      "Caña de azúcar": {
+        "color": "#2e7d32",
+        "label": "Caña de azúcar"
+      },
+      "Etanol": {
+        "color": "#2e7d32",
+        "label": "Etanol"
+      },
+      "Hidro": {
+        "color": "#6a8caf",
+        "label": "Hidro"
+      },
+      "Eólica/Solar": {
+        "color": "#a17c1c",
+        "label": "Eólica & Solar"
+      },
+      "Refinación local": {
+        "color": "#c4570e",
+        "label": "Refinerías"
+      },
+      "Generación eléctrica": {
+        "color": "#6b4e8e",
+        "label": "Generación eléctrica"
+      },
+      "Exportación de crudo": {
+        "color": "#8a4a4a",
+        "label": "EXPORT · Crudo"
+      },
+      "Industria & residencial": {
+        "color": "#4a5870",
+        "label": "Industria + Residencial"
+      },
+      "Transporte": {
+        "color": "#c4570e",
+        "label": "Transporte"
+      }
+    },
+    "cita": "El etanol de caña sustituye gasolina en la flota flex-fuel. <i>Datos estilizados sobre EPE.</i>"
+  },
+  "evolucion": {
+    "src": "2000–2050 · presal y transición",
+    "historico_titulo": "Mix Eléctrico Histórico y Proyectado (%)",
+    "anios": [
+      "2000",
+      "2010",
+      "2020",
+      "2024",
+      "2035",
+      "2050"
+    ],
+    "series": [
+      {
+        "label": "Hidro",
+        "data": [
+          87,
+          80,
+          65,
+          60,
+          50,
+          42
+        ],
+        "color": "#2e7d32"
+      },
+      {
+        "label": "Eólica/Solar",
+        "data": [
+          0,
+          1,
+          11,
+          21,
+          38,
+          50
+        ],
+        "color": "#a17c1c"
+      },
+      {
+        "label": "Gas/Térmica",
+        "data": [
+          9,
+          13,
+          18,
+          15,
+          10,
+          6
+        ],
+        "color": "#0b5394"
+      },
+      {
+        "label": "Nuclear",
+        "data": [
+          4,
+          3,
+          3,
+          4,
+          2,
+          2
+        ],
+        "color": "#6b4e8e"
+      }
+    ],
+    "historico_cita": "La hidro cede peso ante eólica/solar, que dan resiliencia ante sequías.",
+    "hitos_titulo": "Hitos del Régimen Energético",
+    "hitos": [
+      {
+        "anio": "1975",
+        "evento": "Programa Proálcool: etanol de caña como combustible."
+      },
+      {
+        "anio": "1984",
+        "evento": "Inauguración de Itaipú (binacional con Paraguay)."
+      },
+      {
+        "anio": "2006",
+        "evento": "Descubrimiento del presal (Cuenca de Santos)."
+      },
+      {
+        "anio": "2001",
+        "evento": "\"Apagão\": racionamiento eléctrico por sequía."
+      },
+      {
+        "anio": "2021",
+        "evento": "Crisis hídrica eleva tarifas (bandera escasez hídrica)."
+      },
+      {
+        "anio": "2024",
+        "evento": "Auge de eólica/solar en el Nordeste; leilões de transmisión."
+      }
+    ]
+  },
+  "infraestructura": {
+    "src": "Mapa Leaflet · GEM",
+    "mapa_titulo": "Hidro, presal y renovables",
+    "pines": [
+      {
+        "lat": -25.41,
+        "lng": -54.59,
+        "tipo": "almacenamiento",
+        "nombre": "Represa de Itaipú",
+        "desc": "14 GW · binacional con Paraguay"
+      },
+      {
+        "lat": -25,
+        "lng": -43,
+        "tipo": "refineria",
+        "nombre": "Presal (Cuenca de Santos)",
+        "desc": "Campos Tupi/Búzios (Petrobras)"
+      },
+      {
+        "lat": -3.1,
+        "lng": -51.78,
+        "tipo": "almacenamiento",
+        "nombre": "Belo Monte",
+        "desc": "11 GW · gran hidro amazónica"
+      },
+      {
+        "lat": -22.7,
+        "lng": -43.25,
+        "tipo": "refineria",
+        "nombre": "Refinería REDUC",
+        "desc": "Río de Janeiro (Petrobras)"
+      },
+      {
+        "lat": -5.5,
+        "lng": -36,
+        "tipo": "minerales",
+        "nombre": "Eólica del Nordeste (RN/BA)",
+        "desc": "Mayor polo eólico del país"
+      },
+      {
+        "lat": -21,
+        "lng": -48,
+        "tipo": "minerales",
+        "nombre": "Etanol de São Paulo",
+        "desc": "Corazón cañero"
+      }
+    ],
+    "rutas": [
+      {
+        "puntos": [
+          [
+            -25,
+            -43
+          ],
+          [
+            -23,
+            -42
+          ],
+          [
+            -15,
+            -38
+          ],
+          [
+            0,
+            -30
+          ]
+        ],
+        "tooltip": "SLOC: presal → exportación atlántica"
+      }
+    ],
+    "leyenda": [
+      {
+        "color": "#c4570e",
+        "label": "Petróleo / refinerías"
+      },
+      {
+        "color": "#2e7d32",
+        "label": "Hidro / biomasa"
+      },
+      {
+        "color": "#a17c1c",
+        "label": "Eólica / solar"
+      }
+    ],
+    "mapa_cita": "Coordenadas reales de Itaipú, presal de Santos, Belo Monte, REDUC. <i>Fuentes: GEM 2024.</i>",
+    "vulnerabilidades_titulo": "Vulnerabilidades técnicas",
+    "vulnerabilidades": [
+      {
+        "nivel": "high",
+        "tag": "CRÍT",
+        "texto_html": "<b>Hidrodependencia</b> · las sequías obligan a térmicas caras y elevan tarifas (apagão 2001)."
+      },
+      {
+        "nivel": "med",
+        "tag": "ALTO",
+        "texto_html": "<b>Transmisión</b> · llevar eólica del Nordeste al sur-sudeste exige grandes líneas."
+      },
+      {
+        "nivel": "med",
+        "tag": "ALTO",
+        "texto_html": "<b>Refinación</b> · déficit que obliga a importar derivados pese al crudo propio."
+      },
+      {
+        "nivel": "low",
+        "tag": "MED",
+        "texto_html": "<b>Presal offshore</b> · operaciones complejas en aguas profundas."
+      }
+    ],
+    "capacidad_titulo": "Capacidad instalada (GW)",
+    "capacidad": {
+      "anios": [
+        "2020",
+        "2024",
+        "2030",
+        "2040"
+      ],
+      "y_titulo": "GW",
+      "series": [
+        {
+          "label": "Hidro (GW)",
+          "tipo": "bar",
+          "data": [
+            109,
+            110,
+            112,
+            115
+          ],
+          "color": "#2e7d32"
+        },
+        {
+          "label": "Eólica/Solar (GW)",
+          "tipo": "bar",
+          "data": [
+            20,
+            45,
+            90,
+            150
+          ],
+          "color": "#a17c1c"
+        },
+        {
+          "label": "Demanda pico (GW)",
+          "tipo": "line",
+          "data": [
+            86,
+            100,
+            120,
+            145
+          ],
+          "color": "#c4570e"
+        }
+      ]
+    },
+    "capacidad_cita": "Eólica/solar como nueva columna del crecimiento. <i>Fuente: ONS/EPE.</i>"
+  },
+  "geopolitica": {
+    "src": "Radar APERC normalizado",
+    "radar_titulo": "Radar APERC: Brasil vs Colombia vs EE.UU.",
+    "radar": {
+      "ejes": [
+        "Availability",
+        "Accessibility",
+        "Affordability",
+        "Acceptability",
+        "Sovereignty",
+        "Robustness",
+        "Resilience"
+      ],
+      "series": [
+        {
+          "label": "Brasil",
+          "data": [
+            7.5,
+            6.5,
+            6,
+            7.2,
+            7,
+            6,
+            6.5
+          ],
+          "color": "#2e7d32"
+        },
+        {
+          "label": "Colombia",
+          "data": [
+            6.5,
+            6,
+            6,
+            6.5,
+            6.5,
+            6,
+            5.5
+          ],
+          "color": "#a17c1c"
+        },
+        {
+          "label": "Estados Unidos",
+          "data": [
+            9,
+            7.5,
+            7,
+            7.7,
+            8,
+            8,
+            8
+          ],
+          "color": "#0b5394"
+        }
+      ]
+    },
+    "radar_cita": "Normalización min-max sobre indicadores §01.",
+    "dependencias_titulo": "Dependencias y socios",
+    "dependencias": [
+      {
+        "vinculo": "Exportación de crudo a China",
+        "pct": "45",
+        "riesgo": {
+          "texto": "Cliente clave",
+          "pill": "warn"
+        }
+      },
+      {
+        "vinculo": "Importación de diésel",
+        "pct": "—",
+        "riesgo": {
+          "texto": "Déficit de refinación",
+          "pill": "warn"
+        }
+      },
+      {
+        "vinculo": "Importación de gas de Bolivia",
+        "pct": "—",
+        "riesgo": {
+          "texto": "En declive",
+          "pill": "warn"
+        }
+      },
+      {
+        "vinculo": "Etanol como exportación",
+        "pct": "—",
+        "riesgo": {
+          "texto": "Ventaja competitiva",
+          "pill": "ok"
+        }
+      }
+    ],
+    "dependencias_cita": "EPE; MME 2024.",
+    "minerales_titulo": "Posición energética",
+    "minerales": [
+      {
+        "valor": "#1",
+        "unidad": " mundial",
+        "etiqueta": "ETANOL (con EE.UU.)"
+      },
+      {
+        "valor": "85",
+        "unidad": "%",
+        "etiqueta": "RENOVABLES ELÉCTRICAS"
+      },
+      {
+        "valor": "3.4",
+        "unidad": " Mb/d",
+        "etiqueta": "PRODUCCIÓN DE CRUDO"
+      }
+    ],
+    "minerales_cita": "EPE BEN 2024."
+  },
+  "militar": {
+    "titulo_seccion": "Combustibles Militares y Rol Operacional de las Forças Armadas",
+    "nav_label": "Combustibles militares",
+    "src": "IISS · Ministério da Defesa",
+    "combustibles_titulo": "Demanda de combustibles de las Forças Armadas",
+    "combustibles": [
+      {
+        "codigo": "QAV / Jet A-1",
+        "tipo": "Queroseno de aviación",
+        "usuario": "Força Aérea",
+        "ml_anio": "350"
+      },
+      {
+        "codigo": "Diésel naval",
+        "tipo": "Diésel/fuelóleo",
+        "usuario": "Marinha",
+        "ml_anio": "200"
+      },
+      {
+        "codigo": "Diésel terrestre",
+        "tipo": "Diésel",
+        "usuario": "Exército",
+        "ml_anio": "180"
+      }
+    ],
+    "combustibles_total": "~730",
+    "combustibles_cita": "Estimación de orden de magnitud.",
+    "vulnerabilidades_titulo": "Vulnerabilidades específicas de defensa",
+    "vulnerabilidades": [
+      {
+        "nivel": "med",
+        "tag": "ALTO",
+        "texto_html": "<b>Amazônia Azul</b> · proteger el presal offshore (Petrobras) en aguas jurisdiccionales."
+      },
+      {
+        "nivel": "med",
+        "tag": "ALTO",
+        "texto_html": "<b>Amazonía</b> · vigilancia de un territorio vasto con recursos e infraestructura dispersa."
+      },
+      {
+        "nivel": "low",
+        "tag": "MED",
+        "texto_html": "<b>Submarino nuclear (Prosub)</b> · capacidad para proteger el Atlántico Sur."
+      }
+    ],
+    "mision_titulo": "Misión en Seguridad Energética",
+    "mision": [
+      {
+        "titulo": "AMAZÔNIA AZUL",
+        "texto_html": "La Marinha protege el presal y las rutas del Atlántico Sur."
+      },
+      {
+        "titulo": "VIGILANCIA AMAZÓNICA",
+        "texto_html": "SIVAM/SIPAM y operaciones de presencia."
+      },
+      {
+        "titulo": "PROSUB",
+        "texto_html": "Programa de submarinos (incl. propulsión nuclear) para disuasión marítima."
+      },
+      {
+        "titulo": "INFRAESTRUCTURA CRÍTICA",
+        "texto_html": "Apoyo ante apagones y desastres."
+      }
+    ],
+    "mision_cita": "IISS 2024; Estratégia Nacional de Defesa."
+  },
+  "politicas": {
+    "src": "MME · EPE · ANEEL",
+    "planes_titulo": "Planes nacionales",
+    "planes": [
+      {
+        "nombre": "Plano Decenal de Energia (PDE)",
+        "texto": "Expansión de oferta a 10 años."
+      },
+      {
+        "nombre": "RenovaBio",
+        "texto": "Política de biocombustibles y créditos de descarbonización."
+      },
+      {
+        "nombre": "Leilões de energía",
+        "texto": "Subastas que impulsan eólica y solar."
+      },
+      {
+        "nombre": "Programa Combustível do Futuro",
+        "texto": "Biocombustibles avanzados y SAF."
+      }
+    ],
+    "instituciones_titulo": "Instituciones clave",
+    "instituciones": [
+      {
+        "sigla": "Petrobras",
+        "texto": "petrolera estatal; presal y refinación."
+      },
+      {
+        "sigla": "ONS",
+        "texto": "operador nacional del sistema eléctrico."
+      },
+      {
+        "sigla": "ANEEL / ANP",
+        "texto": "reguladores de electricidad e hidrocarburos."
+      },
+      {
+        "sigla": "EPE",
+        "texto": "empresa de investigación energética."
+      }
+    ],
+    "transicion_titulo": "Transición y economía",
+    "transicion_html": "<p>Brasil parte de una matriz limpia y busca <b>diversificar la hidro</b> con eólica/solar (resiliencia ante sequías), monetizar el presal en la ventana de demanda y liderar biocombustibles avanzados.</p>",
+    "transicion_cita": "EPE PDE; MME 2024."
+  },
+  "crisis": {
+    "src": "Wargaming · Cone of Plausibility",
+    "matriz_titulo": "Matriz Probabilidad × Impacto",
+    "matriz": {
+      "esquina": "Impacto ↓ / Prob →",
+      "prob_labels": [
+        "Muy bajo",
+        "Bajo",
+        "Medio",
+        "Alto",
+        "Muy alto"
+      ],
+      "filas": [
+        {
+          "impacto": "Catastrófico",
+          "celdas": [
+            {
+              "nivel": 3
+            },
+            {
+              "nivel": 4
+            },
+            {
+              "nivel": 5,
+              "texto": "Megasequía nacional"
+            },
+            {
+              "nivel": 5
+            },
+            {
+              "nivel": 5
+            }
+          ]
+        },
+        {
+          "impacto": "Mayor",
+          "celdas": [
+            {
+              "nivel": 2
+            },
+            {
+              "nivel": 3
+            },
+            {
+              "nivel": 4,
+              "texto": "Apagão hídrico"
+            },
+            {
+              "nivel": 4
+            },
+            {
+              "nivel": 5
+            }
+          ]
+        },
+        {
+          "impacto": "Moderado",
+          "celdas": [
+            {
+              "nivel": 1
+            },
+            {
+              "nivel": 2
+            },
+            {
+              "nivel": 3,
+              "texto": "Déficit de diésel"
+            },
+            {
+              "nivel": 4,
+              "texto": "Cuello de transmisión"
+            },
+            {
+              "nivel": 4
+            }
+          ]
+        },
+        {
+          "impacto": "Menor",
+          "celdas": [
+            {
+              "nivel": 1
+            },
+            {
+              "nivel": 1
+            },
+            {
+              "nivel": 2
+            },
+            {
+              "nivel": 3
+            },
+            {
+              "nivel": 3
+            }
+          ]
+        },
+        {
+          "impacto": "Insignif.",
+          "celdas": [
+            {
+              "nivel": 1
+            },
+            {
+              "nivel": 1
+            },
+            {
+              "nivel": 1
+            },
+            {
+              "nivel": 2
+            },
+            {
+              "nivel": 2
+            }
+          ]
+        }
+      ]
+    },
+    "matriz_cita": "Escala HM Treasury Orange Book.",
+    "escenarios_titulo": "Escenarios calibrados",
+    "escenarios": [
+      {
+        "nivel": "high",
+        "tag": "A",
+        "texto_html": "<b>Megasequía</b> — caída hidro nacional. <i>Respuesta:</i> térmicas, eólica/solar, gestión de embalses."
+      },
+      {
+        "nivel": "med",
+        "tag": "B",
+        "texto_html": "<b>Déficit de diésel</b> — dependencia de importación. <i>Respuesta:</i> ampliar refinación, biodiésel."
+      },
+      {
+        "nivel": "med",
+        "tag": "C",
+        "texto_html": "<b>Cuello de transmisión</b> — eólica del NE no llega al sur. <i>Respuesta:</i> nuevas líneas (leilões)."
+      },
+      {
+        "nivel": "low",
+        "tag": "D",
+        "texto_html": "<b>Caída de precio del crudo</b> — afecta inversión presal. <i>Respuesta:</i> eficiencia de costos de Petrobras."
+      }
+    ],
+    "vectores_titulo": "Respuesta estratégica integrada — vectores",
+    "vectores": [
+      {
+        "titulo": "DIVERSIFICAR HIDRO",
+        "texto": "Eólica y solar para resiliencia climática."
+      },
+      {
+        "titulo": "PRESAL",
+        "texto": "Monetizar crudo en la ventana de demanda."
+      },
+      {
+        "titulo": "BIOCOMBUSTIBLES",
+        "texto": "Etanol, biodiésel y SAF."
+      },
+      {
+        "titulo": "TRANSMISIÓN",
+        "texto": "Líneas para integrar el Nordeste renovable."
+      }
+    ]
+  },
+  "referencias": {
+    "src": "Triangulación multi-fuente",
+    "titulo": "Fuentes primarias y académicas",
+    "items": [
+      "EPE (2024). <i>Balanço Energético Nacional</i>.",
+      "IEA (2024). <i>Brazil Energy Profile</i>.",
+      "Petrobras (2024). <i>Plano Estratégico</i>.",
+      "Ember (2024). <i>Electricity Data Explorer</i>.",
+      "APERC (2007). <i>A Quest for Energy Security in the 21st Century</i>. Tokio."
+    ]
+  },
+  "footer": "Documento de sustentación · Rúbrica Slide18 · Logística Militar · Mayo 2026"
+}
