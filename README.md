@@ -34,6 +34,25 @@ La plataforma está publicada en **GitHub Pages**:
 - **Repositorio:** https://github.com/JulianQuinteroI/plataforma-seguridad-energetica
   (público; para hacerlo privado se requiere un plan de pago de GitHub para servir Pages).
 
+### 📄 Tablero autocontenido (un solo archivo, sin servidor)
+
+Para compartir o presentar **sin servidor ni carpeta `data/`**, existe una versión
+de **toda la plataforma empaquetada en un único HTML**:
+
+> **[`Tablero_Seguridad_Energetica.html`](Tablero_Seguridad_Energetica.html)**
+> · en línea: <https://julianquinteroi.github.io/plataforma-seguridad-energetica/Tablero_Seguridad_Energetica.html>
+
+- **Mapa mundi + los tableros de todos los países** en un mismo archivo, navegables
+  con un router interno (clic en el país → su tablero; «← Volver al mapa» regresa).
+  Acepta enlace directo por código ISO3, p. ej. `…Tablero_Seguridad_Energetica.html#ECU`.
+- **Funciona con doble clic** (`file://`): los datos, el GeoJSON de fronteras, los
+  estilos, el motor de render y los logos van **embebidos**. Solo necesita internet
+  para las librerías (Leaflet/Chart.js por CDN) y las teselas del mapa base.
+- **Regenerarlo** tras editar datos (después de `node generar_paises.js`):
+  ```bash
+  node build_standalone.js   # -> Tablero_Seguridad_Energetica.html
+  ```
+
 ---
 
 ## Índice
