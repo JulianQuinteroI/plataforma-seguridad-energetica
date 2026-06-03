@@ -2340,8 +2340,8 @@ P({
     conclusion_html: "APERC <b>6.2/10</b>: buena <i>availability</i> y <i>acceptability</i>, pero <i>robustness</i> limitada por la concentración en Camisea. Las FF.AA. protegen el gasoducto y la infraestructura crítica.",
     kpis: [
       { valor: 40, unidad: "%", etiqueta: "Gas en generación eléctrica" },
-      { valor: 55, unidad: "%", etiqueta: "Hidro en electricidad" },
-      { valor: 2, unidad: "º", etiqueta: "Productor de cobre mundial" },
+      { valor: 52, unidad: "%", etiqueta: "Hidro en electricidad" },
+      { valor: 3, unidad: "º", etiqueta: "Productor de cobre mundial" },
       { valor: 1, unidad: "", etiqueta: "Planta de GNL (Melchorita)" }
     ]
   },
@@ -2360,9 +2360,9 @@ P({
     comparador: { pais_b: "Chile", pais_c: "Colombia" },
     indicadores_titulo: "Indicadores cuantitativos aplicados",
     indicadores: [
-      { indicador: "Hidro en electricidad (%)", definicion: "Generación", propio: "55", b: "30", c: "70", interp: { texto: "Alta" } },
-      { indicador: "Gas en electricidad (%)", definicion: "Generación", propio: "40", b: "20", c: "16", interp: { texto: "Eje del sistema" } },
-      { indicador: "Producción de cobre (Mt)", definicion: "Anual", propio: "2.6", b: "5.3", c: "1.0", interp: { texto: "Gran demanda minera" } },
+      { indicador: "Hidro en electricidad (%)", definicion: "Generación", propio: "52", b: "23", c: "70", interp: { texto: "Alta" } },
+      { indicador: "Gas en electricidad (%)", definicion: "Generación", propio: "40", b: "18", c: "14", interp: { texto: "Eje del sistema" } },
+      { indicador: "Producción de cobre (Mt)", definicion: "Anual", propio: "2.6", b: "5.3", c: "0.004", interp: { texto: "Gran demanda minera" } },
       { indicador: "Concentración de transporte gas", definicion: "Camisea", propio: "alta", b: "media", c: "media", interp: { texto: "Riesgo de cuello", pill: "warn" } }
     ],
     indicadores_nota: "Comparación con Chile (minero) y Colombia (vecino hidro)."
@@ -2380,22 +2380,22 @@ P({
     primaria_cita: "Petróleo 40 · Gas 32 · Hidro 16. <i>Fuente: MINEM 2024.</i>",
     electrica_titulo: "Generación Eléctrica (%)",
     electrica: [
-      { label: "Hidro", valor: 55, color: "#2e7d32" },
+      { label: "Hidro", valor: 52, color: "#2e7d32" },
       { label: "Gas", valor: 40, color: "#0b5394" },
-      { label: "Solar/Eólica", valor: 5, color: "#a17c1c" }
+      { label: "Solar/Eólica", valor: 8, color: "#a17c1c" }
     ],
-    electrica_cita: "Hidro 55 · Gas 40 · Solar/Eólica 5. <i>Fuente: Ember 2024.</i>",
+    electrica_cita: "Hidro 52 · Gas 40 · Renov. 8. <i>Fuente: Ember, Global Electricity Review 2025 (datos 2024).</i>",
     comparativa_titulo: "Comparativa Internacional — Mix Eléctrico (%)",
     comparativa: {
       paises: ["Perú", "Chile", "Colombia"],
       series: [
-        { label: "Hidro", data: [55, 30, 70], color: "#2e7d32" },
-        { label: "Gas", data: [40, 20, 16], color: "#0b5394" },
-        { label: "Solar/Eólica", data: [5, 35, 4], color: "#a17c1c" },
-        { label: "Carbón", data: [0, 15, 8], color: "#8a4a4a" }
+        { label: "Hidro", data: [52, 23, 70], color: "#2e7d32" },
+        { label: "Gas", data: [40, 24, 18], color: "#0b5394" },
+        { label: "Solar/Eólica", data: [8, 35, 4], color: "#a17c1c" },
+        { label: "Carbón", data: [0, 18, 8], color: "#8a4a4a" }
       ]
     },
-    comparativa_nota: "Perú apoyado en hidro+gas; Chile lidera en solar/eólica."
+    comparativa_nota: "Perú: hidro+gas; Chile lidera en solar/eólica. La serie «Gas» agrega gas y otros térmicos menores (líquidos, cogeneración) para que cada columna sume 100%."
   },
   sankey: {
     src: "Producción → Transformación → Uso final",
@@ -2428,9 +2428,9 @@ P({
     historico_titulo: "Mix Eléctrico Histórico y Proyectado (%)",
     anios: ["2000", "2010", "2020", "2024", "2035", "2050"],
     series: [
-      { label: "Hidro", data: [85, 60, 55, 55, 50, 45], color: "#2e7d32" },
-      { label: "Gas", data: [5, 35, 40, 40, 35, 25], color: "#0b5394" },
-      { label: "Solar/Eólica", data: [0, 1, 4, 5, 15, 30], color: "#a17c1c" }
+      { label: "Hidro", data: [85, 60, 55, 52, 50, 45], color: "#2e7d32" },
+      { label: "Gas/Térmico", data: [15, 39, 41, 40, 35, 25], color: "#0b5394" },
+      { label: "Solar/Eólica", data: [0, 1, 4, 8, 15, 30], color: "#a17c1c" }
     ],
     historico_cita: "Camisea (2004) transformó la matriz; el sur tiene gran potencial solar.",
     hitos_titulo: "Hitos del Régimen Energético",
@@ -2490,25 +2490,25 @@ P({
       series: [
         { label: "Perú", data: [6.5, 6.0, 6.3, 6.0, 6.5, 5.5, 6.0], color: "#a17c1c" },
         { label: "Chile", data: [6.0, 6.5, 6.0, 7.5, 6.5, 6.5, 7.0], color: "#0b5394" },
-        { label: "Colombia", data: [6.5, 6.0, 6.0, 6.5, 6.5, 6.0, 5.5], color: "#2e7d32" }
+        { label: "Colombia", data: [6.5, 4.2, 5.0, 5.9, 6.0, 4.8, 5.0], color: "#2e7d32" }
       ]
     },
     radar_cita: "Normalización min-max sobre indicadores §01.",
     dependencias_titulo: "Dependencias y socios",
     dependencias: [
       { vinculo: "Exportación de GNL a Asia/Europa", pct: "—", riesgo: { texto: "Mercado spot", pill: "ok" } },
-      { vinculo: "Exportación de cobre a China", pct: "60", riesgo: { texto: "Cliente dominante", pill: "warn" } },
+      { vinculo: "Exportación de cobre a China", pct: "70", riesgo: { texto: "Cliente dominante", pill: "warn" } },
       { vinculo: "Importación de derivados", pct: "—", riesgo: { texto: "Déficit de refinación", pill: "warn" } },
       { vinculo: "Inversión minera extranjera", pct: "—", riesgo: { texto: "Sensible a estabilidad", pill: "warn" } }
     ],
     dependencias_cita: "MINEM; BCRP 2024.",
     minerales_titulo: "Posición minero-energética",
     minerales: [
-      { valor: "#2", unidad: " mundial", etiqueta: "COBRE" },
-      { valor: "#2", unidad: " mundial", etiqueta: "ZINC Y PLATA" },
-      { valor: "55", unidad: "%", etiqueta: "HIDRO ELÉCTRICA" }
+      { valor: "#3", unidad: " mundial", etiqueta: "COBRE" },
+      { valor: "#2", unidad: " mundial", etiqueta: "ZINC (plata #3)" },
+      { valor: "52", unidad: "%", etiqueta: "HIDRO ELÉCTRICA" }
     ],
-    minerales_cita: "USGS; MINEM 2024."
+    minerales_cita: "USGS, Mineral Commodity Summaries 2025 (cobre #3, zinc #2, plata #3); MINEM 2024."
   },
   militar: {
     titulo_seccion: "Combustibles Militares y Rol Operacional de las Fuerzas Armadas del Perú",
@@ -2621,15 +2621,15 @@ P({
     conclusion_html: "APERC <b>5.0/10</b>: <i>availability</i> en crudo pero <i>robustness</i> y <i>affordability</i> débiles (apagones, subsidios). Las FF.AA. protegen el SOTE/OCP y la infraestructura amazónica.",
     kpis: [
       { valor: 0.46, unidad: "Mb/d", etiqueta: "Producción de crudo", decimal: true },
-      { valor: 79, unidad: "%", etiqueta: "Hidro en electricidad" },
-      { valor: 4, unidad: "Bbbl", etiqueta: "Reservas de crudo" },
-      { valor: 12, unidad: "h/día", etiqueta: "Apagones pico (2024)" }
+      { valor: 70, unidad: "%", etiqueta: "Hidro en electricidad" },
+      { valor: 8.3, unidad: "Bbbl", etiqueta: "Reservas de crudo", decimal: true },
+      { valor: 14, unidad: "h/día", etiqueta: "Apagones pico (2024)" }
     ]
   },
   aperc: {
     src: "APERC 2007 · MEM 2024",
-    definicion_html: "<p>Ecuador muestra cómo la <i>hidrodependencia</i> sin respaldo erosiona la <i>robustness</i>: en estiaje, la baja del embalse de Coca Codo Sinclair deja al país a oscuras. La <i>affordability</i> sufre por subsidios insostenibles.</p>",
-    definicion_cita: "MEM; ARCONEL 2024.",
+    definicion_html: "<p>APERC (2007) define la seguridad energética como <i>“la capacidad de una economía de garantizar la disponibilidad del suministro de recursos energéticos de forma sostenible y oportuna, con un precio que no perjudique el desempeño económico”</i>, operacionalizada en las <b>cuatro «As»</b>: <i>Availability</i> (disponibilidad física), <i>Accessibility</i> (acceso geopolítico y de infraestructura), <i>Affordability</i> (asequibilidad económica) y <i>Acceptability</i> (aceptabilidad ambiental y social).</p><p>El radar añade tres ejes que siguen el marco de <b>Cherp &amp; Jewell (2014)</b>, quienes proponen ir “más allá de las cuatro As” entendiendo la seguridad energética como <i>“la baja vulnerabilidad de los sistemas energéticos vitales”</i> a través de tres perspectivas: <b>Sovereignty</b> (soberanía: control sobre el sistema frente a amenazas externas —p. ej. preventas de crudo a China, importación de derivados y de electricidad de Colombia), <b>Robustness</b> (robustez: resistencia ante riesgos técnicos y naturales objetivos —la hidrodependencia del 70 % y los estiajes que dejan al país a oscuras) y <b>Resilience</b> (resiliencia: capacidad de adaptación y recuperación ante perturbaciones imprevistas —respaldo firme, gestión de demanda e interconexión).</p>",
+    definicion_cita: "Definición de las cuatro As: APERC (2007), <i>A Quest for Energy Security in the 21st Century</i>. Ejes Sovereignty/Robustness/Resilience: Cherp &amp; Jewell (2014), <i>Energy Policy</i> 75: 415–421.",
     scorecard_titulo: "Scorecard del Ecuador bajo APERC",
     scores: [
       { letra: "A", nombre: "vailability", desc: "Crudo amazónico; gran hidro; potencial solar.", score: 6.0 },
@@ -2637,46 +2637,46 @@ P({
       { letra: "A", nombre: "ffordability", desc: "Subsidios costosos; apagones.", score: 4.5 },
       { letra: "A", nombre: "cceptability", desc: "Electricidad limpia, pero crudo en Amazonía (Yasuní).", score: 5.0 }
     ],
-    scorecard_cita: "Scores propios sobre indicadores normalizados.",
+    scorecard_cita: "Scores 0–10 de juicio experto, anclados en los indicadores cuantitativos de la sección §01 (hidro en electricidad, horas de apagón 2024, subsidio a combustibles % PIB, utilización de refinación) y contrastados con Colombia y Perú; no son una normalización min-max mecánica. Las cuatro As siguen a APERC (2007).",
     comparador: { pais_b: "Colombia", pais_c: "Perú" },
     indicadores_titulo: "Indicadores cuantitativos aplicados",
     indicadores: [
-      { indicador: "Hidro en electricidad (%)", definicion: "Generación", propio: "79", b: "70", c: "55", interp: { texto: "Hiperdependiente", pill: "warn" } },
-      { indicador: "Horas de apagón (2024)", definicion: "Pico", propio: "hasta 12/día", b: "bajo", c: "bajo", interp: { texto: "Crisis por estiaje", pill: "danger" } },
-      { indicador: "Subsidio a combustibles (% PIB)", definicion: "Estimado", propio: "~3", b: "0", c: "0", interp: { texto: "Carga fiscal", pill: "warn" } },
+      { indicador: "Hidro en electricidad (%)", definicion: "Generación", propio: "70", b: "70", c: "52", interp: { texto: "Hiperdependiente", pill: "warn" } },
+      { indicador: "Horas de apagón (2024)", definicion: "Pico", propio: "hasta 14/día", b: "bajo", c: "bajo", interp: { texto: "Crisis por estiaje", pill: "danger" } },
+      { indicador: "Subsidio a combustibles (% PIB)", definicion: "Solo comb., 2024", propio: "~2.5–3", b: "menor", c: "menor", interp: { texto: "Carga fiscal", pill: "warn" } },
       { indicador: "Utilización de refinación (%)", definicion: "Esmeraldas", propio: "60", b: "70", c: "70", interp: { texto: "Deficitaria" } }
     ],
-    indicadores_nota: "Comparación con Colombia y Perú (vecinos andinos)."
+    indicadores_nota: "Comparación con Colombia y Perú (vecinos andinos). Subsidio a combustibles ~2.5–3% del PIB (solo combustibles, 2024; fuente Min. Finanzas, Proforma PGE 2024); Colombia y Perú subsidian menos. Política en transición a focalización/eliminación (gasolinas liberadas 2024, diésel 2025)."
   },
   matriz: {
     src: "MEM · Ember 2024",
     primaria_titulo: "Energía Primaria (TPES, %)",
     primaria: [
-      { label: "Petróleo", valor: 70, color: "#c4570e" },
-      { label: "Hidro", valor: 16, color: "#2e7d32" },
-      { label: "Gas natural", valor: 8, color: "#0b5394" },
-      { label: "Biomasa/otros", valor: 6, color: "#a17c1c" }
+      { label: "Petróleo", valor: 79, color: "#c4570e" },
+      { label: "Hidro", valor: 14, color: "#2e7d32" },
+      { label: "Gas natural", valor: 3, color: "#0b5394" },
+      { label: "Biomasa/otros", valor: 4, color: "#a17c1c" }
     ],
-    primaria_cita: "Petróleo 70 · Hidro 16 · Gas 8. <i>Fuente: MEM 2024.</i>",
+    primaria_cita: "Petróleo 79 · Hidro 14 · Gas 3 · Biomasa 4. <i>Fuente: MEM, Balance Energético Nacional 2023, cap. 1 (oferta de energía primaria); IEA, Ecuador — Energy Mix.</i>",
     electrica_titulo: "Generación Eléctrica (%)",
     electrica: [
-      { label: "Hidro", valor: 79, color: "#2e7d32" },
-      { label: "Petróleo/Térmica", valor: 18, color: "#c4570e" },
-      { label: "Solar/Eólica", valor: 3, color: "#a17c1c" }
+      { label: "Hidro", valor: 70, color: "#2e7d32" },
+      { label: "Petróleo/Térmica", valor: 29.7, color: "#c4570e" },
+      { label: "Solar/Eólica", valor: 0.3, color: "#a17c1c" }
     ],
-    electrica_cita: "Hidro 79 · Térmica 18 · Renov. 3. <i>Fuente: ARCONEL 2024.</i>",
+    electrica_cita: "Hidro 70 · Térmica 29.7 · Renov. 0.3. <i>Fuente: CENACE, Informe Anual CENACE 2024, cap. 1 (operación del SNI — estructura de generación); MEM, Balance Energético Nacional 2023.</i>",
     comparativa_titulo: "Comparativa Internacional — Mix Eléctrico (%)",
     comparativa: {
       paises: ["Ecuador", "Colombia", "Perú"],
       series: [
-        { label: "Hidro", data: [79, 70, 55], color: "#2e7d32" },
-        { label: "Térmica/Petróleo", data: [18, 2, 0], color: "#c4570e" },
-        { label: "Gas", data: [0, 16, 40], color: "#0b5394" },
+        { label: "Hidro", data: [70, 70, 52], color: "#2e7d32" },
+        { label: "Térmica/Petróleo", data: [29.7, 4, 0], color: "#c4570e" },
+        { label: "Gas", data: [0, 14, 40], color: "#0b5394" },
         { label: "Carbón", data: [0, 8, 0], color: "#8a4a4a" },
-        { label: "Solar/Eólica", data: [3, 4, 5], color: "#a17c1c" }
+        { label: "Solar/Eólica", data: [0.3, 4, 8], color: "#a17c1c" }
       ]
     },
-    comparativa_nota: "Mayor hidrodependencia de la región → mayor riesgo en estiaje."
+    comparativa_nota: "Ecuador y Colombia comparten alta hidrodependencia, pero Ecuador tiene menor respaldo firme → mayor riesgo en estiaje."
   },
   sankey: {
     src: "Producción → Transformación → Uso final",
@@ -2710,15 +2710,15 @@ P({
     historico_titulo: "Mix Eléctrico Histórico y Proyectado (%)",
     anios: ["2000", "2010", "2016", "2024", "2035", "2050"],
     series: [
-      { label: "Hidro", data: [70, 55, 75, 79, 70, 60], color: "#2e7d32" },
-      { label: "Térmica/Petróleo", data: [30, 44, 23, 18, 12, 5], color: "#c4570e" },
-      { label: "Solar/Eólica", data: [0, 1, 2, 3, 18, 35], color: "#a17c1c" }
+      { label: "Hidro", data: [70, 55, 75, 70, 70, 60], color: "#2e7d32" },
+      { label: "Térmica/Petróleo", data: [30, 44, 23, 29.7, 12, 5], color: "#c4570e" },
+      { label: "Solar/Eólica", data: [0, 1, 2, 0.3, 18, 35], color: "#a17c1c" }
     ],
-    historico_cita: "Coca Codo Sinclair (2016) elevó la hidro, pero aumentó la exposición al estiaje.",
+    historico_cita: "Coca Codo Sinclair (1.5 GW, 2016) elevó la hidro pero aumentó la exposición al estiaje. <i>Series 2000–2024: MEM, Balance Energético Nacional 2023; ARCONEL, Estadística Anual del Sector Eléctrico Ecuatoriano 2024 (sección generación por tecnología).</i>",
     hitos_titulo: "Hitos del Régimen Energético",
     hitos: [
       { anio: "1972", evento: "Inicio de la exportación petrolera (SOTE)." },
-      { anio: "1973", evento: "Ingreso a la OPEP (salió en 2020)." },
+      { anio: "1973", evento: "Ingreso a la OPEP (retiro en 1992, reingreso en 2007, salida definitiva en 2020)." },
       { anio: "2016", evento: "Entrada de Coca Codo Sinclair (1.5 GW)." },
       { anio: "2023", evento: "Consulta del Yasuní: dejar el crudo del ITT bajo tierra." },
       { anio: "2024", evento: "Apagones nacionales por estiaje severo." }
@@ -2732,7 +2732,7 @@ P({
       { lat: 0.98, lng: -79.65, tipo: "refineria", nombre: "Refinería de Esmeraldas", desc: "Principal refinería del país" },
       { lat: -0.95, lng: -75.4, tipo: "refineria", nombre: "Bloques amazónicos / ITT", desc: "Crudo pesado de la Amazonía (Yasuní)" },
       { lat: 0.95, lng: -79.62, tipo: "gnl", nombre: "Terminal Balao", desc: "Exportación de crudo (fin del SOTE)" },
-      { lat: -2.2, lng: -79.9, tipo: "almacenamiento", nombre: "Hidro Paute-Molino", desc: "Complejo hidroeléctrico del sur" }
+      { lat: -2.576, lng: -78.51, tipo: "almacenamiento", nombre: "Hidro Paute-Molino", desc: "Complejo hidroeléctrico del sur" }
     ],
     rutas: [
       { puntos: [[-0.95, -75.4], [-0.3, -78], [0.98, -79.65], [0.95, -79.62]], tooltip: "Oleoducto SOTE: Amazonía → Esmeraldas/Balao" }
@@ -2742,10 +2742,10 @@ P({
       { color: "#c4570e", label: "Crudo / refinería" },
       { color: "#0b5394", label: "Terminal de exportación" }
     ],
-    mapa_cita: "Coordenadas reales de Coca Codo, Esmeraldas, ITT, Balao, Paute. <i>Fuentes: GEM 2024.</i>",
+    mapa_cita: "Coordenadas reales de Coca Codo, Esmeraldas, ITT, Balao y Paute. <i>Fuente: Global Energy Monitor, Global Oil and Gas Plant Tracker (release 2024); fichas de centrales Ecuador (gem.wiki).</i>",
     vulnerabilidades_titulo: "Vulnerabilidades técnicas",
     vulnerabilidades: [
-      { nivel: "high", tag: "CRÍT", texto_html: "<b>Estiaje hidroeléctrico</b> · sin respaldo, el país sufre apagones de hasta 12 h/día (2024)." },
+      { nivel: "high", tag: "CRÍT", texto_html: "<b>Estiaje hidroeléctrico</b> · sin respaldo, el país sufre apagones de hasta 14 h/día (2024)." },
       { nivel: "high", tag: "CRÍT", texto_html: "<b>Subsidios</b> · presión fiscal y contrabando hacia países vecinos." },
       { nivel: "med", tag: "ALTO", texto_html: "<b>SOTE/OCP</b> · oleoductos expuestos a deslizamientos (erosión regresiva del río Coca) y derrames." },
       { nivel: "low", tag: "MED", texto_html: "<b>Déficit de refinación</b> · importación de derivados." }
@@ -2757,10 +2757,10 @@ P({
       series: [
         { label: "Hidro (GW)", tipo: "bar", data: [4.5, 5.0, 5.1, 5.8], color: "#2e7d32" },
         { label: "Térmica/Renov. (GW)", tipo: "bar", data: [2.0, 1.8, 1.7, 2.5], color: "#c4570e" },
-        { label: "Demanda pico (GW)", tipo: "line", data: [3.6, 3.9, 4.4, 5.2], color: "#a17c1c" }
+        { label: "Demanda pico (GW)", tipo: "line", data: [3.6, 3.9, 5.05, 5.2], color: "#a17c1c" }
       ]
     },
-    capacidad_cita: "Poco respaldo térmico/renovable agrava el estiaje. <i>Fuente: CENACE.</i>"
+    capacidad_cita: "Poco respaldo térmico/renovable agrava el estiaje. <i>Fuente: CENACE, Informe Anual CENACE 2024, cap. 1 (potencia efectiva y demanda máxima del SNI); ARCONEL, Estadística del Sector Eléctrico 2024 (cap. infraestructura, potencia instalada).</i>"
   },
   geopolitica: {
     src: "Radar APERC normalizado",
@@ -2769,11 +2769,11 @@ P({
       ejes: ["Availability", "Accessibility", "Affordability", "Acceptability", "Sovereignty", "Robustness", "Resilience"],
       series: [
         { label: "Ecuador", data: [6.0, 4.5, 4.5, 5.0, 5.5, 3.5, 4.0], color: "#c4570e" },
-        { label: "Colombia", data: [6.5, 6.0, 6.0, 6.5, 6.5, 6.0, 5.5], color: "#2e7d32" },
+        { label: "Colombia", data: [6.5, 4.2, 5.0, 5.9, 6.0, 4.8, 5.0], color: "#2e7d32" },
         { label: "Perú", data: [6.5, 6.0, 6.3, 6.0, 6.5, 5.5, 6.0], color: "#0b5394" }
       ]
     },
-    radar_cita: "Normalización min-max sobre indicadores §01.",
+    radar_cita: "Los primeros cuatro ejes reproducen el scorecard APERC (juicio experto 0–10 anclado en los indicadores §01). Los tres ejes adicionales —Sovereignty, Robustness y Resilience— siguen el marco de Cherp &amp; Jewell (2014) y valoran, respectivamente, soberanía del sistema, robustez ante riesgos técnico-naturales y resiliencia/adaptación; no son una normalización min-max mecánica.",
     dependencias_titulo: "Dependencias y socios",
     dependencias: [
       { vinculo: "Exportación de crudo a EE.UU./Asia", pct: "—", riesgo: { texto: "Ingreso fiscal clave", pill: "warn" } },
@@ -2784,11 +2784,11 @@ P({
     dependencias_cita: "MEM; BCE 2024.",
     minerales_titulo: "Posición energética",
     minerales: [
-      { valor: "79", unidad: "%", etiqueta: "HIDRO ELÉCTRICA" },
-      { valor: "4", unidad: " Bbbl", etiqueta: "RESERVAS DE CRUDO" },
+      { valor: "70", unidad: "%", etiqueta: "HIDRO ELÉCTRICA" },
+      { valor: "8.3", unidad: " Bbbl", etiqueta: "RESERVAS DE CRUDO" },
       { valor: "ITT", unidad: "", etiqueta: "DEBATE YASUNÍ" }
     ],
-    minerales_cita: "OPEP; MEM 2024."
+    minerales_cita: "Reservas probadas de crudo y producción: OPEC, Annual Statistical Bulletin 2024, tabla «World proven crude oil reserves» (Ecuador); hidro 70 %: CENACE, Informe Anual CENACE 2024."
   },
   militar: {
     titulo_seccion: "Combustibles Militares y Rol Operacional de las Fuerzas Armadas del Ecuador",
@@ -2822,13 +2822,13 @@ P({
     planes_titulo: "Planes nacionales",
     planes: [
       { nombre: "Plan Maestro de Electricidad", texto: "Expansión y diversificación de la generación." },
-      { nombre: "Focalización de subsidios", texto: "Reducir el costo fiscal de los combustibles." },
+      { nombre: "Focalización/eliminación de subsidios", texto: "Liberación de precios de gasolinas (2024) y diésel (2025) para reducir el costo fiscal." },
       { nombre: "Bloque ITT / Yasuní", texto: "Cierre progresivo tras la consulta de 2023." },
       { nombre: "Renovables no convencionales", texto: "Solar, eólica y geotermia." }
     ],
     instituciones_titulo: "Instituciones clave",
     instituciones: [
-      { sigla: "MEM", texto: "ministerio de energía y minas." },
+      { sigla: "MEM", texto: "ministerio de energía y minas (desde ago-2025, Ministerio de Ambiente y Energía)." },
       { sigla: "Petroecuador", texto: "petrolera estatal." },
       { sigla: "ARCONEL / CENACE", texto: "regulación y operación eléctrica." },
       { sigla: "CELEC EP", texto: "generación pública (hidro)." }
@@ -2871,11 +2871,18 @@ P({
     src: "Triangulación multi-fuente",
     titulo: "Fuentes primarias y académicas",
     items: [
-      "MEM Ecuador (2024). <i>Balance Energético Nacional</i>.",
-      "ARCONEL / CENACE (2024). Informes del sector eléctrico.",
-      "OPEC (2020). <i>Annual Statistical Bulletin</i>.",
-      "IEA (2024). <i>Ecuador Energy Profile</i>.",
-      "APERC (2007). <i>A Quest for Energy Security in the 21st Century</i>. Tokio."
+      "Cherp, A. &amp; Jewell, J. (2014). “The concept of energy security: Beyond the four As”, <i>Energy Policy</i> 75: 415–421. (DOI: 10.1016/j.enpol.2014.09.005)",
+      "APERC (2007). <i>A Quest for Energy Security in the 21st Century: Resources and Constraints</i>. Tokio: Asia Pacific Energy Research Centre / Institute of Energy Economics, Japan.",
+      "Ministerio de Energía y Minas del Ecuador (2024). <i>Balance Energético Nacional 2023</i>. Quito: MEM (desde ago-2025, Ministerio de Ambiente y Energía).",
+      "ARCONEL (2024). <i>Estadística Anual y Multianual del Sector Eléctrico Ecuatoriano 2024</i>. Quito: Agencia de Regulación y Control de Energía y Recursos Naturales no Renovables.",
+      "CENACE (2025). <i>Informe Anual CENACE 2024</i>. Quito: Operador Nacional de Electricidad (CENACE).",
+      "EIA (2023). <i>Country Analysis Brief: Ecuador</i> (actualizado 20 jul. 2023). Washington, D.C.: U.S. Energy Information Administration.",
+      "IEA (s.f.). <i>Ecuador — Countries &amp; Regions: Energy Mix</i>. París: International Energy Agency. Disponible en iea.org/countries/ecuador.",
+      "Ember (2025). <i>Global Electricity Review 2025</i> (datos anuales de electricidad 2024). Londres: Ember.",
+      "Global Energy Monitor (2024). <i>Global Oil and Gas Plant Tracker</i> (release 2024). San Francisco: Global Energy Monitor.",
+      "OPEC (2024). <i>Annual Statistical Bulletin 2024</i> (59.ª ed.). Viena: Organization of the Petroleum Exporting Countries.",
+      "Banco Central del Ecuador (2024). <i>Boletín Analítico del Sector Petrolero</i> e <i>Información Estadística Mensual</i>. Quito: BCE.",
+      "IISS (2024). <i>The Military Balance 2024</i> (65.ª ed.). Londres: International Institute for Strategic Studies / Routledge – Taylor &amp; Francis."
     ]
   },
   footer: "Documento de sustentación · Rúbrica Slide18 · Logística Militar · Mayo 2026"

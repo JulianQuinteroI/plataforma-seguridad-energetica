@@ -32,12 +32,12 @@
         "etiqueta": "Gas en generación eléctrica"
       },
       {
-        "valor": 55,
+        "valor": 52,
         "unidad": "%",
         "etiqueta": "Hidro en electricidad"
       },
       {
-        "valor": 2,
+        "valor": 3,
         "unidad": "º",
         "etiqueta": "Productor de cobre mundial"
       },
@@ -89,8 +89,8 @@
       {
         "indicador": "Hidro en electricidad (%)",
         "definicion": "Generación",
-        "propio": "55",
-        "b": "30",
+        "propio": "52",
+        "b": "23",
         "c": "70",
         "interp": {
           "texto": "Alta"
@@ -100,8 +100,8 @@
         "indicador": "Gas en electricidad (%)",
         "definicion": "Generación",
         "propio": "40",
-        "b": "20",
-        "c": "16",
+        "b": "18",
+        "c": "14",
         "interp": {
           "texto": "Eje del sistema"
         }
@@ -111,7 +111,7 @@
         "definicion": "Anual",
         "propio": "2.6",
         "b": "5.3",
-        "c": "1.0",
+        "c": "0.004",
         "interp": {
           "texto": "Gran demanda minera"
         }
@@ -165,7 +165,7 @@
     "electrica": [
       {
         "label": "Hidro",
-        "valor": 55,
+        "valor": 52,
         "color": "#2e7d32"
       },
       {
@@ -175,11 +175,11 @@
       },
       {
         "label": "Solar/Eólica",
-        "valor": 5,
+        "valor": 8,
         "color": "#a17c1c"
       }
     ],
-    "electrica_cita": "Hidro 55 · Gas 40 · Solar/Eólica 5. <i>Fuente: Ember 2024.</i>",
+    "electrica_cita": "Hidro 52 · Gas 40 · Renov. 8. <i>Fuente: Ember, Global Electricity Review 2025 (datos 2024).</i>",
     "comparativa_titulo": "Comparativa Internacional — Mix Eléctrico (%)",
     "comparativa": {
       "paises": [
@@ -191,8 +191,8 @@
         {
           "label": "Hidro",
           "data": [
-            55,
-            30,
+            52,
+            23,
             70
           ],
           "color": "#2e7d32"
@@ -201,15 +201,15 @@
           "label": "Gas",
           "data": [
             40,
-            20,
-            16
+            24,
+            18
           ],
           "color": "#0b5394"
         },
         {
           "label": "Solar/Eólica",
           "data": [
-            5,
+            8,
             35,
             4
           ],
@@ -219,14 +219,14 @@
           "label": "Carbón",
           "data": [
             0,
-            15,
+            18,
             8
           ],
           "color": "#8a4a4a"
         }
       ]
     },
-    "comparativa_nota": "Perú apoyado en hidro+gas; Chile lidera en solar/eólica."
+    "comparativa_nota": "Perú: hidro+gas; Chile lidera en solar/eólica. La serie «Gas» agrega gas y otros térmicos menores (líquidos, cogeneración) para que cada columna sume 100%."
   },
   "sankey": {
     "src": "Producción → Transformación → Uso final",
@@ -331,18 +331,18 @@
           85,
           60,
           55,
-          55,
+          52,
           50,
           45
         ],
         "color": "#2e7d32"
       },
       {
-        "label": "Gas",
+        "label": "Gas/Térmico",
         "data": [
-          5,
-          35,
-          40,
+          15,
+          39,
+          41,
           40,
           35,
           25
@@ -355,7 +355,7 @@
           0,
           1,
           4,
-          5,
+          8,
           15,
           30
         ],
@@ -586,12 +586,12 @@
           "label": "Colombia",
           "data": [
             6.5,
+            4.2,
+            5,
+            5.9,
             6,
-            6,
-            6.5,
-            6.5,
-            6,
-            5.5
+            4.8,
+            5
           ],
           "color": "#2e7d32"
         }
@@ -610,7 +610,7 @@
       },
       {
         "vinculo": "Exportación de cobre a China",
-        "pct": "60",
+        "pct": "70",
         "riesgo": {
           "texto": "Cliente dominante",
           "pill": "warn"
@@ -637,22 +637,22 @@
     "minerales_titulo": "Posición minero-energética",
     "minerales": [
       {
-        "valor": "#2",
+        "valor": "#3",
         "unidad": " mundial",
         "etiqueta": "COBRE"
       },
       {
         "valor": "#2",
         "unidad": " mundial",
-        "etiqueta": "ZINC Y PLATA"
+        "etiqueta": "ZINC (plata #3)"
       },
       {
-        "valor": "55",
+        "valor": "52",
         "unidad": "%",
         "etiqueta": "HIDRO ELÉCTRICA"
       }
     ],
-    "minerales_cita": "USGS; MINEM 2024."
+    "minerales_cita": "USGS, Mineral Commodity Summaries 2025 (cobre #3, zinc #2, plata #3); MINEM 2024."
   },
   "militar": {
     "titulo_seccion": "Combustibles Militares y Rol Operacional de las Fuerzas Armadas del Perú",
